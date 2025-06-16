@@ -1,3 +1,1 @@
-https://mathiyass.github.io/Mathiyass/
-[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=6grrenymxnzrrvbp2dbe4ikxm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false)](https://github.com/kittinan/spotify-github-profile)
-[![https://mathiyass.github.io/Mathiyass/)
+[![🌐 Visit my Portfolio](https://img.shields.io/badge/Visit-Portfolio-brightgreen?logo=github)](https://mathiyass.github.io/Mathiyass/)
