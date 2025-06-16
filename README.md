@@ -234,14 +234,17 @@ I don't just write code - I architect digital experiences that inspire, engage, 
 
 ---
 
-## 🐍 **CONTRIBUTION SNAKE ANIMATION**
+## 🎮 **PACMAN CONTRIBUTION ANIMATION**
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Mathiyass/Mathiyass/raw/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://github.com/Mathiyass/Mathiyass/raw/output/github-contribution-grid-snake.svg">
-    <img alt="Snake eating my contributions" src="https://github.com/Mathiyass/Mathiyass/raw/output/github-contribution-grid-snake.svg"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg">
+    <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg">
   </picture>
+  
+  <br><br>
+  
 </div>
 
 ---
@@ -352,7 +355,6 @@ Continuous Learning    ███████████████████
 
 </div>
 
----
 
 ## 🔥 **CURRENT MISSION & OBJECTIVES**
 
