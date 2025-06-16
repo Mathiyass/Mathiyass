@@ -9,9 +9,7 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=28&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&width=600&lines=🌟+Welcome+to+My+Digital+Realm+🌟;💫+Where+Code+Meets+Creativity+💫;🔥+Building+Tomorrow%2C+Today+🔥" />
-</div>
+
 
 </div>
 
