@@ -1,21 +1,29 @@
 name: Generate Pacman Snake Animation 🐍
+
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: Platane/snk@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate Pacman Snake
+        uses: Platane/snk@v3
         with:
           github_user_name: Mathiyass
           outputs: |
             ./github-contribution-grid-pacman.svg
+          mode: pacman
+
       - name: Commit & Push
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add .
-          git commit -m "Generate Pacman Snake"
+          git commit -m "Generate Pacman Snake Animation" || echo "No changes to commit"
           git push
