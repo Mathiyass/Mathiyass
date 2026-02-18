@@ -1,60 +1,523 @@
+/* ========================================
+   MATHIYA — Premium Dark Theme
+   ======================================== */
+
+/* --- Design Tokens --- */
+:root {
+  --bg-primary: #0a0a0f;
+  --bg-secondary: #0d0d15;
+  --bg-card: rgba(255, 255, 255, 0.03);
+  --bg-card-hover: rgba(255, 255, 255, 0.06);
+  --border-card: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(0, 255, 225, 0.3);
+  --accent: #00ffe1;
+  --accent-glow: rgba(0, 255, 225, 0.15);
+  --gold: #ffd700;
+  --coral: #ff6b6b;
+  --text-primary: #e8e8e8;
+  --text-secondary: #888;
+  --text-muted: #555;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Orbitron', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --radius: 16px;
+  --shadow-glow: 0 0 40px rgba(0, 255, 225, 0.08);
+}
+
+/* --- Reset & Base --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg-primary);
+}
+
 body {
-  margin:0; padding:0;
-  background:#000;
-  color:#00ffe1;
-  font-family:'Orbitron', sans-serif;
-  text-align:center;
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+  position: relative;
 }
-.header {
-  padding:50px 10px;
+
+::selection {
+  background: var(--accent);
+  color: var(--bg-primary);
 }
-.glow {
-  font-size:3rem;
-  text-shadow:0 0 10px #00ffe1, 0 0 20px #00ffe1;
+
+/* --- Particles Canvas --- */
+#particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 0;
 }
-.typing {
-  font-size:1.5rem;
-  white-space:nowrap;
-  overflow:hidden;
-  display:inline;
+
+/* --- Section Defaults --- */
+section {
+  position: relative;
+  z-index: 1;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.section-icon {
+  margin-right: 8px;
+}
+
+/* --- Glass Card --- */
+.glass-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius);
+  padding: 32px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.glass-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-hover);
+  box-shadow: var(--shadow-glow);
+  transform: translateY(-4px);
+}
+
+/* ========================================
+   HERO
+   ======================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: none;
+  padding: 40px 24px;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  background: var(--accent-glow);
+  border: 1px solid rgba(0, 255, 225, 0.2);
+  padding: 8px 20px;
+  border-radius: 50px;
+  margin-bottom: 28px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  animation: fadeInDown 0.8s ease;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+.greeting {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.name-glow {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 900;
+  background: linear-gradient(135deg, var(--accent), var(--gold), var(--accent));
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+  filter: drop-shadow(0 0 30px rgba(0, 255, 225, 0.3));
+}
+
+.typing-wrapper {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  min-height: 1.8em;
+  margin-bottom: 36px;
+  animation: fadeInUp 0.8s ease 0.4s backwards;
+}
+
 .cursor {
-  display:inline-block;
-  width:2px;
-  height:1.5rem;
-  background-color:#00ffe1;
-  margin-left:2px;
-  vertical-align:bottom;
+  display: inline-block;
+  color: var(--accent);
+  animation: blink 1s step-end infinite;
+  font-weight: 100;
 }
-.cursor.inactive {
-  background-color:transparent;
+
+.hero-cta {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease 0.6s backwards;
 }
-.social a {
-  display:inline-block;
-  margin:10px;
-  padding:10px 20px;
-  color:#000;
-  background:#00ffe1;
-  border-radius:10px;
-  text-decoration:none;
-  transition:0.3s;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
 }
-.social a:hover {
-  transform:scale(1.1);
-  background:#ff00ff;
-  color:#fff;
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg-primary);
 }
-.stats, .spotify, .snake {
-  margin:50px 0;
+
+.btn-primary:hover {
+  box-shadow: 0 0 30px rgba(0, 255, 225, 0.4);
+  transform: translateY(-2px);
 }
-img {
-  border-radius:10px;
-  box-shadow:0 0 20px #00ffe1;
-  margin:10px;
-  max-width:90%;
+
+.btn-outline {
+  background: transparent;
+  color: var(--accent);
+  border: 1.5px solid var(--accent);
 }
+
+.btn-outline:hover {
+  background: var(--accent-glow);
+  transform: translateY(-2px);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  animation: fadeInUp 1s ease 1s backwards;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 40px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollPulse 2s ease infinite;
+}
+
+/* ========================================
+   ABOUT
+   ======================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+
+.about-text strong {
+  color: var(--accent);
+}
+
+.about-highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: rgba(0, 255, 225, 0.04);
+  border: 1px solid rgba(0, 255, 225, 0.08);
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.highlight-item:hover {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+
+.highlight-item i {
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+
+.stats-card {
+  text-align: center;
+}
+
+.stats-card h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.stats-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+/* ========================================
+   TECH STACK
+   ======================================== */
+.tech-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.tech-card {
+  text-align: center;
+}
+
+.tech-card h3 {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.tech-card h3 i {
+  margin-right: 8px;
+  color: var(--gold);
+}
+
+.tech-card img {
+  max-width: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* ========================================
+   SPOTIFY
+   ======================================== */
+.spotify-card {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spotify-card a {
+  text-decoration: none;
+}
+
+.spotify-card img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: none;
+}
+
+/* ========================================
+   CONNECT
+   ======================================== */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.social-link i {
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.social-link.github:hover       { border-color: #fff;    }
+.social-link.github:hover i     { color: #fff;           }
+.social-link.linkedin:hover     { border-color: #0077B5; }
+.social-link.linkedin:hover i   { color: #0077B5;        }
+.social-link.twitter:hover      { border-color: #fff;    }
+.social-link.twitter:hover i    { color: #fff;           }
+.social-link.instagram:hover    { border-color: #E4405F; }
+.social-link.instagram:hover i  { color: #E4405F;        }
+.social-link.discord:hover      { border-color: #5865F2; }
+.social-link.discord:hover i    { color: #5865F2;        }
+.social-link.whatsapp:hover     { border-color: #25D366; }
+.social-link.whatsapp:hover i   { color: #25D366;        }
+.social-link.steam:hover        { border-color: #66c0f4; }
+.social-link.steam:hover i      { color: #66c0f4;        }
+.social-link.spotify-link:hover { border-color: #1DB954; }
+.social-link.spotify-link:hover i { color: #1DB954;      }
+
+/* ========================================
+   FOOTER
+   ======================================== */
 footer {
-  margin:50px 0;
-  font-size:1rem;
-  color:#666;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 24px 40px;
+  border-top: 1px solid var(--border-card);
+}
+
+.footer-brand {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 6px;
+}
+
+.footer-brand strong {
+  color: var(--accent);
+}
+
+.footer-sub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes shimmer {
+  0%    { background-position: 0% center; }
+  100%  { background-position: 200% center; }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.3; }
+  50%      { opacity: 1; }
+}
+
+/* --- Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  section { padding: 60px 16px; }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .name-glow {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
 }
