@@ -1,7 +1,7 @@
 name: Latest YouTube Videos Workflow
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */6 * * *'  # Every 6 hours
   workflow_dispatch:
 
 jobs:
@@ -10,15 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Pull in YouTube videos
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "YOUTUBE"
-          channel_id: "UCxxxxxxxxxxxxxxx" # Replace with actual channel ID or use custom_value if known
-          # attempting without channel_id first by using feed_list if possible, but this action is specific.
-          # actually this action supports youtube_channel_id.
-          # I will set a placeholder and ask user to update it or try to find it if it was in the readme.
-          # The previous readme had a link to youtube.com/@mathiya. I'll use that handle if supported or leave a comment.
-          # The action supports channel_id. I don't have it. I'll use a placeholder.
-          channel_id: "UC_YOUR_CHANNEL_ID_HERE" 
+          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UC_YOUR_CHANNEL_ID_HERE"
+          # ⚠️ Replace UC_YOUR_CHANNEL_ID_HERE with your actual YouTube Channel ID
+          # Find it at: https://www.youtube.com/account_advanced
+          # Or from your channel URL: youtube.com/channel/UCxxxxxxx
