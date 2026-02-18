@@ -296,8 +296,8 @@ Example:
 ## ⚡ **RECENT NETWORK ACTIVITY**
 
 <!--START_SECTION:activity-->
-<!-- ACTIVITY-README:START -->
-<!-- ACTIVITY-README:END -->
+1. 🎉 Merged PR [#4](https://github.com/Mathiyass/damithri/pull/4) in [Mathiyass/damithri](https://github.com/Mathiyass/damithri)
+2. 💪 Opened PR [#4](https://github.com/Mathiyass/damithri/pull/4) in [Mathiyass/damithri](https://github.com/Mathiyass/damithri)
 <!--END_SECTION:activity-->
 
 ---
