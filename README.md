@@ -296,8 +296,8 @@ Example:
 ## ⚡ **RECENT NETWORK ACTIVITY**
 
 <!--START_SECTION:activity-->
-1. 🚀 Published release [MA Optimizer v7.1](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v7.1) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-2. 🚀 Published release [MA Optimizer v7.0](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v7.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+1. 🎉 Merged PR [#1](https://github.com/Mathiyass/killer-quebes-co1301/pull/1) in [Mathiyass/killer-quebes-co1301](https://github.com/Mathiyass/killer-quebes-co1301)
+2. 💪 Opened PR [#1](https://github.com/Mathiyass/killer-quebes-co1301/pull/1) in [Mathiyass/killer-quebes-co1301](https://github.com/Mathiyass/killer-quebes-co1301)
 <!--END_SECTION:activity-->
 
 ---
