@@ -158,14 +158,14 @@ motto: "Ship fast, break nothing, scale everything"
 
 ### **🔥 Streak Status**
 <a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=Mathiyass&theme=tokyonight_duo&hide_border=true&background=0D1117&ring=FF00FF&fire=00FFE1&currStreakLabel=00FFE1&sideLabels=FF00FF" />
+  <img src="https://streak-stats.demolab.com?user=Mathiyass&theme=tokyonight_duo&hide_border=true&background=0D1117&ring=FF1744&fire=00E5FF&currStreakLabel=00E5FF&sideLabels=FF1744" />
 </a>
 
 </td>
 <td width="50%" align="center">
 
 ### **⚡ Code Frequency**
-<img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFE1&icon_color=FF00FF&text_color=ffffff&rank_icon=github&include_all_commits=true&count_private=true" />
+<img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&rank_icon=github&include_all_commits=true&count_private=true" />
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ motto: "Ship fast, break nothing, scale everything"
 <td width="50%" align="center">
 
 ### **💻 Language Dominance**
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFE1&text_color=ffffff&langs_count=10" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff&langs_count=10" />
 
 </td>
 <td width="50%" align="center">
