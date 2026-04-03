@@ -247,7 +247,7 @@ Example:
 <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00FFE1" />
 -->
 
-<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00FFE1&bar_color_cover=true" alt="Spotify Now Playing" />
+<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00E5FF&bar_color_cover=true" alt="Spotify Now Playing" />
 
 <br/>
 
@@ -373,17 +373,17 @@ Example:
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mathiyass)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
-[![Twitter](https://img.shields.io/badge/𝕏_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/__Mathiya__)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/mathi_ya_/)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/QERP5JJM8k)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mathiya.dev)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mathiya)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@mathiya)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white)](https://dev.to/mathiya)
-[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)](https://stackoverflow.com/users/mathiya)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mathiya@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white&color=00E5FF&labelColor=0D1117)](https://github.com/Mathiyass)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&color=FF1744&labelColor=0D1117)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
+[![Twitter](https://img.shields.io/badge/𝕏_(Twitter)-000000?style=for-the-badge&logo=x&logoColor=white&color=00E5FF&labelColor=0D1117)](https://x.com/__Mathiya__)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=FF1744&labelColor=0D1117)](https://instagram.com/mathi_ya_/)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white&color=00E5FF&labelColor=0D1117)](https://discord.gg/QERP5JJM8k)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white&color=FF1744&labelColor=0D1117)](https://mathiya.dev)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&color=00E5FF&labelColor=0D1117)](https://youtube.com/@mathiya)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&color=FF1744&labelColor=0D1117)](https://medium.com/@mathiya)
+[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&color=00E5FF&labelColor=0D1117)](https://dev.to/mathiya)
+[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white&color=FF1744&labelColor=0D1117)](https://stackoverflow.com/users/mathiya)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00E5FF&labelColor=0D1117)](mailto:mathiya@example.com)
 
 </div>
 
@@ -427,6 +427,8 @@ Example:
 <img src="https://img.shields.io/badge/Last_Updated-February_2026-00FFE1?style=flat-square&labelColor=0D1117" />
 
 ### **`> END_TRANSMISSION_`**
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=000000,121212,00FFE1,FF00FF&height=150&section=footer&animation=fadeIn&fontColor=00FFE1" />
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00E5FF,FF1744,000000&height=150&section=footer&animation=fadeIn&fontColor=00E5FF" />
+</div>
 
 </div>
