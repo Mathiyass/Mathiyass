@@ -1,12 +1,12 @@
 # 
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=000000,121212,00FFE1,FF00FF&height=350&section=header&text=MATHIYA&fontSize=80&animation=fadeIn&fontAlignY=38&desc=🔥%20Elite%20Full-Stack%20Architect%20%7C%20Cyberpunk%20Dev%20%7C%20Innovation%20Engine%20🔥&descAlignY=65&descSize=22&fontColor=00FFE1&descColor=FF00FF" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00E5FF,FF1744,000000&height=350&section=header&text=MATHIYA&fontSize=80&animation=fadeIn&fontAlignY=38&desc=🔥%20Elite%20Full-Stack%20Architect%20%7C%20Cyberpunk%20Dev%20%7C%20Innovation%20Engine%20🔥&descAlignY=65&descSize=22&fontColor=00E5FF&descColor=FF1744" />
 </div>
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=38&duration=1500&pause=500&color=00FFE1&center=true&vCenter=true&multiline=true&width=1000&height=160&lines=System.init(User.MATHIYA)%3B;Loading+Elite+Developer+Profile...;%3E+Architecting+the+Future+of+Software;%3E+Mastering+AI+%2B+Web3+%2B+Cloud;%3E+Code+is+New+Oil.+I+Drill+Deep.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=38&duration=1500&pause=500&color=00E5FF&center=true&vCenter=true&multiline=true&width=1000&height=160&lines=System.init(User.MATHIYA)%3B;Loading+Elite+Developer+Profile...;%3E+Architecting+the+Future+of+Software;%3E+Mastering+AI+%2B+Web3+%2B+Cloud;%3E+Status:+ONLINE)] (https://git.io/typing-svg)
 
 </div>
 
