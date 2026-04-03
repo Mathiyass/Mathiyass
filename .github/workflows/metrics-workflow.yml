@@ -26,7 +26,13 @@ jobs:
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/London
+          config_order: base.header, isocalendar, languages, achievements, notable, lines, habits, stars
 
+          # Theme and Colors
+          config_theme: tokyonight
+          config_padding: 0, 8
+          config_output: svg
+          
           # Isometric contribution calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
