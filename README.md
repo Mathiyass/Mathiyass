@@ -118,14 +118,14 @@ motto: "Ship fast, break nothing, scale everything"
   <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv&theme=dark&perline=7" />
 </a>
 
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=00E5FF)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=FF1744)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=00E5FF)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=00E5FF)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=FF1744)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=00E5FF)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=FF1744)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=00E5FF)
+![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
 
 ### **🔧 Tools & Platforms**
 <a href="https://skillicons.dev">
@@ -133,13 +133,13 @@ motto: "Ship fast, break nothing, scale everything"
 </a>
 
 ### **🧪 Testing & Quality**
-![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=FF1744)
-![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=00E5FF)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=FF1744)
-![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=mocha&logoColor=00E5FF)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=FF1744)
-![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=00E5FF)
-![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=FF1744)
+![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=mocha&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
+![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
 
 </div>
 
@@ -191,7 +191,7 @@ motto: "Ship fast, break nothing, scale everything"
 </table>
 
 ### **📈 Contribution Activity Graph**
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&bg_color=0D1117&color=00FFE1&line=FF00FF&point=FFFFFF&area=true&area_color=FF00FF&hide_border=true&custom_title=MATHIYA's%20Contribution%20Timeline" width="95%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&bg_color=0D1117&color=00E5FF&line=FF1744&point=FFFFFF&area=true&area_color=FF1744&hide_border=true&custom_title=MATHIYA's%20Contribution%20Timeline" width="95%" />
 
 ### **🏔️ 3D Contribution Calendar**
 <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar" />
@@ -217,14 +217,14 @@ motto: "Ship fast, break nothing, scale everything"
 <div align="center">
 
 <a href="https://github.com/Mathiyass/Mathiyass">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFE1&icon_color=FF00FF&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
 </a>
 
 <!-- 
 🔥 ADD YOUR BEST REPOS HERE! Copy the block below and change REPO-NAME:
 
-<a href="https://github.com/Mathiyass/REPO-NAME">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=REPO-NAME&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00FFE1&icon_color=FF00FF&text_color=ffffff" />
+<a href="https://github.com/Mathiyass/Mathiyass">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
 </a>
 -->
 
@@ -363,7 +363,7 @@ Example:
 
 <div align="center">
 
-![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical&qColor=%2300FFE1&aColor=%23FF00FF&borderColor=%23FF00FF&bgColor=%230D1117&textColor=%23ffffff)
+![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical&qColor=%2300E5FF&aColor=%23FF1744&borderColor=%23FF1744&bgColor=%230D1117&textColor=%23ffffff)
 
 </div>
 
@@ -424,7 +424,7 @@ Example:
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ### 🕐 **Last Updated**
-<img src="https://img.shields.io/badge/Last_Updated-February_2026-00FFE1?style=flat-square&labelColor=0D1117" />
+<img src="https://img.shields.io/badge/Last_Updated-February_2026-00E5FF?style=flat-square&labelColor=0D1117" />
 
 ### **`> END_TRANSMISSION_`**
 <div align="center">
