@@ -296,8 +296,8 @@ Example:
 ## ⚡ **RECENT NETWORK ACTIVITY**
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#1](https://github.com/Mathiyass/killer-quebes-co1301/pull/1) in [Mathiyass/killer-quebes-co1301](https://github.com/Mathiyass/killer-quebes-co1301)
-2. 💪 Opened PR [#1](https://github.com/Mathiyass/killer-quebes-co1301/pull/1) in [Mathiyass/killer-quebes-co1301](https://github.com/Mathiyass/killer-quebes-co1301)
+1. 🎉 Merged PR [#7](https://github.com/Mathiyass/-VELORA-Paint-Factory-POS/pull/7) in [Mathiyass/-VELORA-Paint-Factory-POS](https://github.com/Mathiyass/-VELORA-Paint-Factory-POS)
+2. 💪 Opened PR [#7](https://github.com/Mathiyass/-VELORA-Paint-Factory-POS/pull/7) in [Mathiyass/-VELORA-Paint-Factory-POS](https://github.com/Mathiyass/-VELORA-Paint-Factory-POS)
 <!--END_SECTION:activity-->
 
 ---
