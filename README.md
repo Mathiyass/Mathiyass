@@ -17,15 +17,13 @@
 
 <div align="center">
 
-![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=00FFE1&labelColor=0D1117)
+![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=00E5FF&labelColor=0D1117)
 &nbsp;
-![GitHub followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=FF00FF&labelColor=0D1117&logo=github)
+![GitHub followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=FF1744&labelColor=0D1117&logo=github)
 &nbsp;
-![GitHub stars](https://img.shields.io/github/stars/Mathiyass?label=TOTAL+STARS&style=for-the-badge&color=00FFE1&labelColor=0D1117&logo=github)
+![GitHub stars](https://img.shields.io/github/stars/Mathiyass?label=TOTAL+STARS&style=for-the-badge&color=00E5FF&labelColor=0D1117&logo=github)
 &nbsp;
-![GitHub repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=FF00FF&labelColor=0D1117&logo=github&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
-&nbsp;
-![Last Commit](https://img.shields.io/github/last-commit/Mathiyass/Mathiyass?label=LAST+COMMIT&style=for-the-badge&color=00FFE1&labelColor=0D1117&logo=github)
+![GitHub repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=FF1744&labelColor=0D1117&logo=github&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
 
 </div>
 
