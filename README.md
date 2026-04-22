@@ -294,8 +294,8 @@ Example:
 ## ⚡ **RECENT NETWORK ACTIVITY**
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#24](https://github.com/Mathiyass/MAportfolio/pull/24) in [Mathiyass/MAportfolio](https://github.com/Mathiyass/MAportfolio)
-2. ❌ Closed PR [#18](https://github.com/Mathiyass/MA-Optimizer/pull/18) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+1. ❗ Opened issue [#27](https://github.com/Mathiyass/MAportfolio/issues/27) in [Mathiyass/MAportfolio](https://github.com/Mathiyass/MAportfolio)
+2. ❌ Closed PR [#24](https://github.com/Mathiyass/MAportfolio/pull/24) in [Mathiyass/MAportfolio](https://github.com/Mathiyass/MAportfolio)
 <!--END_SECTION:activity-->
 
 ---
