@@ -23,7 +23,7 @@
 &nbsp;
 ![GitHub stars](https://img.shields.io/github/stars/Mathiyass?label=TOTAL+STARS&style=for-the-badge&color=00E5FF&labelColor=0D1117&logo=github)
 &nbsp;
-![GitHub repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=FF1744&labelColor=0D1117&logo=github&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
+![GitHub repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=FF1744&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
 
 </div>
 
@@ -93,27 +93,27 @@ motto: "Ship fast, break nothing, scale everything"
 
 <div align="center">
 
-### **🎨 Frontend & UI**
+### **🎨 FRONTEND: NEON INTERFACES**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,vue,nextjs,nuxtjs,angular,tailwind,sass,threejs,svelte,astro&theme=dark&perline=7" />
 </a>
 
-### **⚡ Backend & Runtime**
+### **⚡ BACKEND: CORE RUNTIMES**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=nodejs,express,python,java,go,rust,cs,php,ruby,graphql,fastapi,flask,django,spring&theme=dark&perline=7" />
 </a>
 
-### **🗄️ Database & Storage**
+### **🗄️ STORAGE: DATA ARCHITECTURE**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=mongodb,postgres,mysql,redis,firebase,supabase,dynamodb,sqlite,cassandra,elasticsearch&theme=dark&perline=5" />
 </a>
 
-### **☁️ Cloud & DevOps**
+### **☁️ CLOUD: SYSTEM DEPLOYMENT**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=aws,azure,gcp,docker,kubernetes,terraform,ansible,jenkins,githubactions,cloudflare,vercel,netlify,heroku,nginx&theme=dark&perline=7" />
 </a>
 
-### **🤖 AI, ML & Data**
+### **🧠 AI: SENTIENT ALGORITHMS**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv&theme=dark&perline=7" />
 </a>
@@ -127,12 +127,12 @@ motto: "Ship fast, break nothing, scale everything"
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
 
-### **🔧 Tools & Platforms**
+### **🔧 TOOLS: DEVELOPMENT RIG**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,idea,figma,postman,linux,bash,vim,regex,markdown,gradle,maven,webpack,vite,rollup&theme=dark&perline=8" />
 </a>
 
-### **🧪 Testing & Quality**
+### **🧪 QUALITY: BATTLE-TESTED CODE**
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
 ![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
 ![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
@@ -246,13 +246,13 @@ To enable LIVE Spotify Now Playing:
 
 Example:
 <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00FFE1" />
--->
 
 <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00E5FF&bar_color_cover=true" alt="Spotify Now Playing" />
+-->
 
 <br/>
 
-[![Spotify](https://img.shields.io/badge/🎧_Connect_on_Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/)
+[![Spotify](https://img.shields.io/badge/🎧_Connect_on_Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/user/mathiya)
 [![Apple Music](https://img.shields.io/badge/🎵_Apple_Music-FA243C?style=for-the-badge&logo=apple-music&logoColor=white)](https://music.apple.com/)
 
 </div>
@@ -384,7 +384,7 @@ Example:
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&color=FF1744&labelColor=0D1117)](https://medium.com/@mathishaangirasa)
 [![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&color=00E5FF&labelColor=0D1117)](https://dev.to/mathishaangirasa)
 [![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white&color=FF1744&labelColor=0D1117)](https://stackoverflow.com/users/mathiya)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00E5FF&labelColor=0D1117)](mailto:mathiya@example.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00E5FF&labelColor=0D1117)](mailto:YOUR_EMAIL_HERE)
 
 </div>
 
