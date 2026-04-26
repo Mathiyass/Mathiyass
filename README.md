@@ -57,7 +57,7 @@ I don't just write code; I weave digital realities. My mission is to dismantle c
 
 ### 🏆 **Trophy Case**
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=4&row=3" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&margin-w=4" width="100%" />
 </a>
 
 </div>
@@ -194,7 +194,7 @@ motto: "Ship fast, break nothing, scale everything"
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&bg_color=0D1117&color=00E5FF&line=FF1744&point=FFFFFF&area=true&area_color=FF1744&hide_border=true&custom_title=MATHIYA's%20Contribution%20Timeline" width="95%" />
 
 ### **🏔️ 3D Contribution Calendar**
-<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar" />
+<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar" />
 
 </div>
 
