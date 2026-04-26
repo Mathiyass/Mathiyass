@@ -176,7 +176,7 @@ motto: "Ship fast, break nothing, scale everything"
 <td width="50%" align="center">
 
 ### **💻 Language Dominance**
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&text_color=ffffff&langs_count=10" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&langs_count=10" />
 
 </td>
 <td width="50%" align="center">
