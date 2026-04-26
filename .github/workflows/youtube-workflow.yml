@@ -15,7 +15,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "YOUTUBE"
-          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UC_YOUR_CHANNEL_ID_HERE"
+          feed_list: "https://www.youtube.com/feeds/videos.xml?channel_id=UCRa-MY1B5RiaUF0hhGrDKFg"
           # ⚠️ Replace UC_YOUR_CHANNEL_ID_HERE with your actual YouTube Channel ID
           # Find it at: https://www.youtube.com/account_advanced
           # Or from your channel URL: youtube.com/channel/UCxxxxxxx
