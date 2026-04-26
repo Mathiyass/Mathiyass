@@ -29,9 +29,19 @@ jobs:
           config_order: base.header, isocalendar, languages, achievements, notable, lines, habits, stars
 
           # Theme and Colors
-          config_theme: tokyonight
           config_padding: 0, 8
           config_output: svg
+          extras_css: |
+            :root {
+              --color-canvas-default: #0D1117 !important;
+              --color-canvas-subtle: #1e2327 !important;
+              --color-fg-default: #ffffff !important;
+              --color-fg-muted: #8b949e !important;
+              --color-accent-fg: #00E5FF !important;
+              --color-border-default: #30363d !important;
+            }
+            .header, .field, .plugin-title { color: #00E5FF !important; }
+            svg { background: #0D1117 !important; border: 1px solid #FF1744; border-radius: 6px; }
           
           # Isometric contribution calendar
           plugin_isocalendar: yes
