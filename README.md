@@ -219,14 +219,15 @@ motto: "Ship fast, break nothing, scale everything"
 <a href="https://github.com/Mathiyass/Mathiyass">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
 </a>
-
-<!-- 
-🔥 ADD YOUR BEST REPOS HERE! Copy the block below and change REPO-NAME:
-
-<a href="https://github.com/Mathiyass/Mathiyass">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+<a href="https://github.com/Mathiyass/MA-Optimizer">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA-Optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
 </a>
--->
+<a href="https://github.com/Mathiyass/MAportfolio">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MAportfolio&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+</a>
+<a href="https://github.com/Mathiyass/MA_Chat">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA_Chat&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+</a>
 
 </div>
 
@@ -266,11 +267,11 @@ Example:
 
 ### 📺 **Latest YouTube Transmissions**
 <!-- YOUTUBE:START -->
-- [Waiting for signal...](https://youtube.com/@mathiya)
-- [Waiting for signal...](https://youtube.com/@mathiya)
-- [Waiting for signal...](https://youtube.com/@mathiya)
-- [Waiting for signal...](https://youtube.com/@mathiya)
-- [Waiting for signal...](https://youtube.com/@mathiya)
+- [Waiting for signal...](https://youtube.com/@mathiya1783)
+- [Waiting for signal...](https://youtube.com/@mathiya1783)
+- [Waiting for signal...](https://youtube.com/@mathiya1783)
+- [Waiting for signal...](https://youtube.com/@mathiya1783)
+- [Waiting for signal...](https://youtube.com/@mathiya1783)
 <!-- YOUTUBE:END -->
 
 </td>
@@ -278,11 +279,11 @@ Example:
 
 ### 📝 **Latest Neural Logs (Blog)**
 <!-- BLOG-POST-LIST:START -->
-- [Waiting for uplink...](https://medium.com/@mathiya)
-- [Waiting for uplink...](https://medium.com/@mathiya)
-- [Waiting for uplink...](https://medium.com/@mathiya)
-- [Waiting for uplink...](https://medium.com/@mathiya)
-- [Waiting for uplink...](https://medium.com/@mathiya)
+- [Waiting for uplink...](https://medium.com/@mathishaangirasa)
+- [Waiting for uplink...](https://medium.com/@mathishaangirasa)
+- [Waiting for uplink...](https://medium.com/@mathishaangirasa)
+- [Waiting for uplink...](https://medium.com/@mathishaangirasa)
+- [Waiting for uplink...](https://medium.com/@mathishaangirasa)
 <!-- BLOG-POST-LIST:END -->
 
 </td>
@@ -379,9 +380,9 @@ Example:
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&color=FF1744&labelColor=0D1117)](https://instagram.com/mathi_ya_/)
 [![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white&color=00E5FF&labelColor=0D1117)](https://discord.gg/QERP5JJM8k)
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white&color=FF1744&labelColor=0D1117)](https://mathiya.dev)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&color=00E5FF&labelColor=0D1117)](https://youtube.com/@mathiya)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&color=FF1744&labelColor=0D1117)](https://medium.com/@mathiya)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&color=00E5FF&labelColor=0D1117)](https://dev.to/mathiya)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&color=00E5FF&labelColor=0D1117)](https://youtube.com/@mathiya1783)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&color=FF1744&labelColor=0D1117)](https://medium.com/@mathishaangirasa)
+[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&color=00E5FF&labelColor=0D1117)](https://dev.to/mathishaangirasa)
 [![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white&color=FF1744&labelColor=0D1117)](https://stackoverflow.com/users/mathiya)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00E5FF&labelColor=0D1117)](mailto:mathiya@example.com)
 
@@ -424,7 +425,7 @@ Example:
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ### 🕐 **Last Updated**
-<img src="https://img.shields.io/badge/Last_Updated-February_2026-00E5FF?style=flat-square&labelColor=0D1117" />
+<img src="https://img.shields.io/badge/Last_Updated-April_2026-00E5FF?style=flat-square&labelColor=0D1117" />
 
 ### **`> END_TRANSMISSION_`**
 <div align="center">
