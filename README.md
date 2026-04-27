@@ -267,11 +267,10 @@ Example:
 
 ### 📺 **Latest YouTube Transmissions**
 <!-- YOUTUBE:START -->
-- [Waiting for signal...](https://youtube.com/@mathiya1783)
-- [Waiting for signal...](https://youtube.com/@mathiya1783)
-- [Waiting for signal...](https://youtube.com/@mathiya1783)
-- [Waiting for signal...](https://youtube.com/@mathiya1783)
-- [Waiting for signal...](https://youtube.com/@mathiya1783)
+- [Obstacle avoiding Robot](https://www.youtube.com/watch?v=eYGoyt9z1z8)
+- [Building a 2D sprites animation game using pure HTML, CSS, and JavaScriptLanguages](https://www.youtube.com/watch?v=jO4Bg3zOlVs)
+- [New Minecraft 2 playing](https://www.youtube.com/watch?v=fm57QLnm4TA)
+- [HOW TO ADD NEW CARS ON NFS MOST WANTED 2005](https://www.youtube.com/watch?v=maOHZsjQBAk)
 <!-- YOUTUBE:END -->
 
 </td>
