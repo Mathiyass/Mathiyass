@@ -30,12 +30,10 @@ https.get(imageUrl, (res) => {
 
     <!-- Star particle animations -->
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@700;900&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap');
-      
       .bg { fill: #000000; }
       
       .text-outline {
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Arial Black', Impact, sans-serif;
         font-size: 180px;
         font-weight: 900;
         fill: transparent;
@@ -46,7 +44,7 @@ https.get(imageUrl, (res) => {
       }
       
       .text-solid {
-        font-family: 'Syncopate', sans-serif;
+        font-family: 'Arial Black', Impact, sans-serif;
         font-size: 190px;
         font-weight: 900;
         fill: #ffffff;
@@ -56,8 +54,8 @@ https.get(imageUrl, (res) => {
       }
       
       .hud-text {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 12px;
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 14px;
         font-weight: 600;
         fill: rgba(255, 255, 255, 0.4);
         letter-spacing: 4px;
@@ -65,8 +63,8 @@ https.get(imageUrl, (res) => {
       }
 
       .hud-text-left {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 12px;
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 14px;
         font-weight: 600;
         fill: rgba(255, 255, 255, 0.4);
         letter-spacing: 4px;
@@ -74,8 +72,8 @@ https.get(imageUrl, (res) => {
       }
       
       .hud-text-right {
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 12px;
+        font-family: Consolas, 'Courier New', monospace;
+        font-size: 14px;
         font-weight: 600;
         fill: rgba(255, 255, 255, 0.4);
         letter-spacing: 4px;
@@ -89,6 +87,13 @@ https.get(imageUrl, (res) => {
       .particle {
         fill: #ffffff;
         opacity: 0.5;
+        animation: float 15s infinite linear;
+      }
+      
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+        50% { opacity: 0.8; }
+        100% { transform: translateY(-200px) rotate(360deg); opacity: 0; }
       }
     </style>
   </defs>
@@ -104,7 +109,9 @@ https.get(imageUrl, (res) => {
     const y = Math.random() * height;
     const r = Math.random() * 1.5;
     const opacity = Math.random() * 0.8 + 0.2;
-    return `<circle cx="${x}" cy="${y}" r="${r}" class="particle" opacity="${opacity}" />`;
+    const delay = Math.random() * 10;
+    const dur = Math.random() * 10 + 10;
+    return `<circle cx="${x}" cy="${y}" r="${r}" class="particle" opacity="${opacity}" style="animation-delay: -${delay}s; animation-duration: ${dur}s;" />`;
   }).join('\\n  ')}
 
   <!-- HUD Elements -->
@@ -120,13 +127,13 @@ https.get(imageUrl, (res) => {
 
   <!-- Subtitle Top -->
   <g transform="translate(${width / 2}, 160)">
-    <line x1="-120" y1="-4" x2="-80" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <line x1="-150" y1="-4" x2="-110" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
     <text x="0" y="0" class="hud-text" fill="rgba(255,255,255,0.7)">SOFTWARE ENGINEER (MATHIYA)</text>
-    <line x1="80" y1="-4" x2="120" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <line x1="110" y1="-4" x2="150" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
   </g>
 
   <!-- Layer 1: Bold Outlined Text (Behind Photo) -->
-  <text x="${width / 2}" y="290" class="text-outline">MATHISHA</text>
+  <text x="${width / 2}" y="320" class="text-outline">MATHISHA</text>
 
   <!-- Layer 2: Center Image -->
   <g class="image-layer">

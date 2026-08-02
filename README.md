@@ -24,6 +24,7 @@
 ### 👨‍💻 About Me
 
 <div align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Consolas&weight=600&size=22&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Full-Stack+Architect;AI+Systems+Specialist;Open-Source+Contributor;Cloud+Infrastructure+Engineer" alt="Typing SVG" /></a>
   <p align="center">
     I am a <b>Full-Stack Architect & AI Specialist</b> based in Birmingham, UK, currently studying at Birmingham City University. <br/>I specialize in building robust, high-performance web applications and cloud-native systems.
   </p>
@@ -79,11 +80,11 @@
 
 <div align="center">
 
-<a href="https://github.com/Mathiyass">
-  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/metrics.svg" alt="GitHub Metrics" width="48%" onerror="this.style.display='none'"/>
+<a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/0-profile-details.svg" alt="Profile Details" width="48%" onerror="this.style.display='none'"/>
 </a>
 <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/github/0-profile-details.svg" alt="Profile Details" width="48%" onerror="this.style.display='none'"/>
+  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/2-most-commit-language.svg" alt="Most Commits" width="48%" onerror="this.style.display='none'"/>
 </a>
 
 <br/><br/>
@@ -169,8 +170,5 @@
 [![Discord](https://img.shields.io/badge/Discord-101010?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
 [![Medium](https://img.shields.io/badge/Medium-101010?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@mathishaangirasa)
 [![YouTube](https://img.shields.io/badge/YouTube-101010?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
-
-<br/><br/>
-<img src="https://profile-counter.glitch.me/Mathiyass/count.svg" />
 
 </div>
