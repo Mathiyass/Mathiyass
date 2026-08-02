@@ -118,10 +118,6 @@
 <br>
 <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg" width="100%" alt="Pacman" onerror="this.style.display='none'"/>
 
-**GitHub Metrics**
-<br>
-<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/metrics.svg" width="100%" alt="GitHub Metrics" onerror="this.style.display='none'"/>
-
 </div>
 </details>
 
