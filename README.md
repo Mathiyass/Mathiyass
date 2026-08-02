@@ -17,12 +17,7 @@
 
 <br/><br/>
 
-<!-- ANIMATED TROPHIES -->
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&row=1&column=7&no-frame=true&no-bg=true&margin-w=15" />
-</a>
 
-<br/><br/>
 
 <!-- PROFILE BADGES -->
 ![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=101010)
@@ -94,11 +89,11 @@
 
 <div align="center">
 
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=dark&bg_color=0D1117&title_color=00DFD8&icon_color=007CF0&text_color=c9d1d9&rank_icon=github&border_color=30363d" alt="GitHub Stats" width="48%"/>
+<a href="https://github.com/Mathiyass">
+  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/metrics.svg" alt="GitHub Metrics" width="48%" onerror="this.style.display='none'"/>
 </a>
-<a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=compact&theme=dark&bg_color=0D1117&title_color=00DFD8&text_color=c9d1d9&border_color=30363d&langs_count=6" alt="Top Languages" width="48%"/>
+<a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/github/0-profile-details.svg" alt="Profile Details" width="48%" onerror="this.style.display='none'"/>
 </a>
 
 <br/><br/>
