@@ -131,6 +131,18 @@ I am a **Full-Stack Architect & AI Specialist** based in Birmingham, UK, current
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📝 Latest Blog Posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
+</td>
+<td width="50%" valign="top">
+
+</td>
+</tr>
 </table>
 
 ---
