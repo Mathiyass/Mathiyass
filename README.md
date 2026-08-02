@@ -1,19 +1,9 @@
 <div align="center">
 
-<!-- CAPSULE ANIMATED HEADER -->
-<a href="https://github.com/Mathiyass">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=007CF0,00DFD8,FF007F&height=220&section=header&text=MATHIYA&fontSize=55&animation=fadeIn&fontAlignY=35&desc=System%20Architect%20%7C%20Full-Stack%20Engineer&descAlignY=65&descSize=18&fontColor=ffffff&descColor=e1e1e1" />
+<!-- CUSTOM ANIMATED HEADER (Matching Website) -->
+<a href="https://mathiya.dev">
+  <img src="./header.svg" alt="Custom Animated Header" width="100%" />
 </a>
-
-<br/>
-
-<!-- TYPING ANIMATION -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=2000&pause=500&color=00DFD8&center=true&vCenter=true&multiline=false&width=600&height=40&lines=Building+scalable+systems;Crafting+elegant+user+interfaces;Advancing+AI+and+Cloud+Architecture;I+debug+in+my+sleep...)](https://git.io/typing-svg)
-
-<br/>
-
-<!-- ANIMATED ASCII PORTRAIT -->
-<img src="./ascii-portrait.svg" alt="Animated ASCII Portrait" width="600" />
 
 <br/><br/>
 
