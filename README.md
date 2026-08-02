@@ -25,9 +25,14 @@
 
 <div align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Consolas&weight=600&size=22&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Full-Stack+Architect;AI+Systems+Specialist;Open-Source+Contributor;Cloud+Infrastructure+Engineer" alt="Typing SVG" /></a>
-  <p align="center">
-    I am a <b>Full-Stack Architect & AI Specialist</b> based in Birmingham, UK, currently studying at Birmingham City University. <br/>I specialize in building robust, high-performance web applications and cloud-native systems.
-  </p>
+
+```console
+$ whoami
+> Mathisha Angirasa (MATHIYA)
+$ cat bio.txt
+> I am a Full-Stack Architect & AI Specialist based in Birmingham, UK.
+> I specialize in building robust, high-performance web applications and cloud-native systems.
+```
 </div>
 
 <table width="100%" style="border-collapse: collapse; border: none;">
@@ -70,6 +75,18 @@
 **Cloud, DevOps & Databases**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,githubactions,mongodb,postgres,redis,linux&theme=dark" /></a>
 
+</div>
+
+<br/>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<br/>
+
+### 🏆 GitHub Trophies
+
+<div align="center">
+<a href="https://github.com/ryo-ma/github-profile-trophy">
+  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&row=1&column=7&no-frame=true&no-bg=true&margin-w=15" alt="Mathiyass's Trophies" />
+</a>
 </div>
 
 <br/>

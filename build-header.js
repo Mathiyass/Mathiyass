@@ -93,6 +93,22 @@ https.get(imageUrl, (res) => {
         opacity: 0.5;
         animation: float 15s infinite linear;
       }
+
+      /* CRT Scanline effect */
+      .scanlines {
+        background: linear-gradient(
+          to bottom,
+          rgba(255,255,255,0),
+          rgba(255,255,255,0) 50%,
+          rgba(0,0,0,0.2) 50%,
+          rgba(0,0,0,0.2)
+        );
+        background-size: 100% 4px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
       
       @keyframes float {
         0% { transform: translateY(0px) translateX(0px); opacity: 0; }
@@ -120,13 +136,28 @@ https.get(imageUrl, (res) => {
         80% { stroke-dashoffset: 5; transform: translate(1px, -2px); }
         100% { stroke-dashoffset: 0; transform: translate(0, 0); }
       }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      .cursor {
+        animation: blink 1s step-end infinite;
+      }
     </style>
+    
+    <pattern id="scanline" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="rgba(0,0,0,0.2)" />
+      <rect y="2" width="4" height="2" fill="transparent" />
+    </pattern>
   </defs>
 
   <!-- Background -->
   <rect width="${width}" height="${height}" class="bg" />
   <rect width="${width}" height="${height}" fill="url(#cyan-glow)" style="animation: pulse 8s infinite alternate;" />
   <rect width="${width}" height="${height}" fill="url(#purple-glow)" style="animation: pulse 8s infinite alternate-reverse;" />
+  <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
   <!-- Particles -->
   ${Array.from({ length: 150 }).map((_, i) => {
@@ -153,7 +184,7 @@ https.get(imageUrl, (res) => {
   <!-- Subtitle Top -->
   <g transform="translate(${width / 2}, 160)">
     <line x1="-150" y1="-4" x2="-110" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
-    <text x="0" y="0" class="hud-text" fill="rgba(255,255,255,0.7)">SOFTWARE ENGINEER (MATHIYA)</text>
+    <text x="0" y="0" class="hud-text" fill="rgba(255,255,255,0.7)">SOFTWARE ENGINEER (MATHIYA)<tspan class="cursor" fill="#00fbfb">_</tspan></text>
     <line x1="110" y1="-4" x2="150" y2="-4" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
   </g>
 
