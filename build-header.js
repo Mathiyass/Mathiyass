@@ -41,6 +41,7 @@ https.get(imageUrl, (res) => {
         stroke-width: 3px;
         letter-spacing: -5px;
         text-anchor: middle;
+        animation: glitch 4s infinite alternate ease-in-out;
       }
       
       .text-solid {
@@ -82,6 +83,9 @@ https.get(imageUrl, (res) => {
 
       .image-layer {
         filter: drop-shadow(0 0 40px rgba(255,255,255,0.1));
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: breathe 6s infinite ease-in-out;
       }
       
       .particle {
@@ -91,17 +95,38 @@ https.get(imageUrl, (res) => {
       }
       
       @keyframes float {
-        0% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+        0% { transform: translateY(0px) translateX(0px); opacity: 0; }
         50% { opacity: 0.8; }
-        100% { transform: translateY(-200px) rotate(360deg); opacity: 0; }
+        100% { transform: translateY(-200px) translateX(50px); opacity: 0; }
+      }
+      
+      @keyframes pulse {
+        0% { opacity: 0.15; }
+        50% { opacity: 0.3; }
+        100% { opacity: 0.15; }
+      }
+
+      @keyframes breathe {
+        0% { transform: scale(1) translateY(0px); }
+        50% { transform: scale(1.02) translateY(-10px); }
+        100% { transform: scale(1) translateY(0px); }
+      }
+
+      @keyframes glitch {
+        0% { stroke-dashoffset: 0; }
+        20% { stroke-dashoffset: 10; transform: translate(-2px, 1px); }
+        40% { stroke-dashoffset: 20; transform: translate(2px, -1px); }
+        60% { stroke-dashoffset: 10; transform: translate(-1px, 2px); }
+        80% { stroke-dashoffset: 5; transform: translate(1px, -2px); }
+        100% { stroke-dashoffset: 0; transform: translate(0, 0); }
       }
     </style>
   </defs>
 
   <!-- Background -->
   <rect width="${width}" height="${height}" class="bg" />
-  <rect width="${width}" height="${height}" fill="url(#cyan-glow)" />
-  <rect width="${width}" height="${height}" fill="url(#purple-glow)" />
+  <rect width="${width}" height="${height}" fill="url(#cyan-glow)" style="animation: pulse 8s infinite alternate;" />
+  <rect width="${width}" height="${height}" fill="url(#purple-glow)" style="animation: pulse 8s infinite alternate-reverse;" />
 
   <!-- Particles -->
   ${Array.from({ length: 150 }).map((_, i) => {
