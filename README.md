@@ -158,6 +158,10 @@ $ cat bio.txt
 
 #### ⚡ GitHub Activity
 <!--START_SECTION:activity-->
+1. 🚀 Published release [MA Optimizer v11.0](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+2. ❌ Closed PR [#52](https://github.com/Mathiyass/MA-Optimizer/pull/52) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+3. ❌ Closed PR [#53](https://github.com/Mathiyass/MA-Optimizer/pull/53) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+4. 🚀 Published release [V10.1](https://github.com/Mathiyass/MA-Optimizer/releases/tag/V10.1) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
 <!--END_SECTION:activity-->
 
 </td>
