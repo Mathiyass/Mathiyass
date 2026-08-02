@@ -1,17 +1,12 @@
-# 
-
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=00E5FF,FF1744,000000&height=350&section=header&text=MATHIYA&fontSize=80&animation=fadeIn&fontAlignY=38&desc=🔥%20Elite%20Full-Stack%20Architect%20%7C%20Cyberpunk%20Dev%20%7C%20Innovation%20Engine%20🔥&descAlignY=65&descSize=22&fontColor=00E5FF&descColor=FF1744" />
 </div>
 
 <div align="center">
   
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=38&duration=1500&pause=500&color=00E5FF&center=true&vCenter=true&multiline=true&width=1000&height=160&lines=System.init(User.MATHIYA)%3B;Loading+Elite+Developer+Profile...;%3E+Architecting+the+Future+of+Software;%3E+Mastering+AI+%2B+Web3+%2B+Cloud;%3E+Status:+ONLINE)] (https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Orbitron&weight=800&size=38&duration=1500&pause=500&color=00E5FF&center=true&vCenter=true&multiline=true&width=1000&height=160&lines=System.init(User.MATHIYA)%3B;Loading+Elite+Developer+Profile...;%3E+Architecting+the+Future+of+Software;%3E+Mastering+AI+%2B+Web3+%2B+Cloud;%3E+Status:+ONLINE)](https://git.io/typing-svg)
 
 </div>
-
-<!-- ═══════════════════ ANIMATED DIVIDER ═══════════════════ -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 <!-- ═══════════════════ PROFILE BADGES ═══════════════════ -->
 
@@ -27,7 +22,9 @@
 
 </div>
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
 
 ## ⚡ **MISSION CRITICAL: PROFILE STATUS**
 
@@ -57,7 +54,7 @@ I don't just write code; I weave digital realities. My mission is to dismantle c
 
 ### 🏆 **Trophy Case**
 <a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&margin-w=4" width="100%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&margin-w=4&no-bg=true&no-frame=true" width="100%" alt="Trophy Case" onerror="this.style.display='none'"/>
 </a>
 
 </div>
@@ -66,7 +63,9 @@ I don't just write code; I weave digital realities. My mission is to dismantle c
 </tr>
 </table>
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
 
 ## 🎯 **QUICK INTEL**
 
@@ -87,7 +86,9 @@ motto: "Ship fast, break nothing, scale everything"
 
 </div>
 
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
 
 ## 🛠️ **ARSENAL: TECHNOLOGY MATRIX**
 
@@ -115,40 +116,23 @@ motto: "Ship fast, break nothing, scale everything"
 
 ### **🧠 AI: SENTIENT ALGORITHMS**
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv&theme=dark&perline=7" />
+  <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv,keras,scikitlearn,huggingface,langchain&theme=dark&perline=7" />
 </a>
-
-![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?&style=for-the-badge&logo=Keras&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
 
 ### **🔧 TOOLS: DEVELOPMENT RIG**
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=git,github,vscode,idea,figma,postman,linux,bash,vim,regex,markdown,gradle,maven,webpack,vite,rollup&theme=dark&perline=8" />
 </a>
 
-### **🧪 QUALITY: BATTLE-TESTED CODE**
-![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Cypress](https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Mocha](https://img.shields.io/badge/Mocha-8D6748?style=for-the-badge&logo=mocha&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=00E5FF&color=FF1744&labelColor=0D1117)
-![SonarQube](https://img.shields.io/badge/SonarQube-4E9BCD?style=for-the-badge&logo=sonarqube&logoColor=FF1744&color=00E5FF&labelColor=0D1117)
-
 </div>
 
-<!-- ═══════════════════ ANIMATED DIVIDER ═══════════════════ -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
----
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
 
 ## 📊 **SYSTEM ANALYTICS**
+
+> **Note:** If some visualizers below are broken, it usually means GitHub's stats API is rate-limiting the card service, or you need to run your scheduled GitHub Actions first. I have replaced unreliable card providers with the most robust ones available.
 
 <div align="center">
 
@@ -158,14 +142,16 @@ motto: "Ship fast, break nothing, scale everything"
 
 ### **🔥 Streak Status**
 <a href="https://git.io/streak-stats">
-  <img src="https://streak-stats.demolab.com?user=Mathiyass&theme=tokyonight_duo&hide_border=true&background=0D1117&ring=FF1744&fire=00E5FF&currStreakLabel=00E5FF&sideLabels=FF1744" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=tokyonight_duo&hide_border=true&background=0D1117&ring=FF1744&fire=00E5FF&currStreakLabel=00E5FF&sideLabels=FF1744" alt="GitHub Streak" onerror="this.style.display='none'"/>
 </a>
 
 </td>
 <td width="50%" align="center">
 
-### **⚡ Code Frequency**
-<img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&rank_icon=github&include_all_commits=true&count_private=true" />
+### **⚡ Developer Stats**
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&rank_icon=github&include_all_commits=true&count_private=true&cache_seconds=86400" alt="GitHub Stats" onerror="this.style.display='none'"/>
+</a>
 
 </td>
 </tr>
@@ -173,91 +159,74 @@ motto: "Ship fast, break nothing, scale everything"
 
 <table>
 <tr>
-<td width="50%" align="center">
+<td width="100%" align="center">
 
 ### **💻 Language Dominance**
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=donut-vertical&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&langs_count=10" />
-
-</td>
-<td width="50%" align="center">
-
-### **📊 Profile Summary**
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mathiyass&theme=tokyonight" width="100%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Mathiyass&theme=tokyonight" width="48%" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Mathiyass&theme=tokyonight" width="48%" />
+<a href="https://github.com/anuraghazra/github-readme-stats">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&langs_count=10&cache_seconds=86400" alt="Top Languages" onerror="this.style.display='none'"/>
+</a>
 
 </td>
 </tr>
 </table>
 
 ### **📈 Contribution Activity Graph**
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&bg_color=0D1117&color=00E5FF&line=FF1744&point=FFFFFF&area=true&area_color=FF1744&hide_border=true&custom_title=MATHIYA's%20Contribution%20Timeline" width="95%" />
+<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&bg_color=0D1117&color=00E5FF&line=FF1744&point=FFFFFF&area=true&area_color=FF1744&hide_border=true&custom_title=MATHIYA's%20Contribution%20Timeline" width="95%" alt="Contribution Graph" onerror="this.style.display='none'"/>
+</a>
+
+<details>
+<summary><b>👀 Click to view Advanced Automated Analytics (Requires GitHub Actions to be run)</b></summary>
+<br>
+  
+*To see these, go to the `Actions` tab in your profile repository and manually trigger the workflows.*
 
 ### **🏔️ 3D Contribution Calendar**
-<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar" />
+<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar (Run Action to generate)" onerror="this.style.display='none'"/>
+
+### **📊 GitHub Metrics**
+<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/metrics.svg" width="100%" alt="GitHub Metrics (Run Action to generate)" onerror="this.style.display='none'"/>
+
+### **🐍 Snake Protocol — Contribution Grid**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake-dark.svg" width="100%" onerror="this.style.display='none'"/>
+</picture>
+
+### **👾 Pacman Protocol**
+<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg" width="100%" alt="Pacman" onerror="this.style.display='none'"/>
+
+</details>
 
 </div>
-
----
-
-## 📈 **GITHUB METRICS**
 
 <div align="center">
-
-<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/metrics.svg" width="100%" alt="GitHub Metrics" />
-
-<!-- Metrics will be generated by the github-metrics workflow. If not set up yet, this will show a broken image. -->
-
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 </div>
-
----
 
 ## 🚀 **FEATURED PROJECTS**
 
 <div align="center">
 
 <a href="https://github.com/Mathiyass/Mathiyass">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=Mathiyass&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&cache_seconds=86400" />
 </a>
 <a href="https://github.com/Mathiyass/MA-Optimizer">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA-Optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA-Optimizer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&cache_seconds=86400" />
 </a>
 <a href="https://github.com/Mathiyass/MAportfolio">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MAportfolio&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MAportfolio&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&cache_seconds=86400" />
 </a>
 <a href="https://github.com/Mathiyass/MA_Chat">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA_Chat&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Mathiyass&repo=MA_Chat&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=FF1744&text_color=ffffff&cache_seconds=86400" />
 </a>
 
 </div>
 
-> 💡 *Pin your best repositories on your GitHub profile and duplicate the card template above for each repo!*
-
----
-
-## 🎵 **NOW VIBING TO**
-
 <div align="center">
-
-<!-- 
-To enable LIVE Spotify Now Playing:
-1. Deploy: https://github.com/kittinan/spotify-github-profile
-2. Replace the placeholder below with your widget URL
-
-Example:
-<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00FFE1" />
-
-<img src="https://spotify-github-profile.kittinanx.com/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=00E5FF&bar_color_cover=true" alt="Spotify Now Playing" />
--->
-
-<br/>
-
-[![Spotify](https://img.shields.io/badge/🎧_Connect_on_Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white)](https://open.spotify.com/user/mathiya)
-[![Apple Music](https://img.shields.io/badge/🎵_Apple_Music-FA243C?style=for-the-badge&logo=apple-music&logoColor=white)](https://music.apple.com/)
-
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 </div>
-
----
 
 ## 📡 **DYNAMIC DATA STREAMS**
 
@@ -289,85 +258,9 @@ Example:
 </tr>
 </table>
 
----
-
-## ⚡ **RECENT NETWORK ACTIVITY**
-
-<!--START_SECTION:activity-->
-1. 🚀 Published release [MA Optimizer v11.0](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-2. ❌ Closed PR [#52](https://github.com/Mathiyass/MA-Optimizer/pull/52) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-<!--END_SECTION:activity-->
-
----
-
-## 📊 **WEEKLY CODING STATS**
-
-<!--START_SECTION:waka-->
-```text
-🕐 No WakaTime data yet — Set up WakaTime to track your coding stats!
-   → https://wakatime.com to get started
-   → Then add the waka-readme-stats workflow
-```
-<!--END_SECTION:waka-->
-
----
-
-## 💡 **RANDOM DEV WISDOM**
-
 <div align="center">
-
-[![Readme Quotes](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true&quote=First%2C+solve+the+problem.+Then%2C+write+the+code.&author=John+Johnson)](https://github.com/piyushsuthar/github-readme-quotes)
-
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 </div>
-
----
-
-## 🏅 **CERTIFICATIONS & ACHIEVEMENTS**
-
-<div align="center">
-
-<!-- Replace with your actual certifications. Here are badge templates: -->
-
-![AWS Certified](https://img.shields.io/badge/AWS-Certified_Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-Fundamentals_AZ--900-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![Google Cloud](https://img.shields.io/badge/GCP-Associate_Cloud_Engineer-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![Meta](https://img.shields.io/badge/Meta-Front--End_Developer-0866FF?style=for-the-badge&logo=meta&logoColor=white)
-![FreeCodeCamp](https://img.shields.io/badge/freeCodeCamp-Responsive_Web_Design-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white)
-
-> 💡 *Update these with your actual certifications!*
-
-</div>
-
----
-
-## 🧩 **CODING CHALLENGES**
-
-<div align="center">
-
-<!-- Replace the username placeholders with your actual usernames -->
-
-[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/mathiya/)
-[![HackerRank](https://img.shields.io/badge/HackerRank-00EA64?style=for-the-badge&logo=hackerrank&logoColor=black)](https://www.hackerrank.com/profile/mathiya)
-[![CodeWars](https://img.shields.io/badge/Codewars-B1361E?style=for-the-badge&logo=codewars&logoColor=white)](https://www.codewars.com/users/mathiya)
-[![CodeChef](https://img.shields.io/badge/CodeChef-5B4638?style=for-the-badge&logo=codechef&logoColor=white)](https://www.codechef.com/users/mathiya)
-
-<!-- If you have a LeetCode account, uncomment and update this:
-<img src="https://leetcard.jacoblin.cool/mathiya?theme=dark&font=Orbitron&ext=heatmap" width="60%" />
--->
-
-</div>
-
----
-
-## 🃏 **DEV_HUMOR.EXE**
-
-<div align="center">
-
-![Jokes Card](https://readme-jokes.vercel.app/api?theme=radical&qColor=%2300E5FF&aColor=%23FF1744&borderColor=%23FF1744&bgColor=%230D1117&textColor=%23ffffff)
-
-</div>
-
----
 
 ## 🌍 **CONNECT TO THE GRID**
 
@@ -381,47 +274,15 @@ Example:
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white&color=FF1744&labelColor=0D1117)](https://mathiya.dev)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white&color=00E5FF&labelColor=0D1117)](https://youtube.com/@mathiya1783)
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white&color=FF1744&labelColor=0D1117)](https://medium.com/@mathishaangirasa)
-[![Dev.to](https://img.shields.io/badge/Dev.to-0A0A0A?style=for-the-badge&logo=devdotto&logoColor=white&color=00E5FF&labelColor=0D1117)](https://dev.to/mathishaangirasa)
-[![Stack Overflow](https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white&color=FF1744&labelColor=0D1117)](https://stackoverflow.com/users/mathiya)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&color=00E5FF&labelColor=0D1117)](mailto:YOUR_EMAIL_HERE)
 
 </div>
 
----
-
-## 💖 **SUPPORT MY WORK**
-
 <div align="center">
-
-*If you enjoy my projects and want to fuel the mission, consider dropping some support! 🚀*
-
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/mathiya)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/mathiya)
-[![Sponsor](https://img.shields.io/badge/GitHub_Sponsor-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Mathiyass)
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/mathiya)
-
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 </div>
 
----
-
-<!-- ═══════════════════ ANIMATED DIVIDER ═══════════════════ -->
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
 <div align="center">
-
-### **🐍 Snake Protocol — Contribution Grid**
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake-dark.svg" width="100%" />
-</picture>
-
-### **👾 Pacman Protocol — Contribution Grid**
-<img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg" width="100%" />
-
-<br/>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ### 🕐 **Last Updated**
 <img src="https://img.shields.io/badge/Last_Updated-April_2026-00E5FF?style=flat-square&labelColor=0D1117" />
