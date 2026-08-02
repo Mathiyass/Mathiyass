@@ -77,17 +77,7 @@ $ cat bio.txt
 
 </div>
 
-<br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-<br/>
 
-### 🏆 GitHub Trophies
-
-<div align="center">
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=radical&row=1&column=7&no-frame=true&no-bg=true&margin-w=15" alt="Mathiyass's Trophies" />
-</a>
-</div>
 
 <br/>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
