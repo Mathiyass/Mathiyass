@@ -1,28 +1,23 @@
 <div align="center">
-  <img src="./ascii-portrait.svg" alt="Animated ASCII Portrait" width="700" />
-</div>
 
-<div align="center">
-  <a href="https://github.com/Mathiyass">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=007CF0,00DFD8&height=200&section=header&text=MATHIYA&fontSize=50&animation=fadeIn&fontAlignY=40&desc=Software%20Engineer%20%7C%20Full-Stack%20Architect&descAlignY=65&descSize=16&fontColor=ffffff&descColor=e1e1e1" />
-  </a>
-</div>
+<a href="https://github.com/Mathiyass">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=007CF0,00DFD8&height=220&section=header&text=MATHIYA&fontSize=55&animation=fadeIn&fontAlignY=35&desc=System%20Architect%20%7C%20Full-Stack%20Engineer&descAlignY=65&descSize=18&fontColor=ffffff&descColor=e1e1e1" />
+</a>
 
-<div align="center">
+<br/>
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=500&size=18&duration=2000&pause=500&color=a5d6ff&center=true&vCenter=true&multiline=false&width=600&height=40&lines=Building+scalable+systems;Crafting+elegant+user+interfaces;Advancing+AI+and+Cloud+Architecture)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=20&duration=2000&pause=500&color=00DFD8&center=true&vCenter=true&multiline=false&width=600&height=40&lines=Building+scalable+systems;Crafting+elegant+user+interfaces;Advancing+AI+and+Cloud+Architecture)](https://git.io/typing-svg)
 
-</div>
+<br/>
 
-<div align="center">
+<img src="./ascii-portrait.svg" alt="Animated ASCII Portrait" width="600" />
 
-![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=VIEWS&style=flat-square&color=2ea043&labelColor=161b22)
-&nbsp;
-![GitHub followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=flat-square&color=238636&labelColor=161b22)
-&nbsp;
-![GitHub stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=flat-square&color=f0e68c&labelColor=161b22)
-&nbsp;
-![GitHub repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=flat-square&color=1f6feb&labelColor=161b22&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
+<br/><br/>
+
+![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=101010)
+![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=101010)
+![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=007CF0&labelColor=101010)
+![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=101010&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
 
 </div>
 
@@ -30,33 +25,36 @@
 
 ### 👨‍💻 About Me
 
-I am a **Full-Stack Architect & AI Specialist** based in Birmingham, UK, currently pursuing my studies at Birmingham City University. I specialize in building robust, high-performance web applications and cloud-native systems. I have a deep passion for clean architecture, scalable infrastructure, and emerging AI technologies.
+<div align="center">
+  <p align="center">
+    I am a <b>Full-Stack Architect & AI Specialist</b> based in Birmingham, UK, currently studying at Birmingham City University. <br/>I specialize in building robust, high-performance web applications and cloud-native systems.
+  </p>
+</div>
 
-- 🏗️ **Currently working on**: AI-powered web applications & cloud-native systems
-- 🌱 **Currently learning**: Rust, Advanced System Design, LLMs & Prompt Engineering
-- 🤝 **Looking to collaborate on**: Open-source projects, AI/ML research, innovative startups
-- 💬 **Ask me about**: React, Node.js, Python, Cloud Architecture, System Design
-- ⚡ **Fun fact**: I debug code in my dreams and wake up with the fix
+- 🏗️ **Currently building:** AI-powered web applications & cloud-native ecosystems.
+- 🌱 **Currently learning:** Rust, Advanced System Design, LLMs & Distributed Systems.
+- 🤝 **Looking to collaborate on:** Open-source projects, AI/ML research, and innovative startups.
+- 💬 **Ask me about:** React, Node.js, Python, Cloud Architecture, and Performance Optimization.
+- ⚡ **Fun fact:** I debug code in my dreams and wake up with the fix.
 
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ Technology Stack
 
 <div align="center">
 
-**Languages & Frameworks**
-<br/>
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,java,go,rust,react,nextjs,nodejs,express,django,fastapi&theme=dark&perline=12" />
-</a>
+**Languages**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,java,go,rust&theme=dark" /></a>
 
-<br/><br/>
-
-**Cloud, Database & DevOps**
 <br/>
-<a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,githubactions,mongodb,postgres,redis,linux&theme=dark&perline=12" />
-</a>
+
+**Frontend & Backend Frameworks**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,nodejs,express,django,fastapi&theme=dark" /></a>
+
+<br/>
+
+**Cloud, DevOps & Databases**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,githubactions,mongodb,postgres,redis,linux&theme=dark" /></a>
 
 </div>
 
@@ -67,16 +65,24 @@ I am a **Full-Stack Architect & AI Specialist** based in Birmingham, UK, current
 <div align="center">
 
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=transparent&hide_border=true&bg_color=00000000&title_color=2f81f7&icon_color=2ea043&text_color=c9d1d9&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats" onerror="this.style.display='none'"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Mathiyass&show_icons=true&theme=dark&bg_color=0D1117&title_color=00DFD8&icon_color=007CF0&text_color=c9d1d9&rank_icon=github&border_color=30363d&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%" onerror="this.style.display='none'"/>
 </a>
 <a href="https://github.com/anuraghazra/github-readme-stats">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=compact&theme=transparent&hide_border=true&bg_color=00000000&title_color=2f81f7&icon_color=2ea043&text_color=c9d1d9&langs_count=6" alt="Top Languages" onerror="this.style.display='none'"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mathiyass&layout=compact&theme=dark&bg_color=0D1117&title_color=00DFD8&text_color=c9d1d9&border_color=30363d&langs_count=6" alt="Top Languages" width="48%" onerror="this.style.display='none'"/>
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="97%" onerror="this.style.display='none'"/>
 </a>
 
 </div>
 
+<br/>
+
 <details>
-<summary><b>👀 Advanced Profile Metrics (Generated by Actions)</b></summary>
+<summary><b style="font-size: 1.2em;">✨ View Advanced Visualizations (3D Grid, Snake & Pacman)</b></summary>
 <br>
 
 <div align="center">
@@ -106,40 +112,28 @@ I am a **Full-Stack Architect & AI Specialist** based in Birmingham, UK, current
 
 ---
 
-<table width="100%">
-<tr>
-<td width="50%" valign="top">
+### 📡 Latest Activity & Content
 
-### 📺 Latest YouTube Videos
+<table width="100%" style="border-collapse: collapse; border: none;">
+<tr>
+<td width="50%" valign="top" style="border: none;">
+
+#### 📺 YouTube Videos
 <!-- YOUTUBE:START -->
-- [Obstacle avoiding Robot](https://www.youtube.com/watch?v=eYGoyt9z1z8)
-- [Building a 2D sprites animation game using pure HTML, CSS, and JavaScriptLanguages](https://www.youtube.com/watch?v=jO4Bg3zOlVs)
-- [New Minecraft 2 playing](https://www.youtube.com/watch?v=fm57QLnm4TA)
-- [HOW TO ADD NEW CARS ON NFS MOST WANTED 2005](https://www.youtube.com/watch?v=maOHZsjQBAk)
 <!-- YOUTUBE:END -->
 
-</td>
-<td width="50%" valign="top">
+<br/>
 
-### ⚡ Recent Activity
-<!--START_SECTION:activity-->
-1. 🚀 Published release [MA Optimizer v11.0](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-2. ❌ Closed PR [#52](https://github.com/Mathiyass/MA-Optimizer/pull/52) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-3. ❌ Closed PR [#53](https://github.com/Mathiyass/MA-Optimizer/pull/53) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-4. 🚀 Published release [V10.1](https://github.com/Mathiyass/MA-Optimizer/releases/tag/V10.1) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-<!--END_SECTION:activity-->
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 📝 Latest Blog Posts
+#### 📝 Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
 </td>
-<td width="50%" valign="top">
+<td width="50%" valign="top" style="border: none;">
+
+#### ⚡ GitHub Activity
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
 
 </td>
 </tr>
@@ -149,11 +143,12 @@ I am a **Full-Stack Architect & AI Specialist** based in Birmingham, UK, current
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-2ea043?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mathiya.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
-[![Twitter](https://img.shields.io/badge/Twitter-1da1f2?style=for-the-badge&logo=twitter&logoColor=white)](https://x.com/__Mathiya__)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/QERP5JJM8k)
-[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mathiya1783)
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@mathishaangirasa)
+**Let's Connect!**<br/><br/>
+[![Portfolio](https://img.shields.io/badge/Portfolio-101010?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-101010?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
+[![Twitter](https://img.shields.io/badge/Twitter-101010?style=for-the-badge&logo=twitter&logoColor=1da1f2)](https://x.com/__Mathiya__)
+[![Discord](https://img.shields.io/badge/Discord-101010?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
+[![Medium](https://img.shields.io/badge/Medium-101010?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@mathishaangirasa)
+[![YouTube](https://img.shields.io/badge/YouTube-101010?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
 
 </div>
