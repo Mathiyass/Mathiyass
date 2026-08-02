@@ -262,6 +262,15 @@ motto: "Ship fast, break nothing, scale everything"
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 </div>
 
+## ⚡ **RECENT NETWORK ACTIVITY**
+
+<!--START_SECTION:activity-->
+<!--END_SECTION:activity-->
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+</div>
+
 ## 🌍 **CONNECT TO THE GRID**
 
 <div align="center">
