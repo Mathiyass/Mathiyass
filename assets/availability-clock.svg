@@ -30,10 +30,13 @@
       .ping-pulse {
         animation: pingEffect 2s cubic-bezier(0, 0, 0.2, 1) infinite;
       }
+      .ping-pulse-2 {
+        animation: pingEffect 2s cubic-bezier(0, 0, 0.2, 1) 1s infinite;
+      }
 
       @keyframes pingEffect {
         0% { r: 3.5; opacity: 0.9; stroke-width: 1.5; }
-        100% { r: 12; opacity: 0; stroke-width: 0.5; }
+        100% { r: 14; opacity: 0; stroke-width: 0.4; }
       }
     </style>
   </defs>
@@ -46,6 +49,7 @@
   <g transform="translate(20, 14)">
     <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
     <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse" />
+    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse-2" />
     <text x="18" y="9.5" class="c-title">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
     <text x="860" y="9.5" text-anchor="end" class="c-title" fill="#10B981">COLLABORATION: OPEN</text>
     <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
@@ -65,6 +69,10 @@
       <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" />
       <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" />
       <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" />
+      <!-- Sweep Second Hand (4s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
+      </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
@@ -73,7 +81,7 @@
       <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2.5" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
     </g>
     <text x="52" y="16" class="c-loc">🇱🇰 COLOMBO, LK</text>
     <text x="52" y="27" class="c-time">UTC+5:30 • ACTIVE TIMEZONE</text>
@@ -94,6 +102,10 @@
       <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" />
       <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1" />
       <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" />
+      <!-- Sweep Second Hand (4s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
+      </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
@@ -102,7 +114,7 @@
       <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2.5" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
     </g>
     <text x="52" y="16" class="c-loc">🇬🇧 BIRMINGHAM, UK</text>
     <text x="52" y="27" class="c-time" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>
@@ -116,6 +128,7 @@
     <g transform="translate(12, 10)">
       <circle cx="6" cy="6" r="4" fill="#10B981" />
       <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse" />
+      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse-2" />
     </g>
     <text x="32" y="17" class="c-loc" fill="#34D399">ENGAGEMENT STATUS</text>
     <text x="32" y="28" class="c-time" fill="#10B981">SELECT CONSULTATIONS OPEN</text>

@@ -24,8 +24,14 @@
     <!-- Scanning Holographic Beam -->
     <linearGradient id="scanBeamHolo" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.28" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.32" />
       <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
+    </linearGradient>
+
+    <linearGradient id="scanBeamHoloRev" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
     </linearGradient>
 
     <style>
@@ -37,17 +43,27 @@
       .scan-beam {
         animation: scanMove 4s ease-in-out infinite alternate;
       }
+      .scan-beam-rev {
+        animation: scanMoveRev 4s ease-in-out infinite alternate;
+      }
       .beacon-dot {
         animation: pulseBeacon 1.8s infinite alternate;
       }
       .bus-flow {
         stroke-dasharray: 4, 4;
-        animation: busFlow 1.2s linear infinite;
+        animation: busFlow 0.8s linear infinite;
+      }
+      .bar-breathe {
+        animation: barPulse 2.5s ease-in-out infinite alternate;
       }
 
       @keyframes scanMove {
         0% { transform: translateY(-50px); }
         100% { transform: translateY(85px); }
+      }
+      @keyframes scanMoveRev {
+        0% { transform: translateY(85px); }
+        100% { transform: translateY(-50px); }
       }
       @keyframes pulseBeacon {
         0% { opacity: 0.4; transform: scale(0.9); }
@@ -57,6 +73,10 @@
         from { stroke-dashoffset: 8; }
         to { stroke-dashoffset: 0; }
       }
+      @keyframes barPulse {
+        0% { opacity: 0.85; filter: none; }
+        100% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
+      }
     </style>
   </defs>
 
@@ -64,14 +84,17 @@
   <polygon points="16,2 884,2 898,16 898,114 884,128 16,128 2,114 2,16" fill="url(#holoGlassBg)" stroke="url(#holoChromeBorder)" stroke-width="1.3" />
   <path d="M 16 3 L 884 3 L 896 15 L 4 15 Z" fill="url(#holoSpecularEdge)" />
 
-  <!-- Radiating Circuit Bus Lines Behind Cards -->
-  <line x1="225" y1="80" x2="245" y2="80" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.5" class="bus-flow" />
-  <line x1="445" y1="80" x2="465" y2="80" stroke="rgba(168, 85, 247, 0.6)" stroke-width="1.5" class="bus-flow" />
-  <line x1="665" y1="80" x2="685" y2="80" stroke="rgba(16, 185, 129, 0.6)" stroke-width="1.5" class="bus-flow" />
+  <!-- Radiating Circuit Bus Lines Behind Cards with High-Velocity Particles -->
+  <line x1="225" y1="80" x2="245" y2="80" stroke="#00DFD8" stroke-width="1.6" class="bus-flow" />
+  <line x1="445" y1="80" x2="465" y2="80" stroke="#A855F7" stroke-width="1.6" class="bus-flow" />
+  <line x1="665" y1="80" x2="685" y2="80" stroke="#10B981" stroke-width="1.6" class="bus-flow" />
 
-  <!-- Scanning Holographic Beam -->
+  <!-- Dual Counter-Scanning Holographic Beams -->
   <g class="scan-beam">
-    <rect x="2" y="10" width="896" height="45" fill="url(#scanBeamHolo)" pointer-events="none" />
+    <rect x="2" y="10" width="896" height="40" fill="url(#scanBeamHolo)" pointer-events="none" />
+  </g>
+  <g class="scan-beam-rev">
+    <rect x="2" y="10" width="896" height="40" fill="url(#scanBeamHoloRev)" pointer-events="none" />
   </g>
 
   <!-- Top Status Ribbon -->
@@ -88,16 +111,19 @@
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <!-- 3D Mini Gyroscope -->
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
+      <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="2s" repeatCount="indefinite" />
+      </circle>
     </g>
     <text x="14" y="24" font-size="13">🧠</text>
     <text x="38" y="22" class="h-stat">AI COGNITION</text>
     <text x="14" y="38" class="h-sub">SIVION Multi-Agent Core</text>
     <text x="14" y="52" class="h-val" fill="#00DFD8">4/4 THREADS ACTIVE</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
-    <rect x="14" y="58" width="168" height="3.5" rx="1.75" fill="#00DFD8" />
+    <rect x="14" y="58" width="168" height="3.5" rx="1.75" fill="#00DFD8" class="bar-breathe" />
   </g>
 
   <!-- Metric Pod 2: Kernel Latency -->
@@ -105,16 +131,19 @@
     <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
+      <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="2s" repeatCount="indefinite" />
+      </circle>
     </g>
     <text x="14" y="24" font-size="13">⚡</text>
     <text x="38" y="22" class="h-stat">KERNEL LATENCY</text>
     <text x="14" y="38" class="h-sub">MA-Optimizer Engine</text>
     <text x="14" y="52" class="h-val" fill="#C084FC">0.42ms DISPATCH</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
-    <rect x="14" y="58" width="172" height="3.5" rx="1.75" fill="#A855F7" />
+    <rect x="14" y="58" width="172" height="3.5" rx="1.75" fill="#A855F7" class="bar-breathe" />
   </g>
 
   <!-- Metric Pod 3: WebGL Shaders -->
@@ -122,16 +151,19 @@
     <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(16, 185, 129, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
+      <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="2s" repeatCount="indefinite" />
+      </circle>
     </g>
     <text x="14" y="24" font-size="13">🎮</text>
     <text x="38" y="22" class="h-stat">WEBGL SHADERS</text>
     <text x="14" y="38" class="h-sub">Three.js &amp; GPGPU Shaders</text>
     <text x="14" y="52" class="h-val" fill="#34D399">&gt;144 FPS @ 4K COMPUTE</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
-    <rect x="14" y="58" width="165" height="3.5" rx="1.75" fill="#10B981" />
+    <rect x="14" y="58" width="165" height="3.5" rx="1.75" fill="#10B981" class="bar-breathe" />
   </g>
 
   <!-- Metric Pod 4: Cloud Resilience -->
@@ -139,15 +171,18 @@
     <polygon points="8,0 184,0 192,8 192,62 184,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(2, 132, 199, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 184 1 L 191 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(2, 132, 199, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(2, 132, 199, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
+      <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="2s" repeatCount="indefinite" />
+      </circle>
     </g>
     <text x="14" y="24" font-size="13">☁️</text>
     <text x="38" y="22" class="h-stat">CLOUD RESILIENCY</text>
     <text x="14" y="38" class="h-sub">FastAPI + Supabase Sync</text>
     <text x="14" y="52" class="h-val" fill="#38BDF8">99.99% UPTIME CLUSTER</text>
     <rect x="14" y="58" width="164" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
-    <rect x="14" y="58" width="162" height="3.5" rx="1.75" fill="#0284C7" />
+    <rect x="14" y="58" width="162" height="3.5" rx="1.75" fill="#0284C7" class="bar-breathe" />
   </g>
 </svg>
