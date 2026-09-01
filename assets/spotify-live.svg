@@ -6,9 +6,9 @@
     </linearGradient>
 
     <linearGradient id="spotBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#1DB954" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1DB954" stop-opacity="0.9" />
     </linearGradient>
 
     <style>
@@ -18,6 +18,7 @@
       .spot-time { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; fill: #6E7681; }
       
       .eq-bar {
+        transform-box: fill-box;
         transform-origin: bottom;
         animation: bounceEq 1.2s ease-in-out infinite alternate;
       }
@@ -33,6 +34,10 @@
       .b10 { animation-delay: 0.50s; }
       .b11 { animation-delay: 0.20s; }
       .b12 { animation-delay: 0.40s; }
+      .b13 { animation-delay: 0.15s; }
+      .b14 { animation-delay: 0.45s; }
+      .b15 { animation-delay: 0.25s; }
+      .b16 { animation-delay: 0.55s; }
       
       .spot-pulse {
         animation: pulseSpot 2s ease-in-out infinite alternate;
@@ -42,16 +47,15 @@
         0% { transform: scaleY(0.2); }
         100% { transform: scaleY(1); }
       }
-
       @keyframes pulseSpot {
-        0% { filter: drop-shadow(0 0 4px rgba(29, 185, 84, 0.3)); }
-        100% { filter: drop-shadow(0 0 12px rgba(29, 185, 84, 0.8)); }
+        0% { filter: drop-shadow(0 0 4px rgba(29, 185, 84, 0.4)); }
+        100% { filter: drop-shadow(0 0 14px rgba(29, 185, 84, 0.9)); }
       }
     </style>
   </defs>
 
   <!-- Card Frame with Chamfered Corners -->
-  <polygon points="10,2 470,2 478,10 478,86 470,94 10,94 2,86 2,10" fill="url(#spotBgSupreme)" stroke="url(#spotBorderSupreme)" stroke-width="1.2" />
+  <polygon points="10,2 470,2 478,10 478,86 470,94 10,94 2,86 2,10" fill="url(#spotBgSupreme)" stroke="url(#spotBorderSupreme)" stroke-width="1.3" />
 
   <!-- Spotify Logo & Icon with Radiant Aura -->
   <g transform="translate(16, 20)" class="spot-pulse">
@@ -67,19 +71,23 @@
   <text x="82" y="66" class="track-artist">Curated Architect Soundtracks • 24-Bit / 96kHz</text>
   <text x="82" y="80" class="spot-time">02:48 / 03:15 • STREAMING LIVE</text>
 
-  <!-- 12-Band Equalizer -->
-  <g transform="translate(390, 68)">
-    <rect x="0" y="-30" width="3" height="30" rx="1.5" fill="#00DFD8" class="eq-bar b1" />
-    <rect x="5" y="-30" width="3" height="30" rx="1.5" fill="#00DFD8" class="eq-bar b2" />
-    <rect x="10" y="-30" width="3" height="30" rx="1.5" fill="#1DB954" class="eq-bar b3" />
-    <rect x="15" y="-30" width="3" height="30" rx="1.5" fill="#1DB954" class="eq-bar b4" />
-    <rect x="20" y="-30" width="3" height="30" rx="1.5" fill="#10B981" class="eq-bar b5" />
-    <rect x="25" y="-30" width="3" height="30" rx="1.5" fill="#10B981" class="eq-bar b6" />
-    <rect x="30" y="-30" width="3" height="30" rx="1.5" fill="#00DFD8" class="eq-bar b7" />
-    <rect x="35" y="-30" width="3" height="30" rx="1.5" fill="#00DFD8" class="eq-bar b8" />
-    <rect x="40" y="-30" width="3" height="30" rx="1.5" fill="#1DB954" class="eq-bar b9" />
-    <rect x="45" y="-30" width="3" height="30" rx="1.5" fill="#1DB954" class="eq-bar b10" />
-    <rect x="50" y="-30" width="3" height="30" rx="1.5" fill="#10B981" class="eq-bar b11" />
-    <rect x="55" y="-30" width="3" height="30" rx="1.5" fill="#10B981" class="eq-bar b12" />
+  <!-- 16-Band Equalizer -->
+  <g transform="translate(376, 68)">
+    <rect x="0" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b1" />
+    <rect x="5" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b2" />
+    <rect x="10" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b3" />
+    <rect x="15" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b4" />
+    <rect x="20" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b5" />
+    <rect x="25" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b6" />
+    <rect x="30" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b7" />
+    <rect x="35" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b8" />
+    <rect x="40" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b9" />
+    <rect x="45" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b10" />
+    <rect x="50" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b11" />
+    <rect x="55" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b12" />
+    <rect x="60" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b13" />
+    <rect x="65" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b14" />
+    <rect x="70" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b15" />
+    <rect x="75" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b16" />
   </g>
 </svg>

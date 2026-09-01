@@ -1,14 +1,14 @@
-<svg width="900" height="124" viewBox="0 0 900 124" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="holoCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#101522" />
+    <linearGradient id="holoBgSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E131E" />
       <stop offset="100%" stop-color="#06090F" />
     </linearGradient>
 
-    <linearGradient id="holoBorderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="holoBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
     </linearGradient>
 
@@ -20,13 +20,13 @@
     </linearGradient>
 
     <style>
-      .h-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #00DFD8; letter-spacing: 2px; }
-      .h-stat { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
-      .h-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
-      .h-val { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.5px; }
+      .h-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .h-stat { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #FFFFFF; }
+      .h-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
+      .h-val { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8px; font-weight: 700; letter-spacing: 0.5px; }
       
       .scan-beam {
-        animation: scanMove 3.8s ease-in-out infinite alternate;
+        animation: scanMove 4s ease-in-out infinite alternate;
       }
       .beacon-dot {
         animation: pulseBeacon 1.8s infinite alternate;
@@ -38,7 +38,7 @@
 
       @keyframes scanMove {
         0% { transform: translateY(-50px); }
-        100% { transform: translateY(80px); }
+        100% { transform: translateY(85px); }
       }
       @keyframes pulseBeacon {
         0% { opacity: 0.4; transform: scale(0.9); }
@@ -52,12 +52,12 @@
   </defs>
 
   <!-- Frame with Chamfered Corners -->
-  <polygon points="16,2 884,2 898,16 898,108 884,122 16,122 2,108 2,16" fill="url(#holoCardBg)" stroke="url(#holoBorderGlow)" stroke-width="1.4" />
+  <polygon points="16,2 884,2 898,16 898,114 884,128 16,128 2,114 2,16" fill="url(#holoBgSupreme)" stroke="url(#holoBorderSupreme)" stroke-width="1.3" />
 
   <!-- Radiating Circuit Bus Lines Behind Cards -->
-  <line x1="225" y1="78" x2="245" y2="78" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.5" class="bus-flow" />
-  <line x1="445" y1="78" x2="465" y2="78" stroke="rgba(119, 1, 208, 0.6)" stroke-width="1.5" class="bus-flow" />
-  <line x1="665" y1="78" x2="685" y2="78" stroke="rgba(16, 185, 129, 0.6)" stroke-width="1.5" class="bus-flow" />
+  <line x1="225" y1="80" x2="245" y2="80" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.5" class="bus-flow" />
+  <line x1="445" y1="80" x2="465" y2="80" stroke="rgba(119, 1, 208, 0.6)" stroke-width="1.5" class="bus-flow" />
+  <line x1="665" y1="80" x2="685" y2="80" stroke="rgba(16, 185, 129, 0.6)" stroke-width="1.5" class="bus-flow" />
 
   <!-- Scanning Holographic Beam -->
   <g class="scan-beam">
@@ -74,37 +74,45 @@
 
   <!-- Metric Pod 1: AI Cognition -->
   <g transform="translate(24, 46)">
-    <rect x="0" y="0" width="200" height="64" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1.2" />
-    <text x="12" y="20" font-size="14">🧠</text>
-    <text x="32" y="20" class="h-stat">AI COGNITION</text>
-    <text x="12" y="38" class="h-sub">SIVION Multi-Agent Core</text>
-    <text x="12" y="52" class="h-val" fill="#00DFD8">4/4 THREADS ACTIVE</text>
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(0, 223, 216, 0.05)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1.2" />
+    <text x="14" y="20" font-size="14">🧠</text>
+    <text x="36" y="20" class="h-stat">AI COGNITION</text>
+    <text x="14" y="38" class="h-sub">SIVION Multi-Agent Core</text>
+    <text x="14" y="52" class="h-val" fill="#00DFD8">4/4 THREADS ACTIVE</text>
+    <rect x="14" y="58" width="176" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.06)" />
+    <rect x="14" y="58" width="168" height="3" rx="1.5" fill="#00DFD8" />
   </g>
 
   <!-- Metric Pod 2: Kernel Latency -->
   <g transform="translate(244, 46)">
-    <rect x="0" y="0" width="200" height="64" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(119, 1, 208, 0.35)" stroke-width="1.2" />
-    <text x="12" y="20" font-size="14">⚡</text>
-    <text x="32" y="20" class="h-stat">KERNEL LATENCY</text>
-    <text x="12" y="38" class="h-sub">MA-Optimizer Engine</text>
-    <text x="12" y="52" class="h-val" fill="#A855F7">0.42ms DISPATCH</text>
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(119, 1, 208, 0.05)" stroke="rgba(119, 1, 208, 0.35)" stroke-width="1.2" />
+    <text x="14" y="20" font-size="14">⚡</text>
+    <text x="36" y="20" class="h-stat">KERNEL LATENCY</text>
+    <text x="14" y="38" class="h-sub">MA-Optimizer Engine</text>
+    <text x="14" y="52" class="h-val" fill="#A855F7">0.42ms DISPATCH</text>
+    <rect x="14" y="58" width="176" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.06)" />
+    <rect x="14" y="58" width="172" height="3" rx="1.5" fill="#A855F7" />
   </g>
 
   <!-- Metric Pod 3: WebGL Shaders -->
   <g transform="translate(464, 46)">
-    <rect x="0" y="0" width="200" height="64" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" />
-    <text x="12" y="20" font-size="14">🎮</text>
-    <text x="32" y="20" class="h-stat">WEBGL SHADERS</text>
-    <text x="12" y="38" class="h-sub">Three.js &amp; GPGPU Shaders</text>
-    <text x="12" y="52" class="h-val" fill="#10B981">&gt;144 FPS @ 4K COMPUTE</text>
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(16, 185, 129, 0.05)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" />
+    <text x="14" y="20" font-size="14">🎮</text>
+    <text x="36" y="20" class="h-stat">WEBGL SHADERS</text>
+    <text x="14" y="38" class="h-sub">Three.js &amp; GPGPU Shaders</text>
+    <text x="14" y="52" class="h-val" fill="#10B981">&gt;144 FPS @ 4K COMPUTE</text>
+    <rect x="14" y="58" width="176" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.06)" />
+    <rect x="14" y="58" width="165" height="3" rx="1.5" fill="#10B981" />
   </g>
 
   <!-- Metric Pod 4: Cloud Resilience -->
   <g transform="translate(684, 46)">
-    <rect x="0" y="0" width="192" height="64" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(2, 132, 199, 0.35)" stroke-width="1.2" />
-    <text x="12" y="20" font-size="14">☁️</text>
-    <text x="32" y="20" class="h-stat">CLOUD RESILIENCY</text>
-    <text x="12" y="38" class="h-sub">FastAPI + Supabase Sync</text>
-    <text x="12" y="52" class="h-val" fill="#0284C7">99.99% UPTIME CLUSTER</text>
+    <polygon points="8,0 184,0 192,8 192,62 184,70 8,70 0,62 0,8" fill="rgba(2, 132, 199, 0.05)" stroke="rgba(2, 132, 199, 0.35)" stroke-width="1.2" />
+    <text x="14" y="20" font-size="14">☁️</text>
+    <text x="36" y="20" class="h-stat">CLOUD RESILIENCY</text>
+    <text x="14" y="38" class="h-sub">FastAPI + Supabase Sync</text>
+    <text x="14" y="52" class="h-val" fill="#0284C7">99.99% UPTIME CLUSTER</text>
+    <rect x="14" y="58" width="164" height="3" rx="1.5" fill="rgba(255, 255, 255, 0.06)" />
+    <rect x="14" y="58" width="162" height="3" rx="1.5" fill="#0284C7" />
   </g>
 </svg>
