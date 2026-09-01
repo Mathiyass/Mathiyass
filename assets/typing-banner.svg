@@ -1,71 +1,64 @@
-<svg width="850" height="44" viewBox="0 0 850 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="44" viewBox="0 0 850 44" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6">
+        <!-- Grid -->
+        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
+        <circle cx="209.6323114228891" cy="22.87612414689889" r="2.479550890987511" fill="#00DFD8" style="--dx:-18.04066141196396px; --dy:-29.792085021930042px; animation: particle-drift 6.639002256972572s ease-in-out 3.400613817005324s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="413.039890808799" cy="39.9004037700075" r="1.5332987229205859" fill="#A855F7" style="--dx:27.63158009107362px; --dy:46.81267642876061px; animation: particle-drift 6.399370653934273s ease-in-out 3.87665985009793s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="465.5079750670542" cy="27.343088232403968" r="1.8255229981432308" fill="#00DFD8" style="--dx:-9.127543454197435px; --dy:49.1674294731537px; animation: particle-drift 4.499136441381477s ease-in-out 2.1484968562897033s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="477.6479212491241" cy="42.77935527767239" r="2.172723904896392" fill="#A855F7" style="--dx:-45.33910750814491px; --dy:7.53536779032728px; animation: particle-drift 7.397467726021857s ease-in-out 1.6738800385222024s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="313.95801248240724" cy="42.805420041143236" r="1.2237818853751483" fill="#00DFD8" style="--dx:69.01519750719471px; --dy:36.33295472849419px; animation: particle-drift 5.383262101129382s ease-in-out 1.4208421000232518s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="282.72873326473433" cy="11.472008046832883" r="1.073354150825444" fill="#A855F7" style="--dx:74.19117037370074px; --dy:-14.254719185951098px; animation: particle-drift 7.254632781438928s ease-in-out 4.228349397993087s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="89.92357043262118" cy="36.26533844896344" r="0.9071293825314957" fill="#A855F7" style="--dx:-65.03136149786855px; --dy:36.91456093443611px; animation: particle-drift 5.6367504359527425s ease-in-out 0.18225535915189328s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="725.2297899272332" cy="2.069240003638895" r="1.0645425258222407" fill="#00DFD8" style="--dx:-45.137517056603286px; --dy:-57.74667352036171px; animation: particle-drift 4.573374473768239s ease-in-out 3.6785449303952307s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="796.5397956701127" cy="38.209684285860746" r="1.5324365322069895" fill="#00DFD8" style="--dx:-27.010232910088423px; --dy:-21.589074488550807px; animation: particle-drift 3.8023161430477965s ease-in-out 1.115365565497521s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="78.4032271575053" cy="38.50173571293135" r="0.6312655132147935" fill="#00DFD8" style="--dx:-31.320170190501557px; --dy:30.365046165645477px; animation: particle-drift 3.3312586071750054s ease-in-out 2.574335463881687s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="652.1236908084974" cy="20.99223536738651" r="0.527644706831657" fill="#00DFD8" style="--dx:21.685567939007434px; --dy:67.50584212634512px; animation: particle-drift 7.895810064561877s ease-in-out 3.3106972499681175s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="838.5105659313658" cy="0.2657851114429941" r="1.7385696411079856" fill="#A855F7" style="--dx:-35.85859831860731px; --dy:-34.61482144124399px; animation: particle-drift 7.1457013546175405s ease-in-out 1.7841038759988315s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="406.30158858764673" cy="25.432904405084102" r="1.6206417845940377" fill="#00DFD8" style="--dx:4.259389001352737px; --dy:-27.173681254112363px; animation: particle-drift 5.303840937441086s ease-in-out 4.177246872669585s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="390.81230673904156" cy="37.62533179880483" r="1.5622592207682393" fill="#A855F7" style="--dx:21.34440078251913px; --dy:-20.65051057814004px; animation: particle-drift 7.37608131856781s ease-in-out 0.5486150997826805s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="92.76731435619908" cy="23.999725568844987" r="0.7985246690960315" fill="#00DFD8" style="--dx:-12.758806936936601px; --dy:14.296180450006668px; animation: particle-drift 3.572922119926364s ease-in-out 2.9413783205533246s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="46.636162645242116" cy="26.68598650921043" r="1.481258645778594" fill="#A855F7" style="--dx:2.057225365091009px; --dy:-54.624350896725915px; animation: particle-drift 7.239424314975894s ease-in-out 1.993711926719632s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="678.7090080678976" cy="19.848377131402533" r="2.18681077760719" fill="#A855F7" style="--dx:-5.221830862022231px; --dy:-44.48110072219552px; animation: particle-drift 6.150792019308367s ease-in-out 3.7507117792019273s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="805.4687021424157" cy="33.735309054518574" r="0.5266772040346928" fill="#A855F7" style="--dx:-36.411970978375464px; --dy:36.85609992536641px; animation: particle-drift 4.826256884866943s ease-in-out 1.2769428611945677s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="317.2169205546537" cy="30.444784386973502" r="1.9216814277516903" fill="#00DFD8" style="--dx:37.002498960743075px; --dy:-60.69153345265695px; animation: particle-drift 3.9591990520819933s ease-in-out 2.821725326865996s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="772.938958296072" cy="0.3297069678105289" r="0.8561227129705955" fill="#00DFD8" style="--dx:22.646381961156315px; --dy:-38.29604794442768px; animation: particle-drift 5.256187862971034s ease-in-out 3.917624550696238s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="582.5531722020617" cy="41.15967258416711" r="1.9205769386006495" fill="#A855F7" style="--dx:13.912398195424164px; --dy:-48.55675921215853px; animation: particle-drift 5.630762422201001s ease-in-out 3.779469448953594s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="718.8511717698947" cy="11.292295518342293" r="1.2330756303486003" fill="#A855F7" style="--dx:-25.12204732611184px; --dy:-29.870506450293494px; animation: particle-drift 5.130800794723951s ease-in-out 0.8974451244503218s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="16.604737679833477" cy="28.712482755803123" r="2.149723944383778" fill="#00DFD8" style="--dx:-33.94419342036809px; --dy:-39.43997404169988px; animation: particle-drift 4.664326866814665s ease-in-out 2.3035336342006305s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="717.8058551940168" cy="0.8016847945005519" r="0.9102678224105256" fill="#00DFD8" style="--dx:-31.027173853070167px; --dy:-67.33915107532307px; animation: particle-drift 5.164456520176624s ease-in-out 3.3646758356658806s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="186.23221987161162" cy="29.325348166334713" r="2.4465006686467072" fill="#A855F7" style="--dx:29.190831821497714px; --dy:12.734553758146827px; animation: particle-drift 5.955961477984528s ease-in-out 4.010151781504497s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="514.7933684892491" cy="10.657329558589527" r="0.5405880527242852" fill="#00DFD8" style="--dx:6.982992642297303px; --dy:26.14781647941584px; animation: particle-drift 5.369320227644765s ease-in-out 0.24499550370783663s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="101.31547389759987" cy="25.987638537214124" r="0.916941705577544" fill="#A855F7" style="--dx:-62.41928703654818px; --dy:-54.617442029365805px; animation: particle-drift 7.114326687607928s ease-in-out 2.2113947515351655s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="617.1281881910062" cy="20.14330622712108" r="1.2867637547840303" fill="#A855F7" style="--dx:-9.6342533966833px; --dy:-14.90002149116219px; animation: particle-drift 5.62867544242193s ease-in-out 1.4101242479157432s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="609.751255984463" cy="13.093194453084665" r="1.1612825990620916" fill="#A855F7" style="--dx:-0.2677631830380167px; --dy:69.21780491730053px; animation: particle-drift 7.00862432336812s ease-in-out 1.6164329143509615s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="177.25408427092327" cy="18.15870645546011" r="1.3379100942413371" fill="#00DFD8" style="--dx:22.55690137961167px; --dy:64.9753821329852px; animation: particle-drift 5.625849699068489s ease-in-out 1.2769439288009088s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><g style="--spin-dur: 20s" class="gyro-spin">
+        <circle cx="425" cy="22" r="283.3333333333333" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow hyper-float"/>
+        <circle cx="425" cy="22" r="303.3333333333333" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow hyper-float"/>
+    </g></g>
   <defs>
     <!-- Background Glass Gradient -->
     <linearGradient id="typGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98"/>
     </linearGradient>
 
     <!-- Top Specular Highlight -->
     <linearGradient id="typSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Chrome Border Gradient -->
     <linearGradient id="typBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8"/>
     </linearGradient>
 
     <!-- Sweeping Laser Scan Gradient -->
     <linearGradient id="typLaser" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.6" />
-      <stop offset="100%" stop-color="transparent" />
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="transparent"/>
     </linearGradient>
 
     <!-- Clip Paths for Typewriter Reveal -->
     <clipPath id="clip1">
       <rect x="230" y="0" width="0" height="44">
-        <animate attributeName="width" 
-                 values="0; 520; 520; 0; 0; 0; 0; 0; 0; 0; 0; 0" 
-                 keyTimes="0; 0.08; 0.22; 0.25; 0.26; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
-                 dur="16s" 
-                 repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 520; 520; 0; 0; 0; 0; 0; 0; 0; 0; 0" keyTimes="0; 0.08; 0.22; 0.25; 0.26; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" dur="16s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <clipPath id="clip2">
       <rect x="230" y="0" width="0" height="44">
-        <animate attributeName="width" 
-                 values="0; 0; 0; 520; 520; 0; 0; 0; 0; 0; 0; 0" 
-                 keyTimes="0; 0.25; 0.26; 0.34; 0.47; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
-                 dur="16s" 
-                 repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 520; 520; 0; 0; 0; 0; 0; 0; 0" keyTimes="0; 0.25; 0.26; 0.34; 0.47; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" dur="16s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <clipPath id="clip3">
       <rect x="230" y="0" width="0" height="44">
-        <animate attributeName="width" 
-                 values="0; 0; 0; 0; 0; 520; 520; 0; 0; 0; 0; 0" 
-                 keyTimes="0; 0.50; 0.51; 0.52; 0.53; 0.59; 0.72; 0.75; 0.76; 0.98; 0.99; 1" 
-                 dur="16s" 
-                 repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 0; 520; 520; 0; 0; 0; 0; 0" keyTimes="0; 0.50; 0.51; 0.52; 0.53; 0.59; 0.72; 0.75; 0.76; 0.98; 0.99; 1" dur="16s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
     <clipPath id="clip4">
       <rect x="230" y="0" width="0" height="44">
-        <animate attributeName="width" 
-                 values="0; 0; 0; 0; 0; 0; 0; 520; 520; 0; 0; 0" 
-                 keyTimes="0; 0.75; 0.76; 0.77; 0.78; 0.84; 0.97; 0.99; 0.995; 0.998; 0.999; 1" 
-                 dur="16s" 
-                 repeatCount="indefinite" />
+        <animate attributeName="width" values="0; 0; 0; 0; 0; 0; 0; 520; 520; 0; 0; 0" keyTimes="0; 0.75; 0.76; 0.77; 0.78; 0.84; 0.97; 0.99; 0.995; 0.998; 0.999; 1" dur="16s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
 
@@ -104,69 +97,152 @@
         0% { transform: scaleY(0.3); }
         100% { transform: scaleY(1); }
       }
-    </style>
+    
+
+/* EXTREME HYPER ANIMATIONS */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,223,216,0.8)) drop-shadow(0 0 15px rgba(0,223,216,0.6)); }
+  20%, 24%, 55% { opacity: 0.4; filter: none; }
+}
+@keyframes cyber-scan {
+  0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(1000%) scaleY(1.5); opacity: 0; }
+}
+@keyframes cyber-float {
+  0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-4px) scale(1.02) rotate(0.5deg); }
+}
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(168,85,247,0.5)) drop-shadow(0 0 20px rgba(168,85,247,0.3)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0,223,216,0.9)) drop-shadow(0 0 30px rgba(0,223,216,0.6)); }
+}
+@keyframes hologram-glitch {
+  0% { transform: translate(0); opacity: 1; }
+  1% { transform: translate(-2px, 1px) skewX(2deg); opacity: 0.8; filter: hue-rotate(90deg); }
+  2% { transform: translate(2px, -1px) skewX(-2deg); opacity: 0.9; filter: hue-rotate(-90deg); }
+  3% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
+  100% { transform: translate(0); opacity: 1; }
+}
+@keyframes particle-drift {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
+}
+@keyframes rotate-gyro {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -100; }
+}
+@keyframes wave-distortion {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.15) scaleX(0.95); }
+}
+@keyframes rgb-shift {
+  0% { fill: #00DFD8; }
+  33% { fill: #A855F7; }
+  66% { fill: #FF007F; }
+  100% { fill: #00DFD8; }
+}
+@keyframes border-run {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes equalizer-bounce {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1.5); }
+}
+
+.neon-text { animation: neon-flicker 4s infinite alternate; }
+.cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
+.hyper-float { animation: cyber-float 3s ease-in-out infinite; transform-origin: center; }
+.hyper-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.glitch-layer { animation: hologram-glitch 5s infinite; }
+.gyro-spin { animation: rotate-gyro var(--spin-dur, 10s) linear infinite; transform-origin: center; }
+.dash-flow { stroke-dasharray: 10, 5; animation: dash-flow 2s linear infinite; }
+.wave-warp { animation: wave-distortion 4s ease-in-out infinite; transform-origin: center bottom; }
+.rgb-text { animation: rgb-shift 6s linear infinite; }
+.border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
+.eq-bounce { animation: equalizer-bounce var(--eq-dur, 0.5s) ease-in-out infinite; transform-origin: bottom; }
+</style>
   </defs>
 
   <!-- 3D Glass Chassis Container -->
-  <polygon points="6,2 844,2 848,6 848,38 844,42 6,42 2,38 2,6" fill="url(#typGlassBg)" stroke="url(#typBorder)" stroke-width="1.2" />
-  <path d="M 6 3 L 844 3 L 847 7 L 3 7 Z" fill="url(#typSpecular)" />
+  <polygon points="6,2 844,2 848,6 848,38 844,42 6,42 2,38 2,6" fill="url(#typGlassBg)" stroke="url(#typBorder)" stroke-width="1.2"/>
+  <path d="M 6 3 L 844 3 L 847 7 L 3 7 Z" fill="url(#typSpecular)"/>
 
   <!-- Sweeping Laser Beam Across Track -->
   <rect x="0" y="2" width="160" height="2" fill="url(#typLaser)">
-    <animate attributeName="x" from="-180" to="860" dur="4s" repeatCount="indefinite" />
+    <animate attributeName="x" from="-180" to="860" dur="4s" repeatCount="indefinite"/>
   </rect>
 
   <!-- Traffic Lights Terminal Header -->
-  <g transform="translate(18, 22)">
-    <circle cx="0" cy="0" r="3.5" fill="#EF4444" opacity="0.85" />
-    <circle cx="12" cy="0" r="3.5" fill="#FBBF24" opacity="0.85" />
-    <circle cx="24" cy="0" r="3.5" fill="#10B981" class="beacon-dot" />
+  <g transform="translate(18, 22)" class="hyper-float">
+    <circle cx="0" cy="0" r="3.5" fill="#EF4444" opacity="0.85" class="hyper-glow hyper-float"/>
+    <circle cx="12" cy="0" r="3.5" fill="#FBBF24" opacity="0.85" class="hyper-glow hyper-float"/>
+    <circle cx="24" cy="0" r="3.5" fill="#10B981" class="beacon-dot hyper-glow hyper-float"/>
   </g>
 
   <!-- Terminal Prompt -->
   <g transform="translate(60, 26)">
-    <text x="0" y="0" class="term-prompt">SYS://PROMPT ❯</text>
+    <text x="0" y="0" class="term-prompt hyper-float rgb-text glitch-layer">SYS://PROMPT ❯</text>
   </g>
 
   <!-- Live Audio Waveform Bars next to Prompt -->
-  <g transform="translate(185, 27)">
-    <rect x="0" y="-12" width="2" height="12" fill="#00DFD8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.1s;" />
-    <rect x="4" y="-12" width="2" height="12" fill="#38BDF8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.3s;" />
-    <rect x="8" y="-12" width="2" height="12" fill="#A855F7" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.5s;" />
-    <rect x="12" y="-12" width="2" height="12" fill="#10B981" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.2s;" />
+  <g transform="translate(185, 27)" class="hyper-float">
+    <rect x="0" y="-12" width="2" height="12" fill="#00DFD8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.1s;"/>
+    <rect x="4" y="-12" width="2" height="12" fill="#38BDF8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.3s;"/>
+    <rect x="8" y="-12" width="2" height="12" fill="#A855F7" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.5s;"/>
+    <rect x="12" y="-12" width="2" height="12" fill="#10B981" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.2s;"/>
   </g>
 
   <!-- Phrase 1 (Cyan Theme) -->
-  <g clip-path="url(#clip1)">
-    <text x="230" y="26" class="type-line" fill="#00DFD8">
+  <g clip-path="url(#clip1)" class="hyper-float">
+    <text x="230" y="26" class="type-line hyper-float rgb-text glitch-layer" fill="#00DFD8">
       LEAD SYSTEMS ARCHITECT &amp; AI SPECIALIST <tspan fill="#38BDF8">[mathiya.cc]</tspan>
     </text>
   </g>
 
   <!-- Phrase 2 (Purple Theme) -->
-  <g clip-path="url(#clip2)">
-    <text x="230" y="26" class="type-line" fill="#E879F9">
+  <g clip-path="url(#clip2)" class="hyper-float">
+    <text x="230" y="26" class="type-line hyper-float rgb-text glitch-layer" fill="#E879F9">
       SCALABLE MULTI-AGENT AI ECOSYSTEMS <tspan fill="#C084FC">[SIVION SWARMS]</tspan>
     </text>
   </g>
 
   <!-- Phrase 3 (Emerald Theme) -->
   <g clip-path="url(#clip3)">
-    <text x="230" y="26" class="type-line" fill="#34D399">
+    <text x="230" y="26" class="type-line hyper-float rgb-text glitch-layer" fill="#34D399">
       LOW-LATENCY WINDOWS KERNEL TUNING <tspan fill="#10B981">[MA OPTIMIZER]</tspan>
     </text>
   </g>
 
   <!-- Phrase 4 (Amber & WebGL Theme) -->
   <g clip-path="url(#clip4)">
-    <text x="230" y="26" class="type-line" fill="#FBBF24">
+    <text x="230" y="26" class="type-line hyper-float rgb-text glitch-layer" fill="#FBBF24">
       WEBGL 2.0 &amp; GLSL GPGPU COMPUTE SHADERS <tspan fill="#F59E0B">[3D SPATIAL]</tspan>
     </text>
   </g>
 
   <!-- Right Telemetry Badge & Live Beacon -->
   <g transform="translate(775, 26)">
-    <circle cx="0" cy="-3" r="3" fill="#00DFD8" class="beacon-dot" />
-    <text x="10" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681">60 FPS</text>
+    <circle cx="0" cy="-3" r="3" fill="#00DFD8" class="beacon-dot hyper-glow hyper-float"/>
+    <text x="10" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681" class="hyper-float rgb-text glitch-layer">60 FPS</text>
   </g>
-</svg>
+
+    <g class="hyper-overlay-effects" style="pointer-events: none;">
+        <!-- Scanning laser -->
+        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
+        
+        <!-- Vignette / Border flare -->
+        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
+    </g>
+    </svg>

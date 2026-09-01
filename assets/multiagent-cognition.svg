@@ -1,24 +1,33 @@
-<svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6">
+        <!-- Grid -->
+        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
+        <circle cx="652.0535640225988" cy="68.85135580078584" r="2.2922231784649862" fill="#A855F7" style="--dx:58.720825198864766px; --dy:-57.33599729607217px; animation: particle-drift 4.142120956323007s ease-in-out 0.7928675847900546s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="173.47840643160447" cy="6.688887294318571" r="2.0767335724107134" fill="#A855F7" style="--dx:-30.102779349903575px; --dy:66.40420731666083px; animation: particle-drift 6.675634170602342s ease-in-out 4.747027662081132s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="692.6779574920874" cy="50.88185308131864" r="1.6540509050782615" fill="#A855F7" style="--dx:-73.06317547127674px; --dy:-58.20650432266296px; animation: particle-drift 4.858340068897537s ease-in-out 4.136952868584355s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="568.3773287268631" cy="18.284982679667728" r="0.9306885182854765" fill="#00DFD8" style="--dx:-31.411810866770555px; --dy:-38.764263033694895px; animation: particle-drift 7.7549128532395635s ease-in-out 4.908271901493922s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="791.625178790027" cy="35.09744684203617" r="2.074271833018976" fill="#00DFD8" style="--dx:56.77474112029735px; --dy:-37.252573401443286px; animation: particle-drift 3.309774763398983s ease-in-out 1.8215062152621042s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="261.63975849034483" cy="77.40114803745122" r="1.8531273913258361" fill="#A855F7" style="--dx:63.12872559658535px; --dy:-65.74150292097025px; animation: particle-drift 7.36437436253472s ease-in-out 3.9172257626417317s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="434.37957921624326" cy="65.95130962979125" r="1.1691316819450246" fill="#A855F7" style="--dx:47.82367929666258px; --dy:-64.8569658355719px; animation: particle-drift 7.798128730624789s ease-in-out 1.6221943816707411s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="631.8692645312636" cy="23.73312395229658" r="0.6714970237183362" fill="#A855F7" style="--dx:58.336311843073275px; --dy:-38.009882248260055px; animation: particle-drift 6.954151307390416s ease-in-out 2.31480593514969s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="666.0708618918544" cy="96.31833184455887" r="2.3859358012572547" fill="#A855F7" style="--dx:23.529473885152854px; --dy:31.90253381742721px; animation: particle-drift 4.86709832703998s ease-in-out 3.577456441672846s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="164.9485720139307" cy="41.909994660783646" r="2.464433379333507" fill="#00DFD8" style="--dx:71.66756243382244px; --dy:72.4559602559587px; animation: particle-drift 7.493898234231611s ease-in-out 4.345781848779248s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="62.8297793737101" cy="64.1509452859225" r="1.5635638010634698" fill="#A855F7" style="--dx:66.39903470711678px; --dy:10.75544736119865px; animation: particle-drift 5.474624583679681s ease-in-out 3.5077596997541693s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="835.0259243838998" cy="94.8880319282367" r="2.1116590509247066" fill="#A855F7" style="--dx:33.5539490374929px; --dy:-19.698222116142546px; animation: particle-drift 7.268383252358292s ease-in-out 1.2301786362619445s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="650.2146918751663" cy="32.2578605486936" r="2.1076269520136384" fill="#A855F7" style="--dx:4.409390075034947px; --dy:34.81827373925744px; animation: particle-drift 5.795193298293269s ease-in-out 3.2254369948665036s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="753.018949850291" cy="26.479794462188785" r="2.019673738225543" fill="#A855F7" style="--dx:30.376040944944776px; --dy:35.3375084477747px; animation: particle-drift 7.86941333140897s ease-in-out 2.5242166099282586s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="239.47571815364816" cy="21.812525624033547" r="1.0487102574928324" fill="#00DFD8" style="--dx:-19.58141695034045px; --dy:45.77038210780579px; animation: particle-drift 3.445474220412005s ease-in-out 1.6580605237946062s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="845.837576979729" cy="117.71738811409607" r="1.810228480151702" fill="#A855F7" style="--dx:31.74069442638861px; --dy:64.51058466550766px; animation: particle-drift 5.295952585115935s ease-in-out 1.9262229863559865s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="647.1365068582409" cy="93.18656161231536" r="2.0545985189324227" fill="#00DFD8" style="--dx:11.56980677530513px; --dy:-57.47881275500628px; animation: particle-drift 5.329306637600066s ease-in-out 2.863918371082035s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="681.0102327600614" cy="103.52308221646923" r="1.637525432094194" fill="#00DFD8" style="--dx:-49.29471308454404px; --dy:-22.749973761589782px; animation: particle-drift 3.7141351495973094s ease-in-out 0.46426667916664055s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="69.24116045704612" cy="84.30716173031739" r="2.407329650886644" fill="#00DFD8" style="--dx:-59.800667199971116px; --dy:57.95610420013997px; animation: particle-drift 6.1288009305079925s ease-in-out 4.273551782807672s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="686.4209267156791" cy="68.67296780773583" r="1.6514582775155435" fill="#A855F7" style="--dx:36.864943622753565px; --dy:-67.31610396516999px; animation: particle-drift 5.985359825172361s ease-in-out 0.4681977683173516s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="169.765082016798" cy="54.22991674655072" r="1.0651397985566227" fill="#00DFD8" style="--dx:53.66209758754271px; --dy:-69.34968578114672px; animation: particle-drift 6.094156941785958s ease-in-out 4.996748909049775s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="404.3156000476929" cy="95.3497732546411" r="1.412981555178928" fill="#00DFD8" style="--dx:30.949937338465126px; --dy:1.9903462220132562px; animation: particle-drift 6.459704562960954s ease-in-out 4.478476437937381s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="438.88252067211715" cy="30.939016484414367" r="1.7992564642587128" fill="#A855F7" style="--dx:-37.838962620627505px; --dy:61.389419837248894px; animation: particle-drift 7.633375807037375s ease-in-out 1.6317858292947411s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="32.05464816300972" cy="1.8965702137737206" r="2.0215430928655467" fill="#00DFD8" style="--dx:8.600017039594604px; --dy:63.90935394497538px; animation: particle-drift 5.896045571779812s ease-in-out 2.85067266495604s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="541.1782160533344" cy="121.74851468827893" r="1.694776830621888" fill="#00DFD8" style="--dx:-15.094126686435072px; --dy:17.28870230680276px; animation: particle-drift 5.011414950915031s ease-in-out 1.045096861271534s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="430.134658246265" cy="105.22788274910889" r="1.064689854761622" fill="#A855F7" style="--dx:-6.7796059442837455px; --dy:3.6574712510957896px; animation: particle-drift 4.229609119101736s ease-in-out 1.2062475016467278s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="281.12633550530154" cy="31.822917591764877" r="1.2141608244637878" fill="#00DFD8" style="--dx:25.592179894878136px; --dy:-25.609695633977942px; animation: particle-drift 5.2927779813063065s ease-in-out 3.840332244226334s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="702.503249843923" cy="97.8172263779383" r="1.768799998467239" fill="#00DFD8" style="--dx:69.90597030344266px; --dy:-32.12116532611085px; animation: particle-drift 3.6962342227608542s ease-in-out 0.493658331554499s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="88.4244188812856" cy="127.69354265382151" r="0.7277992338274948" fill="#A855F7" style="--dx:26.123795672414495px; --dy:41.209407395755065px; animation: particle-drift 5.189462888696741s ease-in-out 3.0611842426406763s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="385.7899996130259" cy="77.93940314747262" r="2.382672378550866" fill="#00DFD8" style="--dx:-42.328479159004495px; --dy:-19.128978816856744px; animation: particle-drift 6.811792516080326s ease-in-out 2.216025836801032s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><g style="--spin-dur: 20s" class="gyro-spin">
+        <circle cx="450" cy="65" r="300" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow hyper-float"/>
+        <circle cx="450" cy="65" r="320" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow hyper-float"/>
+    </g></g>
   <defs>
     <!-- 3D Glass Chassis Gradient -->
     <linearGradient id="cogGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94"/>
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98"/>
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="cogSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Chrome Border Gradient -->
     <linearGradient id="cogChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95"/>
     </linearGradient>
 
     <style>
@@ -46,103 +55,186 @@
         25% { stroke-opacity: 1; filter: drop-shadow(0 0 10px currentColor); }
         35% { stroke-opacity: 0.35; filter: none; }
       }
-    </style>
+    
+
+/* EXTREME HYPER ANIMATIONS */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,223,216,0.8)) drop-shadow(0 0 15px rgba(0,223,216,0.6)); }
+  20%, 24%, 55% { opacity: 0.4; filter: none; }
+}
+@keyframes cyber-scan {
+  0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(1000%) scaleY(1.5); opacity: 0; }
+}
+@keyframes cyber-float {
+  0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-4px) scale(1.02) rotate(0.5deg); }
+}
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(168,85,247,0.5)) drop-shadow(0 0 20px rgba(168,85,247,0.3)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0,223,216,0.9)) drop-shadow(0 0 30px rgba(0,223,216,0.6)); }
+}
+@keyframes hologram-glitch {
+  0% { transform: translate(0); opacity: 1; }
+  1% { transform: translate(-2px, 1px) skewX(2deg); opacity: 0.8; filter: hue-rotate(90deg); }
+  2% { transform: translate(2px, -1px) skewX(-2deg); opacity: 0.9; filter: hue-rotate(-90deg); }
+  3% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
+  100% { transform: translate(0); opacity: 1; }
+}
+@keyframes particle-drift {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
+}
+@keyframes rotate-gyro {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -100; }
+}
+@keyframes wave-distortion {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.15) scaleX(0.95); }
+}
+@keyframes rgb-shift {
+  0% { fill: #00DFD8; }
+  33% { fill: #A855F7; }
+  66% { fill: #FF007F; }
+  100% { fill: #00DFD8; }
+}
+@keyframes border-run {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes equalizer-bounce {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1.5); }
+}
+
+.neon-text { animation: neon-flicker 4s infinite alternate; }
+.cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
+.hyper-float { animation: cyber-float 3s ease-in-out infinite; transform-origin: center; }
+.hyper-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.glitch-layer { animation: hologram-glitch 5s infinite; }
+.gyro-spin { animation: rotate-gyro var(--spin-dur, 10s) linear infinite; transform-origin: center; }
+.dash-flow { stroke-dasharray: 10, 5; animation: dash-flow 2s linear infinite; }
+.wave-warp { animation: wave-distortion 4s ease-in-out infinite; transform-origin: center bottom; }
+.rgb-text { animation: rgb-shift 6s linear infinite; }
+.border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
+.eq-bounce { animation: equalizer-bounce var(--eq-dur, 0.5s) ease-in-out infinite; transform-origin: bottom; }
+</style>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,118 888,128 12,128 2,118 2,12" fill="url(#cogGlassBg)" stroke="url(#cogChromeBorder)" stroke-width="1.3" />
-  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#cogSpecular)" />
+  <polygon points="12,2 888,2 898,12 898,118 888,128 12,128 2,118 2,12" fill="url(#cogGlassBg)" stroke="url(#cogChromeBorder)" stroke-width="1.3"/>
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#cogSpecular)"/>
 
   <!-- Top Title Ribbon -->
   <g transform="translate(20, 16)">
-    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
-    <text x="18" y="9.5" class="cog-title">SIVION v2.4 // MULTI-AGENT COGNITIVE STATE MACHINE</text>
-    <text x="860" y="9.5" text-anchor="end" class="cog-title" fill="#7701D0">4-STAGE AUTONOMOUS PIPELINE</text>
-    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" class="hyper-glow hyper-float"/>
+    <text x="18" y="9.5" class="cog-title hyper-float rgb-text glitch-layer">SIVION v2.4 // MULTI-AGENT COGNITIVE STATE MACHINE</text>
+    <text x="860" y="9.5" text-anchor="end" class="cog-title hyper-float rgb-text glitch-layer" fill="#7701D0">4-STAGE AUTONOMOUS PIPELINE</text>
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
   </g>
 
   <!-- 4 PIPELINE PODS WITH ACTIVE SEQUENTIAL ILLUMINATION -->
 
   <!-- Stage 01: Ingestion & RAG -->
-  <g transform="translate(24, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1" />
-    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+  <g transform="translate(24, 46)" class="hyper-float">
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1"/>
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" class="dash-flow hyper-glow"/>
     <!-- 3D Mini Gyroscope -->
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite"/>
       </ellipse>
     </g>
-    <circle cx="14" cy="16" r="3" fill="#00DFD8" />
-    <text x="28" y="19" class="cog-step-num" fill="#00DFD8">STAGE 01 // INGESTION</text>
-    <text x="14" y="35" class="cog-step-name">Hybrid RAG Query</text>
-    <text x="14" y="48" class="cog-step-detail">pgvector Semantic Search</text>
-    <text x="14" y="60" class="cog-metric" fill="#00DFD8">⚡ LATENCY: &lt;10ms PROBE</text>
+    <circle cx="14" cy="16" r="3" fill="#00DFD8" class="hyper-glow hyper-float"/>
+    <text x="28" y="19" class="cog-step-num hyper-float rgb-text glitch-layer" fill="#00DFD8">STAGE 01 // INGESTION</text>
+    <text x="14" y="35" class="cog-step-name hyper-float rgb-text glitch-layer">Hybrid RAG Query</text>
+    <text x="14" y="48" class="cog-step-detail hyper-float rgb-text glitch-layer">pgvector Semantic Search</text>
+    <text x="14" y="60" class="cog-metric hyper-float rgb-text glitch-layer" fill="#00DFD8">⚡ LATENCY: &lt;10ms PROBE</text>
   </g>
 
   <!-- Connecting Bus 1-2 -->
   <g transform="translate(224, 80)">
-    <line x1="0" y1="0" x2="18" y2="0" stroke="#00DFD8" stroke-width="1.5" class="arrow-track" />
-    <polygon points="18,-3 24,0 18,3" fill="#00DFD8" />
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#00DFD8" stroke-width="1.5" class="arrow-track dash-flow hyper-glow"/>
+    <polygon points="18,-3 24,0 18,3" fill="#00DFD8" class="dash-flow hyper-glow"/>
   </g>
 
   <!-- Stage 02: Swarm Reasoning -->
   <g transform="translate(250, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
-    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2"/>
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)"/>
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3, 3" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite"/>
       </ellipse>
     </g>
-    <circle cx="14" cy="16" r="3" fill="#A855F7" />
-    <text x="28" y="19" class="cog-step-num" fill="#C084FC">STAGE 02 // REASONING</text>
-    <text x="14" y="35" class="cog-step-name">Swarm Consensus</text>
-    <text x="14" y="48" class="cog-step-detail">Planner + Critic Swarm</text>
-    <text x="14" y="60" class="cog-metric" fill="#C084FC">🤖 SWARM: 4/4 ACTIVE</text>
+    <circle cx="14" cy="16" r="3" fill="#A855F7" class="hyper-glow hyper-float"/>
+    <text x="28" y="19" class="cog-step-num hyper-float rgb-text glitch-layer" fill="#C084FC">STAGE 02 // REASONING</text>
+    <text x="14" y="35" class="cog-step-name hyper-float rgb-text glitch-layer">Swarm Consensus</text>
+    <text x="14" y="48" class="cog-step-detail hyper-float rgb-text glitch-layer">Planner + Critic Swarm</text>
+    <text x="14" y="60" class="cog-metric hyper-float rgb-text glitch-layer" fill="#C084FC">🤖 SWARM: 4/4 ACTIVE</text>
   </g>
 
   <!-- Connecting Bus 2-3 -->
-  <g transform="translate(450, 80)">
-    <line x1="0" y1="0" x2="18" y2="0" stroke="#A855F7" stroke-width="1.5" class="arrow-track" />
-    <polygon points="18,-3 24,0 18,3" fill="#A855F7" />
+  <g transform="translate(450, 80)" class="hyper-float">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#A855F7" stroke-width="1.5" class="arrow-track dash-flow hyper-glow"/>
+    <polygon points="18,-3 24,0 18,3" fill="#A855F7" class="dash-flow hyper-glow"/>
   </g>
 
   <!-- Stage 03: Kernel Execution -->
-  <g transform="translate(476, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
-    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+  <g transform="translate(476, 46)" class="hyper-float">
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" class="st-glow-3 dash-flow hyper-glow"/>
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" class="dash-flow hyper-glow"/>
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite"/>
       </ellipse>
     </g>
-    <circle cx="14" cy="16" r="3" fill="#10B981" />
-    <text x="28" y="19" class="cog-step-num" fill="#34D399">STAGE 03 // EXECUTION</text>
-    <text x="14" y="35" class="cog-step-name">Low-Latency Kernel</text>
-    <text x="14" y="48" class="cog-step-detail">Win32 API &amp; C++20 Ring 0</text>
-    <text x="14" y="60" class="cog-metric" fill="#34D399">🚀 LATENCY: 0.42ms DISPATCH</text>
+    <circle cx="14" cy="16" r="3" fill="#10B981" class="hyper-glow hyper-float"/>
+    <text x="28" y="19" class="cog-step-num hyper-float rgb-text glitch-layer" fill="#34D399">STAGE 03 // EXECUTION</text>
+    <text x="14" y="35" class="cog-step-name hyper-float rgb-text glitch-layer">Low-Latency Kernel</text>
+    <text x="14" y="48" class="cog-step-detail hyper-float rgb-text glitch-layer">Win32 API &amp; C++20 Ring 0</text>
+    <text x="14" y="60" class="cog-metric hyper-float rgb-text glitch-layer" fill="#34D399">🚀 LATENCY: 0.42ms DISPATCH</text>
   </g>
 
   <!-- Connecting Bus 3-4 -->
   <g transform="translate(676, 80)">
-    <line x1="0" y1="0" x2="18" y2="0" stroke="#10B981" stroke-width="1.5" class="arrow-track" />
-    <polygon points="18,-3 24,0 18,3" fill="#10B981" />
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#10B981" stroke-width="1.5" class="arrow-track dash-flow hyper-glow"/>
+    <polygon points="18,-3 24,0 18,3" fill="#10B981"/>
   </g>
 
   <!-- Stage 04: Realtime Stream -->
   <g transform="translate(702, 46)">
-    <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
-    <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)" />
-    <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="3, 3">
-        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+    <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4"/>
+    <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)"/>
+    <g class="hyper-float">
+      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="3, 3" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite"/>
       </ellipse>
     </g>
-    <circle cx="14" cy="16" r="3" fill="#0284C7" />
-    <text x="28" y="19" class="cog-step-num" fill="#38BDF8">STAGE 04 // REALTIME</text>
-    <text x="14" y="35" class="cog-step-name">Supabase Stream</text>
-    <text x="14" y="48" class="cog-step-detail">WebSocket + React 19 UI</text>
-    <text x="14" y="60" class="cog-metric" fill="#38BDF8">☁️ SYNC: REALTIME WS</text>
+    <circle cx="14" cy="16" r="3" fill="#0284C7" class="hyper-glow hyper-float"/>
+    <text x="28" y="19" class="cog-step-num hyper-float rgb-text glitch-layer" fill="#38BDF8">STAGE 04 // REALTIME</text>
+    <text x="14" y="35" class="cog-step-name hyper-float rgb-text glitch-layer">Supabase Stream</text>
+    <text x="14" y="48" class="cog-step-detail hyper-float rgb-text glitch-layer">WebSocket + React 19 UI</text>
+    <text x="14" y="60" class="cog-metric hyper-float rgb-text glitch-layer" fill="#38BDF8">☁️ SYNC: REALTIME WS</text>
   </g>
-</svg>
+
+    <g class="hyper-overlay-effects" style="pointer-events: none;">
+        <!-- Scanning laser -->
+        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
+        
+        <!-- Vignette / Border flare -->
+        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
+    </g>
+    </svg>

@@ -1,24 +1,33 @@
-<svg width="900" height="96" viewBox="0 0 900 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="96" viewBox="0 0 900 96" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6">
+        <!-- Grid -->
+        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
+        <circle cx="831.2089886124961" cy="95.65039084407692" r="0.7163925085365288" fill="#A855F7" style="--dx:-24.659402159469433px; --dy:31.154832036359053px; animation: particle-drift 6.5889629123390865s ease-in-out 3.7945221406158334s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="150.90162899149297" cy="36.47684394168543" r="2.0692167677954303" fill="#A855F7" style="--dx:7.879519685653086px; --dy:-3.373043843860457px; animation: particle-drift 4.74411503480687s ease-in-out 3.5003255964399456s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="468.6234118825107" cy="48.72587590478622" r="0.913457580231765" fill="#00DFD8" style="--dx:28.975349562363427px; --dy:65.33939137651389px; animation: particle-drift 6.661848863519628s ease-in-out 3.930576438329982s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="291.5866440626735" cy="33.44672159324402" r="2.4023365832345704" fill="#A855F7" style="--dx:-59.87776805417514px; --dy:71.61031284844182px; animation: particle-drift 7.082377001064578s ease-in-out 4.855509479991291s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="673.7903708005487" cy="71.8191958811332" r="1.6390532124197486" fill="#A855F7" style="--dx:51.01514794979416px; --dy:-8.81622170417442px; animation: particle-drift 5.427592937817272s ease-in-out 4.460843276298453s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="524.7624273642707" cy="40.84013962065997" r="0.6196979840825674" fill="#A855F7" style="--dx:-43.58132645715576px; --dy:-41.61568053761271px; animation: particle-drift 4.101002835172304s ease-in-out 0.39355627553335215s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="269.34461756981915" cy="15.277505629501189" r="0.8563408102062859" fill="#00DFD8" style="--dx:-64.47528136235519px; --dy:-57.805919624647096px; animation: particle-drift 4.176754876231433s ease-in-out 1.5895285143558435s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="457.42038624345577" cy="91.84197001211233" r="2.054077114797443" fill="#A855F7" style="--dx:43.52957048902034px; --dy:15.980069891353576px; animation: particle-drift 7.029744251968723s ease-in-out 1.3214696212872379s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="55.60830848689102" cy="46.494372412192945" r="0.8049071404225563" fill="#A855F7" style="--dx:0.7771920148201883px; --dy:15.672214369928595px; animation: particle-drift 3.031428244689975s ease-in-out 0.011998650727950144s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="115.2390062360918" cy="9.917673537792176" r="1.2064994277458734" fill="#A855F7" style="--dx:8.209391727519677px; --dy:62.15848998571404px; animation: particle-drift 3.2583851267279833s ease-in-out 2.1062229694677663s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="562.0650899765096" cy="71.28088463526576" r="1.7540446541375594" fill="#A855F7" style="--dx:7.652227583494403px; --dy:-4.4917459424253074px; animation: particle-drift 6.975240407375846s ease-in-out 4.226290895170554s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="483.88511577904075" cy="83.2625388942021" r="0.6794313801159853" fill="#00DFD8" style="--dx:-5.907890780701863px; --dy:-66.82173481626133px; animation: particle-drift 4.029416087960642s ease-in-out 1.747315942133093s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="251.63519907918496" cy="4.432197299747198" r="2.089263447493474" fill="#00DFD8" style="--dx:-45.71866963293139px; --dy:-8.271984799469617px; animation: particle-drift 4.991935144070652s ease-in-out 2.2842815491988366s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="812.2457251383574" cy="43.763875286242865" r="0.6575888167353685" fill="#A855F7" style="--dx:-55.58317755878637px; --dy:46.06354695042058px; animation: particle-drift 7.061322199307657s ease-in-out 3.5995738415407423s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="892.3665858395348" cy="23.992783279230384" r="1.5971439385570168" fill="#A855F7" style="--dx:-8.469957637979658px; --dy:74.98358286688635px; animation: particle-drift 5.831615799667258s ease-in-out 1.180925486797924s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="655.7926625838776" cy="54.420900736151076" r="2.124935631028986" fill="#00DFD8" style="--dx:12.762563566352291px; --dy:43.65148458559265px; animation: particle-drift 7.831225728515803s ease-in-out 0.09350141468769113s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="25.590453787781232" cy="68.92887090895135" r="0.6541408572121272" fill="#A855F7" style="--dx:-28.286810708267158px; --dy:49.495268318637734px; animation: particle-drift 3.2164140312859857s ease-in-out 1.4201658733751383s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="347.16630887288466" cy="89.43638011787733" r="2.0512885546141084" fill="#A855F7" style="--dx:68.46099544790732px; --dy:54.95539266752409px; animation: particle-drift 5.090347115488296s ease-in-out 3.2313964322935096s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="436.54998090787666" cy="55.46847625839342" r="0.6248238456698778" fill="#00DFD8" style="--dx:-17.09750714758301px; --dy:64.5213338906455px; animation: particle-drift 4.1726446224348885s ease-in-out 2.7227796670595787s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="672.549239807037" cy="54.050218358060405" r="2.3066086830015533" fill="#A855F7" style="--dx:-12.361405310052714px; --dy:66.45184361294265px; animation: particle-drift 4.509522365038742s ease-in-out 4.946589305579503s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="87.90990651085745" cy="14.344833031229893" r="1.1815874073592265" fill="#A855F7" style="--dx:37.85484859507754px; --dy:15.878825814449076px; animation: particle-drift 3.4211099892470003s ease-in-out 2.1880728089151913s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="868.6848865195379" cy="90.19903976798774" r="2.214849917159846" fill="#00DFD8" style="--dx:-1.4839336391409885px; --dy:-71.06667429362153px; animation: particle-drift 4.081174700120921s ease-in-out 3.327343148947735s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="300.9634706345619" cy="14.876646921053503" r="1.2759083777236446" fill="#00DFD8" style="--dx:-18.657237792202388px; --dy:-62.31868288166859px; animation: particle-drift 5.147865734262922s ease-in-out 3.9888390435442886s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="483.8712234416917" cy="23.734661594170163" r="1.0174572360779846" fill="#A855F7" style="--dx:-12.583841205159313px; --dy:-20.577693380528856px; animation: particle-drift 7.872469434403403s ease-in-out 4.977447173457582s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="20.400746793405965" cy="82.16739893951762" r="0.6967275779416631" fill="#A855F7" style="--dx:10.47625664943624px; --dy:-25.744966321177216px; animation: particle-drift 4.3794604035256315s ease-in-out 4.066339222775083s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="638.1461802529201" cy="49.527856214480636" r="2.053166620201863" fill="#A855F7" style="--dx:54.18858565967668px; --dy:-15.417602282788772px; animation: particle-drift 4.829411300228347s ease-in-out 2.5573072977262234s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="21.271343880690385" cy="30.094016446811462" r="0.8623279000850086" fill="#00DFD8" style="--dx:72.0485397495703px; --dy:-59.363126412313896px; animation: particle-drift 3.021295485302047s ease-in-out 0.6902073253735713s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="111.93915702451801" cy="73.43275201592655" r="0.5307758151986082" fill="#A855F7" style="--dx:6.595475193721728px; --dy:-26.143327861190635px; animation: particle-drift 6.313156593376696s ease-in-out 3.895438572126981s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="322.3323099363975" cy="91.69914962382246" r="1.3630588533120416" fill="#00DFD8" style="--dx:10.33913177947009px; --dy:-26.63126099211904px; animation: particle-drift 4.603156067879819s ease-in-out 4.211376090744697s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="465.03598782969584" cy="58.61786436127264" r="1.0287820512661225" fill="#A855F7" style="--dx:-5.036174854693942px; --dy:-4.163258077923976px; animation: particle-drift 5.030712681558464s ease-in-out 0.5239832127700961s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><g style="--spin-dur: 20s" class="gyro-spin">
+        <circle cx="450" cy="48" r="300" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow hyper-float"/>
+        <circle cx="450" cy="48" r="320" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow hyper-float"/>
+    </g></g>
   <defs>
     <!-- 3D Glass Background Gradient -->
     <linearGradient id="clockGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94"/>
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98"/>
     </linearGradient>
 
     <!-- Top Specular Edge -->
     <linearGradient id="clockSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
-      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
     </linearGradient>
 
     <!-- Chrome Border Gradient -->
     <linearGradient id="clockChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95"/>
     </linearGradient>
 
     <style>
@@ -38,100 +47,183 @@
         0% { r: 3.5; opacity: 0.9; stroke-width: 1.5; }
         100% { r: 14; opacity: 0; stroke-width: 0.4; }
       }
-    </style>
+    
+
+/* EXTREME HYPER ANIMATIONS */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,223,216,0.8)) drop-shadow(0 0 15px rgba(0,223,216,0.6)); }
+  20%, 24%, 55% { opacity: 0.4; filter: none; }
+}
+@keyframes cyber-scan {
+  0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(1000%) scaleY(1.5); opacity: 0; }
+}
+@keyframes cyber-float {
+  0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-4px) scale(1.02) rotate(0.5deg); }
+}
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(168,85,247,0.5)) drop-shadow(0 0 20px rgba(168,85,247,0.3)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0,223,216,0.9)) drop-shadow(0 0 30px rgba(0,223,216,0.6)); }
+}
+@keyframes hologram-glitch {
+  0% { transform: translate(0); opacity: 1; }
+  1% { transform: translate(-2px, 1px) skewX(2deg); opacity: 0.8; filter: hue-rotate(90deg); }
+  2% { transform: translate(2px, -1px) skewX(-2deg); opacity: 0.9; filter: hue-rotate(-90deg); }
+  3% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
+  100% { transform: translate(0); opacity: 1; }
+}
+@keyframes particle-drift {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
+}
+@keyframes rotate-gyro {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -100; }
+}
+@keyframes wave-distortion {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.15) scaleX(0.95); }
+}
+@keyframes rgb-shift {
+  0% { fill: #00DFD8; }
+  33% { fill: #A855F7; }
+  66% { fill: #FF007F; }
+  100% { fill: #00DFD8; }
+}
+@keyframes border-run {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes equalizer-bounce {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1.5); }
+}
+
+.neon-text { animation: neon-flicker 4s infinite alternate; }
+.cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
+.hyper-float { animation: cyber-float 3s ease-in-out infinite; transform-origin: center; }
+.hyper-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.glitch-layer { animation: hologram-glitch 5s infinite; }
+.gyro-spin { animation: rotate-gyro var(--spin-dur, 10s) linear infinite; transform-origin: center; }
+.dash-flow { stroke-dasharray: 10, 5; animation: dash-flow 2s linear infinite; }
+.wave-warp { animation: wave-distortion 4s ease-in-out infinite; transform-origin: center bottom; }
+.rgb-text { animation: rgb-shift 6s linear infinite; }
+.border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
+.eq-bounce { animation: equalizer-bounce var(--eq-dur, 0.5s) ease-in-out infinite; transform-origin: bottom; }
+</style>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockGlassBg)" stroke="url(#clockChromeBorder)" stroke-width="1.3" />
-  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#clockSpecular)" />
+  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockGlassBg)" stroke="url(#clockChromeBorder)" stroke-width="1.3" class="dash-flow hyper-glow"/>
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#clockSpecular)" class="dash-flow hyper-glow"/>
 
   <!-- Header Banner -->
-  <g transform="translate(20, 14)">
-    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
-    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse" />
-    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse-2" />
-    <text x="18" y="9.5" class="c-title">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
-    <text x="860" y="9.5" text-anchor="end" class="c-title" fill="#10B981">COLLABORATION: OPEN</text>
-    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  <g transform="translate(20, 14)" class="hyper-float">
+    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" class="hyper-glow hyper-float"/>
+    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse hyper-glow hyper-float"/>
+    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse-2 hyper-glow hyper-float"/>
+    <text x="18" y="9.5" class="c-title hyper-float rgb-text glitch-layer">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
+    <text x="860" y="9.5" text-anchor="end" class="c-title hyper-float rgb-text glitch-layer" fill="#10B981">COLLABORATION: OPEN</text>
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" class="dash-flow hyper-glow"/>
   </g>
 
   <!-- Zone 1: Colombo (LK) -->
-  <g transform="translate(30, 42)">
-    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" />
-    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
+  <g transform="translate(30, 42)" class="hyper-float">
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" class="dash-flow hyper-glow"/>
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)"/>
     <!-- 3D Tilted Gyro Chronometer 1 -->
-    <g transform="translate(10, 3)">
-      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="6s" repeatCount="indefinite" />
+    <g transform="translate(10, 3)" class="hyper-float">
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="6s" repeatCount="indefinite"/>
       </ellipse>
-      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" />
-      <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" />
-      <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" />
-      <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" />
-      <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" />
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" class="hyper-glow hyper-float"/>
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
       <!-- Sweep Second Hand (4s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite"/>
       </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite"/>
       </line>
       <!-- Hour Hand (48s SMIL Rotation) -->
       <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite"/>
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" class="hyper-glow hyper-float"/>
     </g>
-    <text x="52" y="16" class="c-loc">🇱🇰 COLOMBO, LK</text>
-    <text x="52" y="27" class="c-time">UTC+5:30 • ACTIVE TIMEZONE</text>
-    <text x="52" y="37" class="c-desc">Lead Systems Architecture &amp; R&amp;D</text>
+    <text x="52" y="16" class="c-loc hyper-float rgb-text glitch-layer">🇱🇰 COLOMBO, LK</text>
+    <text x="52" y="27" class="c-time hyper-float rgb-text glitch-layer">UTC+5:30 • ACTIVE TIMEZONE</text>
+    <text x="52" y="37" class="c-desc hyper-float rgb-text glitch-layer">Lead Systems Architecture &amp; R&amp;D</text>
   </g>
 
   <!-- Zone 2: Birmingham (UK) -->
   <g transform="translate(315, 42)">
-    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
-    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" class="dash-flow hyper-glow"/>
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)"/>
     <!-- 3D Tilted Gyro Chronometer 2 -->
-    <g transform="translate(10, 3)">
-      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4">
-        <animateTransform attributeName="transform" type="rotate" from="360 18 18" to="0 18 18" dur="6s" repeatCount="indefinite" />
+    <g transform="translate(10, 3)" class="hyper-float">
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4" class="hyper-glow hyper-float">
+        <animateTransform attributeName="transform" type="rotate" from="360 18 18" to="0 18 18" dur="6s" repeatCount="indefinite"/>
       </ellipse>
-      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" />
-      <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" />
-      <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" />
-      <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1" />
-      <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" />
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" class="hyper-glow hyper-float"/>
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" class="dash-flow hyper-glow"/>
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" class="dash-flow hyper-glow"/>
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1"/>
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" class="dash-flow hyper-glow"/>
       <!-- Sweep Second Hand (4s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
+      <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round" class="dash-flow hyper-glow">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite"/>
       </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
+      <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round" class="dash-flow hyper-glow">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite"/>
       </line>
       <!-- Hour Hand (48s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
+      <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round" class="dash-flow hyper-glow">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite"/>
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" class="hyper-glow hyper-float"/>
     </g>
-    <text x="52" y="16" class="c-loc">🇬🇧 BIRMINGHAM, UK</text>
-    <text x="52" y="27" class="c-time" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>
-    <text x="52" y="37" class="c-desc">Software Engineering &amp; Client Sync</text>
+    <text x="52" y="16" class="c-loc hyper-float rgb-text glitch-layer">🇬🇧 BIRMINGHAM, UK</text>
+    <text x="52" y="27" class="c-time hyper-float rgb-text glitch-layer" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>
+    <text x="52" y="37" class="c-desc hyper-float rgb-text glitch-layer">Software Engineering &amp; Client Sync</text>
   </g>
 
   <!-- Zone 3: Engagement Status -->
-  <g transform="translate(600, 42)">
-    <polygon points="6,0 264,0 270,6 270,36 264,42 6,42 0,36 0,6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
-    <path d="M 6 1 L 264 1 L 269 6 L 1 6 Z" fill="url(#clockSpecular)" />
+  <g transform="translate(600, 42)" class="hyper-float">
+    <polygon points="6,0 264,0 270,6 270,36 264,42 6,42 0,36 0,6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" class="dash-flow hyper-glow"/>
+    <path d="M 6 1 L 264 1 L 269 6 L 1 6 Z" fill="url(#clockSpecular)"/>
     <g transform="translate(12, 10)">
-      <circle cx="6" cy="6" r="4" fill="#10B981" />
-      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse" />
-      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse-2" />
+      <circle cx="6" cy="6" r="4" fill="#10B981" class="hyper-glow hyper-float"/>
+      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse hyper-glow hyper-float"/>
+      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse-2 hyper-glow hyper-float"/>
     </g>
-    <text x="32" y="17" class="c-loc" fill="#34D399">ENGAGEMENT STATUS</text>
-    <text x="32" y="28" class="c-time" fill="#10B981">SELECT CONSULTATIONS OPEN</text>
-    <text x="32" y="37" class="c-desc">Multi-Agent AI • 3D Shaders • Performance</text>
+    <text x="32" y="17" class="c-loc hyper-float rgb-text glitch-layer" fill="#34D399">ENGAGEMENT STATUS</text>
+    <text x="32" y="28" class="c-time hyper-float rgb-text glitch-layer" fill="#10B981">SELECT CONSULTATIONS OPEN</text>
+    <text x="32" y="37" class="c-desc hyper-float rgb-text glitch-layer">Multi-Agent AI • 3D Shaders • Performance</text>
   </g>
-</svg>
+
+    <g class="hyper-overlay-effects" style="pointer-events: none;">
+        <!-- Scanning laser -->
+        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
+        
+        <!-- Vignette / Border flare -->
+        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
+    </g>
+    </svg>

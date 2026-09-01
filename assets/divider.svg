@@ -1,39 +1,48 @@
-<svg width="900" height="44" viewBox="0 0 900 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="44" viewBox="0 0 900 44" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6">
+        <!-- Grid -->
+        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
+        </pattern>
+        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
+        <circle cx="867.8791603220147" cy="27.807888389429365" r="1.1436003675500204" fill="#A855F7" style="--dx:30.67230031075233px; --dy:57.49902428138842px; animation: particle-drift 3.2550284346744975s ease-in-out 4.5049307666403795s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="667.681397620172" cy="1.7058192677151625" r="0.7623539403014097" fill="#A855F7" style="--dx:52.87878085304643px; --dy:-35.72352759311323px; animation: particle-drift 3.693860522564424s ease-in-out 4.303140051594504s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="644.3451635574352" cy="36.64267830278867" r="1.61994038563878" fill="#A855F7" style="--dx:-67.41516533415697px; --dy:-4.1762157307112915px; animation: particle-drift 5.320903555588411s ease-in-out 1.717873723203942s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="232.51525140268433" cy="43.532253175866096" r="0.5094201065913981" fill="#00DFD8" style="--dx:65.75809262936411px; --dy:-4.04723059415174px; animation: particle-drift 4.61090899756638s ease-in-out 3.611702098209972s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="224.9663477227283" cy="6.295679376591227" r="2.079298464112935" fill="#A855F7" style="--dx:-49.64646355358545px; --dy:-29.786361664191567px; animation: particle-drift 7.939740372297775s ease-in-out 3.0986351213368306s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="73.390018356377" cy="10.831898134074233" r="0.8657693913704165" fill="#00DFD8" style="--dx:11.886131333079458px; --dy:40.218231694158895px; animation: particle-drift 3.7679313811295425s ease-in-out 2.5180036533638566s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="670.8024329006623" cy="35.00005077857936" r="1.7871439081336422" fill="#00DFD8" style="--dx:36.913094783214895px; --dy:-52.51673964371105px; animation: particle-drift 4.864128727629164s ease-in-out 1.3569916478439525s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="809.244599005008" cy="14.652219155529632" r="1.729198264168463" fill="#A855F7" style="--dx:66.33661861102576px; --dy:-41.33246341388775px; animation: particle-drift 3.3771538079267955s ease-in-out 2.3538652768850565s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="757.9533907791456" cy="30.216126364206442" r="1.702647625278451" fill="#A855F7" style="--dx:48.89502375637088px; --dy:-2.8998654249595357px; animation: particle-drift 3.5059956382861652s ease-in-out 3.024556809257886s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="429.9196727531931" cy="13.774252905409865" r="1.7582977607179193" fill="#00DFD8" style="--dx:63.58436897505586px; --dy:49.890233854031656px; animation: particle-drift 4.819068392560718s ease-in-out 3.4504446983522667s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="405.2300423612436" cy="37.983865511814045" r="1.8506124679493245" fill="#00DFD8" style="--dx:44.109857001097716px; --dy:70.53218367268332px; animation: particle-drift 4.072806059193987s ease-in-out 0.8239609151695848s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="289.47234975469763" cy="2.5197651415711113" r="1.1638444689283658" fill="#A855F7" style="--dx:-56.151928229880845px; --dy:-73.34830409275797px; animation: particle-drift 5.31920147641637s ease-in-out 3.7720488438490896s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="352.59644783286154" cy="32.5328126991517" r="1.2613332341203243" fill="#A855F7" style="--dx:-54.27264876966246px; --dy:-45.16803456906071px; animation: particle-drift 6.10115243946347s ease-in-out 2.070636754895439s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="272.704131200847" cy="18.949845675403242" r="2.2409928444110854" fill="#A855F7" style="--dx:52.85748096408653px; --dy:-9.025515343597117px; animation: particle-drift 7.672770893410741s ease-in-out 3.0208628718126707s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="719.0956645736161" cy="25.256199921935906" r="0.7652026754402479" fill="#00DFD8" style="--dx:49.22339434323869px; --dy:-23.558062900593274px; animation: particle-drift 5.699698231735349s ease-in-out 1.7372542117365641s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="308.72556467277906" cy="20.334738923474333" r="1.0805232942187692" fill="#00DFD8" style="--dx:-26.538344449621437px; --dy:35.482628747547196px; animation: particle-drift 7.182519568815233s ease-in-out 1.9996042637398792s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="96.52612772023646" cy="18.884251514489684" r="0.9056489192814043" fill="#A855F7" style="--dx:69.84953165294337px; --dy:35.84779652128967px; animation: particle-drift 5.790634666527913s ease-in-out 4.268547523376883s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="839.1586625047028" cy="17.960982710220584" r="1.7109871197481992" fill="#00DFD8" style="--dx:-49.66402734381695px; --dy:46.17198875182605px; animation: particle-drift 7.015241847600463s ease-in-out 0.8677804136101192s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="716.2897101071219" cy="34.7079079945482" r="0.5505594088190604" fill="#A855F7" style="--dx:-43.857729827385505px; --dy:-59.27243750792687px; animation: particle-drift 5.938057964820846s ease-in-out 3.6553679396649033s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="362.5564841299427" cy="19.805942385175683" r="1.7597395567139977" fill="#A855F7" style="--dx:-34.321454382564184px; --dy:38.80237551251377px; animation: particle-drift 3.27677510545519s ease-in-out 3.235436609714462s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="623.0763998976083" cy="4.476715683070121" r="0.5179260620693515" fill="#A855F7" style="--dx:4.101730609685705px; --dy:-59.526486627527966px; animation: particle-drift 4.559833740851195s ease-in-out 0.39849646612749867s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="392.2043192935968" cy="13.446716220568366" r="1.6875084138500371" fill="#A855F7" style="--dx:-25.150590807159208px; --dy:31.192160198679495px; animation: particle-drift 3.5817844302383985s ease-in-out 3.8275693290863337s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="551.9804327438774" cy="34.239578002183464" r="0.5499298315393488" fill="#00DFD8" style="--dx:-71.83725935533377px; --dy:43.70899676478946px; animation: particle-drift 4.351599395280806s ease-in-out 1.8815565615598047s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="124.22924794288912" cy="39.022224923155534" r="0.67344670044413" fill="#A855F7" style="--dx:-44.455432819936874px; --dy:49.53115031839478px; animation: particle-drift 3.028147471690617s ease-in-out 3.3528116398003682s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="850.4085999114677" cy="33.82524289450751" r="2.2317100584031175" fill="#00DFD8" style="--dx:56.044386219246334px; --dy:-32.16233762367908px; animation: particle-drift 4.145612672307443s ease-in-out 4.6932626219424s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="348.8986188543715" cy="14.249210597189519" r="1.7275411751855088" fill="#A855F7" style="--dx:3.9196503021551035px; --dy:-16.92206494711102px; animation: particle-drift 6.3475451056203545s ease-in-out 0.038445721624782436s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="68.83849942839497" cy="11.39134277848764" r="1.3782818874816116" fill="#A855F7" style="--dx:-23.776064641851143px; --dy:43.92021902551772px; animation: particle-drift 7.917793552724906s ease-in-out 3.1784406633837663s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="63.41660222954072" cy="41.83249040621179" r="1.567906922336977" fill="#A855F7" style="--dx:-69.67645019397058px; --dy:12.489632319443922px; animation: particle-drift 3.657118837314009s ease-in-out 0.00924798678873573s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="518.3189603975904" cy="41.95575762571024" r="2.294490697768917" fill="#00DFD8" style="--dx:-35.77396405549701px; --dy:-5.654518432850453px; animation: particle-drift 7.806412017340566s ease-in-out 4.85197095009914s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><circle cx="395.7810459635472" cy="12.055511182876492" r="2.1745200108622535" fill="#00DFD8" style="--dx:54.436742833684306px; --dy:-52.232406304252116px; animation: particle-drift 3.0440616706129853s ease-in-out 4.337107531837429s infinite; opacity: 0; filter: blur(1px);" class="hyper-glow hyper-float"/><g style="--spin-dur: 20s" class="gyro-spin">
+        <circle cx="450" cy="22" r="300" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow hyper-float"/>
+        <circle cx="450" cy="22" r="320" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow hyper-float"/>
+    </g></g>
   <defs>
     <!-- Volumetric Core Glow -->
     <radialGradient id="gyroCoreAura" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
-      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.9" />
-      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
     </radialGradient>
 
     <!-- 3D Rail Top Surface Gradient (Specular) -->
     <linearGradient id="rail3DTopLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
-      <stop offset="85%" stop-color="#E0F7FA" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#FFFFFF" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3"/>
+      <stop offset="85%" stop-color="#E0F7FA" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
     </linearGradient>
 
     <linearGradient id="rail3DTopRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="15%" stop-color="#F3E8FF" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="15%" stop-color="#F3E8FF" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
     </linearGradient>
 
     <!-- 3D Rail Front Bevel Gradient (Shadow) -->
     <linearGradient id="rail3DFrontLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#004D40" stop-opacity="0" />
-      <stop offset="60%" stop-color="#00838F" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="0%" stop-color="#004D40" stop-opacity="0"/>
+      <stop offset="60%" stop-color="#00838F" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8"/>
     </linearGradient>
 
     <linearGradient id="rail3DFrontRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8" />
-      <stop offset="40%" stop-color="#4A148C" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#311B92" stop-opacity="0" />
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#4A148C" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#311B92" stop-opacity="0"/>
     </linearGradient>
 
     <style>
@@ -80,98 +89,181 @@
         0% { transform: scale(0.85); opacity: 0.8; }
         100% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 16px #00DFD8); }
       }
-    </style>
+    
+
+/* EXTREME HYPER ANIMATIONS */
+@keyframes neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,223,216,0.8)) drop-shadow(0 0 15px rgba(0,223,216,0.6)); }
+  20%, 24%, 55% { opacity: 0.4; filter: none; }
+}
+@keyframes cyber-scan {
+  0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translateY(1000%) scaleY(1.5); opacity: 0; }
+}
+@keyframes cyber-float {
+  0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-4px) scale(1.02) rotate(0.5deg); }
+}
+@keyframes pulse-glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(168,85,247,0.5)) drop-shadow(0 0 20px rgba(168,85,247,0.3)); }
+  50% { filter: drop-shadow(0 0 15px rgba(0,223,216,0.9)) drop-shadow(0 0 30px rgba(0,223,216,0.6)); }
+}
+@keyframes hologram-glitch {
+  0% { transform: translate(0); opacity: 1; }
+  1% { transform: translate(-2px, 1px) skewX(2deg); opacity: 0.8; filter: hue-rotate(90deg); }
+  2% { transform: translate(2px, -1px) skewX(-2deg); opacity: 0.9; filter: hue-rotate(-90deg); }
+  3% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
+  100% { transform: translate(0); opacity: 1; }
+}
+@keyframes particle-drift {
+  0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.8; }
+  90% { opacity: 0.8; }
+  100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
+}
+@keyframes rotate-gyro {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+@keyframes dash-flow {
+  to { stroke-dashoffset: -100; }
+}
+@keyframes wave-distortion {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(1.15) scaleX(0.95); }
+}
+@keyframes rgb-shift {
+  0% { fill: #00DFD8; }
+  33% { fill: #A855F7; }
+  66% { fill: #FF007F; }
+  100% { fill: #00DFD8; }
+}
+@keyframes border-run {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+@keyframes equalizer-bounce {
+  0%, 100% { transform: scaleY(0.2); }
+  50% { transform: scaleY(1.5); }
+}
+
+.neon-text { animation: neon-flicker 4s infinite alternate; }
+.cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
+.hyper-float { animation: cyber-float 3s ease-in-out infinite; transform-origin: center; }
+.hyper-glow { animation: pulse-glow 2s ease-in-out infinite; }
+.glitch-layer { animation: hologram-glitch 5s infinite; }
+.gyro-spin { animation: rotate-gyro var(--spin-dur, 10s) linear infinite; transform-origin: center; }
+.dash-flow { stroke-dasharray: 10, 5; animation: dash-flow 2s linear infinite; }
+.wave-warp { animation: wave-distortion 4s ease-in-out infinite; transform-origin: center bottom; }
+.rgb-text { animation: rgb-shift 6s linear infinite; }
+.border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
+.eq-bounce { animation: equalizer-bounce var(--eq-dur, 0.5s) ease-in-out infinite; transform-origin: bottom; }
+</style>
   </defs>
 
   <!-- ==================== 3D EXTRUDED DUAL-RAIL CHASSIS ==================== -->
 
   <!-- Left Lower Bevel Face (3D Depth Shadow) -->
-  <polygon points="10,23 410,23 410,26 10,26" fill="url(#rail3DFrontLeft)" />
+  <polygon points="10,23 410,23 410,26 10,26" fill="url(#rail3DFrontLeft)"/>
   <!-- Left Upper Bevel Face (3D Top Specular) -->
-  <polygon points="10,21 410,21 410,23 10,23" fill="url(#rail3DTopLeft)" />
+  <polygon points="10,21 410,21 410,23 10,23" fill="url(#rail3DTopLeft)" class="dash-flow hyper-glow"/>
   
   <!-- Left Upper Kinetic Stream -->
-  <line x1="60" y1="14" x2="400" y2="14" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-left" />
+  <line x1="60" y1="14" x2="400" y2="14" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-left dash-flow hyper-glow"/>
   <!-- Left Main Laser Core Beam -->
-  <line x1="10" y1="22" x2="410" y2="22" stroke="url(#rail3DTopLeft)" stroke-width="2.2" />
+  <line x1="10" y1="22" x2="410" y2="22" stroke="url(#rail3DTopLeft)" stroke-width="2.2"/>
   <!-- Left Lower Kinetic Stream -->
-  <line x1="120" y1="30" x2="400" y2="30" stroke="#67E8F9" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-left" />
+  <line x1="120" y1="30" x2="400" y2="30" stroke="#67E8F9" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-left"/>
 
   <!-- Left 3D Support Truss Struts -->
-  <line x1="180" y1="14" x2="190" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
-  <line x1="240" y1="14" x2="250" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
-  <line x1="300" y1="14" x2="310" y2="30" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
-  <line x1="360" y1="14" x2="370" y2="30" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1" />
+  <line x1="180" y1="14" x2="190" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1"/>
+  <line x1="240" y1="14" x2="250" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1"/>
+  <line x1="300" y1="14" x2="310" y2="30" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1"/>
+  <line x1="360" y1="14" x2="370" y2="30" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1" class="dash-flow hyper-glow"/>
 
   <!-- Left High-Energy Inward Chevrons -->
   <g transform="translate(0, 0)">
-    <path d="M 345 15 L 352 22 L 345 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c1" />
-    <path d="M 360 15 L 367 22 L 360 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c2" />
-    <path d="M 375 15 L 382 22 L 375 29" fill="none" stroke="#67E8F9" stroke-width="1.6" class="chevron-surge c3" />
-    <path d="M 390 14 L 398 22 L 390 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4" />
+    <path d="M 345 15 L 352 22 L 345 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c1"/>
+    <path d="M 360 15 L 367 22 L 360 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c2 dash-flow hyper-glow"/>
+    <path d="M 375 15 L 382 22 L 375 29" fill="none" stroke="#67E8F9" stroke-width="1.6" class="chevron-surge c3 dash-flow hyper-glow"/>
+    <path d="M 390 14 L 398 22 L 390 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4"/>
   </g>
 
   <!-- Right Lower Bevel Face (3D Depth Shadow) -->
-  <polygon points="490,23 890,23 890,26 490,26" fill="url(#rail3DFrontRight)" />
+  <polygon points="490,23 890,23 890,26 490,26" fill="url(#rail3DFrontRight)"/>
   <!-- Right Upper Bevel Face (3D Top Specular) -->
-  <polygon points="490,21 890,21 890,23 490,23" fill="url(#rail3DTopRight)" />
+  <polygon points="490,21 890,21 890,23 490,23" fill="url(#rail3DTopRight)" class="dash-flow hyper-glow"/>
 
   <!-- Right Upper Kinetic Stream -->
-  <line x1="500" y1="14" x2="840" y2="14" stroke="#7701D0" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-right" />
+  <line x1="500" y1="14" x2="840" y2="14" stroke="#7701D0" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-right dash-flow hyper-glow"/>
   <!-- Right Main Laser Core Beam -->
-  <line x1="490" y1="22" x2="890" y2="22" stroke="url(#rail3DTopRight)" stroke-width="2.2" />
+  <line x1="490" y1="22" x2="890" y2="22" stroke="url(#rail3DTopRight)" stroke-width="2.2" class="dash-flow hyper-glow"/>
   <!-- Right Lower Kinetic Stream -->
-  <line x1="500" y1="30" x2="780" y2="30" stroke="#A855F7" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-right" />
+  <line x1="500" y1="30" x2="780" y2="30" stroke="#A855F7" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-right"/>
 
   <!-- Right 3D Support Truss Struts -->
-  <line x1="540" y1="14" x2="530" y2="30" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1" />
-  <line x1="600" y1="14" x2="590" y2="30" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" />
-  <line x1="660" y1="14" x2="650" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
-  <line x1="720" y1="14" x2="710" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
+  <line x1="540" y1="14" x2="530" y2="30" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1"/>
+  <line x1="600" y1="14" x2="590" y2="30" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1"/>
+  <line x1="660" y1="14" x2="650" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" class="dash-flow hyper-glow"/>
+  <line x1="720" y1="14" x2="710" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" class="dash-flow hyper-glow"/>
 
   <!-- Right High-Energy Inward Chevrons -->
-  <g transform="translate(0, 0)">
-    <path d="M 555 15 L 548 22 L 555 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c1" />
-    <path d="M 540 15 L 533 22 L 540 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c2" />
-    <path d="M 525 15 L 518 22 L 525 29" fill="none" stroke="#E879F9" stroke-width="1.6" class="chevron-surge c3" />
-    <path d="M 510 14 L 502 22 L 510 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4" />
+  <g transform="translate(0, 0)" class="hyper-float">
+    <path d="M 555 15 L 548 22 L 555 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c1 dash-flow hyper-glow"/>
+    <path d="M 540 15 L 533 22 L 540 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c2 dash-flow hyper-glow"/>
+    <path d="M 525 15 L 518 22 L 525 29" fill="none" stroke="#E879F9" stroke-width="1.6" class="chevron-surge c3 dash-flow hyper-glow"/>
+    <path d="M 510 14 L 502 22 L 510 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4"/>
   </g>
 
   <!-- ==================== CENTER: 3D HOLOGRAPHIC GYROSCOPE CORE ==================== -->
 
   <!-- Expanding Shockwave Rings in 3D Perspective -->
-  <circle cx="450" cy="22" r="8" fill="none" stroke="#00DFD8" class="shockwave-3d" />
-  <circle cx="450" cy="22" r="8" fill="none" stroke="#A855F7" class="shockwave-3d" style="animation-delay: -1.1s;" />
+  <circle cx="450" cy="22" r="8" fill="none" stroke="#00DFD8" class="shockwave-3d hyper-glow hyper-float"/>
+  <circle cx="450" cy="22" r="8" fill="none" stroke="#A855F7" class="shockwave-3d hyper-glow hyper-float" style="animation-delay: -1.1s;"/>
 
   <!-- Outer 3D Gyroscope Glass Ring (Tilted 3D Orbit - 10s SMIL Rotation) -->
-  <g>
-    <ellipse cx="450" cy="22" rx="28" ry="14" fill="none" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.4" stroke-dasharray="8, 6" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="10s" repeatCount="indefinite" />
+  <g class="hyper-float">
+    <ellipse cx="450" cy="22" rx="28" ry="14" fill="none" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.4" stroke-dasharray="8, 6" class="hyper-glow hyper-float"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="10s" repeatCount="indefinite"/>
   </g>
 
   <!-- Mid 3D Gyroscope Bezel Ring (Reverse Tilted Orbit - 6s SMIL Rotation) -->
-  <g>
-    <ellipse cx="450" cy="22" rx="20" ry="10" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.3" />
-    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="6s" repeatCount="indefinite" />
+  <g class="hyper-float">
+    <ellipse cx="450" cy="22" rx="20" ry="10" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.3" class="hyper-glow hyper-float"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="6s" repeatCount="indefinite"/>
   </g>
 
   <!-- Inner 3D Hexagonal Aperture (Fast 3s SMIL Rotation) -->
-  <g>
-    <polygon points="450,13 458,18 458,26 450,31 442,26 442,18" fill="rgba(119, 1, 208, 0.3)" stroke="#00DFD8" stroke-width="1.2" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="3s" repeatCount="indefinite" />
+  <g class="hyper-float">
+    <polygon points="450,13 458,18 458,26 450,31 442,26 442,18" fill="rgba(119, 1, 208, 0.3)" stroke="#00DFD8" stroke-width="1.2"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="3s" repeatCount="indefinite"/>
   </g>
 
   <!-- Orbiting Photon Satellite Node along 3D Ring -->
-  <g>
-    <circle cx="450" cy="8" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="2.5s" repeatCount="indefinite" />
+  <g class="hyper-float">
+    <circle cx="450" cy="8" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)" class="hyper-glow hyper-float"/>
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="2.5s" repeatCount="indefinite"/>
   </g>
-  <g>
-    <circle cx="450" cy="36" r="2.2" fill="#E879F9" filter="drop-shadow(0 0 6px #A855F7)" />
-    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="2.5s" repeatCount="indefinite" />
+  <g class="hyper-float">
+    <circle cx="450" cy="36" r="2.2" fill="#E879F9" filter="drop-shadow(0 0 6px #A855F7)" class="hyper-glow hyper-float"/>
+    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="2.5s" repeatCount="indefinite"/>
   </g>
 
   <!-- Central 3D Volumetric Plasma Core -->
-  <circle cx="450" cy="22" r="5" fill="url(#gyroCoreAura)" class="core-heart" />
-  <circle cx="450" cy="22" r="2" fill="#FFFFFF" />
-</svg>
+  <circle cx="450" cy="22" r="5" fill="url(#gyroCoreAura)" class="core-heart hyper-glow hyper-float"/>
+  <circle cx="450" cy="22" r="2" fill="#FFFFFF" class="hyper-glow hyper-float"/>
+
+    <g class="hyper-overlay-effects" style="pointer-events: none;">
+        <!-- Scanning laser -->
+        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
+            <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
+        
+        <!-- Vignette / Border flare -->
+        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
+    </g>
+    </svg>
