@@ -92,64 +92,19 @@ https.get(imageUrl, (res) => {
     </linearGradient>
 
     <style>
-      /* EXTREME HYPER ANIMATIONS */
-      @keyframes neon-flicker {
-        0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; filter: drop-shadow(0 0 8px rgba(0,223,216,0.8)) drop-shadow(0 0 15px rgba(0,223,216,0.6)); }
-        20%, 24%, 55% { opacity: 0.4; filter: none; }
-      }
+      /* EXTREME HYPER ANIMATIONS (SAFE) */
       @keyframes cyber-scan {
-        0% { transform: translateY(-100%) scaleY(1); opacity: 0; }
+        0% { transform: translateY(-100%); opacity: 0; }
         10% { opacity: 0.8; }
         90% { opacity: 0.8; }
-        100% { transform: translateY(1000%) scaleY(1.5); opacity: 0; }
-      }
-      @keyframes cyber-float {
-        0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
-        50% { transform: translateY(-4px) scale(1.02) rotate(0.5deg); }
-      }
-      @keyframes pulse-glow {
-        0%, 100% { filter: drop-shadow(0 0 5px rgba(168,85,247,0.5)) drop-shadow(0 0 20px rgba(168,85,247,0.3)); }
-        50% { filter: drop-shadow(0 0 15px rgba(0,223,216,0.9)) drop-shadow(0 0 30px rgba(0,223,216,0.6)); }
-      }
-      @keyframes hologram-glitch {
-        0% { transform: translate(0); opacity: 1; }
-        1% { transform: translate(-2px, 1px) skewX(2deg); opacity: 0.8; filter: hue-rotate(90deg); }
-        2% { transform: translate(2px, -1px) skewX(-2deg); opacity: 0.9; filter: hue-rotate(-90deg); }
-        3% { transform: translate(0); opacity: 1; filter: hue-rotate(0deg); }
-        100% { transform: translate(0); opacity: 1; }
-      }
-      @keyframes particle-drift {
-        0% { transform: translate(0, 0) rotate(0deg); opacity: 0; }
-        10% { opacity: 0.8; }
-        90% { opacity: 0.8; }
-        100% { transform: translate(var(--dx), var(--dy)) rotate(360deg); opacity: 0; }
-      }
-      @keyframes rotate-gyro {
-        0% { transform: rotate(0deg) scale(1); }
-        50% { transform: rotate(180deg) scale(1.05); }
-        100% { transform: rotate(360deg) scale(1); }
-      }
-      @keyframes dash-flow {
-        to { stroke-dashoffset: -100; }
-      }
-      @keyframes wave-distortion {
-        0%, 100% { transform: scaleY(1); }
-        50% { transform: scaleY(1.15) scaleX(0.95); }
-      }
-      @keyframes rgb-shift {
-        0% { fill: #00DFD8; }
-        33% { fill: #A855F7; }
-        66% { fill: #FF007F; }
-        100% { fill: #00DFD8; }
+        100% { transform: translateY(1000%); opacity: 0; }
       }
       @keyframes border-run {
         0% { stroke-dashoffset: 1000; }
         100% { stroke-dashoffset: 0; }
       }
-      @keyframes equalizer-bounce {
-        0%, 100% { transform: scaleY(0.2); }
-        50% { transform: scaleY(1.5); }
-      }
+      .cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
+      .border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
 
       .bg-void { fill: #000000; }
       
@@ -160,7 +115,6 @@ https.get(imageUrl, (res) => {
         fill: #94A3B8;
         letter-spacing: 7px;
         text-anchor: middle;
-        animation: hologram-glitch 5s infinite;
       }
 
       .text-outline {
@@ -183,8 +137,7 @@ https.get(imageUrl, (res) => {
         letter-spacing: -1px;
         text-anchor: middle;
         filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.45));
-        animation: textGlowPulse 3.5s infinite alternate ease-in-out, cyber-float 3s ease-in-out infinite;
-        transform-origin: center;
+        animation: textGlowPulse 3.5s infinite alternate ease-in-out;
       }
 
       .bottom-meta {
@@ -194,7 +147,6 @@ https.get(imageUrl, (res) => {
         fill: #00DFD8;
         letter-spacing: 8px;
         text-anchor: middle;
-        animation: rgb-shift 6s linear infinite;
       }
 
       .image-layer {
