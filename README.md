@@ -7,83 +7,127 @@
 
 <br/><br/>
 
-
-
 <!-- PROFILE BADGES -->
-![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=101010)
-![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=101010)
-![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=FF007F&labelColor=101010)
-![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=101010&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)
+[![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.dev)
+[![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=0D1117)](https://github.com/Mathiyass?tab=followers)
+[![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=7701D0&labelColor=0D1117)](https://github.com/Mathiyass?tab=repositories)
+[![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)](https://github.com/Mathiyass?tab=repositories)
 
 </div>
 
 <br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 👨‍💻 About Me
+### 👨‍💻 System Architect & Engineer
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Consolas&weight=600&size=22&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Full-Stack+Architect;AI+Systems+Specialist;Open-Source+Contributor;Cloud+Infrastructure+Engineer" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Full-Stack+Architect+%26+System+Specialist;AI+Agent+Systems+%26+Distributed+Cloud;Crafting+Production-Ready+High-Impact+Software;Open-Source+Ecosystem+Contributor" alt="Typing SVG" /></a>
 
 ```console
 $ whoami
-> Mathisha Angirasa (MATHIYA)
-$ cat bio.txt
-> I am a Full-Stack Architect & AI Specialist based in Birmingham, UK.
-> I specialize in building robust, high-performance web applications and cloud-native systems.
+> Mathisha Angirasa (MATHIYA) — Full-Stack Architect & AI Specialist
+$ location --current
+> Birmingham, United Kingdom 🇬🇧
+$ cat core_mission.json
+> {
+    "focus": ["AI Agent Systems", "Distributed Cloud", "Modern Web Architecture", "High-Performance Engineering"],
+    "status": "Available for High-Impact Projects & Innovative Collaborations"
+  }
 ```
 </div>
 
-<table width="100%" style="border-collapse: collapse; border: none;">
+<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
 <tr>
-<td width="50%" valign="top" style="border: none;">
+<td width="50%" valign="top" style="padding: 16px; border-right: 1px solid #30363d;">
 
-- 🏗️ **Currently building:** AI-powered web applications & cloud-native ecosystems.
-- 🌱 **Currently learning:** Rust, Advanced System Design, LLMs & Distributed Systems.
-- 🤝 **Looking to collaborate on:** Open-source projects, AI/ML research.
+#### ⚡ Core Capabilities & Architecture
+- 🏗️ **Systems Engineering:** Scalable microservices, distributed cloud architectures & low-latency backends.
+- 🤖 **AI & Agentic Systems:** LLM orchestration, autonomous agent tool pipelines, and neural workflows.
+- 🌱 **Continuous Mastery:** Rust systems programming, concurrent Go pipelines, and advanced distributed patterns.
 
 </td>
-<td width="50%" valign="top" style="border: none;">
+<td width="50%" valign="top" style="padding: 16px;">
 
-- 💬 **Ask me about:** React, Node.js, Python, Cloud Architecture.
-- ⚡ **Fun fact:** I debug code in my dreams and wake up with the fix.
-- 📫 **Reach out:** Let's build something amazing together!
+#### 🤝 Collaboration & Focus
+- 💬 **Ask Me About:** React/Next.js, Node.js, Python, TypeScript, Docker & Cloud Architecture.
+- 🚀 **Open Source:** Active contributor & architect of developer productivity ecosystems.
+- ⚡ **Fun Fact:** I debug complex architectures in my dreams and wake up with the solution ready to commit.
 
 </td>
 </tr>
 </table>
 
 <br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 🛠️ Technology Stack
+### 🛠️ Technology & Architectural Stack
 
 <div align="center">
 
-**Languages**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,java,go,rust&theme=dark" /></a>
+**Core Languages & Systems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,rust,go,java,cpp,c&theme=dark" alt="Languages" /></a>
 
-<br/>
+<br/><br/>
 
-**Frontend & Backend Frameworks**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,nodejs,express,django,fastapi&theme=dark" /></a>
+**Frontend Architecture & Ecosystems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vue,html,css,redux,vite&theme=dark" alt="Frontend" /></a>
 
-<br/>
+<br/><br/>
 
-**Cloud, DevOps & Databases**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,githubactions,mongodb,postgres,redis,linux&theme=dark" /></a>
+**Backend, Cloud Infrastructure & DevOps**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="Cloud and DevOps" /></a>
+
+<br/><br/>
+
+**Databases, Streaming & Caching**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,supabase,mysql,sqlite&theme=dark" alt="Databases" /></a>
 
 </div>
 
-
-
 <br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 📊 GitHub Analytics
+### 🌟 Featured Projects & Innovations
+
+<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
+<thead>
+<tr style="background-color: #161b22;">
+<th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">🚀 Project</th>
+<th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">💡 Description</th>
+<th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">🛠️ Tech Stack</th>
+<th align="center" style="padding: 12px; border-bottom: 1px solid #30363d;">🔗 Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>MA Optimizer</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">High-performance Windows & gaming system optimization suite designed to reduce latency, boost FPS, and clean bloatware.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Batch</code> <code>PowerShell</code> <code>Windows API</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">View Repo</a></td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.dev</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">Official cyber-aesthetic portfolio featuring custom GLSL shaders, terminal telemetry, and high-performance frontend engineering.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>TypeScript</code> <code>TailwindCSS</code> <code>Three.js</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.dev">Live Site</a></td>
+</tr>
+<tr>
+<td style="padding: 12px;"><b>Mathiyass GitHub Ecosystem</b></td>
+<td style="padding: 12px;">Automated dynamic profile architecture with real-time SVG asset pipeline, 3D contribution projections, and multi-feed updates.</td>
+<td style="padding: 12px;"><code>Node.js</code> <code>GitHub Actions</code> <code>SVG / Canvas</code></td>
+<td align="center" style="padding: 12px;"><a href="https://github.com/Mathiyass/Mathiyass">View Repo</a></td>
+</tr>
+</tbody>
+</table>
+
+<br/>
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
+<br/>
+
+### 📊 Telemetry & GitHub Intelligence
 
 <div align="center">
 
@@ -105,7 +149,7 @@ $ cat bio.txt
 <br/>
 
 <details open>
-<summary><b style="font-size: 1.2em;">✨ View Advanced Visualizations (3D Grid, Snake & Pacman)</b></summary>
+<summary><b style="font-size: 1.1em; color: #00DFD8; cursor: pointer;">✨ View Dynamic Visualizations (3D Grid, Snake & Pacman)</b></summary>
 <br>
 
 <div align="center">
@@ -118,11 +162,15 @@ $ cat bio.txt
   <img alt="github-snake" src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/github-snake-dark.svg" width="100%" onerror="this.style.display='none'"/>
 </picture>
 
-**3D Contribution Calendar**
+<br/><br/>
+
+**3D Contribution Holographic Universe**
 <br>
 <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/profile-night-rainbow.svg" width="100%" alt="3D Contribution Calendar" onerror="this.style.display='none'"/>
 
-**Pacman Graph**
+<br/><br/>
+
+**Pacman Contribution Matrix**
 <br>
 <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/pacman-contribution-graph.svg" width="100%" alt="Pacman" onerror="this.style.display='none'"/>
 
@@ -130,16 +178,16 @@ $ cat bio.txt
 </details>
 
 <br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 📡 Latest Activity & Content
+### 📡 Real-Time Feeds & Activity
 
-<table width="100%" style="border-collapse: collapse; border: none;">
+<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
 <tr>
-<td width="50%" valign="top" style="border: none;">
+<td width="50%" valign="top" style="padding: 16px; border-right: 1px solid #30363d;">
 
-#### 📺 YouTube Videos
+#### 📺 YouTube Releases
 <!-- YOUTUBE:START -->
 - [Obstacle avoiding Robot](https://www.youtube.com/watch?v=eYGoyt9z1z8)
 - [Building a 2D sprites animation game using pure HTML, CSS, and JavaScriptLanguages](https://www.youtube.com/watch?v=jO4Bg3zOlVs)
@@ -149,14 +197,14 @@ $ cat bio.txt
 
 <br/>
 
-#### 📝 Blog Posts
+#### 📝 Articles & Deep Dives
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
 </td>
-<td width="50%" valign="top" style="border: none;">
+<td width="50%" valign="top" style="padding: 16px;">
 
-#### ⚡ GitHub Activity
+#### ⚡ GitHub Telemetry
 <!--START_SECTION:activity-->
 1. 🚀 Published release [MA Optimizer v11.0](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
 2. ❌ Closed PR [#52](https://github.com/Mathiyass/MA-Optimizer/pull/52) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
@@ -169,17 +217,22 @@ $ cat bio.txt
 </table>
 
 <br/>
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4520-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
 <div align="center">
 
-**Let's Connect!**<br/><br/>
-[![Portfolio](https://img.shields.io/badge/Portfolio-101010?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-101010?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
-[![Twitter](https://img.shields.io/badge/Twitter-101010?style=for-the-badge&logo=twitter&logoColor=1da1f2)](https://x.com/__Mathiya__)
-[![Discord](https://img.shields.io/badge/Discord-101010?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
-[![Medium](https://img.shields.io/badge/Medium-101010?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@mathishaangirasa)
-[![YouTube](https://img.shields.io/badge/YouTube-101010?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
+### 🌐 Connect & Network
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.dev)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
+[![Twitter](https://img.shields.io/badge/Twitter-0D1117?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/__Mathiya__)
+[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
+[![Medium](https://img.shields.io/badge/Medium-0D1117?style=for-the-badge&logo=medium&logoColor=00DFD8)](https://medium.com/@mathishaangirasa)
+[![YouTube](https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
+
+<br/><br/>
+
+<sub>⚡ Designed & Engineered with precision by <b><a href="https://mathiya.dev">Mathisha Angirasa (MATHIYA)</a></b></sub>
 
 </div>
