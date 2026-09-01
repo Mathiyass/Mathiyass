@@ -14,8 +14,8 @@ https.get(imageUrl, (res) => {
         const width = 1600;
         const height = 900;
 
-        // Generate 400 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
-        const particles = Array.from({ length: 400 }).map((_, i) => {
+        // Generate 480 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
+        const particles = Array.from({ length: 480 }).map((_, i) => {
             const x = Math.random() * width;
             const y = Math.random() * height;
             const r = Math.random() * 2.2 + 0.3;
@@ -301,7 +301,7 @@ https.get(imageUrl, (res) => {
     </ellipse>
   </g>
 
-  <!-- 20 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
+  <!-- 24 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
   <g>
     <circle cx="${width / 2}" cy="265" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 12px #00DFD8)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
@@ -402,30 +402,62 @@ https.get(imageUrl, (res) => {
       <animateTransform attributeName="transform" type="rotate" from="330 ${width / 2} 420" to="-30 ${width / 2} 420" dur="4.8s" repeatCount="indefinite" />
     </circle>
   </g>
+  <g>
+    <circle cx="${width / 2 + 320}" cy="370" r="2.4" fill="#06B6D4" filter="drop-shadow(0 0 6px #0891B2)">
+      <animateTransform attributeName="transform" type="rotate" from="15 ${width / 2} 420" to="375 ${width / 2} 420" dur="5.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 320}" cy="470" r="2.4" fill="#EC4899" filter="drop-shadow(0 0 6px #DB2777)">
+      <animateTransform attributeName="transform" type="rotate" from="195 ${width / 2} 420" to="-165 ${width / 2} 420" dur="5.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 + 190}" cy="530" r="2.4" fill="#84CC16" filter="drop-shadow(0 0 6px #65A30D)">
+      <animateTransform attributeName="transform" type="rotate" from="75 ${width / 2} 420" to="435 ${width / 2} 420" dur="3.9s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 190}" cy="310" r="2.4" fill="#6366F1" filter="drop-shadow(0 0 6px #4F46E5)">
+      <animateTransform attributeName="transform" type="rotate" from="255 ${width / 2} 420" to="-105 ${width / 2} 420" dur="3.9s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
-  <!-- 400 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
+  <!-- 480 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
   <g>
     ${particles}
   </g>
 
-  <!-- 3D Glass Corner Pods & Animated Brackets -->
+  <!-- 3D Glass Corner Pods & Animated Brackets with Rotating Gyro Reticles -->
   <g transform="translate(24, 24)">
     <polygon points="0,0 20,0 0,20" fill="rgba(0, 223, 216, 0.3)" />
     <path d="M 0 35 L 0 0 L 35 0" fill="none" stroke="#00DFD8" stroke-width="2.5" class="corner-chase" />
+    <circle cx="12" cy="12" r="8" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" stroke-dasharray="2, 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
   <g transform="translate(${width - 24}, 24)">
     <polygon points="0,0 -20,0 0,20" fill="rgba(0, 223, 216, 0.3)" />
     <path d="M 0 35 L 0 0 L -35 0" fill="none" stroke="#00DFD8" stroke-width="2.5" class="corner-chase" />
+    <circle cx="-12" cy="12" r="8" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" stroke-dasharray="2, 4">
+      <animateTransform attributeName="transform" type="rotate" from="360 -12 12" to="0 -12 12" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
   <g transform="translate(24, ${height - 24})">
     <polygon points="0,0 20,0 0,-20" fill="rgba(119, 1, 208, 0.3)" />
     <path d="M 0 -35 L 0 0 L 35 0" fill="none" stroke="#7701D0" stroke-width="2.5" class="corner-chase" />
+    <circle cx="12" cy="-12" r="8" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" stroke-dasharray="2, 4">
+      <animateTransform attributeName="transform" type="rotate" from="360 12 -12" to="0 12 -12" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
   <g transform="translate(${width - 24}, ${height - 24})">
     <polygon points="0,0 -20,0 0,-20" fill="rgba(119, 1, 208, 0.3)" />
     <path d="M 0 -35 L 0 0 L -35 0" fill="none" stroke="#7701D0" stroke-width="2.5" class="corner-chase" />
+    <circle cx="-12" cy="-12" r="8" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" stroke-dasharray="2, 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 -12 -12" to="360 -12 -12" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Top Metadata Bar with High-Speed Kinetic Streams -->
@@ -467,6 +499,6 @@ https.get(imageUrl, (res) => {
         `;
 
         fs.writeFileSync('header.svg', svg);
-        console.log("Successfully created 20-satellite supercharged header.svg!");
+        console.log("Successfully created 24-satellite ultra-supercharged header.svg!");
     });
 });

@@ -112,6 +112,15 @@
         stroke-dasharray: 8, 6;
         animation: dashFlowRev 2s linear infinite;
       }
+    
+      .eq-tb-1 { animation: tbEq1 0.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-2 { animation: tbEq2 1.1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-3 { animation: tbEq3 0.7s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-4 { animation: tbEq4 1.3s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes tbEq1 { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(1); } }
+      @keyframes tbEq2 { 0% { transform: scaleY(0.8); } 100% { transform: scaleY(0.25); } }
+      @keyframes tbEq3 { 0% { transform: scaleY(0.15); } 100% { transform: scaleY(0.9); } }
+      @keyframes tbEq4 { 0% { transform: scaleY(0.95); } 100% { transform: scaleY(0.3); } }
     </style>
   
     <linearGradient id="typLaserShine" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -187,5 +196,15 @@
   <g transform="translate(775, 26)">
     <circle cx="0" cy="-3" r="3" fill="#00DFD8" class="beacon-dot" />
     <text x="10" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681">60 FPS</text>
+  </g>
+
+  <!-- Mini 6-Channel Visualizer on Right Rail -->
+  <g transform="translate(805, 32)">
+    <rect x="0" y="-18" width="2.5" height="18" rx="1.25" fill="#00DFD8" class="eq-tb-1" />
+    <rect x="4" y="-18" width="2.5" height="18" rx="1.25" fill="#38BDF8" class="eq-tb-2" />
+    <rect x="8" y="-18" width="2.5" height="18" rx="1.25" fill="#A855F7" class="eq-tb-3" />
+    <rect x="12" y="-18" width="2.5" height="18" rx="1.25" fill="#10B981" class="eq-tb-4" />
+    <rect x="16" y="-18" width="2.5" height="18" rx="1.25" fill="#00DFD8" class="eq-tb-2" />
+    <rect x="20" y="-18" width="2.5" height="18" rx="1.25" fill="#E879F9" class="eq-tb-1" />
   </g>
 </svg>

@@ -95,7 +95,12 @@
       <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      
+        <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+        <!-- Orbiting Chronometer Photon Satellite -->
+        <circle cx="18" cy="2" r="1.8" fill="#00DFD8" filter="drop-shadow(0 0 4px #00DFD8)">
+          <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="3.2s" repeatCount="indefinite" />
+        </circle>
     </g>
     <text x="52" y="16" class="c-loc">🇱🇰 COLOMBO, LK</text>
     <text x="52" y="27" class="c-time">UTC+5:30 • ACTIVE TIMEZONE</text>
@@ -128,7 +133,12 @@
       <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round">
         <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      
+        <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+        <!-- Orbiting Chronometer Photon Satellite -->
+        <circle cx="18" cy="2" r="1.8" fill="#00DFD8" filter="drop-shadow(0 0 4px #00DFD8)">
+          <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="3.2s" repeatCount="indefinite" />
+        </circle>
     </g>
     <text x="52" y="16" class="c-loc">🇬🇧 BIRMINGHAM, UK</text>
     <text x="52" y="27" class="c-time" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>

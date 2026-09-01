@@ -86,7 +86,11 @@
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <!-- 3D Mini Gyroscope -->
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3">
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
       </ellipse>
     </g>
@@ -108,7 +112,11 @@
     <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3, 3">
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
       </ellipse>
     </g>
@@ -130,7 +138,11 @@
     <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3">
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
       </ellipse>
     </g>
@@ -152,7 +164,11 @@
     <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
     <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>
-      <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="3, 3">
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
       </ellipse>
     </g>
