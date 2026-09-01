@@ -14,8 +14,8 @@ https.get(imageUrl, (res) => {
         const width = 1600;
         const height = 900;
 
-        // Generate 480 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
-        const particles = Array.from({ length: 480 }).map((_, i) => {
+        // Generate 550 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
+        const particles = Array.from({ length: 550 }).map((_, i) => {
             const x = Math.random() * width;
             const y = Math.random() * height;
             const r = Math.random() * 2.2 + 0.3;
@@ -301,7 +301,7 @@ https.get(imageUrl, (res) => {
     </ellipse>
   </g>
 
-  <!-- 24 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
+  <!-- 28 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
   <g>
     <circle cx="${width / 2}" cy="265" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 12px #00DFD8)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
@@ -422,10 +422,30 @@ https.get(imageUrl, (res) => {
       <animateTransform attributeName="transform" type="rotate" from="255 ${width / 2} 420" to="-105 ${width / 2} 420" dur="3.9s" repeatCount="indefinite" />
     </circle>
   </g>
+  <g>
+    <circle cx="${width / 2 + 140}" cy="220" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+      <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 140}" cy="620" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+      <animateTransform attributeName="transform" type="rotate" from="180 ${width / 2} 420" to="540 ${width / 2} 420" dur="3.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 + 280}" cy="390" r="2" fill="#00DFD8" filter="drop-shadow(0 0 4px #00DFD8)">
+      <animateTransform attributeName="transform" type="rotate" from="45 ${width / 2} 420" to="405 ${width / 2} 420" dur="4.1s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 280}" cy="450" r="2" fill="#E879F9" filter="drop-shadow(0 0 4px #A855F7)">
+      <animateTransform attributeName="transform" type="rotate" from="225 ${width / 2} 420" to="-135 ${width / 2} 420" dur="4.1s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
-  <!-- 480 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
+  <!-- 550 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
   <g>
     ${particles}
   </g>
@@ -499,6 +519,6 @@ https.get(imageUrl, (res) => {
         `;
 
         fs.writeFileSync('header.svg', svg);
-        console.log("Successfully created 24-satellite ultra-supercharged header.svg!");
+        console.log("Successfully created 28-satellite supreme header.svg!");
     });
 });

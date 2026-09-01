@@ -105,6 +105,11 @@
         100% { transform: translateY(0px); }
       }
     </style>
+  
+    <!-- Hex Deck Traveling Photons -->
+    <filter id="hexDeckPhoton" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#00DFD8" flood-opacity="0.9"/>
+    </filter>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
