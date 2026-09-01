@@ -1,193 +1,147 @@
-<svg width="900" height="96" viewBox="0 0 900 96" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6" style="pointer-events: none">
-        <!-- Grid -->
-        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
-        <circle cx="118.78677852860929" cy="78.65223394902237" r="0.6571548248542427" fill="#A855F7" style="--dx:59.010553438771574px;  --dy:54.2228560099609px;  animation: particle-drift 3.4073930459647417s ease-in-out 1.8374598916615448s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="437.1626749029059" cy="59.979131139537806" r="0.659751846490187" fill="#A855F7" style="--dx:11.219624315646254px;  --dy:-31.14067288138378px;  animation: particle-drift 4.461599214516565s ease-in-out 4.1389941140310444s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="218.21067428960743" cy="26.180865518549876" r="2.2614872773583756" fill="#00DFD8" style="--dx:6.855680474370029px;  --dy:54.9415427590937px;  animation: particle-drift 7.732434524450266s ease-in-out 0.386555789132213s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="830.6540197026114" cy="88.89117001057564" r="0.5039851653785645" fill="#00DFD8" style="--dx:32.54641341588278px;  --dy:-41.88788820807985px;  animation: particle-drift 7.98929709775357s ease-in-out 0.8885077260010976s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="348.04471385058406" cy="3.4095783985433847" r="1.4061243998441697" fill="#00DFD8" style="--dx:20.85197059519604px;  --dy:35.44445188212236px;  animation: particle-drift 7.442168871094183s ease-in-out 4.586239914368608s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="210.06013623761203" cy="32.87233420660218" r="2.431015451197564" fill="#A855F7" style="--dx:6.9168831187791655px;  --dy:-24.822444864648663px;  animation: particle-drift 5.871188989770301s ease-in-out 4.651925228092789s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="15.622919354938203" cy="50.18653560826097" r="1.5274148084046144" fill="#A855F7" style="--dx:-67.48312824169264px;  --dy:-17.470317425375057px;  animation: particle-drift 5.0786559145442345s ease-in-out 0.5954135179665848s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="19.204570937905665" cy="74.43357441597578" r="1.013910173660353" fill="#A855F7" style="--dx:73.86852812430259px;  --dy:-5.864500661464417px;  animation: particle-drift 4.462021658819062s ease-in-out 2.0444651936112157s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="563.8649787973244" cy="9.448193248827003" r="2.0730870213588384" fill="#A855F7" style="--dx:35.421203342874875px;  --dy:59.29641651537458px;  animation: particle-drift 6.7996228641376755s ease-in-out 4.568296104095894s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="184.06359927386202" cy="6.9896844437565555" r="2.238120079341093" fill="#00DFD8" style="--dx:-50.39272809593362px;  --dy:17.340228002975838px;  animation: particle-drift 7.512712090757419s ease-in-out 3.8272008451814985s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="499.09620302823583" cy="20.536516436245147" r="0.5272473490913545" fill="#00DFD8" style="--dx:72.62388194299425px;  --dy:73.13218140414328px;  animation: particle-drift 5.636061557342899s ease-in-out 1.119203062061917s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="233.80081632260192" cy="47.86150745856857" r="0.5902309868107631" fill="#00DFD8" style="--dx:-50.43223262689955px;  --dy:36.899334917277656px;  animation: particle-drift 3.382693110768175s ease-in-out 0.5080843422462933s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="300.5394691999134" cy="92.4496728366853" r="2.2414464343316016" fill="#00DFD8" style="--dx:1.926517515684617px;  --dy:14.75166770675062px;  animation: particle-drift 4.339129926319966s ease-in-out 0.9245321246023147s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="548.667836576861" cy="61.04705471124437" r="0.8448576673187635" fill="#A855F7" style="--dx:15.02238928602141px;  --dy:-3.1848964685131484px;  animation: particle-drift 4.004007247925495s ease-in-out 4.081536449780924s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="556.4339745661243" cy="45.64569712930651" r="1.4144781776522777" fill="#00DFD8" style="--dx:-57.2677528294642px;  --dy:31.416125190337958px;  animation: particle-drift 7.759791075256282s ease-in-out 1.723003402164719s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="527.8108595176145" cy="14.476132579467212" r="1.542582978585292" fill="#A855F7" style="--dx:-50.16056721053251px;  --dy:-8.137249013434655px;  animation: particle-drift 4.726043698495108s ease-in-out 4.436095922447217s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="281.2906367568695" cy="56.766287174185706" r="1.12056327628312" fill="#00DFD8" style="--dx:23.282158709644158px;  --dy:-69.01555931503968px;  animation: particle-drift 6.435956124313373s ease-in-out 2.8015380868350293s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="224.39191144392333" cy="45.36997356904206" r="0.9182617551440795" fill="#A855F7" style="--dx:13.040762441023428px;  --dy:-34.363350536377524px;  animation: particle-drift 3.96712798328936s ease-in-out 1.7777083422438777s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="898.012628580482" cy="67.82799929171134" r="1.737615979300809" fill="#00DFD8" style="--dx:-60.15140144319448px;  --dy:-71.08124714013225px;  animation: particle-drift 7.743807887630676s ease-in-out 1.9351491492272772s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="494.6614213226639" cy="8.824989939599114" r="0.8873130481196299" fill="#A855F7" style="--dx:-39.13512244990508px;  --dy:44.590343497931315px;  animation: particle-drift 5.195122033595813s ease-in-out 3.636724375746703s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="162.0529009849908" cy="75.104358533579" r="0.6481012019575767" fill="#A855F7" style="--dx:24.02514278151866px;  --dy:15.160293237161964px;  animation: particle-drift 6.285882306280872s ease-in-out 2.2554478721263207s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="162.81439923560555" cy="50.29711689006337" r="0.5130093934921933" fill="#A855F7" style="--dx:-24.030819966917182px;  --dy:29.90581372324722px;  animation: particle-drift 4.148599160969365s ease-in-out 2.5776547850248974s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="394.06281946846343" cy="47.48651136524043" r="0.7141442139529399" fill="#00DFD8" style="--dx:44.88012606639213px;  --dy:54.24875373989757px;  animation: particle-drift 7.1709913073183245s ease-in-out 2.44556100862712s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="121.17553409916057" cy="52.23513832244028" r="0.5194424741715746" fill="#A855F7" style="--dx:-25.748547366685308px;  --dy:25.497389439385593px;  animation: particle-drift 3.3243188766150027s ease-in-out 0.8671387117952883s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="239.91790542557732" cy="87.15743677450844" r="1.8180801826312607" fill="#A855F7" style="--dx:23.32680352582045px;  --dy:-41.16692356598191px;  animation: particle-drift 3.4353228285278483s ease-in-out 3.282835454258264s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="746.4106535578185" cy="34.47141965387054" r="1.5549304492716995" fill="#00DFD8" style="--dx:27.60265627865434px;  --dy:49.41809972074167px;  animation: particle-drift 4.060768479926276s ease-in-out 3.0128158724178893s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="894.8850378084752" cy="30.957011017623035" r="2.249734234022343" fill="#A855F7" style="--dx:-61.187187550774816px;  --dy:-48.32499592134772px;  animation: particle-drift 7.367529361502852s ease-in-out 0.7262207862416725s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="26.942527004494586" cy="59.726750178595694" r="0.7272509294445821" fill="#00DFD8" style="--dx:48.12975424100792px;  --dy:-55.48915654032878px;  animation: particle-drift 7.296172681074987s ease-in-out 1.7565599841773611s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="543.0175993038077" cy="81.52062788971844" r="1.5903484957106284" fill="#00DFD8" style="--dx:12.228551122648307px;  --dy:44.6226643737204px;  animation: particle-drift 3.458298251198447s ease-in-out 2.456548703982721s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="167.11526077078284" cy="6.902303121866108" r="2.3040043301499393" fill="#A855F7" style="--dx:-13.210660252712398px;  --dy:3.7555935689052466px;  animation: particle-drift 7.040033365408194s ease-in-out 1.3757735537313898s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><g>
-        <animateTransform attributeName="transform" type="rotate" values="0 450 48; 360 450 48" dur="20s" repeatCount="indefinite"/>
-        <circle cx="450" cy="48" r="300" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow" style="opacity: 0.5"/>
-        <circle cx="450" cy="48" r="320" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow" style="opacity: 0.5"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.6s" additive="sum" repeatCount="indefinite"/></g></g>
+<svg width="900" height="96" viewBox="0 0 900 96" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- 3D Glass Background Gradient -->
     <linearGradient id="clockGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.94"/>
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88"/>
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98"/>
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge -->
     <linearGradient id="clockSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12"/>
-      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
     <!-- Chrome Border Gradient -->
     <linearGradient id="clockChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95"/>
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95"/>
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
     </linearGradient>
 
     <style>
-.c-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
-    .c-loc { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
-    .c-time { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #00DFD8; }
-    .c-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
-  
+      .c-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .c-loc { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .c-time { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #00DFD8; }
+      .c-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
+      
+      
+      
 
-/* CONTINUOUS HIGH-FPS CYBER ANIMATIONS (NO PULSE, NO GLITCH) */
-@keyframes cyber-scan {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(1000%); }
-}
-@keyframes border-run {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-@keyframes dash-flow {
-  0% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -200; }
-}
-@keyframes dash-flow-reverse {
-  0% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 200; }
-}
-@keyframes particle-drift {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(var(--dx), var(--dy)); }
-  100% { transform: translate(0, 0); }
-}
-
-.cyber-scanner { 
-  animation: cyber-scan 3.5s linear infinite; 
-  opacity: 0.45; 
-}
-.border-run { 
-  stroke-dasharray: 100 200; 
-  animation: border-run 5s linear infinite; 
-}
-.dash-flow { 
-  stroke-dasharray: 8 6; 
-  animation: dash-flow 2.5s linear infinite; 
-}
-.dash-flow-reverse { 
-  stroke-dasharray: 12 8; 
-  animation: dash-flow-reverse 3.5s linear infinite; 
-}
-.hyper-glow { 
-  filter: drop-shadow(0 0 4px rgba(0, 223, 216, 0.4)); 
-}
-.purple-glow { 
-  filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.4)); 
-}
-</style>
+      
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockGlassBg)" stroke="url(#clockChromeBorder)" stroke-width="1.3" class="dash-flow hyper-glow"/>
-  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#clockSpecular)"/>
+  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockGlassBg)" stroke="url(#clockChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#clockSpecular)" />
 
   <!-- Header Banner -->
   <g transform="translate(20, 14)">
-    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" class="hyper-glow"/>
-    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="hyper-glow"/>
-    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="-2 hyper-glow"/>
+    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
+    
+    
     <text x="18" y="9.5" class="c-title">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
     <text x="860" y="9.5" text-anchor="end" class="c-title" fill="#10B981">COLLABORATION: OPEN</text>
-    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
-  <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.2s" additive="sum" repeatCount="indefinite"/></g>
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
 
   <!-- Zone 1: Colombo (LK) -->
   <g transform="translate(30, 42)">
-    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2"/>
-    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" class="dash-flow hyper-glow"/>
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
     <!-- 3D Tilted Gyro Chronometer 1 -->
     <g transform="translate(10, 3)">
-      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4" class="hyper-glow">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="6s" repeatCount="indefinite"/>
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="6s" repeatCount="indefinite" />
       </ellipse>
-      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" class="hyper-glow"/>
-      <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
-      <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" class="dash-flow-reverse"/>
-      <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" class="dash-flow"/>
-      <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" class="dash-flow hyper-glow"/>
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" />
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" />
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" />
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" />
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" />
       <!-- Sweep Second Hand (4s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
       </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round" class="dash-flow">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite"/>
+      <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
       </line>
       <!-- Hour Hand (48s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round" class="dash-flow-reverse">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite"/>
+      <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" class="hyper-glow"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.3s" additive="sum" repeatCount="indefinite"/></g>
-    <text x="52" y="16" class="c-loc hyper-glow">🇱🇰 COLOMBO, LK</text>
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+    </g>
+    <text x="52" y="16" class="c-loc">🇱🇰 COLOMBO, LK</text>
     <text x="52" y="27" class="c-time">UTC+5:30 • ACTIVE TIMEZONE</text>
-    <text x="52" y="37" class="c-desc hyper-glow">Lead Systems Architecture &amp; R&amp;D</text>
-  <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.0s" additive="sum" repeatCount="indefinite"/></g>
+    <text x="52" y="37" class="c-desc">Lead Systems Architecture &amp; R&amp;D</text>
+  </g>
 
   <!-- Zone 2: Birmingham (UK) -->
   <g transform="translate(315, 42)">
-    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2"/>
-    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" class="dash-flow hyper-glow"/>
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
     <!-- 3D Tilted Gyro Chronometer 2 -->
     <g transform="translate(10, 3)">
-      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4" class="hyper-glow">
-        <animateTransform attributeName="transform" type="rotate" from="360 18 18" to="0 18 18" dur="6s" repeatCount="indefinite"/>
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4">
+        <animateTransform attributeName="transform" type="rotate" from="360 18 18" to="0 18 18" dur="6s" repeatCount="indefinite" />
       </ellipse>
-      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" class="hyper-glow"/>
-      <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" class="dash-flow"/>
-      <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1"/>
-      <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1"/>
-      <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" class="dash-flow hyper-glow"/>
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" />
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" />
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" />
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1" />
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" />
       <!-- Sweep Second Hand (4s SMIL Rotation) -->
       <line x1="18" y1="18" x2="18" y2="6" stroke="#EF4444" stroke-width="1" stroke-linecap="round">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="4s" repeatCount="indefinite" />
       </line>
       <!-- Minute Hand (8s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round" class="dash-flow hyper-glow">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite"/>
+      <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
       </line>
       <!-- Hour Hand (48s SMIL Rotation) -->
-      <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round" class="dash-flow hyper-glow">
-        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite"/>
+      <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
       </line>
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" class="hyper-glow"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.8s" additive="sum" repeatCount="indefinite"/></g>
-    <text x="52" y="16" class="c-loc hyper-glow">🇬🇧 BIRMINGHAM, UK</text>
+      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+    </g>
+    <text x="52" y="16" class="c-loc">🇬🇧 BIRMINGHAM, UK</text>
     <text x="52" y="27" class="c-time" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>
     <text x="52" y="37" class="c-desc">Software Engineering &amp; Client Sync</text>
   </g>
 
   <!-- Zone 3: Engagement Status -->
   <g transform="translate(600, 42)">
-    <polygon points="6,0 264,0 270,6 270,36 264,42 6,42 0,36 0,6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2"/>
-    <path d="M 6 1 L 264 1 L 269 6 L 1 6 Z" fill="url(#clockSpecular)" class="dash-flow hyper-glow"/>
+    <polygon points="6,0 264,0 270,6 270,36 264,42 6,42 0,36 0,6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 264 1 L 269 6 L 1 6 Z" fill="url(#clockSpecular)" />
     <g transform="translate(12, 10)">
-      <circle cx="6" cy="6" r="4" fill="#10B981" class="hyper-glow"/>
-      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="hyper-glow"/>
-      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="-2 hyper-glow"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.9s" additive="sum" repeatCount="indefinite"/></g>
+      <circle cx="6" cy="6" r="4" fill="#10B981" />
+      
+      
+    </g>
     <text x="32" y="17" class="c-loc" fill="#34D399">ENGAGEMENT STATUS</text>
     <text x="32" y="28" class="c-time" fill="#10B981">SELECT CONSULTATIONS OPEN</text>
-    <text x="32" y="37" class="c-desc hyper-glow">Multi-Agent AI • 3D Shaders • Performance</text>
-  <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.7s" additive="sum" repeatCount="indefinite"/></g>
-
-    <g class="hyper-overlay-effects" style="pointer-events: none">
-        <!-- Scanning laser -->
-        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
-            
-        </rect>
-        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
-        
-        <!-- Vignette / Border flare -->
-        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
-    </g>
-    </svg>
+    <text x="32" y="37" class="c-desc">Multi-Agent AI • 3D Shaders • Performance</text>
+  </g>
+</svg>

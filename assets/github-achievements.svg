@@ -1,112 +1,96 @@
-<svg width="900" height="116" viewBox="0 0 900 116" fill="none" xmlns="http://www.w3.org/2000/svg"><g class="hyper-background-effects" opacity="0.6" style="pointer-events: none">
-        <!-- Grid -->
-        <pattern id="hyperGrid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0, 223, 216, 0.05)" stroke-width="1" class="dash-flow"/>
-        </pattern>
-        <rect width="100%" height="100%" fill="url(#hyperGrid)"/>
-        <circle cx="305.854893512602" cy="81.92278854908798" r="0.9559445570360698" fill="#A855F7" style="--dx:-34.836660256505056px;  --dy:20.38754997367505px;  animation: particle-drift 3.4391791118079684s ease-in-out 4.631440987727637s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="838.5172837399786" cy="64.84066792281648" r="1.2730634793536892" fill="#A855F7" style="--dx:48.029101164828965px;  --dy:74.2546554813351px;  animation: particle-drift 5.877244104880995s ease-in-out 2.33521395106463s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="28.702007763589155" cy="63.232290250040286" r="1.6874900053749353" fill="#00DFD8" style="--dx:-7.931014197269609px;  --dy:-37.05273907656894px;  animation: particle-drift 3.454858068889819s ease-in-out 0.10105770297968941s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="301.20558107677175" cy="35.74328728406633" r="0.7376711636519822" fill="#A855F7" style="--dx:-49.74813064051791px;  --dy:32.4684291053014px;  animation: particle-drift 4.677430664581676s ease-in-out 4.25187930300431s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="719.4942408084147" cy="114.11475669396371" r="2.186968168945125" fill="#00DFD8" style="--dx:10.175082432628118px;  --dy:38.45324088363156px;  animation: particle-drift 3.6327122825488867s ease-in-out 0.732150507902537s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="557.7900052766962" cy="84.08457170975379" r="0.8788923822285353" fill="#00DFD8" style="--dx:-8.511777236859091px;  --dy:19.45698781202767px;  animation: particle-drift 7.003321310134295s ease-in-out 3.742366926957894s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="230.94537521812305" cy="101.81382561633285" r="0.9243597167697248" fill="#A855F7" style="--dx:31.462591145406105px;  --dy:66.25359427409951px;  animation: particle-drift 5.9732606496642955s ease-in-out 0.19621036224186317s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="656.7290349373116" cy="21.181167535563812" r="0.6529571114325763" fill="#00DFD8" style="--dx:25.69054390679377px;  --dy:54.23283155422023px;  animation: particle-drift 5.817076668780079s ease-in-out 2.705726272150825s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="118.63861498974568" cy="98.05760730536363" r="1.8887624695310898" fill="#A855F7" style="--dx:-46.99461139526834px;  --dy:32.916672969673265px;  animation: particle-drift 3.0417766130866326s ease-in-out 1.7459434650728234s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="298.3645052213727" cy="109.35190427013428" r="2.0329256576618184" fill="#A855F7" style="--dx:-74.24690881187388px;  --dy:51.29587739878909px;  animation: particle-drift 3.583302544789874s ease-in-out 4.575413828723164s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="370.9651851843029" cy="58.872939976179644" r="1.5907453493128723" fill="#A855F7" style="--dx:-18.030066569865415px;  --dy:-19.073090945189797px;  animation: particle-drift 6.653274628556715s ease-in-out 3.2019676449287098s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="448.1941447907997" cy="53.90551109359194" r="0.6659154614737481" fill="#00DFD8" style="--dx:5.617685900181247px;  --dy:-54.40866028862245px;  animation: particle-drift 5.312834182130427s ease-in-out 0.7975584793925861s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="298.4485775348526" cy="16.408429698180214" r="1.6474449107718696" fill="#A855F7" style="--dx:53.10313040612923px;  --dy:-1.1233311776084831px;  animation: particle-drift 3.0373385040894054s ease-in-out 3.0792432136895083s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="55.30035417704566" cy="16.867665666402097" r="2.155713251385131" fill="#A855F7" style="--dx:-70.82981543676057px;  --dy:58.23346575273145px;  animation: particle-drift 4.655173582206432s ease-in-out 1.137870057922592s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="52.82730555964105" cy="47.10031139351467" r="2.144036641837167" fill="#00DFD8" style="--dx:-53.62476487561453px;  --dy:73.06910665883504px;  animation: particle-drift 5.289924316601394s ease-in-out 0.43441156585054486s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="48.33663827986487" cy="59.323553427838526" r="0.628443811789517" fill="#00DFD8" style="--dx:69.16078798090395px;  --dy:57.00784951633879px;  animation: particle-drift 7.218593790970807s ease-in-out 1.7603286648733856s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="752.0925286866136" cy="9.93674609399101" r="0.9858365153779396" fill="#A855F7" style="--dx:-59.930311617995635px;  --dy:-27.53898572924125px;  animation: particle-drift 5.522853962406286s ease-in-out 1.642916118643309s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="547.9395468002771" cy="10.94169472009974" r="1.2968985794317514" fill="#A855F7" style="--dx:39.79537677525779px;  --dy:-40.042436152241905px;  animation: particle-drift 4.124256397382975s ease-in-out 2.1555143231816887s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="705.4104263590697" cy="110.89734252523583" r="1.1689850906389612" fill="#00DFD8" style="--dx:-38.65353084551412px;  --dy:-6.361333425797028px;  animation: particle-drift 3.2634979537040834s ease-in-out 1.1568553632093543s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="94.69362168107097" cy="25.630792988579273" r="1.4763258428176713" fill="#A855F7" style="--dx:0.41509402312565613px;  --dy:-40.36254656089281px;  animation: particle-drift 4.3709321717836875s ease-in-out 0.08127810211982278s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="599.1961370963934" cy="6.2976337502716415" r="0.6964380055610608" fill="#A855F7" style="--dx:-69.64598963428915px;  --dy:65.33855799226619px;  animation: particle-drift 7.081781484155428s ease-in-out 2.5828286149570054s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="784.2357294532061" cy="103.63428640271566" r="0.6561258306880617" fill="#A855F7" style="--dx:-38.817338909538066px;  --dy:70.08845886299198px;  animation: particle-drift 3.7109169020902013s ease-in-out 3.6860069261299855s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="474.3804050660921" cy="16.93192384722874" r="1.7665848860745412" fill="#A855F7" style="--dx:-67.26798353038049px;  --dy:60.2817269833845px;  animation: particle-drift 3.8384898974227015s ease-in-out 3.5509726178359866s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="113.66261879279533" cy="27.343875330153182" r="1.3878460429871429" fill="#A855F7" style="--dx:-14.774935961414904px;  --dy:6.737121619064906px;  animation: particle-drift 3.163241558154696s ease-in-out 4.5286645996913695s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="305.4906040368165" cy="89.76775286174339" r="2.1386102218808754" fill="#A855F7" style="--dx:-26.338141090230867px;  --dy:-41.317467963255275px;  animation: particle-drift 4.700696983353209s ease-in-out 2.5816330059320673s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="542.6902774329716" cy="92.44143333522794" r="0.6952471366129511" fill="#00DFD8" style="--dx:27.119267780657253px;  --dy:59.595026659275334px;  animation: particle-drift 5.632632519541469s ease-in-out 3.261485087351312s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="670.3229613310577" cy="9.895555698856079" r="1.907901852403442" fill="#00DFD8" style="--dx:-68.59934659413283px;  --dy:-70.9494050888781px;  animation: particle-drift 5.1857943662925745s ease-in-out 1.142143045091804s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="646.8651414523342" cy="17.578178123604715" r="2.017444927769419" fill="#A855F7" style="--dx:-47.27542837196309px;  --dy:-5.969647936569284px;  animation: particle-drift 5.145955507580255s ease-in-out 1.0237322733733178s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="780.7705455943385" cy="26.933382684513823" r="2.083647617742213" fill="#00DFD8" style="--dx:1.6913906586256022px;  --dy:55.2192783576525px;  animation: particle-drift 3.154702465364088s ease-in-out 1.7860304151328699s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><circle cx="574.8240578206161" cy="68.8515269304589" r="2.442051213308615" fill="#00DFD8" style="--dx:-49.69040384319937px;  --dy:73.79879719816631px;  animation: particle-drift 3.115789652732074s ease-in-out 3.6756224841012264s infinite;  opacity: 0.5;  filter: blur(1px)" class="hyper-glow"/><g>
-        <animateTransform attributeName="transform" type="rotate" values="0 450 58; 360 450 58" dur="20s" repeatCount="indefinite"/>
-        <circle cx="450" cy="58" r="300" fill="none" stroke="rgba(168,85,247,0.1)" stroke-width="2" stroke-dasharray="15 30" class="dash-flow hyper-glow" style="opacity: 0.5"/>
-        <circle cx="450" cy="58" r="320" fill="none" stroke="rgba(0,223,216,0.1)" stroke-width="1" stroke-dasharray="50 100" class="dash-flow hyper-glow" style="opacity: 0.5"/>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.1s" additive="sum" repeatCount="indefinite"/></g></g>
+<svg width="900" height="116" viewBox="0 0 900 116" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Frosted Translucent Glass Gradient -->
     <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.94"/>
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98"/>
+      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.94" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="cardSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45"/>
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1"/>
-      <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
     <!-- Metallic Tier Gradients -->
     <linearGradient id="goldTier" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFE066"/>
-      <stop offset="50%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#D97706"/>
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
     </linearGradient>
 
     <linearGradient id="cyanTier" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#67E8F9"/>
-      <stop offset="50%" stop-color="#00DFD8"/>
-      <stop offset="100%" stop-color="#0891B2"/>
+      <stop offset="0%" stop-color="#67E8F9" />
+      <stop offset="50%" stop-color="#00DFD8" />
+      <stop offset="100%" stop-color="#0891B2" />
     </linearGradient>
 
     <linearGradient id="purpleTier" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E879F9"/>
-      <stop offset="50%" stop-color="#A855F7"/>
-      <stop offset="100%" stop-color="#6B21A8"/>
+      <stop offset="0%" stop-color="#E879F9" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#6B21A8" />
     </linearGradient>
 
     <linearGradient id="emeraldTier" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6EE7B7"/>
-      <stop offset="50%" stop-color="#10B981"/>
-      <stop offset="100%" stop-color="#047857"/>
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
     </linearGradient>
 
     <linearGradient id="blueTier" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7DD3FC"/>
-      <stop offset="50%" stop-color="#0284C7"/>
-      <stop offset="100%" stop-color="#0369A1"/>
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
     </linearGradient>
 
     <style>
-.b-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
-    .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
-    .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; }
-  
+      .b-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
+      .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1.2px; }
+      
+      .corner-tick { stroke-width: 1.5; }
+      
+      .badge-anim {
+        animation: floatBadge 3.5s ease-in-out infinite alternate;
+      }
+      .f1 { animation-delay: 0s; }
+      .f2 { animation-delay: 0.4s; }
+      .f3 { animation-delay: 0.8s; }
+      .f4 { animation-delay: 1.2s; }
+      .f5 { animation-delay: 1.6s; }
 
-/* CONTINUOUS HIGH-FPS CYBER ANIMATIONS (NO PULSE, NO GLITCH) */
-@keyframes cyber-scan {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(1000%); }
-}
-@keyframes border-run {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
-}
-@keyframes dash-flow {
-  0% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -200; }
-}
-@keyframes dash-flow-reverse {
-  0% { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 200; }
-}
-@keyframes particle-drift {
-  0% { transform: translate(0, 0); }
-  50% { transform: translate(var(--dx), var(--dy)); }
-  100% { transform: translate(0, 0); }
-}
+      .tier-glow { filter: drop-shadow(0 0 6px currentColor); }
+      .card-laser-stream { stroke-dasharray: 6, 12; animation: cardLaser 1.5s linear infinite; }
 
-.cyber-scanner { 
-  animation: cyber-scan 3.5s linear infinite; 
-  opacity: 0.45; 
-}
-.border-run { 
-  stroke-dasharray: 100 200; 
-  animation: border-run 5s linear infinite; 
-}
-.dash-flow { 
-  stroke-dasharray: 8 6; 
-  animation: dash-flow 2.5s linear infinite; 
-}
-.dash-flow-reverse { 
-  stroke-dasharray: 12 8; 
-  animation: dash-flow-reverse 3.5s linear infinite; 
-}
-.hyper-glow { 
-  filter: drop-shadow(0 0 4px rgba(0, 223, 216, 0.4)); 
-}
-.purple-glow { 
-  filter: drop-shadow(0 0 4px rgba(168, 85, 247, 0.4)); 
-}
-</style>
+      @keyframes floatBadge {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-4px); }
+      }
+      
+      @keyframes cardLaser {
+        from { stroke-dashoffset: 36; }
+        to { stroke-dashoffset: 0; }
+      }
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
   </defs>
 
   <!-- 5 3D Glassmorphic Podium Cards with Multi-Plane Gyroscopes & Laser Perimeter -->
@@ -114,146 +98,135 @@
   <!-- Badge 1: Systems Architect -->
   <g transform="translate(10, 8)">
     <g class="badge-anim f1">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#goldTier)" stroke-width="1.3"/>
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#FFE066" stroke-width="1" class="card-laser-stream" opacity="0.6"/>
-      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" class="dash-flow hyper-glow"/>
-      <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick dash-flow hyper-glow"/>
-      <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick dash-flow"/>
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#goldTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#FFE066" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick" />
       <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </ellipse>
-        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#FFE066" stroke-width="1" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#FFE066" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
         </ellipse>
-        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #F59E0B)" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite"/>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #F59E0B)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.2s" additive="sum" repeatCount="indefinite"/></g>
+      </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🏛️</text>
-      <text x="84" y="58" text-anchor="middle" class="b-title hyper-glow">SYSTEMS ARCHITECT</text>
-      <text x="84" y="72" text-anchor="middle" class="b-sub hyper-glow">Distributed Scalability</text>
-      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow hyper-glow" fill="#FBBF24">★ MASTER TIER ★</text>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.4s" additive="sum" repeatCount="indefinite"/></g>
-  <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.3s" additive="sum" repeatCount="indefinite"/></g>
+      <text x="84" y="58" text-anchor="middle" class="b-title">SYSTEMS ARCHITECT</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Distributed Scalability</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#FBBF24">★ MASTER TIER ★</text>
+    </g>
+  </g>
 
   <!-- Badge 2: Multi-Agent AI -->
   <g transform="translate(188, 8)">
     <g class="badge-anim f2">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#cyanTier)" stroke-width="1.3" class="dash-flow hyper-glow"/>
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#67E8F9" stroke-width="1" class="card-laser-stream dash-flow hyper-glow" opacity="0.6"/>
-      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)"/>
-      <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick dash-flow hyper-glow"/>
-      <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick dash-flow hyper-glow"/>
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#cyanTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#67E8F9" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick" />
       <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </ellipse>
-        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#67E8F9" stroke-width="1" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#67E8F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
         </ellipse>
-        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite"/>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.4s" additive="sum" repeatCount="indefinite"/></g>
-      <text x="84" y="34" text-anchor="middle" font-size="16" class="hyper-glow">🤖</text>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🤖</text>
       <text x="84" y="58" text-anchor="middle" class="b-title">MULTI-AGENT AI</text>
       <text x="84" y="72" text-anchor="middle" class="b-sub">Swarm &amp; Tool RAG</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#00DFD8">★ MYTHIC TIER ★</text>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.2s" additive="sum" repeatCount="indefinite"/></g>
+    </g>
   </g>
 
   <!-- Badge 3: WebGL & GLSL -->
   <g transform="translate(366, 8)">
     <g class="badge-anim f3">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#purpleTier)" stroke-width="1.3"/>
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#E879F9" stroke-width="1" class="card-laser-stream dash-flow hyper-glow" opacity="0.6"/>
-      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)"/>
-      <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick dash-flow hyper-glow"/>
-      <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick dash-flow"/>
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#purpleTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#E879F9" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick" />
       <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </ellipse>
-        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#E879F9" stroke-width="1" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#E879F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
         </ellipse>
-        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite"/>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.2s" additive="sum" repeatCount="indefinite"/></g>
+      </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🎮</text>
       <text x="84" y="58" text-anchor="middle" class="b-title">WEBGL 2.0 &amp; GLSL</text>
-      <text x="84" y="72" text-anchor="middle" class="b-sub hyper-glow">3D Spatial &amp; Compute</text>
-      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow hyper-glow" fill="#C084FC">★ OBSIDIAN TIER ★</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">3D Spatial &amp; Compute</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#C084FC">★ OBSIDIAN TIER ★</text>
     </g>
   </g>
 
   <!-- Badge 4: 50+ Deployments -->
   <g transform="translate(544, 8)">
     <g class="badge-anim f4">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#emeraldTier)" stroke-width="1.3"/>
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#6EE7B7" stroke-width="1" class="card-laser-stream" opacity="0.6"/>
-      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" class="dash-flow-reverse"/>
-      <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick dash-flow hyper-glow"/>
-      <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick dash-flow"/>
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#emeraldTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#6EE7B7" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick" />
       <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </ellipse>
-        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#6EE7B7" stroke-width="1" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#6EE7B7" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
         </ellipse>
-        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #10B981)" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite"/>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #10B981)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
-      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.5s" additive="sum" repeatCount="indefinite"/></g>
-      <text x="84" y="34" text-anchor="middle" font-size="16" class="hyper-glow">🚀</text>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🚀</text>
       <text x="84" y="58" text-anchor="middle" class="b-title">50+ DEPLOYMENTS</text>
       <text x="84" y="72" text-anchor="middle" class="b-sub">High-Availability Cloud</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#34D399">★ DIAMOND TIER ★</text>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.4s" additive="sum" repeatCount="indefinite"/></g>
+    </g>
   </g>
 
   <!-- Badge 5: OS Kernel Tuner -->
   <g transform="translate(722, 8)">
     <g class="badge-anim f5">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#blueTier)" stroke-width="1.3"/>
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#7DD3FC" stroke-width="1" class="card-laser-stream dash-flow hyper-glow" opacity="0.6"/>
-      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)"/>
-      <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick dash-flow hyper-glow"/>
-      <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick dash-flow"/>
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#blueTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#7DD3FC" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick" />
       <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </ellipse>
-        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#7DD3FC" stroke-width="1" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite"/>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#7DD3FC" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
         </ellipse>
-        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #0284C7)" class="hyper-glow">
-          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite"/>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #0284C7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">⚡</text>
-      <text x="84" y="58" text-anchor="middle" class="b-title hyper-glow">OS KERNEL TUNER</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">OS KERNEL TUNER</text>
       <text x="84" y="72" text-anchor="middle" class="b-sub">Low-Latency Engineering</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#38BDF8">★ PLATINUM TIER ★</text>
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="3.1s" additive="sum" repeatCount="indefinite"/></g>
-  <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="4.0s" additive="sum" repeatCount="indefinite"/></g>
-
-    <g class="hyper-overlay-effects" style="pointer-events: none">
-        <!-- Scanning laser -->
-        <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
-            
-        </rect>
-        <rect x="0" y="-20" width="100%" height="40" fill="#FFFFFF" opacity="0.1" class="cyber-scanner" style="animation-delay: -0.1s"/>
-        
-        <!-- Vignette / Border flare -->
-        <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.3)" stroke-width="1" class="border-run"/>
     </g>
-    </svg>
+  </g>
+</svg>
