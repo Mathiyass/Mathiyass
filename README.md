@@ -7,17 +7,18 @@
 
 <br/><br/>
 
-<!-- DYNAMIC TYPING SVG BANNER (Native 60 FPS 3D HUD) -->
+<!-- DYNAMIC TYPING SVG BANNER -->
 <a href="https://mathiya.cc">
-  <img src="./assets/hud-typing-banner.svg" alt="Dynamic HUD Typing Banner" width="100%" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2500&pause=1000&color=00DFD8&center=true&vCenter=true&multiline=false&width=750&height=40&lines=LEAD+SYSTEMS+ARCHITECT+%26+AI+SPECIALIST;SCALABLE+MULTI-AGENT+AI+ECOSYSTEMS+(SIVION);LOW-LATENCY+WINDOWS+KERNEL+TUNING+(MA+OPTIMIZER);WEBGL+2.0+%26+GLSL+GPGPU+COMPUTE+SHADERS" alt="Typing SVG" />
 </a>
 
 <br/><br/>
 
-<!-- PROFILE TELEMETRY STRIP (Native 60 FPS 3D HUD) -->
-<a href="https://mathiya.cc">
-  <img src="./assets/quick-stats-strip.svg" alt="Profile Telemetry Strip" width="100%" />
-</a>
+<!-- PROFILE BADGES -->
+[![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.cc)
+[![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=0D1117)](https://github.com/Mathiyass?tab=followers)
+[![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=7701D0&labelColor=0D1117)](https://github.com/Mathiyass?tab=repositories)
+[![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)](https://github.com/Mathiyass?tab=repositories)
 
 <br/><br/>
 
@@ -115,10 +116,43 @@
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 🛠️ Technology & Architectural Stack Matrix
+### 🛠️ Technology & Architectural Stack
 
 <div align="center">
-  <img src="./assets/tech-stack-matrix.svg" alt="Technology & Architectural Stack Matrix" width="100%" />
+
+**🤖 Multi-Agent AI & Intelligent Systems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi&theme=dark" alt="AI Stack" /></a>
+<br/>
+`Python 3.12` • `PyTorch` • `Multi-Agent Orchestration` • `RAG Pipelines` • `Vector Search (pgvector)` • `FastAPI`
+
+<br/><br/>
+
+**⚡ Low-Level & High-Performance Engineering**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,rust,go,powershell,bash&theme=dark" alt="Systems Stack" /></a>
+<br/>
+`C++20` • `Rust` • `Go` • `Windows API & Kernel Tuning` • `PowerShell Automation` • `POSIX Bash`
+
+<br/><br/>
+
+**🎨 WebGL 2.0, 3D Spatial & Frontend Architecture**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vue,threejs,vite,html,css&theme=dark" alt="Frontend Stack" /></a>
+<br/>
+`Next.js 16 (Turbopack)` • `React 19 (Concurrent UI)` • `TypeScript 5 (Strict)` • `Three.js` • `GLSL Shaders` • `WebGL 2.0` • `Tailwind CSS`
+
+<br/><br/>
+
+**☁️ Cloud Native, Distributed Backend & DevOps**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="DevOps Stack" /></a>
+<br/>
+`Node.js` • `Bun Runtime` • `Docker` • `Kubernetes` • `AWS` • `GCP` • `Azure` • `GitHub Actions CI/CD` • `Linux` • `NGINX`
+
+<br/><br/>
+
+**🗄️ Databases, Caching & Data Systems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,supabase,redis,mongodb,mysql,sqlite&theme=dark" alt="Databases Stack" /></a>
+<br/>
+`PostgreSQL` • `Supabase (Realtime & Auth)` • `Redis Caching` • `MongoDB` • `MySQL` • `SQLite`
+
 </div>
 
 <br/>
@@ -202,8 +236,8 @@
 
 <br/><br/>
 
-<a href="https://github.com/Mathiyass">
-  <img src="./assets/streak-telemetry.svg" alt="GitHub Streak Telemetry" width="100%" />
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="100%"/>
 </a>
 
 <br/><br/>
@@ -342,11 +376,13 @@ Leave a star or sign the guestbook to connect:
 <br/><br/>
 
 ### 🌐 Connect & Network
-<br/>
 
-<div align="center">
-  <img src="./assets/connect-hub.svg" alt="Connect & Network Portals" width="100%" />
-</div>
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.cc)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-a-a955941a2/)
+[![Twitter](https://img.shields.io/badge/Twitter-0D1117?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/__Mathiya__)
+[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/z3k3NVxuqY)
+[![Medium](https://img.shields.io/badge/Medium-0D1117?style=for-the-badge&logo=medium&logoColor=00DFD8)](https://medium.com/@mathishaangirasa)
+[![YouTube](https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
 
 <br/><br/>
 
