@@ -2,15 +2,32 @@
   <defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
-      <stop offset="20%" stop-color="#00DFD8" stop-opacity="0.4"/>
+      <stop offset="10%" stop-color="#00DFD8" stop-opacity="0.6"/>
       <stop offset="50%" stop-color="#00DFD8" stop-opacity="1"/>
-      <stop offset="80%" stop-color="#7701D0" stop-opacity="0.4"/>
+      <stop offset="90%" stop-color="#7701D0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#7701D0" stop-opacity="0.4"/>
       <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
     </linearGradient>
   </defs>
-  <line x1="40" y1="12" x2="860" y2="12" stroke="url(#lineGrad)" stroke-width="1.5"/>
-  <line x1="380" y1="7" x2="380" y2="17" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.7"/>
-  <line x1="520" y1="7" x2="520" y2="17" stroke="#7701D0" stroke-width="1.5" stroke-opacity="0.7"/>
-  <polygon points="450,5 457,12 450,19 443,12" fill="#00DFD8"/>
-  <circle cx="450" cy="12" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Ambient Glow Line -->
+  <line x1="50" y1="12" x2="850" y2="12" stroke="url(#glowGrad)" stroke-width="4" filter="drop-shadow(0 0 6px #00DFD8)" />
+  
+  <!-- Main Laser Precision Beam -->
+  <line x1="10" y1="12" x2="890" y2="12" stroke="url(#lineGrad)" stroke-width="1.5" />
+  
+  <!-- Circuit Tick Accents -->
+  <line x1="360" y1="7" x2="360" y2="17" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.8" />
+  <line x1="540" y1="7" x2="540" y2="17" stroke="#7701D0" stroke-width="1.5" stroke-opacity="0.8" />
+  
+  <!-- Center Diamond HUD Node -->
+  <polygon points="450,4 458,12 450,20 442,12" fill="#00DFD8" />
+  <circle cx="450" cy="12" r="3" fill="#FFFFFF" />
 </svg>

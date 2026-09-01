@@ -182,26 +182,34 @@
 
 ### 📊 Telemetry & GitHub Intelligence
 
+<table width="100%" style="border-collapse: collapse; border: none;">
+<tr>
+<td width="50%" align="center" valign="top" style="border: none; padding: 4px;">
+  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+    <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/0-profile-details.svg" alt="Profile Details" width="100%" onerror="this.style.display='none'"/>
+  </a>
+</td>
+<td width="50%" align="center" valign="top" style="border: none; padding: 4px;">
+  <a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
+    <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/2-most-commit-language.svg" alt="Most Commits" width="100%" onerror="this.style.display='none'"/>
+  </a>
+</td>
+</tr>
+</table>
+
 <div align="center">
 
-<a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/0-profile-details.svg" alt="Profile Details" width="48%" onerror="this.style.display='none'"/>
-</a>
-<a href="https://github.com/vn7n24fzkq/github-profile-summary-cards">
-  <img src="https://raw.githubusercontent.com/Mathiyass/Mathiyass/output/cards/dark/2-most-commit-language.svg" alt="Most Commits" width="48%" onerror="this.style.display='none'"/>
-</a>
-
-<br/><br/>
+<br/>
 
 <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="97%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="100%"/>
 </a>
 
 <br/><br/>
 
 <!-- Spotify Live Stream Integration -->
 <a href="https://mathiya.cc">
-  <img src="./assets/spotify-live.svg" alt="Spotify Audio Stream" width="480px" />
+  <img src="./assets/spotify-live.svg" alt="Spotify Audio Stream" width="100%" />
 </a>
 
 </div>
@@ -259,6 +267,9 @@
 
 #### 📝 Articles & Deep Dives
 <!-- BLOG-POST-LIST:START -->
+- [High-Performance Multi-Agent Architectures with LLM Swarms](https://mathiya.cc/blog)
+- [Building 3D Tactical Experiences with WebGL 2.0 & GLSL Compute](https://mathiya.cc/blog)
+- [Zero-Latency Windows Kernel Tuning with MA Optimizer](https://mathiya.cc/blog)
 <!-- BLOG-POST-LIST:END -->
 
 </td>
