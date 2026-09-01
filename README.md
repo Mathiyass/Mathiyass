@@ -312,10 +312,10 @@
 
 #### ⚡ GitHub Telemetry
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#19](https://github.com/Mathiyass/Mathiyass/pull/19) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
-2. 💪 Opened PR [#19](https://github.com/Mathiyass/Mathiyass/pull/19) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
-3. 🎉 Merged PR [#18](https://github.com/Mathiyass/Mathiyass/pull/18) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
-4. 💪 Opened PR [#18](https://github.com/Mathiyass/Mathiyass/pull/18) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
+1. 🎉 Merged PR [#11](https://github.com/Mathiyass/Mathiyass/pull/11) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
+2. 🎉 Merged PR [#2](https://github.com/Mathiyass/Mathiyass/pull/2) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
+3. 🎉 Merged PR [#16](https://github.com/Mathiyass/Mathiyass/pull/16) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
+4. 🎉 Merged PR [#5](https://github.com/Mathiyass/Mathiyass/pull/5) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
 <!--END_SECTION:activity-->
 
 </td>
