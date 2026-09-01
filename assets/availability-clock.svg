@@ -1,60 +1,42 @@
 <svg width="900" height="96" viewBox="0 0 900 96" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="clockBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F141F" />
-      <stop offset="100%" stop-color="#06090E" />
+    <linearGradient id="clockBgSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E131E" />
+      <stop offset="100%" stop-color="#06090F" />
     </linearGradient>
 
     <!-- Border Gradient -->
-    <linearGradient id="clockBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    <linearGradient id="clockBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
     </linearGradient>
 
     <style>
-      .c-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
-      .c-loc { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
-      .c-time { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8px; fill: #00DFD8; }
+      .c-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .c-loc { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .c-time { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8.5px; font-weight: 700; fill: #00DFD8; }
       .c-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8px; fill: #8B949E; }
       
-      .rot-minute {
-        transform-box: fill-box;
-        transform-origin: 50% 100%;
-        animation: spinClock 8s linear infinite;
-      }
-      .rot-hour {
-        transform-box: fill-box;
-        transform-origin: 0% 50%;
-        animation: spinClock 48s linear infinite;
-      }
-
-      .ping-ring {
-        transform-box: fill-box;
-        transform-origin: center;
+      .ping-pulse {
         animation: pingEffect 2s cubic-bezier(0, 0, 0.2, 1) infinite;
       }
 
-      @keyframes spinClock {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-
       @keyframes pingEffect {
-        0% { transform: scale(1); opacity: 0.8; }
-        75%, 100% { transform: scale(2.2); opacity: 0; }
+        0% { r: 3.5; opacity: 0.9; stroke-width: 1.5; }
+        100% { r: 12; opacity: 0; stroke-width: 0.5; }
       }
     </style>
   </defs>
 
   <!-- Outer Glass Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockBg)" stroke="url(#clockBorder)" stroke-width="1.2" />
+  <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockBgSupreme)" stroke="url(#clockBorderSupreme)" stroke-width="1.3" />
 
   <!-- Header Banner -->
   <g transform="translate(20, 14)">
     <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
-    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" stroke-width="1" class="ping-ring" />
+    <circle cx="6" cy="6" r="3.5" fill="none" stroke="#00DFD8" class="ping-pulse" />
     <text x="18" y="9.5" class="c-title">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
     <text x="860" y="9.5" text-anchor="end" class="c-title" fill="#10B981">COLLABORATION: OPEN</text>
     <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
@@ -62,13 +44,24 @@
 
   <!-- Zone 1: Colombo (LK) -->
   <g transform="translate(30, 42)">
-    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
-    <!-- Mini Clock Dial -->
+    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(0, 223, 216, 0.04)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1.2" />
+    <!-- Clock Dial 1 with SMIL Center Rotation -->
     <g transform="translate(10, 3)">
-      <circle cx="18" cy="18" r="14" fill="#0D1117" stroke="#00DFD8" stroke-width="1.2" />
-      <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round" class="rot-minute" />
-      <line x1="18" y1="18" x2="24" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round" class="rot-hour" />
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" />
+      <!-- Hour Ticks -->
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" />
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" />
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#00DFD8" stroke-width="1" />
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#00DFD8" stroke-width="1" />
+      <!-- Minute Hand (8s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="18" y2="8" stroke="#00DFD8" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
+      </line>
+      <!-- Hour Hand (48s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="25" y2="18" stroke="#34D399" stroke-width="2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
+      </line>
+      <circle cx="18" cy="18" r="2.5" fill="#FFFFFF" />
     </g>
     <text x="52" y="16" class="c-loc">🇱🇰 COLOMBO, LK</text>
     <text x="52" y="27" class="c-time">UTC+5:30 • ACTIVE TIMEZONE</text>
@@ -77,13 +70,23 @@
 
   <!-- Zone 2: Birmingham (UK) -->
   <g transform="translate(315, 42)">
-    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
-    <!-- Mini Clock Dial -->
+    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(168, 85, 247, 0.04)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1.2" />
+    <!-- Clock Dial 2 with SMIL Center Rotation -->
     <g transform="translate(10, 3)">
-      <circle cx="18" cy="18" r="14" fill="#0D1117" stroke="#A855F7" stroke-width="1.2" />
-      <line x1="18" y1="18" x2="18" y2="9" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round" class="rot-minute" />
-      <line x1="18" y1="18" x2="14" y2="22" stroke="#A855F7" stroke-width="2" stroke-linecap="round" class="rot-hour" />
-      <circle cx="18" cy="18" r="2" fill="#FFFFFF" />
+      <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" />
+      <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" />
+      <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" />
+      <line x1="5" y1="18" x2="7" y2="18" stroke="#A855F7" stroke-width="1" />
+      <line x1="29" y1="18" x2="31" y2="18" stroke="#A855F7" stroke-width="1" />
+      <!-- Minute Hand (8s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="18" y2="8" stroke="#E879F9" stroke-width="1.5" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="8s" repeatCount="indefinite" />
+      </line>
+      <!-- Hour Hand (48s SMIL Rotation) -->
+      <line x1="18" y1="18" x2="13" y2="23" stroke="#A855F7" stroke-width="2" stroke-linecap="round">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="48s" repeatCount="indefinite" />
+      </line>
+      <circle cx="18" cy="18" r="2.5" fill="#FFFFFF" />
     </g>
     <text x="52" y="16" class="c-loc">🇬🇧 BIRMINGHAM, UK</text>
     <text x="52" y="27" class="c-time" fill="#C084FC">UTC+1 (BST) • COLLABORATION</text>
@@ -92,10 +95,10 @@
 
   <!-- Zone 3: Engagement Status -->
   <g transform="translate(600, 42)">
-    <rect x="0" y="0" width="270" height="42" rx="8" fill="rgba(16, 185, 129, 0.05)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
+    <rect x="0" y="0" width="270" height="42" rx="8" fill="rgba(16, 185, 129, 0.05)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" />
     <g transform="translate(12, 10)">
       <circle cx="6" cy="6" r="4" fill="#10B981" />
-      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" stroke-width="1" class="ping-ring" />
+      <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse" />
     </g>
     <text x="32" y="17" class="c-loc" fill="#34D399">ENGAGEMENT STATUS</text>
     <text x="32" y="28" class="c-time" fill="#10B981">SELECT CONSULTATIONS OPEN</text>
