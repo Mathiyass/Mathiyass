@@ -1,0 +1,111 @@
+<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="radarBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E121A" />
+      <stop offset="100%" stop-color="#07090E" />
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .r-label { font-family: 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #FFFFFF; }
+      .r-val { font-family: 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; }
+      .r-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
+      .r-ring { stroke: rgba(0, 223, 216, 0.2); stroke-width: 1; }
+      .r-axis { stroke: rgba(48, 54, 61, 0.8); stroke-width: 1; stroke-dasharray: 3, 3; }
+      
+      .radar-sweep {
+        transform-origin: 120px 110px;
+        animation: radarSpin 5s linear infinite;
+      }
+      .radar-ping {
+        animation: radarPing 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+
+      @keyframes radarSpin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes radarPing {
+        0% { r: 10; opacity: 0.8; }
+        100% { r: 90; opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="1" y="1" width="898" height="218" rx="12" fill="url(#radarBg)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1.2" />
+
+  <!-- LEFT: Radar Visualizer (Center at 120, 110) -->
+  <g id="radar-visualizer">
+    <!-- Concentric Rings -->
+    <circle cx="120" cy="110" r="25" class="r-ring" />
+    <circle cx="120" cy="110" r="50" class="r-ring" />
+    <circle cx="120" cy="110" r="75" class="r-ring" stroke-opacity="0.4" />
+    <circle cx="120" cy="110" r="90" class="r-ring" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.5" />
+
+    <!-- Expanding Ping Ripple -->
+    <circle cx="120" cy="110" r="40" fill="none" stroke="#00DFD8" stroke-width="1.5" class="radar-ping" />
+
+    <!-- Crosshair Axes -->
+    <line x1="25" y1="110" x2="215" y2="110" class="r-axis" />
+    <line x1="120" y1="15" x2="120" y2="205" class="r-axis" />
+
+    <!-- Radar Polygon Data Area -->
+    <polygon points="120,25 190,65 175,160 65,165 45,70" fill="rgba(0, 223, 216, 0.15)" stroke="#00DFD8" stroke-width="1.5" />
+    <circle cx="120" cy="25" r="3" fill="#00DFD8" />
+    <circle cx="190" cy="65" r="3" fill="#00DFD8" />
+    <circle cx="175" cy="160" r="3" fill="#7701D0" />
+    <circle cx="65" cy="165" r="3" fill="#7701D0" />
+    <circle cx="45" cy="70" r="3" fill="#00DFD8" />
+
+    <!-- Rotating Radar Sweep Beam -->
+    <g class="radar-sweep">
+      <path d="M 120 110 L 120 20 A 90 90 0 0 1 198 65 Z" fill="url(#sweepGrad)" />
+      <line x1="120" y1="110" x2="120" y2="20" stroke="#00DFD8" stroke-width="1.5" />
+    </g>
+    <circle cx="120" cy="110" r="4" fill="#00DFD8" />
+  </g>
+
+  <!-- RIGHT: Capability Breakdown Grid -->
+  <g transform="translate(255, 30)">
+    <!-- Header Title -->
+    <text x="0" y="0" class="r-label" fill="#00DFD8" font-size="12" letter-spacing="2">ARCHITECTURAL CAPABILITY RADAR // METRICS</text>
+    <line x1="0" y1="10" x2="600" y2="10" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Skill 1: Multi-Agent AI -->
+    <g transform="translate(0, 32)">
+      <text x="0" y="0" class="r-label">🤖 Multi-Agent AI &amp; LLM Swarms</text>
+      <text x="590" y="0" text-anchor="end" class="r-val">98%</text>
+      <rect x="0" y="8" width="590" height="5" rx="2.5" fill="#161B22" />
+      <rect x="0" y="8" width="578" height="5" rx="2.5" fill="url(#cyanBorder)" />
+    </g>
+
+    <!-- Skill 2: WebGL & Shaders -->
+    <g transform="translate(0, 64)">
+      <text x="0" y="0" class="r-label">🎮 WebGL 2.0, Three.js &amp; GLSL Compute</text>
+      <text x="590" y="0" text-anchor="end" class="r-val">95%</text>
+      <rect x="0" y="8" width="590" height="5" rx="2.5" fill="#161B22" />
+      <rect x="0" y="8" width="560" height="5" rx="2.5" fill="url(#cyanBorder)" />
+    </g>
+
+    <!-- Skill 3: Low-Level & OS Tuning -->
+    <g transform="translate(0, 96)">
+      <text x="0" y="0" class="r-label">⚡ Kernel Tuning, Windows API &amp; Low-Latency</text>
+      <text x="590" y="0" text-anchor="end" class="r-val" fill="#C4B5FD">96%</text>
+      <rect x="0" y="8" width="590" height="5" rx="2.5" fill="#161B22" />
+      <rect x="0" y="8" width="566" height="5" rx="2.5" fill="url(#cyanBorder)" />
+    </g>
+
+    <!-- Skill 4: Distributed Cloud & Full-Stack -->
+    <g transform="translate(0, 128)">
+      <text x="0" y="0" class="r-label">☁️ Distributed Cloud, Next.js 16 &amp; Supabase</text>
+      <text x="590" y="0" text-anchor="end" class="r-val" fill="#10B981">97%</text>
+      <rect x="0" y="8" width="590" height="5" rx="2.5" fill="#161B22" />
+      <rect x="0" y="8" width="572" height="5" rx="2.5" fill="url(#cyanBorder)" />
+    </g>
+  </g>
+</svg>

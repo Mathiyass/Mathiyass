@@ -1,0 +1,94 @@
+<svg width="900" height="230" viewBox="0 0 900 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F141C" />
+      <stop offset="100%" stop-color="#080B10" />
+    </linearGradient>
+
+    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#30363D" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#30363D" />
+    </linearGradient>
+
+    <style>
+      .t-mono { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 11.5px; }
+      .t-prompt { fill: #10B981; font-weight: 700; }
+      .t-dir { fill: #00DFD8; font-weight: 600; }
+      .t-cmd { fill: #F0F6FC; }
+      .t-dim { fill: #8B949E; }
+      .t-success { fill: #10B981; font-weight: 600; }
+      .t-cyan { fill: #00DFD8; font-weight: 600; }
+      .t-purple { fill: #C4B5FD; font-weight: 600; }
+      .t-gold { fill: #FBBF24; font-weight: 600; }
+      
+      .cursor-blink {
+        animation: blinkCursor 0.9s step-end infinite;
+      }
+      
+      .line-anim {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+
+      @keyframes blinkCursor {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; filter: drop-shadow(0 0 6px #00DFD8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Background -->
+  <rect x="1" y="1" width="898" height="228" rx="10" fill="url(#termBg)" stroke="url(#termBorder)" stroke-width="1.2" />
+
+  <!-- Window Titlebar -->
+  <path d="M 1 10 C 1 5 5 1 10 1 L 890 1 C 895 1 899 5 899 10 L 899 32 L 1 32 Z" fill="#161B22" />
+  <circle cx="22" cy="16.5" r="5.5" fill="#FF5F56" />
+  <circle cx="38" cy="16.5" r="5.5" fill="#FFBD2E" />
+  <circle cx="54" cy="16.5" r="5.5" fill="#27C93F" />
+  <text x="450" y="20.5" text-anchor="middle" class="t-mono t-dim" font-size="11">mathiya@architect-core: ~/system-engine (zsh)</text>
+  <line x1="1" y1="32" x2="899" y2="32" stroke="#21262D" stroke-width="1" />
+
+  <!-- Terminal Output Lines -->
+  <g transform="translate(24, 60)" class="t-mono">
+    <!-- Command 1 -->
+    <text x="0" y="0">
+      <tspan class="t-prompt">mathiya@core</tspan>:<tspan class="t-dir">~/engine</tspan><tspan class="t-cmd">$ ./orchestrate-systems --all --profile=production</tspan>
+    </text>
+
+    <!-- Output 1 -->
+    <text x="0" y="24">
+      <tspan class="t-dim">[00:00.04]</tspan> <tspan class="t-cyan">⚡ MULTI-AGENT SWARM:</tspan> <tspan class="t-success">ACTIVE</tspan> <tspan class="t-dim">(SIVION v2.4 initialized • 6 workers online)</tspan>
+    </text>
+
+    <!-- Output 2 -->
+    <text x="0" y="46">
+      <tspan class="t-dim">[00:00.12]</tspan> <tspan class="t-purple">🌌 MA-OPTIMIZER TUNER:</tspan> <tspan class="t-gold">BENCHMARK 0.42ms</tspan> <tspan class="t-dim">(Kernel latency eliminated • 100% telemetry locked)</tspan>
+    </text>
+
+    <!-- Output 3 -->
+    <text x="0" y="68">
+      <tspan class="t-dim">[00:00.28]</tspan> <tspan class="t-cyan">🎮 WEBGL 2.0 / GLSL:</tspan> <tspan class="t-success">144 FPS @ 4K</tspan> <tspan class="t-dim">(GPGPU Compute shaders verified • mathiya.cc/lab)</tspan>
+    </text>
+
+    <!-- Output 4 -->
+    <text x="0" y="90">
+      <tspan class="t-dim">[00:00.35]</tspan> <tspan class="t-purple">☁️ DISTRIBUTED CLOUD:</tspan> <tspan class="t-success">HEALTHY</tspan> <tspan class="t-dim">(FastAPI + Bun + Supabase Realtime synchronized)</tspan>
+    </text>
+
+    <!-- Next Prompt & Cursor -->
+    <text x="0" y="118">
+      <tspan class="t-prompt">mathiya@core</tspan>:<tspan class="t-dir">~/engine</tspan><tspan class="t-cmd">$ echo "Ready for High-Impact Innovation" </tspan><tspan class="t-cyan cursor-blink">█</tspan>
+    </text>
+
+    <!-- System Status Badge Pill -->
+    <g transform="translate(680, -8)">
+      <rect width="170" height="24" rx="12" fill="#0D1117" stroke="#10B981" stroke-width="1" />
+      <circle cx="14" cy="12" r="3.5" fill="#10B981" style="animation: pulseGlow 1.5s infinite alternate;" />
+      <text x="26" y="15.5" class="t-mono t-success" font-size="10">PIPELINE: 100% OPERATIONAL</text>
+    </g>
+  </g>
+</svg>

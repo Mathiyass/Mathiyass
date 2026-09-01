@@ -29,22 +29,12 @@
 ### 👨‍💻 Lead Systems Architect & AI Engineer
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Lead+Systems+Architect+%26+Software+Engineer;Scalable+Multi-Agent+AI+Ecosystems;WebGL+2.0+Real-Time+Graphics+%26+3D+Spatial;High-Performance+Distributed+Cloud+Engines" alt="Typing SVG" /></a>
-
-```console
-$ whoami
-> Mathisha Angirasa (MATHIYA) — Lead Systems Architect & AI Specialist
-$ location --active
-> Colombo, Sri Lanka 🇱🇰 // Birmingham, United Kingdom 🇬🇧
-$ cat system_status.json
-> {
-    "experience": "4+ Years Active in Systems Architecture & Full-Stack",
-    "deployments": "50+ Production Services & Cloud Deployments",
-    "peer_reviews": "12+ Verified Industry Peer Endorsements",
-    "core_focus": ["Multi-Agent AI Systems", "WebGL 2.0 & GLSL Shaders", "Low-Latency Distributed Engines"]
-  }
-```
+  <a href="https://mathiya.cc">
+    <img src="./assets/terminal-telemetry.svg" alt="Live System Telemetry Terminal" width="100%" />
+  </a>
 </div>
+
+<br/>
 
 <table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
 <tr>
@@ -71,10 +61,20 @@ $ cat system_status.json
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 📐 System Architecture Blueprint
+### 📐 Kinetic Architecture Blueprint
 
 <div align="center">
-  <img src="./assets/architecture-blueprint.svg" alt="System Architecture Blueprint" width="100%" />
+  <img src="./assets/architecture-blueprint.svg" alt="Kinetic System Architecture Blueprint" width="100%" />
+</div>
+
+<br/>
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
+<br/>
+
+### 🎯 Architectural Capability Radar
+
+<div align="center">
+  <img src="./assets/capability-radar.svg" alt="Capability Radar HUD" width="100%" />
 </div>
 
 <br/>
