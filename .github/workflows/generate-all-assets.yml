@@ -7,6 +7,10 @@ on:
   push:
     branches:
       - main
+    paths-ignore:
+      - 'README.md'
+      - 'profile-summary-card-output/**'
+      - '.github/workflows/**'
 
 jobs:
   generate-assets:
@@ -37,7 +41,7 @@ jobs:
           github_user_name: ${{ github.repository_owner }}
       
       - name: Move Pacman to dist
-        run: mv pacman-contribution-graph.svg dist/ || echo "Pacman generation failed but continuing"
+        run: mv pacman-contribution-graph*.svg dist/ || echo "Pacman generation failed but continuing"
 
       - name: Generate 3D Contribution Calendar
         uses: yoshi389111/github-profile-3d-contrib@0.7.1
@@ -51,7 +55,7 @@ jobs:
       - name: Generate Metrics SVG
         uses: lowlighter/metrics@latest
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
           user: Mathiyass
           template: classic
           base: header, activity, community, repositories, metadata
@@ -80,10 +84,12 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
 
       - name: Move Summary Cards to dist
-        run: mv profile-summary-card* dist/cards || echo "Summary cards generation failed but continuing"
+        run: |
+          mkdir -p dist/cards
+          cp -r profile-summary-card-output/* dist/cards/ || echo "Summary cards generation failed but continuing"
 
       - name: Push all assets to output branch
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: output
