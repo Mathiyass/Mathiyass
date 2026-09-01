@@ -15,9 +15,9 @@
 
 <br/><br/>
 
-<!-- GITHUB TROPHIES -->
+<!-- GITHUB ACHIEVEMENTS & SPECIALIZATIONS -->
 <a href="https://github.com/Mathiyass">
-  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=onedark&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" width="100%"/>
+  <img src="./assets/github-achievements.svg" alt="GitHub Achievements & Specializations" width="100%"/>
 </a>
 
 </div>
@@ -193,8 +193,8 @@ $ cat system_status.json
 <br/><br/>
 
 <!-- Spotify Live Stream Integration -->
-<a href="https://spotify.com">
-  <img src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=6grrenymxnzrrvbp2dbe4ikxm&cover_image=true&theme=default&show_offline=true&background_color=0D1117&interchange=true&bar_color=00dfd8&bar_color_cover=false" alt="Spotify Live Stream" width="480px" />
+<a href="https://mathiya.cc">
+  <img src="./assets/spotify-live.svg" alt="Spotify Audio Stream" width="480px" />
 </a>
 
 </div>

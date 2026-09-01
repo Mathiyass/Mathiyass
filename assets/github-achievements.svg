@@ -1,0 +1,85 @@
+<svg width="900" height="110" viewBox="0 0 900 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFA500" />
+    </linearGradient>
+
+    <linearGradient id="cyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" />
+      <stop offset="100%" stop-color="#007CF0" />
+    </linearGradient>
+
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7701D0" />
+      <stop offset="100%" stop-color="#FF007F" />
+    </linearGradient>
+
+    <linearGradient id="emeraldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+
+    <style>
+      .badge-title { font-family: 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #FFFFFF; }
+      .badge-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
+      .badge-tier { font-family: 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- 5 Achievement Badges in a Grid -->
+  <!-- Badge 1: Lead Architect -->
+  <g transform="translate(10, 10)">
+    <rect width="168" height="90" rx="10" fill="url(#cardGrad)" stroke="#FFD700" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="84" cy="28" r="16" fill="rgba(255, 215, 0, 0.12)" stroke="#FFD700" stroke-width="1" />
+    <text x="84" y="33" text-anchor="middle" font-size="16">🏛️</text>
+    <text x="84" y="58" text-anchor="middle" class="badge-title">SYSTEMS ARCHITECT</text>
+    <text x="84" y="72" text-anchor="middle" class="badge-sub">Distributed Scalability</text>
+    <text x="84" y="84" text-anchor="middle" class="badge-tier" fill="#FFD700">★ MASTER TIER ★</text>
+  </g>
+
+  <!-- Badge 2: Multi-Agent AI -->
+  <g transform="translate(188, 10)">
+    <rect width="168" height="90" rx="10" fill="url(#cardGrad)" stroke="#00DFD8" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="84" cy="28" r="16" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1" />
+    <text x="84" y="33" text-anchor="middle" font-size="16">🤖</text>
+    <text x="84" y="58" text-anchor="middle" class="badge-title">MULTI-AGENT AI</text>
+    <text x="84" y="72" text-anchor="middle" class="badge-sub">LLM Swarms &amp; Tool RAG</text>
+    <text x="84" y="84" text-anchor="middle" class="badge-tier" fill="#00DFD8">★ MYTHIC TIER ★</text>
+  </g>
+
+  <!-- Badge 3: WebGL & Shaders -->
+  <g transform="translate(366, 10)">
+    <rect width="168" height="90" rx="10" fill="url(#cardGrad)" stroke="#7701D0" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="84" cy="28" r="16" fill="rgba(119, 1, 208, 0.12)" stroke="#7701D0" stroke-width="1" />
+    <text x="84" y="33" text-anchor="middle" font-size="16">🎮</text>
+    <text x="84" y="58" text-anchor="middle" class="badge-title">WEBGL 2.0 &amp; GLSL</text>
+    <text x="84" y="72" text-anchor="middle" class="badge-sub">3D Spatial &amp; Compute</text>
+    <text x="84" y="84" text-anchor="middle" class="badge-tier" fill="#c4b5fd">★ OBSIDIAN TIER ★</text>
+  </g>
+
+  <!-- Badge 4: Production Deployments -->
+  <g transform="translate(544, 10)">
+    <rect width="168" height="90" rx="10" fill="url(#cardGrad)" stroke="#10B981" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="84" cy="28" r="16" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1" />
+    <text x="84" y="33" text-anchor="middle" font-size="16">🚀</text>
+    <text x="84" y="58" text-anchor="middle" class="badge-title">50+ DEPLOYMENTS</text>
+    <text x="84" y="72" text-anchor="middle" class="badge-sub">High-Availability Cloud</text>
+    <text x="84" y="84" text-anchor="middle" class="badge-tier" fill="#10B981">★ DIAMOND TIER ★</text>
+  </g>
+
+  <!-- Badge 5: Open Source & Tuning -->
+  <g transform="translate(722, 10)">
+    <rect width="168" height="90" rx="10" fill="url(#cardGrad)" stroke="#007CF0" stroke-width="1.2" stroke-opacity="0.6" />
+    <circle cx="84" cy="28" r="16" fill="rgba(0, 124, 240, 0.12)" stroke="#007CF0" stroke-width="1" />
+    <text x="84" y="33" text-anchor="middle" font-size="16">⚡</text>
+    <text x="84" y="58" text-anchor="middle" class="badge-title">OS KERNEL TUNER</text>
+    <text x="84" y="72" text-anchor="middle" class="badge-sub">Low-Latency Engineering</text>
+    <text x="84" y="84" text-anchor="middle" class="badge-tier" fill="#007CF0">★ PLATINUM TIER ★</text>
+  </g>
+</svg>
