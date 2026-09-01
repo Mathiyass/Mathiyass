@@ -1,33 +1,46 @@
 <svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="laserBeamSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
-      <stop offset="10%" stop-color="#00DFD8" stop-opacity="0.6"/>
+      <stop offset="12%" stop-color="#00DFD8" stop-opacity="0.8"/>
       <stop offset="50%" stop-color="#00DFD8" stop-opacity="1"/>
-      <stop offset="90%" stop-color="#7701D0" stop-opacity="0.6"/>
+      <stop offset="88%" stop-color="#7701D0" stop-opacity="0.8"/>
       <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
     </linearGradient>
 
-    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="laserGlowSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
-      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.4"/>
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.9"/>
-      <stop offset="70%" stop-color="#7701D0" stop-opacity="0.4"/>
+      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="1"/>
+      <stop offset="75%" stop-color="#7701D0" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
     </linearGradient>
+
+    <style>
+      .beacon-div {
+        animation: pulseBeaconDiv 1.5s ease-in-out infinite alternate;
+      }
+      @keyframes pulseBeaconDiv {
+        0% { opacity: 0.6; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 8px #00DFD8); }
+      }
+    </style>
   </defs>
 
   <!-- Ambient Glow Line -->
-  <line x1="50" y1="12" x2="850" y2="12" stroke="url(#glowGrad)" stroke-width="4" filter="drop-shadow(0 0 6px #00DFD8)" />
+  <line x1="20" y1="12" x2="880" y2="12" stroke="url(#laserGlowSupreme)" stroke-width="4.5" opacity="0.6" />
   
   <!-- Main Laser Precision Beam -->
-  <line x1="10" y1="12" x2="890" y2="12" stroke="url(#lineGrad)" stroke-width="1.5" />
+  <line x1="10" y1="12" x2="890" y2="12" stroke="url(#laserBeamSupreme)" stroke-width="1.6" />
   
-  <!-- Circuit Tick Accents -->
-  <line x1="360" y1="7" x2="360" y2="17" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.8" />
-  <line x1="540" y1="7" x2="540" y2="17" stroke="#7701D0" stroke-width="1.5" stroke-opacity="0.8" />
+  <!-- Precision Circuit Graduation Ticks -->
+  <line x1="300" y1="8" x2="300" y2="16" stroke="#00DFD8" stroke-width="1.2" stroke-opacity="0.7" />
+  <line x1="360" y1="6" x2="360" y2="18" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.9" />
+  <line x1="540" y1="6" x2="540" y2="18" stroke="#7701D0" stroke-width="1.5" stroke-opacity="0.9" />
+  <line x1="600" y1="8" x2="600" y2="16" stroke="#7701D0" stroke-width="1.2" stroke-opacity="0.7" />
   
-  <!-- Center Diamond HUD Node -->
-  <polygon points="450,4 458,12 450,20 442,12" fill="#00DFD8" />
-  <circle cx="450" cy="12" r="3" fill="#FFFFFF" />
+  <!-- Center Diamond HUD Reticle -->
+  <polygon points="450,3 460,12 450,21 440,12" fill="#00DFD8" />
+  <polygon points="450,6 456,12 450,18 444,12" fill="#0D1117" />
+  <circle cx="450" cy="12" r="2.5" fill="#FFFFFF" class="beacon-div" />
 </svg>

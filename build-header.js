@@ -19,28 +19,33 @@ https.get(imageUrl, (res) => {
   <defs>
     <!-- Background styling -->
     <radialGradient id="cyan-glow" cx="20%" cy="20%" r="55%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.22" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.28" />
       <stop offset="60%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
     
     <radialGradient id="purple-glow" cx="80%" cy="80%" r="55%">
-      <stop offset="0%" stop-color="#7701d0" stop-opacity="0.25" />
+      <stop offset="0%" stop-color="#7701d0" stop-opacity="0.3" />
       <stop offset="65%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <linearGradient id="neon-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="50%" stop-color="#E0F7FA" />
+      <stop offset="45%" stop-color="#E0F7FA" />
       <stop offset="100%" stop-color="#00DFD8" />
     </linearGradient>
 
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.2" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.5" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.7" />
     </linearGradient>
 
-    <!-- Star particle animations -->
+    <!-- Perspective Horizon Gradient -->
+    <linearGradient id="horizon-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
     <style>
       .bg { fill: #07090E; }
       
@@ -50,10 +55,10 @@ https.get(imageUrl, (res) => {
         font-weight: 900;
         fill: transparent;
         stroke: rgba(0, 223, 216, 0.5);
-        stroke-width: 2px;
+        stroke-width: 2.5px;
         letter-spacing: -3px;
         text-anchor: middle;
-        animation: glitch 4s infinite alternate ease-in-out;
+        animation: glitch 5s infinite alternate ease-in-out;
       }
       
       .text-solid {
@@ -63,7 +68,7 @@ https.get(imageUrl, (res) => {
         fill: url(#neon-text-grad);
         letter-spacing: -3px;
         text-anchor: middle;
-        filter: drop-shadow(0px 15px 30px rgba(0, 223, 216, 0.3));
+        filter: drop-shadow(0px 15px 35px rgba(0, 223, 216, 0.35));
       }
       
       .hud-text {
@@ -77,24 +82,24 @@ https.get(imageUrl, (res) => {
 
       .hud-text-left {
         font-family: 'SF Mono', Consolas, 'Courier New', monospace;
-        font-size: 13px;
+        font-size: 12.5px;
         font-weight: 600;
-        fill: rgba(255, 255, 255, 0.5);
-        letter-spacing: 3px;
+        fill: rgba(255, 255, 255, 0.65);
+        letter-spacing: 2.5px;
         text-anchor: start;
       }
       
       .hud-text-right {
         font-family: 'SF Mono', Consolas, 'Courier New', monospace;
-        font-size: 13px;
+        font-size: 12.5px;
         font-weight: 600;
-        fill: rgba(255, 255, 255, 0.5);
-        letter-spacing: 3px;
+        fill: rgba(255, 255, 255, 0.65);
+        letter-spacing: 2.5px;
         text-anchor: end;
       }
 
       .image-layer {
-        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.2));
+        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.25));
         transform-box: fill-box;
         transform-origin: center;
         animation: breathe 6s infinite ease-in-out;
@@ -114,7 +119,7 @@ https.get(imageUrl, (res) => {
       
       @keyframes pulse {
         0% { opacity: 0.2; }
-        50% { opacity: 0.4; }
+        50% { opacity: 0.45; }
         100% { opacity: 0.2; }
       }
 
@@ -142,8 +147,13 @@ https.get(imageUrl, (res) => {
         animation: blink 1s step-end infinite;
       }
       
-      .hud-line { stroke: rgba(0, 223, 216, 0.35); stroke-width: 1; }
-      .hud-accent { fill: #00DFD8; }
+      .beacon {
+        animation: beaconGlow 1.8s infinite alternate;
+      }
+      @keyframes beaconGlow {
+        0% { opacity: 0.4; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1.25); filter: drop-shadow(0 0 6px #10B981); }
+      }
     </style>
     
     <pattern id="scanline" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -152,7 +162,7 @@ https.get(imageUrl, (res) => {
     </pattern>
 
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.025)" stroke-width="1"/>
     </pattern>
   </defs>
 
@@ -161,6 +171,12 @@ https.get(imageUrl, (res) => {
   <rect width="${width}" height="${height}" rx="16" fill="url(#grid)" />
   <rect width="${width}" height="${height}" rx="16" fill="url(#cyan-glow)" style="animation: pulse 8s infinite alternate;" />
   <rect width="${width}" height="${height}" rx="16" fill="url(#purple-glow)" style="animation: pulse 8s infinite alternate-reverse;" />
+  
+  <!-- Perspective Horizon Lines at Bottom -->
+  <polygon points="0,${height} ${width},${height} ${width - 200},450 200,450" fill="url(#horizon-grad)" opacity="0.4" />
+  <line x1="0" y1="${height - 20}" x2="${width}" y2="${height - 20}" stroke="rgba(0, 223, 216, 0.15)" stroke-width="1" />
+  <line x1="0" y1="${height - 60}" x2="${width}" y2="${height - 60}" stroke="rgba(0, 223, 216, 0.08)" stroke-width="1" />
+
   <rect width="${width}" height="${height}" rx="16" fill="url(#scanline)" />
   <rect width="${width - 4}" height="${height - 4}" x="2" y="2" rx="14" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />
 
@@ -186,20 +202,20 @@ https.get(imageUrl, (res) => {
   <path d="M ${width - 44} ${height - 24} L ${width - 24} ${height - 24} L ${width - 24} ${height - 44}" fill="none" stroke="#7701D0" stroke-width="2" />
 
   <!-- HUD Elements: Top Left -->
-  <circle cx="48" cy="68" r="4" fill="#10B981" />
-  <text x="60" y="72" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // CORE TELEMETRY</text>
-  <text x="48" y="98" class="hud-text-left">LOC: COLOMBO &amp; BIRMINGHAM</text>
-  <text x="48" y="124" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • SYSTEMS</text>
+  <circle cx="48" cy="68" r="4" fill="#10B981" class="beacon" />
+  <text x="62" y="72" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // TELEMETRY ACTIVE</text>
+  <text x="48" y="98" class="hud-text-left">[CBO: 6.9271° N, 79.8612° E] • [BHX: 52.4862° N, 1.8904° W]</text>
+  <text x="48" y="124" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • KERNEL TUNING</text>
 
   <!-- HUD Elements: Top Right -->
   <text x="${width - 48}" y="72" class="hud-text-right" fill="#00DFD8">MATHIYA.CC ↗</text>
   <text x="${width - 48}" y="98" class="hud-text-right">LEAD SYSTEMS ARCHITECT</text>
-  <text x="${width - 48}" y="124" class="hud-text-right" fill="rgba(255,255,255,0.7)">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
+  <text x="${width - 48}" y="124" class="hud-text-right" fill="rgba(255,255,255,0.75)">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
 
   <!-- Subtitle Top Badge -->
   <g transform="translate(${width / 2}, 150)">
-    <rect x="-200" y="-18" width="400" height="28" rx="14" fill="#0D1117" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
-    <circle cx="-175" cy="-4" r="3.5" fill="#00DFD8" style="animation: pulse 2s infinite;" />
+    <rect x="-210" y="-18" width="420" height="28" rx="14" fill="#0D1117" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.2" />
+    <circle cx="-185" cy="-4" r="3.5" fill="#00DFD8" style="animation: pulse 2s infinite;" />
     <text x="0" y="0" class="hud-text" fill="#00DFD8">LEAD SYSTEMS ARCHITECT // MATHIYA<tspan class="cursor" fill="#00DFD8">_</tspan></text>
   </g>
 
@@ -216,9 +232,9 @@ https.get(imageUrl, (res) => {
 
   <!-- Subtitle Bottom Ribbon -->
   <g transform="translate(${width / 2}, 545)">
-    <line x1="-380" y1="0" x2="-280" y2="0" stroke="url(#border-grad)" stroke-width="1" />
-    <text x="0" y="4" class="hud-text" fill="rgba(255,255,255,0.85)" style="letter-spacing: 6px;">MULTI-AGENT AI • WEBGL GRAPHICS • DISTRIBUTED SYSTEMS</text>
-    <line x1="280" y1="0" x2="380" y2="0" stroke="url(#border-grad)" stroke-width="1" />
+    <line x1="-400" y1="0" x2="-290" y2="0" stroke="url(#border-grad)" stroke-width="1.2" />
+    <text x="0" y="4" class="hud-text" fill="rgba(255,255,255,0.9)" style="letter-spacing: 6px;">MULTI-AGENT AI • WEBGL GRAPHICS • DISTRIBUTED SYSTEMS</text>
+    <line x1="290" y1="0" x2="400" y2="0" stroke="url(#border-grad)" stroke-width="1.2" />
   </g>
 
 </svg>

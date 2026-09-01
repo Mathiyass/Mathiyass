@@ -1,92 +1,99 @@
-<svg width="900" height="120" viewBox="0 0 900 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="124" viewBox="0 0 900 124" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="holoBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0F141F" />
-      <stop offset="100%" stop-color="#07090E" />
+    <!-- Background Gradient -->
+    <linearGradient id="holoCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#101522" />
+      <stop offset="100%" stop-color="#06090F" />
     </linearGradient>
 
-    <linearGradient id="holoBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    <linearGradient id="holoBorderGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
     </linearGradient>
 
-    <linearGradient id="scanbeam" x1="0%" y1="0%" x2="0%" y2="100%">
+    <!-- Scanning Holographic Beam -->
+    <linearGradient id="scanBeamHolo" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.2" />
       <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
     </linearGradient>
 
     <style>
-      .h-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .h-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #00DFD8; letter-spacing: 2px; }
       .h-stat { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
       .h-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
-      .h-val { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; }
+      .h-val { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; letter-spacing: 0.5px; }
       
-      .scan-sweep {
-        animation: scanMove 4s ease-in-out infinite;
+      .scan-beam {
+        animation: scanMove 4.5s ease-in-out infinite;
       }
       .beacon-dot {
-        animation: pulseDot 1.8s infinite alternate;
+        animation: pulseBeacon 1.8s infinite alternate;
       }
 
       @keyframes scanMove {
-        0%, 100% { transform: translateY(-120px); }
-        50% { transform: translateY(120px); }
+        0%, 100% { transform: translateY(-130px); }
+        50% { transform: translateY(130px); }
       }
-      @keyframes pulseDot {
+      @keyframes pulseBeacon {
         0% { opacity: 0.4; transform: scale(0.9); }
         100% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #00DFD8); }
       }
     </style>
   </defs>
 
-  <!-- Holographic Card Frame -->
-  <rect x="1" y="1" width="898" height="118" rx="10" fill="url(#holoBg)" stroke="url(#holoBorder)" stroke-width="1.2" />
+  <!-- Frame with Chamfered Corners -->
+  <polygon points="16,2 884,2 898,16 898,108 884,122 16,122 2,108 2,16" fill="url(#holoCardBg)" stroke="url(#holoBorderGlow)" stroke-width="1.4" />
 
-  <!-- Scanning Holographic Light Sweep -->
-  <g class="scan-sweep">
-    <rect x="2" y="10" width="896" height="40" fill="url(#scanbeam)" pointer-events="none" />
+  <!-- Radiating Circuit Bus Lines Behind Cards -->
+  <line x1="225" y1="78" x2="245" y2="78" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.5" stroke-dasharray="2, 3" />
+  <line x1="445" y1="78" x2="465" y2="78" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1.5" stroke-dasharray="2, 3" />
+  <line x1="665" y1="78" x2="685" y2="78" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5" stroke-dasharray="2, 3" />
+
+  <!-- Scanning Holographic Beam -->
+  <g class="scan-beam">
+    <rect x="2" y="10" width="896" height="45" fill="url(#scanBeamHolo)" pointer-events="none" />
   </g>
 
   <!-- Top Status Ribbon -->
-  <g transform="translate(20, 18)">
+  <g transform="translate(24, 18)">
     <circle cx="6" cy="6" r="3.5" fill="#10B981" class="beacon-dot" />
     <text x="18" y="9.5" class="h-title">HOLOGRAPHIC TELEMETRY CHIP // CORE SYSTEM METRICS</text>
-    <text x="860" y="9.5" text-anchor="end" class="h-title" fill="#7701D0">SYS-ARCH-v2.6 [ONLINE]</text>
-    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <text x="850" y="9.5" text-anchor="end" class="h-title" fill="#7701D0">SYS-ARCH-v2.8 [ONLINE]</text>
+    <line x1="0" y1="18" x2="850" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
   </g>
 
-  <!-- 4 Telemetry Modules -->
-  <!-- Module 1: AI Agents -->
+  <!-- 4 Telemetry Modules with Inner Chamfers -->
+  <!-- Module 1: AI Cognition -->
   <g transform="translate(25, 48)">
-    <rect width="200" height="56" rx="6" fill="#141922" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
-    <text x="12" y="18" class="h-stat">🤖 AI COGNITION</text>
-    <text x="12" y="34" class="h-sub">SIVION Multi-Agent Core</text>
-    <text x="12" y="47" class="h-val" fill="#00DFD8">● 6/6 THREADS ACTIVE</text>
+    <polygon points="6,0 194,0 200,6 200,54 194,60 6,60 0,54 0,6" fill="#131822" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <text x="12" y="19" class="h-stat">🤖 AI COGNITION</text>
+    <text x="12" y="35" class="h-sub">SIVION Multi-Agent Core</text>
+    <text x="12" y="49" class="h-val" fill="#00DFD8">● 6/6 THREADS ACTIVE</text>
   </g>
 
   <!-- Module 2: Kernel Latency -->
   <g transform="translate(245, 48)">
-    <rect width="200" height="56" rx="6" fill="#141922" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
-    <text x="12" y="18" class="h-stat">⚡ KERNEL LATENCY</text>
-    <text x="12" y="34" class="h-sub">MA-Optimizer OS Tuner</text>
-    <text x="12" y="47" class="h-val" fill="#C4B5FD">● 0.42ms [ZERO JITTER]</text>
+    <polygon points="6,0 194,0 200,6 200,54 194,60 6,60 0,54 0,6" fill="#131822" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1" />
+    <text x="12" y="19" class="h-stat">⚡ KERNEL LATENCY</text>
+    <text x="12" y="35" class="h-sub">MA-Optimizer OS Tuner</text>
+    <text x="12" y="49" class="h-val" fill="#C4B5FD">● 0.42ms [ZERO JITTER]</text>
   </g>
 
-  <!-- Module 3: WebGL Compute -->
+  <!-- Module 3: WebGL Shaders -->
   <g transform="translate(465, 48)">
-    <rect width="200" height="56" rx="6" fill="#141922" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
-    <text x="12" y="18" class="h-stat">🎮 WEBGL SHADERS</text>
-    <text x="12" y="34" class="h-sub">Three.js &amp; GPGPU Shaders</text>
-    <text x="12" y="47" class="h-val" fill="#00DFD8">● 144 FPS @ 4K COMPUTE</text>
+    <polygon points="6,0 194,0 200,6 200,54 194,60 6,60 0,54 0,6" fill="#131822" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <text x="12" y="19" class="h-stat">🎮 WEBGL SHADERS</text>
+    <text x="12" y="35" class="h-sub">Three.js &amp; GPGPU Shaders</text>
+    <text x="12" y="49" class="h-val" fill="#00DFD8">● 144 FPS @ 4K COMPUTE</text>
   </g>
 
-  <!-- Module 4: Cloud Sync -->
+  <!-- Module 4: Cloud Resiliency -->
   <g transform="translate(685, 48)">
-    <rect width="190" height="56" rx="6" fill="#141922" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1" />
-    <text x="12" y="18" class="h-stat">☁️ CLOUD RESILIENCY</text>
-    <text x="12" y="34" class="h-sub">FastAPI + Supabase Sync</text>
-    <text x="12" y="47" class="h-val" fill="#10B981">● 99.99% FAULT TOLERANT</text>
+    <polygon points="6,0 184,0 190,6 190,54 184,60 6,60 0,54 0,6" fill="#131822" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+    <text x="12" y="19" class="h-stat">☁️ CLOUD RESILIENCY</text>
+    <text x="12" y="35" class="h-sub">FastAPI + Supabase Sync</text>
+    <text x="12" y="49" class="h-val" fill="#10B981">● 99.99% FAULT TOLERANT</text>
   </g>
 </svg>
