@@ -189,6 +189,14 @@ https.get(imageUrl, (res) => {
         from { stroke-dashoffset: 20; }
         to { stroke-dashoffset: 0; }
       }
+      .corner-chase {
+        stroke-dasharray: 20, 40;
+        animation: cornerChase 3s linear infinite;
+      }
+      @keyframes cornerChase {
+        from { stroke-dashoffset: 60; }
+        to { stroke-dashoffset: 0; }
+      }
     </style>
     
     <pattern id="scanline" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -211,7 +219,7 @@ https.get(imageUrl, (res) => {
   <path d="M 18 5 L ${width - 18} 5 L ${width - 5} 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.8" />
 
   <!-- Animated Laser Perimeter Stream -->
-  <polygon points="22,8 ${width - 22},8 ${width - 8},22 ${width - 8},${height - 22} ${width - 22},${height - 8} 22,${height - 8} 8,${height - 22} 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1" class="laser-cable" />
+  <polygon points="22,8 ${width - 22},8 ${width - 8},22 ${width - 8},${height - 22} ${width - 22},${height - 8} 22,${height - 8} 8,${height - 22} 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.45" stroke-width="1.2" class="laser-cable" />
 
   <!-- Perspective Horizon Grid at Bottom -->
   <polygon points="0,${height} ${width},${height} ${width - 200},440 200,440" fill="url(#horizon-grad)" opacity="0.45" />
@@ -221,26 +229,42 @@ https.get(imageUrl, (res) => {
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="${width / 2}" cy="280" r="230" fill="url(#avatar-center-glow)" />
 
-  <!-- 3D Tilted Gyroscope Outer Ring (18s SMIL Clockwise Rotation) -->
+  <!-- 3D Tilted Gyroscope Outer Ring 1 (18s SMIL Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="280" rx="240" ry="120" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.5" stroke-dasharray="16, 12" />
-    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="18s" repeatCount="indefinite" />
+    <ellipse cx="${width / 2}" cy="280" rx="240" ry="120" fill="none" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.6" stroke-dasharray="16, 12">
+      <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="18s" repeatCount="indefinite" />
+    </ellipse>
   </g>
 
-  <!-- 3D Tilted Gyroscope Reverse Ring (12s SMIL Counter-Clockwise Rotation) -->
+  <!-- 3D Tilted Gyroscope Reverse Ring 2 (12s SMIL Counter-Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="280" rx="200" ry="100" fill="none" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.4" stroke-dasharray="10, 14" />
-    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="12s" repeatCount="indefinite" />
+    <ellipse cx="${width / 2}" cy="280" rx="200" ry="100" fill="none" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.4" stroke-dasharray="10, 14">
+      <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="12s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+
+  <!-- 3D Tilted Gyroscope Ring 3 (Inclined 45deg, 8s Clockwise Rotation) -->
+  <g>
+    <ellipse cx="${width / 2}" cy="280" rx="220" ry="80" fill="none" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1.2" stroke-dasharray="6, 8">
+      <animateTransform attributeName="transform" type="rotate" from="45 ${width / 2} 280" to="405 ${width / 2} 280" dur="8s" repeatCount="indefinite" />
+    </ellipse>
   </g>
 
   <!-- Orbiting 3D Photon Satellites around Avatar -->
   <g>
-    <circle cx="${width / 2}" cy="160" r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 8px #00DFD8)" />
-    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
+    <circle cx="${width / 2}" cy="160" r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 8px #00DFD8)">
+      <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
   <g>
-    <circle cx="${width / 2}" cy="400" r="3.5" fill="#E879F9" filter="drop-shadow(0 0 8px #A855F7)" />
-    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
+    <circle cx="${width / 2}" cy="400" r="3.5" fill="#E879F9" filter="drop-shadow(0 0 8px #A855F7)">
+      <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 + 180}" cy="280" r="3" fill="#34D399" filter="drop-shadow(0 0 6px #10B981)">
+      <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="4s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
@@ -256,22 +280,22 @@ https.get(imageUrl, (res) => {
     return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" class="particle" opacity="${opacity.toFixed(2)}" style="animation-delay: -${delay.toFixed(1)}s; animation-duration: ${dur.toFixed(1)}s;" />`;
   }).join('\n  ')}
 
-  <!-- 3D Glass Corner Pods & Brackets -->
+  <!-- 3D Glass Corner Pods & Animated Brackets -->
   <g transform="translate(24, 24)">
     <polygon points="0,0 20,0 0,20" fill="rgba(0, 223, 216, 0.2)" />
-    <path d="M 0 35 L 0 0 L 35 0" fill="none" stroke="#00DFD8" stroke-width="2.2" />
+    <path d="M 0 35 L 0 0 L 35 0" fill="none" stroke="#00DFD8" stroke-width="2.2" class="corner-chase" />
   </g>
   <g transform="translate(${width - 24}, 24)">
     <polygon points="0,0 -20,0 0,20" fill="rgba(0, 223, 216, 0.2)" />
-    <path d="M 0 35 L 0 0 L -35 0" fill="none" stroke="#00DFD8" stroke-width="2.2" />
+    <path d="M 0 35 L 0 0 L -35 0" fill="none" stroke="#00DFD8" stroke-width="2.2" class="corner-chase" />
   </g>
   <g transform="translate(24, ${height - 24})">
     <polygon points="0,0 20,0 0,-20" fill="rgba(119, 1, 208, 0.2)" />
-    <path d="M 0 -35 L 0 0 L 35 0" fill="none" stroke="#7701D0" stroke-width="2.2" />
+    <path d="M 0 -35 L 0 0 L 35 0" fill="none" stroke="#7701D0" stroke-width="2.2" class="corner-chase" />
   </g>
   <g transform="translate(${width - 24}, ${height - 24})">
     <polygon points="0,0 -20,0 0,-20" fill="rgba(119, 1, 208, 0.2)" />
-    <path d="M 0 -35 L 0 0 L -35 0" fill="none" stroke="#7701D0" stroke-width="2.2" />
+    <path d="M 0 -35 L 0 0 L -35 0" fill="none" stroke="#7701D0" stroke-width="2.2" class="corner-chase" />
   </g>
 
   <!-- HUD Glass Plate: Top Left (3D Chamfered Glass Chassis) -->
