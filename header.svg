@@ -3,35 +3,44 @@
   <defs>
     <!-- Volumetric Ambient Nebula Glows -->
     <radialGradient id="nebula-cyan" cx="18%" cy="25%" r="60%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.38" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
     
     <radialGradient id="nebula-purple" cx="82%" cy="75%" r="60%">
-      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.42" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.48" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.15" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="avatar-center-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.35" />
-      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.22" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.28" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <!-- 3D Liquid Glass Gradients -->
     <linearGradient id="glass-chassis-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827" stop-opacity="0.94" />
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
       <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
       <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="specular-top-edge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
-      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.20" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.25" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Sweeping Laser Flare Gradient -->
+    <linearGradient id="laser-flare-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#A855F7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="transparent" />
     </linearGradient>
 
     <!-- Dual-Tone Chrome Neon Stroke -->
@@ -52,8 +61,8 @@
 
     <!-- Perspective Horizon Gradient -->
     <linearGradient id="horizon-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.25" />
-      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.08" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.1" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -110,7 +119,7 @@
       }
 
       .image-layer {
-        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.4)) drop-shadow(0 20px 40px rgba(0,0,0,0.9));
+        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.45)) drop-shadow(0 20px 40px rgba(0,0,0,0.95));
         transform-box: fill-box;
         transform-origin: center;
         animation: breathe 5s infinite ease-in-out;
@@ -181,6 +190,15 @@
         from { stroke-dashoffset: 60; }
         to { stroke-dashoffset: 0; }
       }
+
+      /* Audio Waveform Oscillators */
+      .audio-bar {
+        animation: audioBounce 1.2s ease-in-out infinite alternate;
+      }
+      @keyframes audioBounce {
+        0% { transform: scaleY(0.2); }
+        100% { transform: scaleY(1.0); }
+      }
     </style>
     
     <pattern id="scanline" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -200,7 +218,12 @@
   <rect width="1400" height="600" fill="url(#nebula-purple)" style="animation: pulse 8s infinite alternate-reverse;" />
   
   <!-- Specular Top Edge Light Refraction -->
-  <path d="M 18 5 L 1382 5 L 1395 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.8" />
+  <path d="M 18 5 L 1382 5 L 1395 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.85" />
+
+  <!-- Sweeping Laser Beam Across Top Rail -->
+  <rect x="0" y="4" width="280" height="3" fill="url(#laser-flare-grad)">
+    <animate attributeName="x" from="-300" to="1500" dur="4.5s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Animated Laser Perimeter Stream -->
   <polygon points="22,8 1378,8 1392,22 1392,578 1378,592 22,592 8,578 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.45" stroke-width="1.2" class="laser-cable" />
@@ -212,6 +235,13 @@
 
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="700" cy="280" r="230" fill="url(#avatar-center-glow)" />
+
+  <!-- Target Reticle Tick Aperture -->
+  <g transform="translate(700, 280)">
+    <circle cx="0" cy="0" r="255" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" stroke-dasharray="2, 8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <!-- 3D Tilted Gyroscope Outer Ring 1 (18s SMIL Clockwise Rotation) -->
   <g>
@@ -266,126 +296,126 @@
   <rect width="1400" height="600" fill="url(#scanline)" />
 
   <!-- 3D Floating Particles -->
-  <circle cx="42.9" cy="11.4" r="0.5" class="particle" opacity="0.90" style="animation-delay: -4.5s; animation-duration: 13.2s;" />
-  <circle cx="188.7" cy="196.1" r="1.6" class="particle" opacity="0.66" style="animation-delay: -2.9s; animation-duration: 10.1s;" />
-  <circle cx="1226.4" cy="260.5" r="0.8" class="particle" opacity="0.32" style="animation-delay: -1.7s; animation-duration: 14.2s;" />
-  <circle cx="962.4" cy="221.3" r="0.5" class="particle" opacity="0.88" style="animation-delay: -5.4s; animation-duration: 10.0s;" />
-  <circle cx="73.3" cy="206.0" r="1.2" class="particle" opacity="0.44" style="animation-delay: -7.2s; animation-duration: 9.6s;" />
-  <circle cx="1260.6" cy="284.9" r="1.7" class="particle" opacity="0.72" style="animation-delay: -1.2s; animation-duration: 13.0s;" />
-  <circle cx="1074.3" cy="320.0" r="1.9" class="particle" opacity="0.49" style="animation-delay: -1.1s; animation-duration: 8.7s;" />
-  <circle cx="261.2" cy="498.1" r="0.5" class="particle" opacity="0.74" style="animation-delay: -8.2s; animation-duration: 11.6s;" />
-  <circle cx="332.6" cy="588.8" r="1.2" class="particle" opacity="0.56" style="animation-delay: -5.2s; animation-duration: 12.4s;" />
-  <circle cx="228.2" cy="272.6" r="1.3" class="particle" opacity="0.65" style="animation-delay: -2.7s; animation-duration: 12.1s;" />
-  <circle cx="1328.8" cy="551.5" r="0.8" class="particle" opacity="0.49" style="animation-delay: -5.6s; animation-duration: 15.3s;" />
-  <circle cx="98.6" cy="79.5" r="1.9" class="particle" opacity="0.20" style="animation-delay: -4.5s; animation-duration: 11.7s;" />
-  <circle cx="402.8" cy="56.4" r="1.6" class="particle" opacity="0.40" style="animation-delay: -9.0s; animation-duration: 12.4s;" />
-  <circle cx="562.8" cy="520.6" r="1.1" class="particle" opacity="0.84" style="animation-delay: -7.9s; animation-duration: 13.9s;" />
-  <circle cx="348.3" cy="80.9" r="1.7" class="particle" opacity="0.45" style="animation-delay: -7.6s; animation-duration: 11.3s;" />
-  <circle cx="1368.2" cy="563.7" r="1.9" class="particle" opacity="0.78" style="animation-delay: -6.5s; animation-duration: 13.8s;" />
-  <circle cx="796.2" cy="524.0" r="1.3" class="particle" opacity="0.84" style="animation-delay: -6.0s; animation-duration: 12.0s;" />
-  <circle cx="431.4" cy="363.1" r="1.7" class="particle" opacity="0.85" style="animation-delay: -2.0s; animation-duration: 10.4s;" />
-  <circle cx="522.2" cy="440.3" r="1.9" class="particle" opacity="0.29" style="animation-delay: -1.9s; animation-duration: 10.2s;" />
-  <circle cx="989.4" cy="192.6" r="0.9" class="particle" opacity="0.82" style="animation-delay: -5.0s; animation-duration: 8.9s;" />
-  <circle cx="1197.8" cy="471.1" r="1.4" class="particle" opacity="0.23" style="animation-delay: -7.0s; animation-duration: 12.1s;" />
-  <circle cx="1282.3" cy="5.8" r="2.0" class="particle" opacity="0.32" style="animation-delay: -6.7s; animation-duration: 10.4s;" />
-  <circle cx="989.8" cy="145.6" r="1.5" class="particle" opacity="0.52" style="animation-delay: -4.5s; animation-duration: 11.6s;" />
-  <circle cx="245.4" cy="552.0" r="1.2" class="particle" opacity="0.87" style="animation-delay: -8.1s; animation-duration: 14.7s;" />
-  <circle cx="1051.2" cy="580.6" r="0.4" class="particle" opacity="0.28" style="animation-delay: -7.3s; animation-duration: 9.0s;" />
-  <circle cx="548.8" cy="163.9" r="1.6" class="particle" opacity="0.70" style="animation-delay: -3.0s; animation-duration: 9.0s;" />
-  <circle cx="59.8" cy="316.8" r="0.6" class="particle" opacity="0.62" style="animation-delay: -2.5s; animation-duration: 12.3s;" />
-  <circle cx="1386.4" cy="245.6" r="0.8" class="particle" opacity="0.65" style="animation-delay: -1.9s; animation-duration: 11.1s;" />
-  <circle cx="189.0" cy="224.4" r="1.3" class="particle" opacity="0.20" style="animation-delay: -2.4s; animation-duration: 9.7s;" />
-  <circle cx="796.9" cy="469.7" r="0.5" class="particle" opacity="0.77" style="animation-delay: -4.5s; animation-duration: 14.3s;" />
-  <circle cx="529.9" cy="163.0" r="0.9" class="particle" opacity="0.34" style="animation-delay: -4.2s; animation-duration: 15.4s;" />
-  <circle cx="768.2" cy="504.7" r="1.0" class="particle" opacity="0.41" style="animation-delay: -2.2s; animation-duration: 15.8s;" />
-  <circle cx="1368.3" cy="559.0" r="1.4" class="particle" opacity="0.22" style="animation-delay: -7.4s; animation-duration: 13.7s;" />
-  <circle cx="1391.8" cy="92.3" r="0.9" class="particle" opacity="0.60" style="animation-delay: -8.8s; animation-duration: 12.0s;" />
-  <circle cx="37.3" cy="598.3" r="0.8" class="particle" opacity="0.27" style="animation-delay: -9.5s; animation-duration: 9.1s;" />
-  <circle cx="437.2" cy="157.3" r="0.6" class="particle" opacity="0.38" style="animation-delay: -5.4s; animation-duration: 10.3s;" />
-  <circle cx="1012.9" cy="416.6" r="1.6" class="particle" opacity="0.52" style="animation-delay: -8.8s; animation-duration: 15.1s;" />
-  <circle cx="1271.0" cy="521.0" r="1.8" class="particle" opacity="0.42" style="animation-delay: -8.3s; animation-duration: 15.3s;" />
-  <circle cx="1153.5" cy="53.4" r="1.3" class="particle" opacity="0.46" style="animation-delay: -5.3s; animation-duration: 8.2s;" />
-  <circle cx="1133.1" cy="561.3" r="1.2" class="particle" opacity="0.23" style="animation-delay: -7.2s; animation-duration: 8.3s;" />
-  <circle cx="310.4" cy="212.8" r="2.0" class="particle" opacity="0.46" style="animation-delay: -8.3s; animation-duration: 13.0s;" />
-  <circle cx="785.9" cy="371.2" r="1.3" class="particle" opacity="0.36" style="animation-delay: -8.7s; animation-duration: 13.9s;" />
-  <circle cx="910.3" cy="513.4" r="1.2" class="particle" opacity="0.22" style="animation-delay: -4.5s; animation-duration: 13.5s;" />
-  <circle cx="250.1" cy="528.3" r="1.5" class="particle" opacity="0.60" style="animation-delay: -3.0s; animation-duration: 15.5s;" />
-  <circle cx="685.5" cy="519.2" r="1.9" class="particle" opacity="0.65" style="animation-delay: -3.5s; animation-duration: 14.5s;" />
-  <circle cx="1089.7" cy="268.8" r="1.1" class="particle" opacity="0.83" style="animation-delay: -7.0s; animation-duration: 16.0s;" />
-  <circle cx="740.8" cy="138.0" r="1.5" class="particle" opacity="0.31" style="animation-delay: -3.8s; animation-duration: 8.8s;" />
-  <circle cx="108.5" cy="217.8" r="1.7" class="particle" opacity="0.85" style="animation-delay: -6.3s; animation-duration: 12.5s;" />
-  <circle cx="1389.4" cy="191.2" r="1.1" class="particle" opacity="0.71" style="animation-delay: -7.9s; animation-duration: 12.2s;" />
-  <circle cx="462.0" cy="143.4" r="1.2" class="particle" opacity="0.68" style="animation-delay: -7.1s; animation-duration: 9.0s;" />
-  <circle cx="1356.5" cy="308.3" r="1.5" class="particle" opacity="0.44" style="animation-delay: -5.5s; animation-duration: 14.0s;" />
-  <circle cx="1364.3" cy="532.9" r="1.6" class="particle" opacity="0.64" style="animation-delay: -4.0s; animation-duration: 9.2s;" />
-  <circle cx="974.7" cy="438.4" r="1.2" class="particle" opacity="0.44" style="animation-delay: -1.8s; animation-duration: 10.4s;" />
-  <circle cx="1091.8" cy="10.3" r="1.5" class="particle" opacity="0.40" style="animation-delay: -3.3s; animation-duration: 15.1s;" />
-  <circle cx="240.0" cy="229.9" r="0.7" class="particle" opacity="0.37" style="animation-delay: -3.2s; animation-duration: 12.9s;" />
-  <circle cx="613.8" cy="147.0" r="1.4" class="particle" opacity="0.54" style="animation-delay: -7.2s; animation-duration: 10.7s;" />
-  <circle cx="425.0" cy="373.0" r="1.1" class="particle" opacity="0.73" style="animation-delay: -7.9s; animation-duration: 9.0s;" />
-  <circle cx="430.1" cy="399.3" r="1.9" class="particle" opacity="0.80" style="animation-delay: -8.8s; animation-duration: 13.1s;" />
-  <circle cx="1374.5" cy="166.8" r="1.2" class="particle" opacity="0.55" style="animation-delay: -6.9s; animation-duration: 10.2s;" />
-  <circle cx="1348.9" cy="31.2" r="0.8" class="particle" opacity="0.90" style="animation-delay: -4.2s; animation-duration: 11.0s;" />
-  <circle cx="82.7" cy="422.1" r="0.6" class="particle" opacity="0.75" style="animation-delay: -8.7s; animation-duration: 13.5s;" />
-  <circle cx="585.6" cy="275.1" r="0.6" class="particle" opacity="0.25" style="animation-delay: -2.8s; animation-duration: 11.4s;" />
-  <circle cx="945.2" cy="511.2" r="1.4" class="particle" opacity="0.21" style="animation-delay: -5.6s; animation-duration: 14.7s;" />
-  <circle cx="1119.1" cy="115.1" r="0.7" class="particle" opacity="0.71" style="animation-delay: -0.2s; animation-duration: 11.9s;" />
-  <circle cx="1350.9" cy="356.8" r="0.5" class="particle" opacity="0.63" style="animation-delay: -7.5s; animation-duration: 14.4s;" />
-  <circle cx="336.9" cy="130.1" r="1.6" class="particle" opacity="0.55" style="animation-delay: -8.7s; animation-duration: 11.1s;" />
-  <circle cx="1125.2" cy="308.8" r="0.5" class="particle" opacity="0.66" style="animation-delay: -7.9s; animation-duration: 14.8s;" />
-  <circle cx="465.7" cy="535.5" r="1.1" class="particle" opacity="0.50" style="animation-delay: -0.3s; animation-duration: 9.2s;" />
-  <circle cx="913.4" cy="162.7" r="0.9" class="particle" opacity="0.67" style="animation-delay: -8.1s; animation-duration: 8.2s;" />
-  <circle cx="990.5" cy="398.8" r="0.8" class="particle" opacity="0.74" style="animation-delay: -1.9s; animation-duration: 12.5s;" />
-  <circle cx="417.2" cy="236.2" r="1.8" class="particle" opacity="0.78" style="animation-delay: -8.6s; animation-duration: 9.7s;" />
-  <circle cx="254.7" cy="148.5" r="1.1" class="particle" opacity="0.65" style="animation-delay: -1.3s; animation-duration: 12.3s;" />
-  <circle cx="22.1" cy="375.0" r="0.8" class="particle" opacity="0.57" style="animation-delay: -2.4s; animation-duration: 11.9s;" />
-  <circle cx="1363.9" cy="491.5" r="1.5" class="particle" opacity="0.46" style="animation-delay: -4.8s; animation-duration: 12.5s;" />
-  <circle cx="907.5" cy="336.3" r="1.0" class="particle" opacity="0.53" style="animation-delay: -4.0s; animation-duration: 15.9s;" />
-  <circle cx="156.5" cy="201.3" r="0.8" class="particle" opacity="0.66" style="animation-delay: -8.6s; animation-duration: 15.8s;" />
-  <circle cx="72.3" cy="331.0" r="1.0" class="particle" opacity="0.82" style="animation-delay: -9.7s; animation-duration: 8.7s;" />
-  <circle cx="1138.7" cy="263.5" r="1.1" class="particle" opacity="0.36" style="animation-delay: -9.8s; animation-duration: 12.8s;" />
-  <circle cx="228.9" cy="345.4" r="1.4" class="particle" opacity="0.42" style="animation-delay: -3.9s; animation-duration: 13.0s;" />
-  <circle cx="503.1" cy="117.1" r="1.8" class="particle" opacity="0.43" style="animation-delay: -9.6s; animation-duration: 13.8s;" />
-  <circle cx="282.8" cy="205.1" r="1.9" class="particle" opacity="0.51" style="animation-delay: -8.3s; animation-duration: 14.8s;" />
-  <circle cx="334.6" cy="108.8" r="1.4" class="particle" opacity="0.90" style="animation-delay: -9.9s; animation-duration: 15.1s;" />
-  <circle cx="1022.4" cy="578.0" r="1.1" class="particle" opacity="0.54" style="animation-delay: -2.6s; animation-duration: 12.9s;" />
-  <circle cx="411.0" cy="42.6" r="1.6" class="particle" opacity="0.66" style="animation-delay: -7.2s; animation-duration: 10.4s;" />
-  <circle cx="446.0" cy="482.2" r="1.7" class="particle" opacity="0.30" style="animation-delay: -9.8s; animation-duration: 8.8s;" />
-  <circle cx="900.5" cy="431.3" r="1.3" class="particle" opacity="0.62" style="animation-delay: -7.7s; animation-duration: 14.3s;" />
-  <circle cx="1147.4" cy="590.9" r="1.4" class="particle" opacity="0.56" style="animation-delay: -9.7s; animation-duration: 11.0s;" />
-  <circle cx="1397.7" cy="557.6" r="0.6" class="particle" opacity="0.84" style="animation-delay: -4.3s; animation-duration: 8.6s;" />
-  <circle cx="759.1" cy="479.9" r="1.2" class="particle" opacity="0.77" style="animation-delay: -1.3s; animation-duration: 11.4s;" />
-  <circle cx="1374.2" cy="201.9" r="1.1" class="particle" opacity="0.67" style="animation-delay: -9.5s; animation-duration: 10.1s;" />
-  <circle cx="800.0" cy="72.7" r="0.8" class="particle" opacity="0.64" style="animation-delay: -9.0s; animation-duration: 9.0s;" />
-  <circle cx="1318.7" cy="229.6" r="1.1" class="particle" opacity="0.60" style="animation-delay: -0.6s; animation-duration: 10.2s;" />
-  <circle cx="90.1" cy="334.0" r="0.4" class="particle" opacity="0.57" style="animation-delay: -2.6s; animation-duration: 10.6s;" />
-  <circle cx="563.4" cy="525.4" r="1.4" class="particle" opacity="0.37" style="animation-delay: -6.5s; animation-duration: 13.2s;" />
-  <circle cx="571.5" cy="212.1" r="1.5" class="particle" opacity="0.57" style="animation-delay: -1.5s; animation-duration: 11.9s;" />
-  <circle cx="355.3" cy="219.9" r="1.6" class="particle" opacity="0.85" style="animation-delay: -0.9s; animation-duration: 9.9s;" />
-  <circle cx="276.5" cy="342.3" r="0.8" class="particle" opacity="0.30" style="animation-delay: -3.1s; animation-duration: 9.5s;" />
-  <circle cx="1240.6" cy="223.8" r="0.5" class="particle" opacity="0.43" style="animation-delay: -7.0s; animation-duration: 13.7s;" />
-  <circle cx="1163.7" cy="117.9" r="1.4" class="particle" opacity="0.60" style="animation-delay: -8.7s; animation-duration: 10.8s;" />
-  <circle cx="1192.7" cy="45.4" r="2.0" class="particle" opacity="0.63" style="animation-delay: -6.3s; animation-duration: 11.1s;" />
-  <circle cx="882.0" cy="289.0" r="1.3" class="particle" opacity="0.22" style="animation-delay: -5.2s; animation-duration: 14.4s;" />
-  <circle cx="567.9" cy="195.3" r="1.8" class="particle" opacity="0.74" style="animation-delay: -0.7s; animation-duration: 10.3s;" />
-  <circle cx="1116.3" cy="302.1" r="1.1" class="particle" opacity="0.79" style="animation-delay: -7.5s; animation-duration: 15.0s;" />
-  <circle cx="15.0" cy="225.3" r="0.5" class="particle" opacity="0.73" style="animation-delay: -7.0s; animation-duration: 14.3s;" />
-  <circle cx="265.7" cy="287.3" r="1.3" class="particle" opacity="0.74" style="animation-delay: -6.5s; animation-duration: 13.1s;" />
-  <circle cx="961.4" cy="173.1" r="1.9" class="particle" opacity="0.53" style="animation-delay: -3.7s; animation-duration: 10.7s;" />
-  <circle cx="780.5" cy="366.6" r="1.7" class="particle" opacity="0.85" style="animation-delay: -2.2s; animation-duration: 9.3s;" />
-  <circle cx="401.8" cy="362.8" r="1.4" class="particle" opacity="0.53" style="animation-delay: -9.3s; animation-duration: 11.9s;" />
-  <circle cx="1098.6" cy="14.2" r="2.0" class="particle" opacity="0.62" style="animation-delay: -0.3s; animation-duration: 14.0s;" />
-  <circle cx="652.2" cy="36.4" r="1.2" class="particle" opacity="0.29" style="animation-delay: -2.5s; animation-duration: 11.0s;" />
-  <circle cx="199.4" cy="131.2" r="1.3" class="particle" opacity="0.57" style="animation-delay: -3.4s; animation-duration: 9.4s;" />
-  <circle cx="372.0" cy="211.3" r="0.8" class="particle" opacity="0.43" style="animation-delay: -1.7s; animation-duration: 8.9s;" />
-  <circle cx="1251.0" cy="236.8" r="1.3" class="particle" opacity="0.58" style="animation-delay: -9.9s; animation-duration: 11.2s;" />
-  <circle cx="284.5" cy="289.2" r="1.5" class="particle" opacity="0.63" style="animation-delay: -8.2s; animation-duration: 15.8s;" />
-  <circle cx="856.5" cy="592.9" r="1.4" class="particle" opacity="0.70" style="animation-delay: -6.2s; animation-duration: 12.1s;" />
-  <circle cx="458.8" cy="467.6" r="0.7" class="particle" opacity="0.33" style="animation-delay: -2.9s; animation-duration: 13.1s;" />
-  <circle cx="890.5" cy="95.1" r="0.4" class="particle" opacity="0.33" style="animation-delay: -9.1s; animation-duration: 9.2s;" />
-  <circle cx="1352.5" cy="282.1" r="2.0" class="particle" opacity="0.45" style="animation-delay: -7.7s; animation-duration: 11.1s;" />
-  <circle cx="811.4" cy="351.3" r="1.3" class="particle" opacity="0.60" style="animation-delay: -4.9s; animation-duration: 14.3s;" />
-  <circle cx="1082.1" cy="547.0" r="1.5" class="particle" opacity="0.81" style="animation-delay: -1.2s; animation-duration: 12.2s;" />
+  <circle cx="686.6" cy="290.3" r="1.4" class="particle" opacity="0.51" style="animation-delay: -3.2s; animation-duration: 8.5s;" />
+  <circle cx="1376.3" cy="111.1" r="1.4" class="particle" opacity="0.67" style="animation-delay: -4.4s; animation-duration: 12.9s;" />
+  <circle cx="1016.6" cy="4.4" r="0.5" class="particle" opacity="0.56" style="animation-delay: -8.1s; animation-duration: 12.8s;" />
+  <circle cx="1108.7" cy="360.3" r="1.1" class="particle" opacity="0.71" style="animation-delay: -0.1s; animation-duration: 13.0s;" />
+  <circle cx="1040.9" cy="322.0" r="0.6" class="particle" opacity="0.33" style="animation-delay: -0.1s; animation-duration: 12.3s;" />
+  <circle cx="59.0" cy="228.5" r="0.5" class="particle" opacity="0.43" style="animation-delay: -2.5s; animation-duration: 14.2s;" />
+  <circle cx="1297.2" cy="38.6" r="0.9" class="particle" opacity="0.69" style="animation-delay: -2.0s; animation-duration: 12.6s;" />
+  <circle cx="1226.6" cy="490.0" r="1.1" class="particle" opacity="0.41" style="animation-delay: -9.5s; animation-duration: 9.1s;" />
+  <circle cx="1137.0" cy="466.4" r="1.7" class="particle" opacity="0.43" style="animation-delay: -3.9s; animation-duration: 9.2s;" />
+  <circle cx="501.1" cy="49.5" r="1.2" class="particle" opacity="0.55" style="animation-delay: -8.1s; animation-duration: 9.5s;" />
+  <circle cx="1305.7" cy="116.1" r="0.5" class="particle" opacity="0.73" style="animation-delay: -5.6s; animation-duration: 8.7s;" />
+  <circle cx="1018.8" cy="398.6" r="1.2" class="particle" opacity="0.50" style="animation-delay: -9.5s; animation-duration: 11.9s;" />
+  <circle cx="849.2" cy="60.0" r="0.8" class="particle" opacity="0.20" style="animation-delay: -2.8s; animation-duration: 13.9s;" />
+  <circle cx="1201.5" cy="548.5" r="1.5" class="particle" opacity="0.87" style="animation-delay: -6.3s; animation-duration: 12.0s;" />
+  <circle cx="1030.8" cy="307.3" r="1.5" class="particle" opacity="0.62" style="animation-delay: -9.7s; animation-duration: 15.6s;" />
+  <circle cx="1353.4" cy="506.1" r="1.4" class="particle" opacity="0.67" style="animation-delay: -1.2s; animation-duration: 8.9s;" />
+  <circle cx="374.9" cy="36.9" r="1.8" class="particle" opacity="0.70" style="animation-delay: -3.9s; animation-duration: 8.1s;" />
+  <circle cx="59.2" cy="587.2" r="1.4" class="particle" opacity="0.75" style="animation-delay: -6.2s; animation-duration: 9.3s;" />
+  <circle cx="797.9" cy="128.8" r="0.7" class="particle" opacity="0.40" style="animation-delay: -6.4s; animation-duration: 8.1s;" />
+  <circle cx="785.9" cy="332.7" r="1.3" class="particle" opacity="0.30" style="animation-delay: -8.6s; animation-duration: 9.5s;" />
+  <circle cx="482.7" cy="366.9" r="1.0" class="particle" opacity="0.29" style="animation-delay: -7.6s; animation-duration: 8.8s;" />
+  <circle cx="990.7" cy="539.5" r="0.9" class="particle" opacity="0.24" style="animation-delay: -8.5s; animation-duration: 15.6s;" />
+  <circle cx="772.7" cy="507.5" r="0.5" class="particle" opacity="0.50" style="animation-delay: -3.3s; animation-duration: 15.9s;" />
+  <circle cx="734.6" cy="103.6" r="1.2" class="particle" opacity="0.86" style="animation-delay: -9.4s; animation-duration: 14.4s;" />
+  <circle cx="372.8" cy="227.9" r="0.4" class="particle" opacity="0.86" style="animation-delay: -5.9s; animation-duration: 13.5s;" />
+  <circle cx="315.4" cy="554.6" r="1.9" class="particle" opacity="0.29" style="animation-delay: -5.1s; animation-duration: 10.1s;" />
+  <circle cx="425.4" cy="549.8" r="1.5" class="particle" opacity="0.85" style="animation-delay: -7.7s; animation-duration: 14.1s;" />
+  <circle cx="275.7" cy="388.8" r="1.7" class="particle" opacity="0.54" style="animation-delay: -6.5s; animation-duration: 14.0s;" />
+  <circle cx="1161.6" cy="503.7" r="1.1" class="particle" opacity="0.68" style="animation-delay: -3.5s; animation-duration: 10.6s;" />
+  <circle cx="484.5" cy="64.2" r="1.2" class="particle" opacity="0.61" style="animation-delay: -8.6s; animation-duration: 8.5s;" />
+  <circle cx="1284.3" cy="483.0" r="1.4" class="particle" opacity="0.50" style="animation-delay: -0.4s; animation-duration: 12.4s;" />
+  <circle cx="658.8" cy="61.2" r="1.5" class="particle" opacity="0.80" style="animation-delay: -8.4s; animation-duration: 13.7s;" />
+  <circle cx="1329.0" cy="482.5" r="1.8" class="particle" opacity="0.40" style="animation-delay: -6.9s; animation-duration: 9.0s;" />
+  <circle cx="708.5" cy="365.9" r="1.8" class="particle" opacity="0.69" style="animation-delay: -3.0s; animation-duration: 15.4s;" />
+  <circle cx="711.2" cy="34.8" r="0.7" class="particle" opacity="0.29" style="animation-delay: -4.7s; animation-duration: 13.3s;" />
+  <circle cx="238.1" cy="398.5" r="1.1" class="particle" opacity="0.64" style="animation-delay: -8.7s; animation-duration: 16.0s;" />
+  <circle cx="608.4" cy="281.1" r="1.4" class="particle" opacity="0.30" style="animation-delay: -2.3s; animation-duration: 9.2s;" />
+  <circle cx="1105.5" cy="578.9" r="1.3" class="particle" opacity="0.48" style="animation-delay: -4.3s; animation-duration: 11.3s;" />
+  <circle cx="904.9" cy="216.1" r="1.7" class="particle" opacity="0.45" style="animation-delay: -4.0s; animation-duration: 11.6s;" />
+  <circle cx="298.4" cy="368.6" r="1.2" class="particle" opacity="0.53" style="animation-delay: -6.4s; animation-duration: 16.0s;" />
+  <circle cx="802.2" cy="507.4" r="1.2" class="particle" opacity="0.26" style="animation-delay: -6.9s; animation-duration: 10.1s;" />
+  <circle cx="626.0" cy="135.6" r="0.4" class="particle" opacity="0.21" style="animation-delay: -5.3s; animation-duration: 12.5s;" />
+  <circle cx="1320.2" cy="519.0" r="0.7" class="particle" opacity="0.37" style="animation-delay: -8.5s; animation-duration: 12.1s;" />
+  <circle cx="768.5" cy="239.6" r="1.8" class="particle" opacity="0.21" style="animation-delay: -3.3s; animation-duration: 11.3s;" />
+  <circle cx="830.4" cy="270.4" r="1.5" class="particle" opacity="0.77" style="animation-delay: -8.3s; animation-duration: 8.7s;" />
+  <circle cx="1236.4" cy="223.4" r="0.9" class="particle" opacity="0.47" style="animation-delay: -6.5s; animation-duration: 9.8s;" />
+  <circle cx="213.3" cy="365.0" r="1.0" class="particle" opacity="0.87" style="animation-delay: -0.3s; animation-duration: 10.0s;" />
+  <circle cx="276.9" cy="251.9" r="1.1" class="particle" opacity="0.85" style="animation-delay: -6.3s; animation-duration: 15.8s;" />
+  <circle cx="1275.8" cy="47.4" r="1.4" class="particle" opacity="0.78" style="animation-delay: -7.9s; animation-duration: 13.3s;" />
+  <circle cx="1339.9" cy="142.3" r="1.1" class="particle" opacity="0.67" style="animation-delay: -6.0s; animation-duration: 10.7s;" />
+  <circle cx="46.7" cy="304.3" r="2.0" class="particle" opacity="0.40" style="animation-delay: -8.8s; animation-duration: 15.9s;" />
+  <circle cx="465.8" cy="191.3" r="0.7" class="particle" opacity="0.81" style="animation-delay: -5.0s; animation-duration: 10.5s;" />
+  <circle cx="1223.2" cy="1.2" r="0.4" class="particle" opacity="0.36" style="animation-delay: -6.4s; animation-duration: 11.1s;" />
+  <circle cx="487.0" cy="314.7" r="1.8" class="particle" opacity="0.22" style="animation-delay: -5.2s; animation-duration: 14.7s;" />
+  <circle cx="1028.6" cy="103.4" r="1.9" class="particle" opacity="0.26" style="animation-delay: -3.4s; animation-duration: 8.0s;" />
+  <circle cx="1011.8" cy="474.1" r="1.3" class="particle" opacity="0.64" style="animation-delay: -3.0s; animation-duration: 11.2s;" />
+  <circle cx="907.5" cy="143.6" r="0.9" class="particle" opacity="0.31" style="animation-delay: -6.5s; animation-duration: 9.0s;" />
+  <circle cx="825.5" cy="331.0" r="1.3" class="particle" opacity="0.77" style="animation-delay: -2.5s; animation-duration: 9.1s;" />
+  <circle cx="585.9" cy="84.0" r="1.8" class="particle" opacity="0.31" style="animation-delay: -8.7s; animation-duration: 11.2s;" />
+  <circle cx="729.4" cy="68.1" r="1.4" class="particle" opacity="0.30" style="animation-delay: -6.1s; animation-duration: 15.9s;" />
+  <circle cx="705.7" cy="131.4" r="1.7" class="particle" opacity="0.66" style="animation-delay: -6.6s; animation-duration: 12.3s;" />
+  <circle cx="1111.2" cy="147.5" r="1.6" class="particle" opacity="0.55" style="animation-delay: -5.4s; animation-duration: 12.2s;" />
+  <circle cx="13.6" cy="422.1" r="1.5" class="particle" opacity="0.47" style="animation-delay: -4.1s; animation-duration: 10.6s;" />
+  <circle cx="454.6" cy="116.9" r="0.9" class="particle" opacity="0.55" style="animation-delay: -6.7s; animation-duration: 10.4s;" />
+  <circle cx="548.2" cy="221.0" r="1.2" class="particle" opacity="0.52" style="animation-delay: -0.5s; animation-duration: 14.4s;" />
+  <circle cx="254.9" cy="516.1" r="1.3" class="particle" opacity="0.60" style="animation-delay: -6.8s; animation-duration: 11.1s;" />
+  <circle cx="403.8" cy="206.7" r="1.5" class="particle" opacity="0.60" style="animation-delay: -1.6s; animation-duration: 13.9s;" />
+  <circle cx="617.8" cy="256.8" r="0.7" class="particle" opacity="0.60" style="animation-delay: -6.7s; animation-duration: 8.0s;" />
+  <circle cx="316.1" cy="332.3" r="1.4" class="particle" opacity="0.80" style="animation-delay: -3.0s; animation-duration: 13.7s;" />
+  <circle cx="215.7" cy="464.5" r="0.9" class="particle" opacity="0.58" style="animation-delay: -4.5s; animation-duration: 14.0s;" />
+  <circle cx="877.8" cy="122.6" r="1.1" class="particle" opacity="0.86" style="animation-delay: -7.7s; animation-duration: 10.5s;" />
+  <circle cx="844.8" cy="187.4" r="0.6" class="particle" opacity="0.35" style="animation-delay: -7.9s; animation-duration: 16.0s;" />
+  <circle cx="568.6" cy="137.8" r="1.7" class="particle" opacity="0.78" style="animation-delay: -1.4s; animation-duration: 9.2s;" />
+  <circle cx="1162.6" cy="551.9" r="1.9" class="particle" opacity="0.73" style="animation-delay: -8.0s; animation-duration: 13.5s;" />
+  <circle cx="945.6" cy="365.4" r="1.2" class="particle" opacity="0.60" style="animation-delay: -1.2s; animation-duration: 8.6s;" />
+  <circle cx="58.0" cy="374.3" r="1.4" class="particle" opacity="0.84" style="animation-delay: -2.2s; animation-duration: 8.9s;" />
+  <circle cx="276.7" cy="383.8" r="1.5" class="particle" opacity="0.80" style="animation-delay: -4.0s; animation-duration: 14.8s;" />
+  <circle cx="1170.1" cy="367.4" r="1.0" class="particle" opacity="0.55" style="animation-delay: -4.0s; animation-duration: 14.9s;" />
+  <circle cx="1097.0" cy="294.7" r="1.4" class="particle" opacity="0.47" style="animation-delay: -5.2s; animation-duration: 12.9s;" />
+  <circle cx="75.5" cy="66.2" r="1.6" class="particle" opacity="0.60" style="animation-delay: -0.6s; animation-duration: 11.7s;" />
+  <circle cx="81.7" cy="10.5" r="0.7" class="particle" opacity="0.48" style="animation-delay: -10.0s; animation-duration: 12.7s;" />
+  <circle cx="1252.3" cy="474.9" r="1.6" class="particle" opacity="0.81" style="animation-delay: -3.2s; animation-duration: 13.7s;" />
+  <circle cx="127.2" cy="261.2" r="0.8" class="particle" opacity="0.81" style="animation-delay: -8.9s; animation-duration: 10.2s;" />
+  <circle cx="1261.3" cy="444.0" r="1.1" class="particle" opacity="0.38" style="animation-delay: -1.0s; animation-duration: 9.2s;" />
+  <circle cx="263.4" cy="30.5" r="1.0" class="particle" opacity="0.28" style="animation-delay: -1.6s; animation-duration: 16.0s;" />
+  <circle cx="1198.7" cy="266.6" r="0.8" class="particle" opacity="0.79" style="animation-delay: -1.9s; animation-duration: 9.2s;" />
+  <circle cx="188.6" cy="270.4" r="0.6" class="particle" opacity="0.34" style="animation-delay: -4.0s; animation-duration: 11.0s;" />
+  <circle cx="969.4" cy="262.6" r="1.3" class="particle" opacity="0.71" style="animation-delay: -9.8s; animation-duration: 15.6s;" />
+  <circle cx="1337.6" cy="187.3" r="1.0" class="particle" opacity="0.82" style="animation-delay: -8.4s; animation-duration: 12.7s;" />
+  <circle cx="786.4" cy="538.9" r="1.3" class="particle" opacity="0.44" style="animation-delay: -6.9s; animation-duration: 8.4s;" />
+  <circle cx="255.2" cy="109.3" r="1.1" class="particle" opacity="0.77" style="animation-delay: -6.0s; animation-duration: 8.7s;" />
+  <circle cx="785.3" cy="21.8" r="1.9" class="particle" opacity="0.76" style="animation-delay: -4.6s; animation-duration: 11.2s;" />
+  <circle cx="152.0" cy="211.3" r="1.3" class="particle" opacity="0.29" style="animation-delay: -7.1s; animation-duration: 14.6s;" />
+  <circle cx="120.2" cy="436.5" r="0.5" class="particle" opacity="0.26" style="animation-delay: -2.2s; animation-duration: 14.6s;" />
+  <circle cx="366.7" cy="274.1" r="0.7" class="particle" opacity="0.56" style="animation-delay: -8.0s; animation-duration: 10.8s;" />
+  <circle cx="989.4" cy="121.7" r="1.8" class="particle" opacity="0.88" style="animation-delay: -4.9s; animation-duration: 11.5s;" />
+  <circle cx="1010.2" cy="347.8" r="0.5" class="particle" opacity="0.74" style="animation-delay: -2.1s; animation-duration: 12.7s;" />
+  <circle cx="129.5" cy="232.0" r="0.7" class="particle" opacity="0.66" style="animation-delay: -6.4s; animation-duration: 10.0s;" />
+  <circle cx="735.4" cy="195.8" r="0.9" class="particle" opacity="0.83" style="animation-delay: -9.7s; animation-duration: 8.4s;" />
+  <circle cx="780.3" cy="179.0" r="0.9" class="particle" opacity="0.40" style="animation-delay: -9.0s; animation-duration: 12.0s;" />
+  <circle cx="190.4" cy="500.5" r="0.6" class="particle" opacity="0.65" style="animation-delay: -2.1s; animation-duration: 8.4s;" />
+  <circle cx="749.7" cy="273.3" r="0.7" class="particle" opacity="0.89" style="animation-delay: -8.0s; animation-duration: 15.9s;" />
+  <circle cx="650.7" cy="584.5" r="1.0" class="particle" opacity="0.66" style="animation-delay: -8.5s; animation-duration: 9.0s;" />
+  <circle cx="1067.8" cy="159.8" r="0.8" class="particle" opacity="0.84" style="animation-delay: -1.6s; animation-duration: 11.8s;" />
+  <circle cx="703.6" cy="112.1" r="1.0" class="particle" opacity="0.78" style="animation-delay: -6.7s; animation-duration: 13.5s;" />
+  <circle cx="714.7" cy="62.3" r="1.9" class="particle" opacity="0.72" style="animation-delay: -3.9s; animation-duration: 11.4s;" />
+  <circle cx="1210.9" cy="35.1" r="1.3" class="particle" opacity="0.62" style="animation-delay: -5.6s; animation-duration: 10.2s;" />
+  <circle cx="171.7" cy="167.8" r="1.6" class="particle" opacity="0.27" style="animation-delay: -0.0s; animation-duration: 12.4s;" />
+  <circle cx="97.5" cy="467.2" r="1.7" class="particle" opacity="0.72" style="animation-delay: -9.9s; animation-duration: 9.6s;" />
+  <circle cx="1124.3" cy="530.7" r="0.5" class="particle" opacity="0.62" style="animation-delay: -1.7s; animation-duration: 13.5s;" />
+  <circle cx="1220.6" cy="447.9" r="1.8" class="particle" opacity="0.66" style="animation-delay: -5.6s; animation-duration: 13.8s;" />
+  <circle cx="759.3" cy="442.8" r="0.5" class="particle" opacity="0.36" style="animation-delay: -6.4s; animation-duration: 8.3s;" />
+  <circle cx="968.7" cy="67.1" r="1.8" class="particle" opacity="0.27" style="animation-delay: -1.3s; animation-duration: 8.4s;" />
+  <circle cx="1357.3" cy="424.2" r="1.5" class="particle" opacity="0.45" style="animation-delay: -10.0s; animation-duration: 13.8s;" />
+  <circle cx="1217.3" cy="360.0" r="1.7" class="particle" opacity="0.25" style="animation-delay: -3.8s; animation-duration: 11.8s;" />
+  <circle cx="624.4" cy="192.4" r="0.8" class="particle" opacity="0.82" style="animation-delay: -7.5s; animation-duration: 9.9s;" />
+  <circle cx="514.5" cy="295.5" r="2.0" class="particle" opacity="0.46" style="animation-delay: -8.4s; animation-duration: 14.9s;" />
+  <circle cx="118.5" cy="214.6" r="1.7" class="particle" opacity="0.68" style="animation-delay: -1.3s; animation-duration: 11.9s;" />
+  <circle cx="59.0" cy="418.1" r="1.4" class="particle" opacity="0.36" style="animation-delay: -0.4s; animation-duration: 8.8s;" />
+  <circle cx="1351.1" cy="453.2" r="0.6" class="particle" opacity="0.72" style="animation-delay: -7.9s; animation-duration: 11.1s;" />
 
   <!-- 3D Glass Corner Pods & Animated Brackets -->
   <g transform="translate(24, 24)">
@@ -413,6 +443,14 @@
     <text x="28" y="26" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // CORE TELEMETRY</text>
     <text x="16" y="48" class="hud-text-left">[CBO: 6.9271° N, 79.8612° E] • [BHX: 52.4862° N]</text>
     <text x="16" y="70" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • KERNEL TUNING</text>
+    
+    <!-- Mini Equalizer Bars Inside Top Left Plate -->
+    <g transform="translate(325, 36)">
+      <rect x="0" y="0" width="2.5" height="18" fill="#10B981" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.1s;" />
+      <rect x="5" y="0" width="2.5" height="18" fill="#00DFD8" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.4s;" />
+      <rect x="10" y="0" width="2.5" height="18" fill="#38BDF8" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.2s;" />
+      <rect x="15" y="0" width="2.5" height="18" fill="#10B981" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.5s;" />
+    </g>
   </g>
 
   <!-- HUD Glass Plate: Top Right (3D Chamfered Glass Chassis) -->
@@ -422,6 +460,14 @@
     <text x="350" y="26" class="hud-text-right" fill="#00DFD8">MATHIYA.CC ↗ // OFFICIAL PORTAL</text>
     <text x="350" y="48" class="hud-text-right">LEAD SYSTEMS ARCHITECT</text>
     <text x="350" y="70" class="hud-text-right" fill="#C084FC">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
+    
+    <!-- Mini Equalizer Bars Inside Top Right Plate -->
+    <g transform="translate(20, 36)">
+      <rect x="0" y="0" width="2.5" height="18" fill="#A855F7" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.3s;" />
+      <rect x="5" y="0" width="2.5" height="18" fill="#E879F9" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.6s;" />
+      <rect x="10" y="0" width="2.5" height="18" fill="#7701D0" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.15s;" />
+      <rect x="15" y="0" width="2.5" height="18" fill="#A855F7" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.45s;" />
+    </g>
   </g>
 
   <!-- 3D Glass Badge Center Top -->

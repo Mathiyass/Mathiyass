@@ -19,35 +19,44 @@ https.get(imageUrl, (res) => {
   <defs>
     <!-- Volumetric Ambient Nebula Glows -->
     <radialGradient id="nebula-cyan" cx="18%" cy="25%" r="60%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.38" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.45" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
     
     <radialGradient id="nebula-purple" cx="82%" cy="75%" r="60%">
-      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.42" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.48" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.15" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="avatar-center-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.35" />
-      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.22" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.45" />
+      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.28" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <!-- 3D Liquid Glass Gradients -->
     <linearGradient id="glass-chassis-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827" stop-opacity="0.94" />
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
       <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
       <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="specular-top-edge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
-      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.20" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="30%" stop-color="#00DFD8" stop-opacity="0.25" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Sweeping Laser Flare Gradient -->
+    <linearGradient id="laser-flare-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#A855F7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="transparent" />
     </linearGradient>
 
     <!-- Dual-Tone Chrome Neon Stroke -->
@@ -68,8 +77,8 @@ https.get(imageUrl, (res) => {
 
     <!-- Perspective Horizon Gradient -->
     <linearGradient id="horizon-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.25" />
-      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.08" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.1" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -126,7 +135,7 @@ https.get(imageUrl, (res) => {
       }
 
       .image-layer {
-        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.4)) drop-shadow(0 20px 40px rgba(0,0,0,0.9));
+        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.45)) drop-shadow(0 20px 40px rgba(0,0,0,0.95));
         transform-box: fill-box;
         transform-origin: center;
         animation: breathe 5s infinite ease-in-out;
@@ -197,6 +206,15 @@ https.get(imageUrl, (res) => {
         from { stroke-dashoffset: 60; }
         to { stroke-dashoffset: 0; }
       }
+
+      /* Audio Waveform Oscillators */
+      .audio-bar {
+        animation: audioBounce 1.2s ease-in-out infinite alternate;
+      }
+      @keyframes audioBounce {
+        0% { transform: scaleY(0.2); }
+        100% { transform: scaleY(1.0); }
+      }
     </style>
     
     <pattern id="scanline" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -216,7 +234,12 @@ https.get(imageUrl, (res) => {
   <rect width="${width}" height="${height}" fill="url(#nebula-purple)" style="animation: pulse 8s infinite alternate-reverse;" />
   
   <!-- Specular Top Edge Light Refraction -->
-  <path d="M 18 5 L ${width - 18} 5 L ${width - 5} 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.8" />
+  <path d="M 18 5 L ${width - 18} 5 L ${width - 5} 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.85" />
+
+  <!-- Sweeping Laser Beam Across Top Rail -->
+  <rect x="0" y="4" width="280" height="3" fill="url(#laser-flare-grad)">
+    <animate attributeName="x" from="-300" to="${width + 100}" dur="4.5s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Animated Laser Perimeter Stream -->
   <polygon points="22,8 ${width - 22},8 ${width - 8},22 ${width - 8},${height - 22} ${width - 22},${height - 8} 22,${height - 8} 8,${height - 22} 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.45" stroke-width="1.2" class="laser-cable" />
@@ -228,6 +251,13 @@ https.get(imageUrl, (res) => {
 
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="${width / 2}" cy="280" r="230" fill="url(#avatar-center-glow)" />
+
+  <!-- Target Reticle Tick Aperture -->
+  <g transform="translate(${width / 2}, 280)">
+    <circle cx="0" cy="0" r="255" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" stroke-dasharray="2, 8">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <!-- 3D Tilted Gyroscope Outer Ring 1 (18s SMIL Clockwise Rotation) -->
   <g>
@@ -318,6 +348,14 @@ https.get(imageUrl, (res) => {
     <text x="28" y="26" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // CORE TELEMETRY</text>
     <text x="16" y="48" class="hud-text-left">[CBO: 6.9271° N, 79.8612° E] • [BHX: 52.4862° N]</text>
     <text x="16" y="70" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • KERNEL TUNING</text>
+    
+    <!-- Mini Equalizer Bars Inside Top Left Plate -->
+    <g transform="translate(325, 36)">
+      <rect x="0" y="0" width="2.5" height="18" fill="#10B981" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.1s;" />
+      <rect x="5" y="0" width="2.5" height="18" fill="#00DFD8" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.4s;" />
+      <rect x="10" y="0" width="2.5" height="18" fill="#38BDF8" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.2s;" />
+      <rect x="15" y="0" width="2.5" height="18" fill="#10B981" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.5s;" />
+    </g>
   </g>
 
   <!-- HUD Glass Plate: Top Right (3D Chamfered Glass Chassis) -->
@@ -327,6 +365,14 @@ https.get(imageUrl, (res) => {
     <text x="350" y="26" class="hud-text-right" fill="#00DFD8">MATHIYA.CC ↗ // OFFICIAL PORTAL</text>
     <text x="350" y="48" class="hud-text-right">LEAD SYSTEMS ARCHITECT</text>
     <text x="350" y="70" class="hud-text-right" fill="#C084FC">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
+    
+    <!-- Mini Equalizer Bars Inside Top Right Plate -->
+    <g transform="translate(20, 36)">
+      <rect x="0" y="0" width="2.5" height="18" fill="#A855F7" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.3s;" />
+      <rect x="5" y="0" width="2.5" height="18" fill="#E879F9" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.6s;" />
+      <rect x="10" y="0" width="2.5" height="18" fill="#7701D0" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.15s;" />
+      <rect x="15" y="0" width="2.5" height="18" fill="#A855F7" class="audio-bar" style="transform-origin: bottom; animation-delay: 0.45s;" />
+    </g>
   </g>
 
   <!-- 3D Glass Badge Center Top -->
