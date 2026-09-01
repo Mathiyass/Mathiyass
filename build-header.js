@@ -126,7 +126,7 @@ https.get(imageUrl, (res) => {
         stroke-width: 2.5px;
         letter-spacing: 6px;
         text-anchor: middle;
-        animation: glitch 4.5s infinite alternate ease-in-out;
+        
       }
       
       .text-solid {
@@ -157,10 +157,9 @@ https.get(imageUrl, (res) => {
       }
 
       @keyframes pulse {
-        0% { opacity: 0.25; }
-        50% { opacity: 0.8; }
-        100% { opacity: 0.25; }
-      }
+  0% { opacity: 0.8; }
+  100% { opacity: 0.8; }
+}
 
       @keyframes breathe {
         0% { transform: scale(1) translateY(0px); }
@@ -169,19 +168,11 @@ https.get(imageUrl, (res) => {
       }
 
       @keyframes textGlowPulse {
-        0% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 20px rgba(0, 223, 216, 0.2)); }
-        50% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 50px rgba(0, 223, 216, 0.7)) drop-shadow(0px 0px 30px rgba(232, 121, 249, 0.6)); }
-        100% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 30px rgba(56, 189, 248, 0.6)); }
-      }
+  0% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.7)); }
+  100% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.7)); }
+}
 
-      @keyframes glitch {
-        0% { stroke-dashoffset: 0; stroke: rgba(255, 255, 255, 0.95); }
-        15% { stroke-dashoffset: 14; transform: translate(-3px, 1px); stroke: #00DFD8; }
-        30% { stroke-dashoffset: 28; transform: translate(3px, -1px); stroke: #E879F9; }
-        45% { stroke-dashoffset: 14; transform: translate(-2px, 2px); stroke: #38BDF8; }
-        60% { stroke-dashoffset: 8; transform: translate(2px, -2px); stroke: rgba(255, 255, 255, 0.95); }
-        100% { stroke-dashoffset: 0; transform: translate(0, 0); }
-      }
+      
 
       .sonar-shockwave {
         animation: shockwaveExpand 2.4s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
@@ -193,9 +184,9 @@ https.get(imageUrl, (res) => {
 
       .laser-cable {
         stroke-dasharray: 10, 16;
-        animation: cablePulse 0.9s linear infinite;
+        animation: cableStream 0.9s linear infinite;
       }
-      @keyframes cablePulse {
+      @keyframes cableStream {
         from { stroke-dashoffset: 26; }
         to { stroke-dashoffset: 0; }
       }
@@ -264,11 +255,6 @@ https.get(imageUrl, (res) => {
   <circle cx="${width / 2}" cy="420" r="320" fill="url(#avatar-center-glow)" />
 
   <!-- Expanding Sonar Shockwaves from Center -->
-  <circle cx="${width / 2}" cy="420" r="50" fill="none" stroke="#00DFD8" class="sonar-shockwave" />
-  <circle cx="${width / 2}" cy="420" r="50" fill="none" stroke="#E879F9" class="sonar-shockwave" style="animation-delay: -1.2s;" />
-  <circle cx="${width / 2}" cy="420" r="50" fill="none" stroke="#38BDF8" class="sonar-shockwave" style="animation-delay: -0.6s;" />
-  <circle cx="${width / 2}" cy="420" r="50" fill="none" stroke="#FBBF24" class="sonar-shockwave" style="animation-delay: -1.8s;" />
-
   <!-- Target Reticle Tick Aperture (Dual Counter-Rotating Gears) -->
   <g transform="translate(${width / 2}, 420)">
     <circle cx="0" cy="0" r="325" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" stroke-dasharray="4, 12">
