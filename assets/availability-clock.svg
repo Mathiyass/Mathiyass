@@ -8,9 +8,9 @@
 
     <!-- Border Gradient -->
     <linearGradient id="clockBorder" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
       <stop offset="50%" stop-color="#7701D0" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
     </linearGradient>
 
     <style>
@@ -20,16 +20,19 @@
       .c-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8px; fill: #8B949E; }
       
       .rot-minute {
-        transform-origin: 18px 18px;
+        transform-box: fill-box;
+        transform-origin: 50% 100%;
         animation: spinClock 8s linear infinite;
       }
       .rot-hour {
-        transform-origin: 18px 18px;
+        transform-box: fill-box;
+        transform-origin: 0% 50%;
         animation: spinClock 48s linear infinite;
       }
 
       .ping-ring {
-        transform-origin: 6px 6px;
+        transform-box: fill-box;
+        transform-origin: center;
         animation: pingEffect 2s cubic-bezier(0, 0, 0.2, 1) infinite;
       }
 

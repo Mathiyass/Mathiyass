@@ -111,15 +111,6 @@ https.get(imageUrl, (res) => {
         transform-origin: center;
         animation: breathe 5s infinite ease-in-out;
       }
-
-      .reticle-spin {
-        transform-origin: ${width / 2}px 280px;
-        animation: spinR 20s linear infinite;
-      }
-      .reticle-spin-rev {
-        transform-origin: ${width / 2}px 280px;
-        animation: spinRRev 14s linear infinite;
-      }
       
       .particle {
         fill: #00DFD8;
@@ -143,15 +134,6 @@ https.get(imageUrl, (res) => {
         0% { transform: scale(1) translateY(0px); }
         50% { transform: scale(1.02) translateY(-6px); }
         100% { transform: scale(1) translateY(0px); }
-      }
-
-      @keyframes spinR {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes spinRRev {
-        from { transform: rotate(360deg); }
-        to { transform: rotate(0deg); }
       }
 
       @keyframes glitch {
@@ -202,11 +184,17 @@ https.get(imageUrl, (res) => {
   <line x1="0" y1="${height - 20}" x2="${width}" y2="${height - 20}" stroke="rgba(0, 223, 216, 0.15)" stroke-width="1" />
   <line x1="0" y1="${height - 60}" x2="${width}" y2="${height - 60}" stroke="rgba(0, 223, 216, 0.08)" stroke-width="1" />
 
-  <!-- Holographic Avatar Backdrop Reticle HUD -->
+  <!-- Holographic Avatar Backdrop Reticle HUD with Pure Native SMIL Animations -->
   <circle cx="${width / 2}" cy="280" r="230" fill="url(#avatar-center-glow)" />
-  <circle cx="${width / 2}" cy="280" r="210" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1.5" stroke-dasharray="12, 12" class="reticle-spin" />
-  <circle cx="${width / 2}" cy="280" r="170" fill="none" stroke="rgba(119, 1, 208, 0.25)" stroke-width="1.2" stroke-dasharray="8, 16" class="reticle-spin-rev" />
-  <circle cx="${width / 2}" cy="280" r="130" fill="none" stroke="rgba(0, 223, 216, 0.15)" stroke-width="1" />
+  <g>
+    <circle cx="${width / 2}" cy="280" r="210" fill="none" stroke="rgba(0, 223, 216, 0.25)" stroke-width="1.5" stroke-dasharray="12, 12" />
+    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="24s" repeatCount="indefinite" />
+  </g>
+  <g>
+    <circle cx="${width / 2}" cy="280" r="170" fill="none" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1.2" stroke-dasharray="8, 16" />
+    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="16s" repeatCount="indefinite" />
+  </g>
+  <circle cx="${width / 2}" cy="280" r="130" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" />
 
   <rect width="${width}" height="${height}" rx="16" fill="url(#scanline)" />
   <rect width="${width - 4}" height="${height - 4}" x="2" y="2" rx="14" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />

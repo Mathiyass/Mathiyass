@@ -25,24 +25,8 @@
       .r-label { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8px; font-weight: 700; fill: #FFFFFF; }
       .r-coord { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 7.5px; fill: #8B949E; }
       
-      .radar-sweep-beam {
-        transform-origin: 100px 100px;
-        animation: radarSpin 5s linear infinite;
-      }
-      .radar-sweep-beam-trail {
-        transform-origin: 100px 100px;
-        animation: radarSpin 5s linear infinite;
-        animation-delay: -0.15s;
-        opacity: 0.4;
-      }
-
       .radar-ping-node {
         animation: pingNode 2s ease-in-out infinite alternate;
-      }
-
-      @keyframes radarSpin {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
       }
 
       @keyframes pingNode {
@@ -83,10 +67,11 @@
     <!-- Radar Polygon (Pentagon) -->
     <polygon points="60,18 98,42 85,92 35,92 22,42" fill="rgba(0, 223, 216, 0.15)" stroke="#00DFD8" stroke-width="1.5" />
 
-    <!-- Rotating Radar Sweep Beam with Trail -->
-    <g transform="translate(-40, -40)">
-      <path d="M 100 100 L 100 50 A 50 50 0 0 1 135 65 Z" fill="url(#radarSweep)" class="radar-sweep-beam" />
-      <path d="M 100 100 L 100 50 A 50 50 0 0 1 135 65 Z" fill="url(#radarSweep)" class="radar-sweep-beam-trail" />
+    <!-- Rotating Radar Sweep Beam with Pure SVG SMIL Rotation -->
+    <g>
+      <path d="M 60 60 L 60 10 A 50 50 0 0 1 95 25 Z" fill="url(#radarSweep)">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="5s" repeatCount="indefinite" />
+      </path>
     </g>
 
     <!-- Vertex Data Nodes -->
