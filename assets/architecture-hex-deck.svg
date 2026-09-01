@@ -98,6 +98,12 @@
         0% { transform: translateY(110px); }
         100% { transform: translateY(0px); }
       }
+    
+      .spark-up-4 { animation: sparkAscend4 3s ease-in-out 1.5s infinite; }
+      @keyframes sparkAscend4 {
+        0% { transform: translateY(110px); }
+        100% { transform: translateY(0px); }
+      }
     </style>
   </defs>
 

@@ -122,7 +122,11 @@
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <!-- 3D Mini Gyroscope -->
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+      
+        <ellipse cx="22" cy="20" rx="18" ry="9" fill="none" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1" stroke-dasharray="2, 4">
+          <animateTransform attributeName="transform" type="rotate" from="360 22 20" to="0 22 20" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
       <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
@@ -142,7 +146,11 @@
     <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+      
+        <ellipse cx="22" cy="20" rx="18" ry="9" fill="none" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1" stroke-dasharray="2, 4">
+          <animateTransform attributeName="transform" type="rotate" from="360 22 20" to="0 22 20" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
       <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
@@ -162,7 +170,11 @@
     <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(16, 185, 129, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+      
+        <ellipse cx="22" cy="20" rx="18" ry="9" fill="none" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" stroke-dasharray="2, 4">
+          <animateTransform attributeName="transform" type="rotate" from="360 22 20" to="0 22 20" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(16, 185, 129, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
       <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">
@@ -182,7 +194,11 @@
     <polygon points="8,0 184,0 192,8 192,62 184,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(2, 132, 199, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 184 1 L 191 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
     <g>
-      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(2, 132, 199, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
+      
+        <ellipse cx="22" cy="20" rx="18" ry="9" fill="none" stroke="rgba(2, 132, 199, 0.35)" stroke-width="1" stroke-dasharray="2, 4">
+          <animateTransform attributeName="transform" type="rotate" from="360 22 20" to="0 22 20" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(2, 132, 199, 0.5)" stroke-width="1.2" stroke-dasharray="3, 3">
         <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="4s" repeatCount="indefinite" />
       </ellipse>
       <circle cx="22" cy="13" r="1.5" fill="#FFFFFF">

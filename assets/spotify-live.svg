@@ -134,6 +134,7 @@
   <text x="82" y="49" class="track-title">Cyberpunk Synthwave &amp; Systems Flow</text>
   <text x="82" y="66" class="track-artist">Curated Architect Soundtracks • 24-Bit / 96kHz</text>
   <text x="82" y="80" class="spot-time">02:48 / 03:15 • STREAMING LIVE</text>
+  <line x1="82" y1="86" x2="350" y2="86" stroke="#1DB954" stroke-width="1.5" stroke-opacity="0.8" class="dash-flow" />
 
   <!-- 16-Band Equalizer -->
   <g transform="translate(376, 68)">
