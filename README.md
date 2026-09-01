@@ -14,11 +14,10 @@
 
 <br/><br/>
 
-<!-- PROFILE BADGES -->
-[![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.cc)
-[![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=0D1117)](https://github.com/Mathiyass?tab=followers)
-[![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=7701D0&labelColor=0D1117)](https://github.com/Mathiyass?tab=repositories)
-[![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)](https://github.com/Mathiyass?tab=repositories)
+<!-- PROFILE TELEMETRY STRIP (Native 60 FPS 3D HUD) -->
+<a href="https://mathiya.cc">
+  <img src="./assets/quick-stats-strip.svg" alt="Profile Telemetry Strip" width="100%" />
+</a>
 
 <br/><br/>
 
@@ -203,8 +202,8 @@
 
 <br/><br/>
 
-<a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="100%"/>
+<a href="https://github.com/Mathiyass">
+  <img src="./assets/streak-telemetry.svg" alt="GitHub Streak Telemetry" width="100%" />
 </a>
 
 <br/><br/>
@@ -343,13 +342,11 @@ Leave a star or sign the guestbook to connect:
 <br/><br/>
 
 ### 🌐 Connect & Network
+<br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.cc)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-a-a955941a2/)
-[![Twitter](https://img.shields.io/badge/Twitter-0D1117?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/__Mathiya__)
-[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/z3k3NVxuqY)
-[![Medium](https://img.shields.io/badge/Medium-0D1117?style=for-the-badge&logo=medium&logoColor=00DFD8)](https://medium.com/@mathishaangirasa)
-[![YouTube](https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
+<div align="center">
+  <img src="./assets/connect-hub.svg" alt="Connect & Network Portals" width="100%" />
+</div>
 
 <br/><br/>
 
