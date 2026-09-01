@@ -192,7 +192,7 @@ https.get(imageUrl, (res) => {
   <text x="48" y="124" class="hud-text-left" fill="#00DFD8">SPEC: AI &amp; CLOUD ARCHITECT</text>
 
   <!-- HUD Elements: Top Right -->
-  <text x="${width - 48}" y="72" class="hud-text-right" fill="#00DFD8">MATHIYA.DEV</text>
+  <text x="${width - 48}" y="72" class="hud-text-right" fill="#00DFD8">MATHIYA.CC</text>
   <text x="${width - 48}" y="98" class="hud-text-right">FULL-STACK INNOVATION</text>
   <text x="${width - 48}" y="124" class="hud-text-right" fill="rgba(255,255,255,0.7)">OPEN FOR COLLABORATION</text>
 

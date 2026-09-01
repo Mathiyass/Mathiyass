@@ -1,14 +1,14 @@
 <div align="center">
 
 <!-- CUSTOM ANIMATED HEADER (Matching Website) -->
-<a href="https://mathiya.dev">
+<a href="https://mathiya.cc">
   <img src="./header.svg" alt="Custom Animated Header" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- PROFILE BADGES -->
-[![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.dev)
+[![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.cc)
 [![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=0D1117)](https://github.com/Mathiyass?tab=followers)
 [![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=7701D0&labelColor=0D1117)](https://github.com/Mathiyass?tab=repositories)
 [![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)](https://github.com/Mathiyass?tab=repositories)
@@ -109,10 +109,10 @@ $ cat core_mission.json
 <td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">View Repo</a></td>
 </tr>
 <tr>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.dev</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.cc</b></td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;">Official cyber-aesthetic portfolio featuring custom GLSL shaders, terminal telemetry, and high-performance frontend engineering.</td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>TypeScript</code> <code>TailwindCSS</code> <code>Three.js</code></td>
-<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.dev">Live Site</a></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc">Live Site</a></td>
 </tr>
 <tr>
 <td style="padding: 12px;"><b>Mathiyass GitHub Ecosystem</b></td>
@@ -224,7 +224,7 @@ $ cat core_mission.json
 
 ### 🌐 Connect & Network
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.cc)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
 [![Twitter](https://img.shields.io/badge/Twitter-0D1117?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/__Mathiya__)
 [![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
@@ -233,6 +233,6 @@ $ cat core_mission.json
 
 <br/><br/>
 
-<sub>⚡ Designed & Engineered with precision by <b><a href="https://mathiya.dev">Mathisha Angirasa (MATHIYA)</a></b></sub>
+<sub>⚡ Designed & Engineered with precision by <b><a href="https://mathiya.cc">Mathisha Angirasa (MATHIYA)</a></b></sub>
 
 </div>
