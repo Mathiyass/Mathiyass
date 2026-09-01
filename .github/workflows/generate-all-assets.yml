@@ -25,6 +25,14 @@ jobs:
       - name: Create output directory
         run: mkdir -p dist
 
+      - name: Set up Node.js for Header Generation
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Compile Dynamic Header SVG
+        run: node build-header.js || echo "Header build failed but continuing"
+
       - name: Generate Snake Animation
         uses: Platane/snk/svg-only@v3
         with:

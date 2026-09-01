@@ -107,12 +107,33 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Button Hover Sounds
-  document.querySelectorAll(".hud-btn, .mode-btn").forEach((btn) => {
+  document.querySelectorAll(".hud-btn, .mode-btn, .filter-btn").forEach((btn) => {
     btn.addEventListener("mouseenter", () => playTone(540, "triangle", 0.04, 0.02));
     btn.addEventListener("click", () => playTone(880, "sine", 0.08, 0.05));
   });
 
-  // --- 3. 3D CARD PARALLAX TILT PHYSICS ---
+  // --- 3. PROJECT FILTER ENGINE ---
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      filterBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      const filter = btn.dataset.filter;
+
+      projectCards.forEach((card) => {
+        const category = card.dataset.category;
+        if (filter === "all" || category === filter) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+
+  // --- 4. 3D CARD PARALLAX TILT PHYSICS ---
   document.querySelectorAll(".hud-card").forEach((card) => {
     card.addEventListener("mousemove", (e) => {
       const rect = card.getBoundingClientRect();
@@ -132,7 +153,131 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // --- 4. 60FPS MULTI-MODE CANVAS ENGINE ---
+  // --- 5. INTERACTIVE HUD CLI TERMINAL SHELL ---
+  const terminalForm = document.getElementById("terminal-form");
+  const terminalInput = document.getElementById("terminal-input");
+  const terminalOutput = document.getElementById("terminal-output");
+
+  const commands = {
+    help: () => [
+      "[SYSTEM] Available commands:",
+      "  - about     : Architectural background & leadership thesis",
+      "  - projects  : List flagship engineering projects",
+      "  - skills    : Technical competencies & framework matrix",
+      "  - sivion    : SIVION v2.4 multi-agent architecture overview",
+      "  - optimizer : MA Optimizer kernel latency specs",
+      "  - matrix    : Switch canvas to Cyber Matrix mode",
+      "  - audio     : Toggle native audio synthesizer SFX",
+      "  - contact   : Official channels (LinkedIn, Discord, Email)",
+      "  - resume    : View verified credentials & resume link",
+      "  - clear     : Clear terminal history",
+    ],
+    about: () => [
+      "🏛️ Mathisha Angirasa (MATHIYA) — Lead Systems Architect & AI Specialist",
+      "  • Dual Presence: Colombo 🇱🇰 & Birmingham 🇬🇧",
+      "  • 50+ Production Deployments • 4+ Years Active",
+      "  • Specializations: Multi-Agent Swarms, WebGL 2.0 Shaders, Win32 Kernel Tuning",
+    ],
+    projects: () => [
+      "🚀 Flagship Engineering Projects:",
+      "  1. MA Optimizer (Windows Kernel OS Tuning Suite) -> mathiya.cc/projects/MA-Optimizer",
+      "  2. SIVION Automation (Enterprise Multi-Agent Swarm) -> mathiya.cc/projects/sivion",
+      "  3. mathiya.cc & The Lab (WebGL 2.0 & GLSL Shaders) -> mathiya.cc/lab",
+      "  4. Dev Marketplace (Kotlin KMP / Native Android) -> mathiya.cc/projects/marketplace",
+      "  5. VELORA Paint Factory POS (Full-Stack POS System)",
+    ],
+    skills: () => [
+      "🛠️ Architectural Stack Matrix:",
+      "  • AI/ML      : Python 3.12, PyTorch, Multi-Agent Swarms, pgvector RAG, FastAPI",
+      "  • Systems    : C++20, Rust, Go, Windows API, Kernel Tuning, PowerShell, POSIX",
+      "  • Frontend   : Next.js 16 (Turbopack), React 19, TS 5, WebGL 2.0, GLSL, Tailwind",
+      "  • Cloud/DB   : Node.js, Bun, Docker, Kubernetes, AWS, GCP, Supabase, Redis, PostgreSQL",
+    ],
+    sivion: () => [
+      "🤖 SIVION v2.4 Multi-Agent Cognitive Engine:",
+      "  [Stage 01] Hybrid RAG Query -> pgvector semantic embedding search",
+      "  [Stage 02] Swarm Consensus -> Planner + Critic reasoning swarm",
+      "  [Stage 03] Execution -> Sub-millisecond tool execution pipeline",
+      "  [Stage 04] Sync -> Supabase Realtime WebSockets to Concurrent React 19",
+    ],
+    optimizer: () => [
+      "⚡ MA Optimizer Engine Telemetry:",
+      "  • Input Latency : 0.42ms [Sub-millisecond]",
+      "  • Kernel Tuning : Win32 Ring 0 timer resolution & scheduler tuning",
+      "  • Telemetry     : 100% telemetry lockdown & bloatware elimination",
+      "  • Architecture  : React + Electron + Native PowerShell + Windows API",
+    ],
+    matrix: () => {
+      currentMode = "matrix";
+      initMatrix();
+      document.querySelectorAll(".mode-btn:not(#sfx-toggle)").forEach((b) => {
+        b.classList.toggle("active", b.dataset.mode === "matrix");
+      });
+      return ["[SYSTEM] Switched canvas renderer to Cyber Matrix Rain mode."];
+    },
+    audio: () => {
+      initAudio();
+      sfxEnabled = !sfxEnabled;
+      if (sfxBtn) {
+        sfxBtn.textContent = sfxEnabled ? "🔊 SFX: ON" : "🔇 SFX: OFF";
+        sfxBtn.classList.toggle("active", sfxEnabled);
+      }
+      return [`[SYSTEM] Native Web Audio SFX is now ${sfxEnabled ? "ENABLED" : "DISABLED"}.`];
+    },
+    contact: () => [
+      "🌐 Official Network Channels:",
+      "  • Portfolio : https://mathiya.cc",
+      "  • LinkedIn  : https://linkedin.com/in/mathisha-a-a955941a2/",
+      "  • Discord   : https://discord.gg/z3k3NVxuqY",
+      "  • Twitter/X : https://x.com/__Mathiya__",
+      "  • GitHub    : https://github.com/Mathiyass",
+    ],
+    resume: () => [
+      "📄 Verified Resume & Credentials:",
+      "  • Direct Access: https://mathiya.cc/resume",
+    ],
+    date: () => [`[TIME] Current System Timestamp: ${new Date().toUTCString()}`],
+  };
+
+  if (terminalForm && terminalInput && terminalOutput) {
+    terminalForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const rawInput = terminalInput.value.trim();
+      if (!rawInput) return;
+
+      playTone(1050, "sine", 0.05, 0.03);
+
+      // Append user command
+      const userLine = document.createElement("div");
+      userLine.classList.add("term-line");
+      userLine.innerHTML = `<span class="terminal-user-prompt">visitor@mathiya.cc:~$</span> <span class="term-cmd">${rawInput}</span>`;
+      terminalOutput.appendChild(userLine);
+
+      const cmdKey = rawInput.toLowerCase();
+
+      if (cmdKey === "clear") {
+        terminalOutput.innerHTML = "";
+      } else if (commands[cmdKey]) {
+        const responseLines = commands[cmdKey]();
+        responseLines.forEach((line) => {
+          const respEl = document.createElement("div");
+          respEl.classList.add("term-line");
+          respEl.textContent = line;
+          terminalOutput.appendChild(respEl);
+        });
+      } else {
+        const errLine = document.createElement("div");
+        errLine.classList.add("term-line", "term-error");
+        errLine.textContent = `[ERROR] Command not recognized: '${rawInput}'. Type 'help' for valid options.`;
+        terminalOutput.appendChild(errLine);
+      }
+
+      terminalInput.value = "";
+      terminalOutput.scrollTop = terminalOutput.scrollHeight;
+    });
+  }
+
+  // --- 6. 60FPS MULTI-MODE CANVAS ENGINE ---
   const canvas = document.getElementById("neural-canvas");
   if (!canvas) return;
 
@@ -167,6 +312,7 @@ document.addEventListener("DOMContentLoaded", () => {
       modeButtons.forEach((b) => b.classList.remove("active"));
       btn.classList.add("active");
       currentMode = btn.dataset.mode;
+      if (currentMode === "matrix") initMatrix();
     });
   });
 
