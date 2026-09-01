@@ -20,6 +20,13 @@
   <img src="./assets/github-achievements.svg" alt="GitHub Achievements & Specializations" width="100%"/>
 </a>
 
+<br/><br/>
+
+<!-- HOLOGRAPHIC SYSTEM TELEMETRY CHIP -->
+<a href="https://mathiya.cc">
+  <img src="./assets/status-hologram.svg" alt="Holographic System Telemetry" width="100%"/>
+</a>
+
 </div>
 
 <br/>

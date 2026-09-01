@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     "WebGL 2.0 Graphics & Custom GLSL Shaders 🎮",
     "High-Performance Distributed Cloud Architectures 🚀",
   ];
-  
+
   const typeSpeed = 60;
   const eraseSpeed = 30;
   const pauseDuration = 2200;
-  
+
   let lineIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(tick, 500);
   }
 
-  // --- 2. 60FPS INTERACTIVE NEURAL PARTICLE MESH ---
+  // --- 2. 60FPS MULTI-MODE CANVAS ENGINE ---
   const canvas = document.getElementById("neural-canvas");
   if (!canvas) return;
 
@@ -64,9 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let width = (canvas.width = window.innerWidth);
   let height = (canvas.height = window.innerHeight);
 
-  const particles = [];
-  const particleCount = Math.min(Math.floor(window.innerWidth / 18), 65);
-  const maxDistance = 140;
+  let currentMode = "neural"; // 'neural' | 'matrix' | 'spectrum'
 
   const mouse = { x: null, y: null, radius: 150 };
 
@@ -83,7 +81,23 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", () => {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
+    initMatrix();
   });
+
+  // Mode switcher event listeners
+  const modeButtons = document.querySelectorAll(".mode-btn");
+  modeButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      modeButtons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+      currentMode = btn.dataset.mode;
+    });
+  });
+
+  // --- MODE 1: NEURAL MESH ---
+  const particles = [];
+  const particleCount = Math.min(Math.floor(window.innerWidth / 18), 65);
+  const maxDistance = 140;
 
   class Particle {
     constructor() {
@@ -102,7 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
 
-      // Mouse interactivity
       if (mouse.x !== null && mouse.y !== null) {
         const dx = mouse.x - this.x;
         const dy = mouse.y - this.y;
@@ -130,9 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     particles.push(new Particle());
   }
 
-  function animate() {
-    ctx.clearRect(0, 0, width, height);
-
+  function renderNeural() {
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
       particles[i].draw();
@@ -153,6 +164,83 @@ document.addEventListener("DOMContentLoaded", () => {
           ctx.stroke();
         }
       }
+    }
+  }
+
+  // --- MODE 2: MATRIX STREAM ---
+  const matrixChars = "01010101ABCDEF0123456789MATHIYA";
+  const fontSize = 14;
+  let columns = Math.floor(width / fontSize);
+  let drops = [];
+
+  function initMatrix() {
+    columns = Math.floor(width / fontSize);
+    drops = [];
+    for (let i = 0; i < columns; i++) {
+      drops[i] = Math.random() * -50;
+    }
+  }
+  initMatrix();
+
+  function renderMatrix() {
+    ctx.fillStyle = "rgba(7, 9, 14, 0.15)";
+    ctx.fillRect(0, 0, width, height);
+
+    ctx.fillStyle = "#00DFD8";
+    ctx.font = `${fontSize}px 'Fira Code', monospace`;
+
+    for (let i = 0; i < drops.length; i++) {
+      const text = matrixChars.charAt(Math.floor(Math.random() * matrixChars.length));
+      ctx.fillStyle = Math.random() > 0.85 ? "#FFFFFF" : "#00DFD8";
+      ctx.shadowColor = "#00DFD8";
+      ctx.shadowBlur = 6;
+      ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+      if (drops[i] * fontSize > height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  // --- MODE 3: AUDIO SPECTRUM WAVE ---
+  let waveTime = 0;
+  function renderSpectrum() {
+    waveTime += 0.03;
+    const centerY = height * 0.75;
+    const waveCount = 4;
+
+    for (let w = 0; w < waveCount; w++) {
+      ctx.beginPath();
+      ctx.moveTo(0, centerY);
+
+      const color = w % 2 === 0 ? "rgba(0, 223, 216, 0.4)" : "rgba(119, 1, 208, 0.4)";
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2;
+      ctx.shadowColor = color;
+      ctx.shadowBlur = 10;
+
+      for (let x = 0; x < width; x += 15) {
+        const freq = (x * 0.005) + waveTime + w;
+        const amp = Math.sin(freq) * 45 * Math.sin(waveTime * 0.5 + w);
+        ctx.lineTo(x, centerY + amp);
+      }
+      ctx.stroke();
+    }
+  }
+
+  // --- MASTER RENDER LOOP ---
+  function animate() {
+    if (currentMode !== "matrix") {
+      ctx.clearRect(0, 0, width, height);
+    }
+
+    if (currentMode === "neural") {
+      renderNeural();
+    } else if (currentMode === "matrix") {
+      renderMatrix();
+    } else if (currentMode === "spectrum") {
+      renderSpectrum();
     }
 
     requestAnimationFrame(animate);
