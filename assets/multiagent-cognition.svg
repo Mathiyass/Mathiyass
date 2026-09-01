@@ -71,13 +71,17 @@
     <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
     <text x="18" y="9.5" class="cog-title">SIVION v2.4 // MULTI-AGENT COGNITIVE STATE MACHINE</text>
     <text x="860" y="9.5" text-anchor="end" class="cog-title" fill="#7701D0">4-STAGE AUTONOMOUS PIPELINE</text>
+    
     <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <rect x="0" y="17" width="120" height="2" fill="#00DFD8" opacity="0.8">
+      <animate attributeName="x" from="-120" to="860" dur="3s" repeatCount="indefinite" />
+    </rect>
   </g>
 
   <!-- 4 PIPELINE PODS WITH ACTIVE SEQUENTIAL ILLUMINATION -->
 
   <!-- Stage 01: Ingestion & RAG -->
-  <g transform="translate(24, 46)">
+  <g transform="translate(24, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.2s" additive="sum" repeatCount="indefinite"/>
     <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1" />
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <!-- 3D Mini Gyroscope -->
@@ -100,7 +104,7 @@
   </g>
 
   <!-- Stage 02: Swarm Reasoning -->
-  <g transform="translate(250, 46)">
+  <g transform="translate(250, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="2.7s" additive="sum" repeatCount="indefinite"/>
     <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>
@@ -122,7 +126,7 @@
   </g>
 
   <!-- Stage 03: Kernel Execution -->
-  <g transform="translate(476, 46)">
+  <g transform="translate(476, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.5s" additive="sum" repeatCount="indefinite"/>
     <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
     <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>
@@ -144,7 +148,7 @@
   </g>
 
   <!-- Stage 04: Realtime Stream -->
-  <g transform="translate(702, 46)">
+  <g transform="translate(702, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="2.9s" additive="sum" repeatCount="indefinite"/>
     <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
     <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <g>

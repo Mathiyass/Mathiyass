@@ -92,6 +92,12 @@
         animation: dashFlowRev 2s linear infinite;
       }
     </style>
+  
+    <linearGradient id="waveScanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->

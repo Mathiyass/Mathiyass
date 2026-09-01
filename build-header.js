@@ -14,12 +14,12 @@ https.get(imageUrl, (res) => {
         const width = 1600;
         const height = 900;
 
-        // Generate 320 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
-        const particles = Array.from({ length: 320 }).map((_, i) => {
+        // Generate 360 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
+        const particles = Array.from({ length: 360 }).map((_, i) => {
             const x = Math.random() * width;
             const y = Math.random() * height;
             const r = Math.random() * 2.2 + 0.3;
-            const op = (Math.random() * 0.6 + 0.3).toFixed(2);
+            const op = (Math.random() * 0.5 + 0.3).toFixed(2);
             const dur = (Math.random() * 6 + 4).toFixed(1);
             const delay = (Math.random() * 10).toFixed(1);
             const color = Math.random() > 0.6 ? '#00DFD8' : (Math.random() > 0.3 ? '#E879F9' : (Math.random() > 0.15 ? '#38BDF8' : '#FFFFFF'));
@@ -96,17 +96,9 @@ https.get(imageUrl, (res) => {
         0% { transform: translateY(-100%); }
         100% { transform: translateY(1000%); }
       }
-      @keyframes border-run {
-        0% { stroke-dashoffset: 1000; }
-        100% { stroke-dashoffset: 0; }
-      }
       .cyber-scanner { 
         animation: cyber-scan 3.5s linear infinite; 
         opacity: 0.45; 
-      }
-      .border-run { 
-        stroke-dasharray: 100 200; 
-        animation: border-run 5s linear infinite; 
       }
 
       .bg-void { fill: #000000; }
@@ -154,13 +146,12 @@ https.get(imageUrl, (res) => {
         filter: drop-shadow(0 0 70px rgba(147, 51, 234, 0.65)) drop-shadow(0 25px 50px rgba(0,0,0,0.95));
         transform-box: fill-box;
         transform-origin: center;
-        animation: breathe 4s infinite ease-in-out;
+        animation: smoothFloat 4s infinite ease-in-out alternate;
       }
 
-      @keyframes breathe {
-        0% { transform: scale(1) translateY(0px); }
-        50% { transform: scale(1.03) translateY(-8px); }
-        100% { transform: scale(1) translateY(0px); }
+      @keyframes smoothFloat {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-8px); }
       }
 
       .laser-cable {
@@ -170,6 +161,23 @@ https.get(imageUrl, (res) => {
       @keyframes cableStream {
         from { stroke-dashoffset: 26; }
         to { stroke-dashoffset: 0; }
+      }
+
+      .stream-fast {
+        stroke-dasharray: 6, 12;
+        animation: streamFast 1s linear infinite;
+      }
+      .stream-fast-rev {
+        stroke-dasharray: 6, 12;
+        animation: streamFastRev 1s linear infinite;
+      }
+      @keyframes streamFast {
+        from { stroke-dashoffset: 18; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes streamFastRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 18; }
       }
 
       .corner-chase {
@@ -235,59 +243,52 @@ https.get(imageUrl, (res) => {
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="${width / 2}" cy="420" r="320" fill="url(#avatar-center-glow)" />
 
-  <!-- Target Reticle Tick Aperture (Dual Counter-Rotating Gears) -->
+  <!-- Target Reticle Tick Aperture (Concentric Counter-Rotating Gears) -->
   <g transform="translate(${width / 2}, 420)">
-    <circle cx="0" cy="0" r="325" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" stroke-dasharray="4, 12">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="22s" repeatCount="indefinite" />
+    <circle cx="0" cy="0" r="340" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" stroke-dasharray="4, 12">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite" />
     </circle>
-    <circle cx="0" cy="0" r="285" fill="none" stroke="rgba(232, 121, 249, 0.35)" stroke-width="1" stroke-dasharray="2, 8">
+    <circle cx="0" cy="0" r="310" fill="none" stroke="rgba(232, 121, 249, 0.35)" stroke-width="1" stroke-dasharray="2, 8">
       <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="18s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="260" fill="none" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" stroke-dasharray="6, 10">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="14s" repeatCount="indefinite" />
     </circle>
   </g>
 
-  <!-- 3D Tilted Gyroscope Outer Ring 1 (18s SMIL Clockwise Rotation) -->
+  <!-- 3D Tilted Gyroscope Rings (Multi-Axis 360 Continuous Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="330" ry="155" fill="none" stroke="rgba(0, 223, 216, 0.65)" stroke-width="1.8" stroke-dasharray="18, 14">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="18s" repeatCount="indefinite" />
     </ellipse>
   </g>
-
-  <!-- 3D Tilted Gyroscope Reverse Ring 2 (12s SMIL Counter-Clockwise Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="285" ry="125" fill="none" stroke="rgba(168, 85, 247, 0.65)" stroke-width="1.6" stroke-dasharray="12, 16">
       <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 420" to="0 ${width / 2} 420" dur="12s" repeatCount="indefinite" />
     </ellipse>
   </g>
-
-  <!-- 3D Tilted Gyroscope Ring 3 (Inclined 45deg, 8s Clockwise Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="305" ry="100" fill="none" stroke="rgba(16, 185, 129, 0.55)" stroke-width="1.4" stroke-dasharray="8, 10">
       <animateTransform attributeName="transform" type="rotate" from="45 ${width / 2} 420" to="405 ${width / 2} 420" dur="8s" repeatCount="indefinite" />
     </ellipse>
   </g>
-
-  <!-- 3D Tilted Gyroscope Ring 4 (Inclined 135deg, 5s Counter-Clockwise Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="255" ry="80" fill="none" stroke="rgba(245, 158, 11, 0.55)" stroke-width="1.4" stroke-dasharray="6, 8">
       <animateTransform attributeName="transform" type="rotate" from="135 ${width / 2} 420" to="-225 ${width / 2} 420" dur="5s" repeatCount="indefinite" />
     </ellipse>
   </g>
-
-  <!-- 3D Tilted Gyroscope Ring 5 (Inclined 75deg, 10s Clockwise Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="270" ry="110" fill="none" stroke="rgba(56, 189, 248, 0.5)" stroke-width="1.2" stroke-dasharray="10, 8">
       <animateTransform attributeName="transform" type="rotate" from="75 ${width / 2} 420" to="435 ${width / 2} 420" dur="10s" repeatCount="indefinite" />
     </ellipse>
   </g>
-
-  <!-- 3D Tilted Gyroscope Ring 6 (Inclined 165deg, 6s Counter-Clockwise Rotation) -->
   <g>
     <ellipse cx="${width / 2}" cy="420" rx="235" ry="70" fill="none" stroke="rgba(236, 72, 153, 0.5)" stroke-width="1.2" stroke-dasharray="5, 7">
       <animateTransform attributeName="transform" type="rotate" from="165 ${width / 2} 420" to="-195 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
-  <!-- 12 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
+  <!-- 16 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
   <g>
     <circle cx="${width / 2}" cy="265" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 12px #00DFD8)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
@@ -348,10 +349,30 @@ https.get(imageUrl, (res) => {
       <animateTransform attributeName="transform" type="rotate" from="315 ${width / 2} 420" to="-45 ${width / 2} 420" dur="2.5s" repeatCount="indefinite" />
     </circle>
   </g>
+  <g>
+    <circle cx="${width / 2 + 300}" cy="420" r="3.5" fill="#38BDF8" filter="drop-shadow(0 0 8px #0284C7)">
+      <animateTransform attributeName="transform" type="rotate" from="60 ${width / 2} 420" to="420 ${width / 2} 420" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 300}" cy="420" r="3.5" fill="#A855F7" filter="drop-shadow(0 0 8px #7C3AED)">
+      <animateTransform attributeName="transform" type="rotate" from="240 ${width / 2} 420" to="-120 ${width / 2} 420" dur="5.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2}" cy="230" r="3" fill="#10B981" filter="drop-shadow(0 0 8px #059669)">
+      <animateTransform attributeName="transform" type="rotate" from="120 ${width / 2} 420" to="480 ${width / 2} 420" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2}" cy="610" r="3" fill="#F59E0B" filter="drop-shadow(0 0 8px #D97706)">
+      <animateTransform attributeName="transform" type="rotate" from="300 ${width / 2} 420" to="-60 ${width / 2} 420" dur="4.2s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
-  <!-- 320 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
+  <!-- 360 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
   <g>
     ${particles}
   </g>
@@ -374,11 +395,11 @@ https.get(imageUrl, (res) => {
     <path d="M 0 -35 L 0 0 L -35 0" fill="none" stroke="#7701D0" stroke-width="2.5" class="corner-chase" />
   </g>
 
-  <!-- Top Metadata Bar -->
+  <!-- Top Metadata Bar with High-Speed Kinetic Streams -->
   <g transform="translate(${width / 2}, 55)">
-    <line x1="-380" y1="-5" x2="-230" y2="-5" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.85" />
+    <line x1="-380" y1="-5" x2="-230" y2="-5" stroke="#00DFD8" stroke-width="1.5" class="stream-fast" />
     <text x="0" y="0" class="top-meta">SOFTWARE ENGINEER (MATHIYA)</text>
-    <line x1="230" y1="-5" x2="380" y2="-5" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.85" />
+    <line x1="230" y1="-5" x2="380" y2="-5" stroke="#00DFD8" stroke-width="1.5" class="stream-fast-rev" />
   </g>
 
   <!-- Layer 1: Outlined "MATHISHA" (Upper Background Behind Avatar) - Perfectly Fitted -->
@@ -398,9 +419,9 @@ https.get(imageUrl, (res) => {
 
   <!-- Layer 4: Bottom Subtitle with Dual Chrome Neon Rules -->
   <g transform="translate(${width / 2}, 850)">
-    <line x1="-480" y1="-4" x2="-350" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.6" />
+    <line x1="-480" y1="-4" x2="-350" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.6" class="stream-fast" />
     <text x="0" y="0" class="bottom-meta">SOFTWARE ENGINEER &amp; AI SYSTEMS ARCHITECT</text>
-    <line x1="350" y1="-4" x2="480" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.6" />
+    <line x1="350" y1="-4" x2="480" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.6" class="stream-fast-rev" />
   </g>
 
   <!-- Layer 5: Extreme Cyber Scanner Overlay (Continuous Smooth Sweeps) -->
@@ -408,9 +429,6 @@ https.get(imageUrl, (res) => {
       <!-- Scanning laser -->
       <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)" />
       <rect x="0" y="-20" width="100%" height="40" fill="url(#specular-top-edge)" class="cyber-scanner" style="animation-delay: -0.1s" />
-      
-      <!-- Vignette / Border flare -->
-      <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.5)" stroke-width="2" class="border-run" />
   </g>
 </svg>
         `;

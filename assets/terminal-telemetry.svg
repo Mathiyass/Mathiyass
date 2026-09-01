@@ -57,11 +57,22 @@
         animation: dashFlowRev 2s linear infinite;
       }
     </style>
+  
+    <linearGradient id="termFlareBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
   </defs>
 
   <!-- 3D Glass Terminal Window Frame -->
   <polygon points="12,2 888,2 898,12 898,138 888,148 12,148 2,138 2,12" fill="url(#termGlassBg)" stroke="url(#termChromeBorder)" stroke-width="1.3" />
+  
   <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#termSpecular)" />
+  <!-- Continuous Horizontal Sweeping Laser Flare -->
+  <rect x="0" y="2" width="220" height="144" fill="url(#termFlareBeam)" pointer-events="none">
+    <animate attributeName="x" from="-250" to="920" dur="3.5s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Window Control Dots & Title -->
   <g transform="translate(18, 14)">

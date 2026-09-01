@@ -113,11 +113,22 @@
         animation: dashFlowRev 2s linear infinite;
       }
     </style>
+  
+    <linearGradient id="typLaserShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
   </defs>
 
   <!-- 3D Glass Chassis Container -->
   <polygon points="6,2 844,2 848,6 848,38 844,42 6,42 2,38 2,6" fill="url(#typGlassBg)" stroke="url(#typBorder)" stroke-width="1.2" />
+  
   <path d="M 6 3 L 844 3 L 847 7 L 3 7 Z" fill="url(#typSpecular)" />
+  <!-- Continuous Sweeping Laser Flare -->
+  <rect x="0" y="2" width="180" height="38" fill="url(#typLaserShine)" pointer-events="none">
+    <animate attributeName="x" from="-200" to="900" dur="3s" repeatCount="indefinite" />
+  </rect>
 
   <!-- Sweeping Laser Beam Across Track -->
   <rect x="0" y="2" width="160" height="2" fill="url(#typLaser)">
