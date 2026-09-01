@@ -50,14 +50,7 @@
       .b16 { animation-delay: 0.55s; }
       
       
-      .soundwave-ripple {
-        animation: waveRipple 2s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
-      }
 
-      @keyframes bounceEq {
-        0% { transform: scaleY(0.2); }
-        100% { transform: scaleY(1); }
-      }
       
       
     
@@ -107,8 +100,8 @@
 
   <!-- 3D Tilted Gyro Orbit around Spotify Logo -->
   <g transform="translate(16, 20)">
-    <circle cx="28" cy="28" r="26" fill="none" stroke="#1DB954" class="soundwave-ripple" />
-    <circle cx="28" cy="28" r="26" fill="none" stroke="#00DFD8" class="soundwave-ripple" style="animation-delay: -1s;" />
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#1DB954" stroke-opacity="0.3" />
+
     <ellipse cx="28" cy="28" rx="32" ry="16" fill="none" stroke="rgba(29, 185, 84, 0.4)" stroke-width="1.2" stroke-dasharray="4, 4">
       <animateTransform attributeName="transform" type="rotate" from="0 28 28" to="360 28 28" dur="8s" repeatCount="indefinite" />
     </ellipse>

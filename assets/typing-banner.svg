@@ -86,15 +86,13 @@
       .cursor-blink { opacity: 1; }
       
       .beacon-dot { filter: drop-shadow(0 0 6px #00DFD8); }
-      @keyframes bGlow {
-        0% { opacity: 0.4; }
-        100% { opacity: 1; filter: drop-shadow(0 0 6px #10B981); }
-      }
       .bar-bounce {
         animation: barBounce 1s ease-in-out infinite alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
       }
       @keyframes barBounce {
-        0% { transform: scaleY(0.3); }
+        0% { transform: scaleY(0.25); }
         100% { transform: scaleY(1); }
       }
     
@@ -114,9 +112,6 @@
         stroke-dasharray: 8, 6;
         animation: dashFlowRev 2s linear infinite;
       }
-    
-      .bar-bounce { animation: barBounce 1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
-      @keyframes barBounce { 0% { transform: scaleY(0.25); } 100% { transform: scaleY(1); } }
     </style>
   </defs>
 
