@@ -19,30 +19,37 @@ https.get(imageUrl, (res) => {
   <defs>
     <!-- Background styling -->
     <radialGradient id="cyan-glow" cx="20%" cy="20%" r="55%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.28" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.32" />
       <stop offset="60%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
     
     <radialGradient id="purple-glow" cx="80%" cy="80%" r="55%">
-      <stop offset="0%" stop-color="#7701d0" stop-opacity="0.3" />
+      <stop offset="0%" stop-color="#7701d0" stop-opacity="0.35" />
       <stop offset="65%" stop-color="transparent" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="avatar-center-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.25" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <linearGradient id="neon-text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#ffffff" />
-      <stop offset="45%" stop-color="#E0F7FA" />
-      <stop offset="100%" stop-color="#00DFD8" />
+      <stop offset="40%" stop-color="#E0F7FA" />
+      <stop offset="80%" stop-color="#00DFD8" />
+      <stop offset="100%" stop-color="#7701D0" />
     </linearGradient>
 
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.7" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
     </linearGradient>
 
     <!-- Perspective Horizon Gradient -->
     <linearGradient id="horizon-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.18" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -54,11 +61,11 @@ https.get(imageUrl, (res) => {
         font-size: 175px;
         font-weight: 900;
         fill: transparent;
-        stroke: rgba(0, 223, 216, 0.5);
+        stroke: rgba(0, 223, 216, 0.45);
         stroke-width: 2.5px;
         letter-spacing: -3px;
         text-anchor: middle;
-        animation: glitch 5s infinite alternate ease-in-out;
+        animation: glitch 6s infinite alternate ease-in-out;
       }
       
       .text-solid {
@@ -68,7 +75,7 @@ https.get(imageUrl, (res) => {
         fill: url(#neon-text-grad);
         letter-spacing: -3px;
         text-anchor: middle;
-        filter: drop-shadow(0px 15px 35px rgba(0, 223, 216, 0.35));
+        filter: drop-shadow(0px 15px 35px rgba(0, 223, 216, 0.4));
       }
       
       .hud-text {
@@ -99,10 +106,19 @@ https.get(imageUrl, (res) => {
       }
 
       .image-layer {
-        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.25));
+        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.3));
         transform-box: fill-box;
         transform-origin: center;
-        animation: breathe 6s infinite ease-in-out;
+        animation: breathe 5s infinite ease-in-out;
+      }
+
+      .reticle-spin {
+        transform-origin: ${width / 2}px 280px;
+        animation: spinR 20s linear infinite;
+      }
+      .reticle-spin-rev {
+        transform-origin: ${width / 2}px 280px;
+        animation: spinRRev 14s linear infinite;
       }
       
       .particle {
@@ -119,14 +135,23 @@ https.get(imageUrl, (res) => {
       
       @keyframes pulse {
         0% { opacity: 0.2; }
-        50% { opacity: 0.45; }
+        50% { opacity: 0.5; }
         100% { opacity: 0.2; }
       }
 
       @keyframes breathe {
         0% { transform: scale(1) translateY(0px); }
-        50% { transform: scale(1.015) translateY(-8px); }
+        50% { transform: scale(1.02) translateY(-6px); }
         100% { transform: scale(1) translateY(0px); }
+      }
+
+      @keyframes spinR {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes spinRRev {
+        from { transform: rotate(360deg); }
+        to { transform: rotate(0deg); }
       }
 
       @keyframes glitch {
@@ -177,6 +202,12 @@ https.get(imageUrl, (res) => {
   <line x1="0" y1="${height - 20}" x2="${width}" y2="${height - 20}" stroke="rgba(0, 223, 216, 0.15)" stroke-width="1" />
   <line x1="0" y1="${height - 60}" x2="${width}" y2="${height - 60}" stroke="rgba(0, 223, 216, 0.08)" stroke-width="1" />
 
+  <!-- Holographic Avatar Backdrop Reticle HUD -->
+  <circle cx="${width / 2}" cy="280" r="230" fill="url(#avatar-center-glow)" />
+  <circle cx="${width / 2}" cy="280" r="210" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1.5" stroke-dasharray="12, 12" class="reticle-spin" />
+  <circle cx="${width / 2}" cy="280" r="170" fill="none" stroke="rgba(119, 1, 208, 0.25)" stroke-width="1.2" stroke-dasharray="8, 16" class="reticle-spin-rev" />
+  <circle cx="${width / 2}" cy="280" r="130" fill="none" stroke="rgba(0, 223, 216, 0.15)" stroke-width="1" />
+
   <rect width="${width}" height="${height}" rx="16" fill="url(#scanline)" />
   <rect width="${width - 4}" height="${height - 4}" x="2" y="2" rx="14" fill="none" stroke="url(#border-grad)" stroke-width="1.5" />
 
@@ -192,13 +223,9 @@ https.get(imageUrl, (res) => {
   }).join('\n  ')}
 
   <!-- HUD Corner Brackets -->
-  <!-- Top Left -->
   <path d="M 24 44 L 24 24 L 44 24" fill="none" stroke="#00DFD8" stroke-width="2" />
-  <!-- Top Right -->
   <path d="M ${width - 44} 24 L ${width - 24} 24 L ${width - 24} 44" fill="none" stroke="#00DFD8" stroke-width="2" />
-  <!-- Bottom Left -->
   <path d="M 24 ${height - 44} L 24 ${height - 24} L 44 ${height - 24}" fill="none" stroke="#7701D0" stroke-width="2" />
-  <!-- Bottom Right -->
   <path d="M ${width - 44} ${height - 24} L ${width - 24} ${height - 24} L ${width - 24} ${height - 44}" fill="none" stroke="#7701D0" stroke-width="2" />
 
   <!-- HUD Elements: Top Left -->

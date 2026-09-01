@@ -178,7 +178,7 @@
 <td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">GitHub</a> • <a href="https://mathiya.cc/projects/MA-Optimizer">Case Study</a></td>
 </tr>
 <tr>
-<td style="padding: 12px border-bottom: 1px solid #21262d;"><b>SIVION Automation</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>SIVION Automation</b></td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;">Production-grade enterprise platform orchestrating distributed intelligent agents to automate mission-critical workflows with high reliability and low latency.</td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Python</code> <code>AI Agents</code> <code>FastAPI</code> <code>Docker</code></td>
 <td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc/projects/sivion">Case Study</a></td>
