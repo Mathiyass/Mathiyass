@@ -1,0 +1,125 @@
+<svg width="900" height="240" viewBox="0 0 900 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0E14" />
+      <stop offset="100%" stop-color="#07090E" />
+    </linearGradient>
+
+    <linearGradient id="cyanBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161B22" />
+      <stop offset="100%" stop-color="#0D1117" />
+    </linearGradient>
+
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" />
+      <stop offset="100%" stop-color="#7701D0" />
+    </linearGradient>
+
+    <linearGradient id="arrowGradRev" x1="100%" y1="0%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7701D0" />
+      <stop offset="100%" stop-color="#00DFD8" />
+    </linearGradient>
+
+    <!-- Marker Arrowheads -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#00DFD8" />
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#7701D0" />
+    </marker>
+
+    <style>
+      .blueprint-title { font-family: 'SF Mono', Consolas, monospace; font-size: 11px; font-weight: 700; fill: #00DFD8; letter-spacing: 2px; }
+      .node-title { font-family: 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .node-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; fill: #8B949E; }
+      .flow-line { stroke-dasharray: 6, 6; animation: dash 20s linear infinite; }
+      @keyframes dash {
+        to { stroke-dashoffset: -100; }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame Background -->
+  <rect x="2" y="2" width="896" height="236" rx="12" fill="url(#bgGrad)" stroke="url(#cyanBorder)" stroke-width="1.5" />
+  
+  <!-- Header Bar -->
+  <path d="M 20 28 L 30 18 L 220 18 L 230 28" fill="none" stroke="#00DFD8" stroke-width="1.5" />
+  <text x="35" y="26" class="blueprint-title">SYSTEM ARCHITECTURE BLUEPRINT // 2026</text>
+
+  <!-- Connection Lines (Row 1 Forward) -->
+  <line x1="280" y1="85" x2="330" y2="85" stroke="url(#arrowGrad)" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="565" y1="85" x2="615" y2="85" stroke="url(#arrowGrad)" stroke-width="1.5" marker-end="url(#arrow-purple)" />
+
+  <!-- Connection Line (Row 1 down to Row 2) -->
+  <path d="M 740 120 L 740 145 L 740 170" fill="none" stroke="#7701D0" stroke-width="1.5" marker-end="url(#arrow-purple)" />
+
+  <!-- Connection Lines (Row 2 Reverse) -->
+  <line x1="615" y1="185" x2="565" y2="185" stroke="url(#arrowGradRev)" stroke-width="1.5" marker-end="url(#arrow)" />
+  <line x1="330" y1="185" x2="280" y2="185" stroke="url(#arrowGradRev)" stroke-width="1.5" marker-end="url(#arrow)" />
+
+  <!-- Top Left to Bottom Left Loop Line -->
+  <path d="M 160 150 L 160 135 L 160 120" fill="none" stroke="#00DFD8" stroke-width="1.5" stroke-dasharray="4,4" />
+
+  <!-- NODES ROW 1 -->
+  <!-- Node 1: AI Agents -->
+  <g transform="translate(40, 50)">
+    <rect width="240" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#00DFD8" />
+    <text x="34" y="28" class="node-title">MULTI-AGENT AI CORE</text>
+    <text x="16" y="48" class="node-desc">Autonomous LLM Swarms • Tool Orchestration</text>
+    <text x="16" y="62" class="node-desc">Low-Latency Decision &amp; Feedback Loops</text>
+  </g>
+
+  <!-- Node 2: RAG & Vector -->
+  <g transform="translate(325, 50)">
+    <rect width="240" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#00DFD8" />
+    <text x="34" y="28" class="node-title">VECTOR EMBEDDINGS &amp; RAG</text>
+    <text x="16" y="48" class="node-desc">Hybrid Semantic Search • pgvector DB</text>
+    <text x="16" y="62" class="node-desc">Context-Aware Neural Knowledge Graphs</text>
+  </g>
+
+  <!-- Node 3: Distributed Backend -->
+  <g transform="translate(610, 50)">
+    <rect width="250" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#7701D0" />
+    <text x="34" y="28" class="node-title">DISTRIBUTED CLOUD ENGINE</text>
+    <text x="16" y="48" class="node-desc">FastAPI Async • Node.js / Bun Runtime</text>
+    <text x="16" y="62" class="node-desc">Docker • Microservices • Low Latency</text>
+  </g>
+
+  <!-- NODES ROW 2 -->
+  <!-- Node 4: WebGL 3D Shaders -->
+  <g transform="translate(40, 150)">
+    <rect width="240" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#00DFD8" />
+    <text x="34" y="28" class="node-title">WEBGL 2.0 &amp; GLSL SHADERS</text>
+    <text x="16" y="48" class="node-desc">Three.js • GPGPU Compute • 3D Spatial</text>
+    <text x="16" y="62" class="node-desc">Interactive Tactical Graphics Engine</text>
+  </g>
+
+  <!-- Node 5: React 19 Concurrent UI -->
+  <g transform="translate(325, 150)">
+    <rect width="240" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#00DFD8" />
+    <text x="34" y="28" class="node-title">CONCURRENT UI ARCHITECTURE</text>
+    <text x="16" y="48" class="node-desc">Next.js 16 (Turbopack) • React 19</text>
+    <text x="16" y="62" class="node-desc">TypeScript 5 • Tailwind CSS • Zero Jitter</text>
+  </g>
+
+  <!-- Node 6: Realtime DB -->
+  <g transform="translate(610, 150)">
+    <rect width="250" height="70" rx="8" fill="url(#nodeGrad)" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1" />
+    <circle cx="20" cy="24" r="5" fill="#7701D0" />
+    <text x="34" y="28" class="node-title">STORAGE &amp; REALTIME STREAM</text>
+    <text x="16" y="48" class="node-desc">PostgreSQL • Supabase • Redis Caching</text>
+    <text x="16" y="62" class="node-desc">Instant Sync • Multi-Region Resiliency</text>
+  </g>
+</svg>

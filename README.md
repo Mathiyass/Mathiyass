@@ -52,7 +52,7 @@ $ cat system_status.json
 
 #### ⚡ Architectural Thesis & Research
 - 🤖 **Multi-Agent Orchestration:** Designing distributed intelligent agents with robust tool execution pipelines and low-latency decision loops.
-- 🎮 **WebGL 2.0 & Spatial 3D:** Building procedural graphics engines, custom GLSL shaders, and high-fidelity interactive digital experiences.
+- 🎮 **WebGL 2.0 & Spatial 3D:** Building procedural graphics engines, custom GLSL compute shaders, and high-fidelity interactive digital experiences.
 - ⚡ **High-Performance Systems:** Kernel-level Windows tuning, input latency elimination, and concurrent systems programming in Rust, Go, and C++.
 
 </td>
@@ -60,12 +60,22 @@ $ cat system_status.json
 
 #### 🤝 Collaboration & Engagement
 - 💼 **Dedicated Engineering Partner:** Full-cycle system design, technical leadership, and production-scale refactoring.
-- 🚀 **Flagship Ecosystem:** Architecting [MA Optimizer](https://github.com/Mathiyass/MA-Optimizer) & [mathiya.cc](https://mathiya.cc).
-- 💬 **Direct Consultation:** Distributed Cloud, Agentic Workflows, Three.js, React, Node.js, and Supabase.
+- 🚀 **Flagship Ecosystem:** Architecting [MA Optimizer](https://github.com/Mathiyass/MA-Optimizer), [SIVION Engine](https://mathiya.cc/projects/sivion) & [mathiya.cc](https://mathiya.cc).
+- 💬 **Direct Consultation:** Distributed Cloud, Agentic Workflows, Three.js, Next.js, and Supabase.
 
 </td>
 </tr>
 </table>
+
+<br/>
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
+<br/>
+
+### 📐 System Architecture Blueprint
+
+<div align="center">
+  <img src="./assets/architecture-blueprint.svg" alt="System Architecture Blueprint" width="100%" />
+</div>
 
 <br/>
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
@@ -77,26 +87,36 @@ $ cat system_status.json
 
 **🤖 Multi-Agent AI & Intelligent Systems**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi&theme=dark" alt="AI Stack" /></a>
+<br/>
+`Python 3.12` • `PyTorch` • `Multi-Agent Orchestration` • `RAG Pipelines` • `Vector Search (pgvector)` • `FastAPI`
 
 <br/><br/>
 
 **⚡ Low-Level & High-Performance Engineering**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,rust,go,powershell,bash&theme=dark" alt="Systems Stack" /></a>
+<br/>
+`C++20` • `Rust` • `Go` • `Windows API & Kernel Tuning` • `PowerShell Automation` • `POSIX Bash`
 
 <br/><br/>
 
 **🎨 WebGL 2.0, 3D Spatial & Frontend Architecture**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vue,threejs,vite,html,css&theme=dark" alt="Frontend Stack" /></a>
+<br/>
+`Next.js 16 (Turbopack)` • `React 19 (Concurrent UI)` • `TypeScript 5 (Strict)` • `Three.js` • `GLSL Shaders` • `WebGL 2.0` • `Tailwind CSS`
 
 <br/><br/>
 
 **☁️ Cloud Native, Distributed Backend & DevOps**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="DevOps Stack" /></a>
+<br/>
+`Node.js` • `Bun Runtime` • `Docker` • `Kubernetes` • `AWS` • `GCP` • `Azure` • `GitHub Actions CI/CD` • `Linux` • `NGINX`
 
 <br/><br/>
 
 **🗄️ Databases, Caching & Data Systems**<br/>
 <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,supabase,redis,mongodb,mysql,sqlite&theme=dark" alt="Databases Stack" /></a>
+<br/>
+`PostgreSQL` • `Supabase (Realtime & Auth)` • `Redis Caching` • `MongoDB` • `MySQL` • `SQLite`
 
 </div>
 
@@ -132,7 +152,7 @@ $ cat system_status.json
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.cc & The Lab</b></td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;">Official cyber-spatial portfolio and interactive WebGL shader laboratory featuring procedural 3D environments, audio visualizers, and zero-latency UI.</td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>TypeScript</code> <code>Three.js</code> <code>WebGL 2.0</code> <code>GLSL</code></td>
-<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc">Live Site</a> • <a href="https://mathiya.cc/lab">Lab</a></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc">Live Site</a> • <a href="https://mathiya.cc/lab">WebGL Lab</a></td>
 </tr>
 <tr>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>Dev Marketplace</b></td>
@@ -168,6 +188,13 @@ $ cat system_status.json
 
 <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="97%"/>
+</a>
+
+<br/><br/>
+
+<!-- Spotify Live Stream Integration -->
+<a href="https://spotify.com">
+  <img src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=6grrenymxnzrrvbp2dbe4ikxm&cover_image=true&theme=default&show_offline=true&background_color=0D1117&interchange=true&bar_color=00dfd8&bar_color_cover=false" alt="Spotify Live Stream" width="480px" />
 </a>
 
 </div>
@@ -297,6 +324,6 @@ Advanced interactive 3D web applications, custom GLSL shader pipelines, and real
 
 <br/><br/>
 
-<sub>⚡ Architected & Engineered with precision by <b><a href="https://mathiya.cc">Mathisha Angirasa (MATHIYA)</a></b></sub>
+<sub>⚡ Architected & Engineered with precision by <b><a href="https://mathiya.cc">Mathisha Angirasa (MATHIYA)</a></b> • <a href="https://mathiya.cc/resume">View Resume</a></sub>
 
 </div>
