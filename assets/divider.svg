@@ -1,142 +1,177 @@
-<svg width="900" height="30" viewBox="0 0 900 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="44" viewBox="0 0 900 44" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Left Converging Laser Gradient -->
-    <linearGradient id="divLaserLeft" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.4" />
-      <stop offset="85%" stop-color="#67E8F9" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#FFFFFF" />
-    </linearGradient>
-
-    <!-- Right Converging Laser Gradient -->
-    <linearGradient id="divLaserRight" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="15%" stop-color="#E879F9" stop-opacity="0.85" />
-      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.4" />
-      <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Central Core Aura -->
-    <radialGradient id="divCoreAura" cx="50%" cy="50%" r="50%">
+    <!-- Volumetric Core Glow -->
+    <radialGradient id="gyroCoreAura" cx="50%" cy="50%" r="50%">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
-      <stop offset="35%" stop-color="#00DFD8" stop-opacity="0.8" />
-      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.4" />
+      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.5" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
+    <!-- 3D Rail Top Surface Gradient (Specular) -->
+    <linearGradient id="rail3DTopLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="85%" stop-color="#E0F7FA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <linearGradient id="rail3DTopRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="15%" stop-color="#F3E8FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- 3D Rail Front Bevel Gradient (Shadow) -->
+    <linearGradient id="rail3DFrontLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004D40" stop-opacity="0" />
+      <stop offset="60%" stop-color="#00838F" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="rail3DFrontRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#4A148C" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#311B92" stop-opacity="0" />
+    </linearGradient>
+
     <style>
-      .laser-stream-left {
-        stroke-dasharray: 6, 12;
-        animation: streamLeft 0.8s linear infinite;
+      .energy-pulse-left {
+        stroke-dasharray: 8, 16;
+        animation: energySurgeLeft 0.7s linear infinite;
       }
-      .laser-stream-right {
-        stroke-dasharray: 6, 12;
-        animation: streamRight 0.8s linear infinite;
+      .energy-pulse-right {
+        stroke-dasharray: 8, 16;
+        animation: energySurgeRight 0.7s linear infinite;
       }
-      .plasma-core {
-        animation: plasmaPulse 1.2s ease-in-out infinite alternate;
-      }
-      .plasma-ring {
-        animation: ringExpand 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-      }
-      .chevron-pulse {
-        animation: chevronGlow 1.2s ease-in-out infinite alternate;
+      .chevron-surge {
+        animation: chevronFlash 1.2s ease-in-out infinite alternate;
       }
       .c1 { animation-delay: 0s; }
-      .c2 { animation-delay: 0.2s; }
-      .c3 { animation-delay: 0.4s; }
+      .c2 { animation-delay: 0.15s; }
+      .c3 { animation-delay: 0.3s; }
+      .c4 { animation-delay: 0.45s; }
 
-      @keyframes streamLeft {
-        from { stroke-dashoffset: 36; }
+      .shockwave-3d {
+        animation: shockwaveExpand 2.2s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
+      }
+      .core-heart {
+        animation: heartPulse 1.4s ease-in-out infinite alternate;
+      }
+
+      @keyframes energySurgeLeft {
+        from { stroke-dashoffset: 48; }
         to { stroke-dashoffset: 0; }
       }
-      @keyframes streamRight {
+      @keyframes energySurgeRight {
         from { stroke-dashoffset: 0; }
-        to { stroke-dashoffset: 36; }
+        to { stroke-dashoffset: 48; }
       }
-      @keyframes plasmaPulse {
-        0% { r: 2.5; opacity: 0.7; }
-        100% { r: 5; opacity: 1; filter: drop-shadow(0 0 12px #00DFD8); }
+      @keyframes chevronFlash {
+        0% { opacity: 0.2; transform: scale(0.95); }
+        100% { opacity: 1; transform: scale(1.08); filter: drop-shadow(0 0 8px currentColor); }
       }
-      @keyframes ringExpand {
-        0% { r: 4; opacity: 0.9; stroke-width: 1.5; }
-        100% { r: 22; opacity: 0; stroke-width: 0.5; }
+      @keyframes shockwaveExpand {
+        0% { r: 6; opacity: 0.9; stroke-width: 2; }
+        100% { r: 32; opacity: 0; stroke-width: 0.4; }
       }
-      @keyframes chevronGlow {
-        0% { opacity: 0.25; }
-        100% { opacity: 1; filter: drop-shadow(0 0 6px currentColor); }
+      @keyframes heartPulse {
+        0% { transform: scale(0.85); opacity: 0.8; }
+        100% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 16px #00DFD8); }
       }
     </style>
   </defs>
 
-  <!-- ==================== LEFT CONDUIT ==================== -->
-  <!-- Upper & Lower Micro-Rails -->
-  <line x1="80" y1="8" x2="415" y2="8" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1" class="laser-stream-left" />
-  <line x1="160" y1="22" x2="420" y2="22" stroke="#67E8F9" stroke-opacity="0.3" stroke-width="1" class="laser-stream-left" />
+  <!-- ==================== 3D EXTRUDED DUAL-RAIL CHASSIS ==================== -->
 
-  <!-- Left Main Heavy Beam -->
-  <line x1="10" y1="15" x2="425" y2="15" stroke="url(#divLaserLeft)" stroke-width="2" />
-
-  <!-- Left Tactical Chevron Stream (Rushing to Core) -->
-  <path d="M 365 10 L 370 15 L 365 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c1" />
-  <path d="M 378 10 L 383 15 L 378 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c2" />
-  <path d="M 391 10 L 396 15 L 391 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c3" />
-  <path d="M 404 10 L 409 15 L 404 20" fill="none" stroke="#67E8F9" stroke-width="1.4" class="chevron-pulse c1" />
-
-  <!-- Left Calibration Scale & Coordinate Ticks -->
-  <line x1="310" y1="11" x2="310" y2="19" stroke="#00DFD8" stroke-opacity="0.6" stroke-width="1" />
-  <line x1="330" y1="12" x2="330" y2="18" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" />
-  <line x1="350" y1="13" x2="350" y2="17" stroke="#00DFD8" stroke-opacity="0.3" stroke-width="1" />
-  <circle cx="280" cy="15" r="1.5" fill="#00DFD8" opacity="0.6" />
-  <circle cx="240" cy="15" r="1.5" fill="#00DFD8" opacity="0.4" />
-  <circle cx="200" cy="15" r="1.5" fill="#00DFD8" opacity="0.2" />
-
-  <!-- ==================== RIGHT CONDUIT ==================== -->
-  <!-- Upper & Lower Micro-Rails -->
-  <line x1="485" y1="8" x2="820" y2="8" stroke="#7701D0" stroke-opacity="0.35" stroke-width="1" class="laser-stream-right" />
-  <line x1="480" y1="22" x2="740" y2="22" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1" class="laser-stream-right" />
-
-  <!-- Right Main Heavy Beam -->
-  <line x1="475" y1="15" x2="890" y2="15" stroke="url(#divLaserRight)" stroke-width="2" />
-
-  <!-- Right Tactical Chevron Stream (Rushing to Core) -->
-  <path d="M 535 10 L 530 15 L 535 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c1" />
-  <path d="M 522 10 L 517 15 L 522 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c2" />
-  <path d="M 509 10 L 504 15 L 509 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c3" />
-  <path d="M 496 10 L 491 15 L 496 20" fill="none" stroke="#E879F9" stroke-width="1.4" class="chevron-pulse c1" />
-
-  <!-- Right Calibration Scale & Coordinate Ticks -->
-  <line x1="590" y1="11" x2="590" y2="19" stroke="#7701D0" stroke-opacity="0.6" stroke-width="1" />
-  <line x1="570" y1="12" x2="570" y2="18" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" />
-  <line x1="550" y1="13" x2="550" y2="17" stroke="#7701D0" stroke-opacity="0.3" stroke-width="1" />
-  <circle cx="620" cy="15" r="1.5" fill="#7701D0" opacity="0.6" />
-  <circle cx="660" cy="15" r="1.5" fill="#7701D0" opacity="0.4" />
-  <circle cx="700" cy="15" r="1.5" fill="#7701D0" opacity="0.2" />
-
-  <!-- ==================== CENTERPIECE: 3D HOLOGRAPHIC QUANTUM COLLIDER ==================== -->
+  <!-- Left Lower Bevel Face (3D Depth Shadow) -->
+  <polygon points="10,23 410,23 410,26 10,26" fill="url(#rail3DFrontLeft)" />
+  <!-- Left Upper Bevel Face (3D Top Specular) -->
+  <polygon points="10,21 410,21 410,23 10,23" fill="url(#rail3DTopLeft)" />
   
-  <!-- Radiating Energy Ripple Wave -->
-  <circle cx="450" cy="15" r="4" fill="none" stroke="#00DFD8" class="plasma-ring" />
-  <circle cx="450" cy="15" r="4" fill="none" stroke="#A855F7" class="plasma-ring" style="animation-delay: -1s;" />
+  <!-- Left Upper Kinetic Stream -->
+  <line x1="60" y1="14" x2="400" y2="14" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-left" />
+  <!-- Left Main Laser Core Beam -->
+  <line x1="10" y1="22" x2="410" y2="22" stroke="url(#rail3DTopLeft)" stroke-width="2.2" />
+  <!-- Left Lower Kinetic Stream -->
+  <line x1="120" y1="30" x2="400" y2="30" stroke="#67E8F9" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-left" />
 
-  <!-- Outer Hexagonal 3D Glass Shield (12s SMIL Clockwise Rotation) -->
-  <g>
-    <polygon points="450,2 463,8 463,22 450,28 437,22 437,8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.7)" stroke-width="1.3" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 15" to="360 450 15" dur="12s" repeatCount="indefinite" />
+  <!-- Left 3D Support Truss Struts -->
+  <line x1="180" y1="14" x2="190" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+  <line x1="240" y1="14" x2="250" y2="30" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+  <line x1="300" y1="14" x2="310" y2="30" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+  <line x1="360" y1="14" x2="370" y2="30" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1" />
+
+  <!-- Left High-Energy Inward Chevrons -->
+  <g transform="translate(0, 0)">
+    <path d="M 345 15 L 352 22 L 345 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c1" />
+    <path d="M 360 15 L 367 22 L 360 29" fill="none" stroke="#00DFD8" stroke-width="1.5" class="chevron-surge c2" />
+    <path d="M 375 15 L 382 22 L 375 29" fill="none" stroke="#67E8F9" stroke-width="1.6" class="chevron-surge c3" />
+    <path d="M 390 14 L 398 22 L 390 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4" />
   </g>
 
-  <!-- Mid Diamond Bezel (6s SMIL Counter-Clockwise Rotation) -->
-  <g>
-    <rect x="442" y="7" width="16" height="16" fill="rgba(119, 1, 208, 0.25)" stroke="#A855F7" stroke-width="1.3" rx="1.5" />
-    <animateTransform attributeName="transform" type="rotate" from="360 450 15" to="0 450 15" dur="6s" repeatCount="indefinite" />
+  <!-- Right Lower Bevel Face (3D Depth Shadow) -->
+  <polygon points="490,23 890,23 890,26 490,26" fill="url(#rail3DFrontRight)" />
+  <!-- Right Upper Bevel Face (3D Top Specular) -->
+  <polygon points="490,21 890,21 890,23 490,23" fill="url(#rail3DTopRight)" />
+
+  <!-- Right Upper Kinetic Stream -->
+  <line x1="500" y1="14" x2="840" y2="14" stroke="#7701D0" stroke-opacity="0.35" stroke-width="1.2" class="energy-pulse-right" />
+  <!-- Right Main Laser Core Beam -->
+  <line x1="490" y1="22" x2="890" y2="22" stroke="url(#rail3DTopRight)" stroke-width="2.2" />
+  <!-- Right Lower Kinetic Stream -->
+  <line x1="500" y1="30" x2="780" y2="30" stroke="#A855F7" stroke-opacity="0.25" stroke-width="1.2" class="energy-pulse-right" />
+
+  <!-- Right 3D Support Truss Struts -->
+  <line x1="540" y1="14" x2="530" y2="30" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1" />
+  <line x1="600" y1="14" x2="590" y2="30" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" />
+  <line x1="660" y1="14" x2="650" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
+  <line x1="720" y1="14" x2="710" y2="30" stroke="rgba(119, 1, 208, 0.3)" stroke-width="1" />
+
+  <!-- Right High-Energy Inward Chevrons -->
+  <g transform="translate(0, 0)">
+    <path d="M 555 15 L 548 22 L 555 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c1" />
+    <path d="M 540 15 L 533 22 L 540 29" fill="none" stroke="#A855F7" stroke-width="1.5" class="chevron-surge c2" />
+    <path d="M 525 15 L 518 22 L 525 29" fill="none" stroke="#E879F9" stroke-width="1.6" class="chevron-surge c3" />
+    <path d="M 510 14 L 502 22 L 510 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" class="chevron-surge c4" />
   </g>
 
-  <!-- Inner Octagon Reticle (3s SMIL Clockwise Rotation) -->
+  <!-- ==================== CENTER: 3D HOLOGRAPHIC GYROSCOPE CORE ==================== -->
+
+  <!-- Expanding Shockwave Rings in 3D Perspective -->
+  <circle cx="450" cy="22" r="8" fill="none" stroke="#00DFD8" class="shockwave-3d" />
+  <circle cx="450" cy="22" r="8" fill="none" stroke="#A855F7" class="shockwave-3d" style="animation-delay: -1.1s;" />
+
+  <!-- Outer 3D Gyroscope Glass Ring (Tilted 3D Orbit - 10s SMIL Rotation) -->
   <g>
-    <rect x="445" y="10" width="10" height="10" fill="none" stroke="#00DFD8" stroke-width="1.2" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 15" to="360 450 15" dur="3s" repeatCount="indefinite" />
+    <ellipse cx="450" cy="22" rx="28" ry="14" fill="none" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.4" stroke-dasharray="8, 6" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="10s" repeatCount="indefinite" />
   </g>
 
-  <!-- Central Supercharged Plasma Node with Ambient Volumetric Aura -->
-  <circle cx="450" cy="15" r="4" fill="url(#divCoreAura)" class="plasma-core" />
+  <!-- Mid 3D Gyroscope Bezel Ring (Reverse Tilted Orbit - 6s SMIL Rotation) -->
+  <g>
+    <ellipse cx="450" cy="22" rx="20" ry="10" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.3" />
+    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="6s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Inner 3D Hexagonal Aperture (Fast 3s SMIL Rotation) -->
+  <g>
+    <polygon points="450,13 458,18 458,26 450,31 442,26 442,18" fill="rgba(119, 1, 208, 0.3)" stroke="#00DFD8" stroke-width="1.2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="3s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Orbiting Photon Satellite Node along 3D Ring -->
+  <g>
+    <circle cx="450" cy="8" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="2.5s" repeatCount="indefinite" />
+  </g>
+  <g>
+    <circle cx="450" cy="36" r="2.2" fill="#E879F9" filter="drop-shadow(0 0 6px #A855F7)" />
+    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="2.5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Central 3D Volumetric Plasma Core -->
+  <circle cx="450" cy="22" r="5" fill="url(#gyroCoreAura)" class="core-heart" />
+  <circle cx="450" cy="22" r="2" fill="#FFFFFF" />
 </svg>
