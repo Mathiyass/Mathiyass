@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // --- 1. TYPEWRITER ENGINE ---
   const lines = [
     "Lead Systems Architect & AI Engineer ⚡",
-    "Scalable Multi-Agent AI Ecosystems 🤖",
+    "Scalable Multi-Agent AI Ecosystems (SIVION) 🤖",
     "WebGL 2.0 Graphics & Custom GLSL Shaders 🎮",
-    "High-Performance Distributed Cloud Architectures 🚀",
+    "Windows Low-Latency Kernel Tuning (MA-Optimizer) 🚀",
   ];
 
-  const typeSpeed = 60;
-  const eraseSpeed = 30;
+  const typeSpeed = 55;
+  const eraseSpeed = 28;
   const pauseDuration = 2200;
 
   let lineIndex = 0;
@@ -56,7 +56,83 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(tick, 500);
   }
 
-  // --- 2. 60FPS MULTI-MODE CANVAS ENGINE ---
+  // --- 2. NATIVE WEB AUDIO API SYNTHESIZER ---
+  let audioCtx = null;
+  let sfxEnabled = false;
+
+  function initAudio() {
+    if (!audioCtx) {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (AudioContext) audioCtx = new AudioContext();
+    }
+    if (audioCtx && audioCtx.state === "suspended") {
+      audioCtx.resume();
+    }
+  }
+
+  function playTone(freq, type = "sine", duration = 0.08, gainVal = 0.04) {
+    if (!sfxEnabled || !audioCtx) return;
+    try {
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+
+      osc.type = type;
+      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+
+      gain.gain.setValueAtTime(gainVal, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration);
+    } catch (e) {
+      // Audio fallback
+    }
+  }
+
+  const sfxBtn = document.getElementById("sfx-toggle");
+  if (sfxBtn) {
+    sfxBtn.addEventListener("click", () => {
+      initAudio();
+      sfxEnabled = !sfxEnabled;
+      sfxBtn.textContent = sfxEnabled ? "🔊 SFX: ON" : "🔇 SFX: OFF";
+      sfxBtn.classList.toggle("active", sfxEnabled);
+      if (sfxEnabled) {
+        playTone(880, "sine", 0.1, 0.06);
+        setTimeout(() => playTone(1320, "sine", 0.15, 0.06), 100);
+      }
+    });
+  }
+
+  // Button Hover Sounds
+  document.querySelectorAll(".hud-btn, .mode-btn").forEach((btn) => {
+    btn.addEventListener("mouseenter", () => playTone(540, "triangle", 0.04, 0.02));
+    btn.addEventListener("click", () => playTone(880, "sine", 0.08, 0.05));
+  });
+
+  // --- 3. 3D CARD PARALLAX TILT PHYSICS ---
+  document.querySelectorAll(".hud-card").forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = ((y - centerY) / centerY) * -5;
+      const rotateY = ((x - centerX) / centerX) * 5;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-2px)`;
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)";
+    });
+  });
+
+  // --- 4. 60FPS MULTI-MODE CANVAS ENGINE ---
   const canvas = document.getElementById("neural-canvas");
   if (!canvas) return;
 
@@ -85,7 +161,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Mode switcher event listeners
-  const modeButtons = document.querySelectorAll(".mode-btn");
+  const modeButtons = document.querySelectorAll(".mode-btn:not(#sfx-toggle)");
   modeButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
       modeButtons.forEach((b) => b.classList.remove("active"));

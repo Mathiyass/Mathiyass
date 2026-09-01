@@ -299,17 +299,18 @@ body {
 .hud-card {
     background: var(--bg-card);
     border: 1px solid var(--border);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     padding: 24px;
+    position: relative;
     backdrop-filter: blur(16px);
-    transition: border-color 0.3s ease, transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.1s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform;
 }
 
 .hud-card:hover {
     border-color: var(--border-cyan);
-    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(0, 223, 216, 0.15);
 }
 
 .hud-card.span-2 {

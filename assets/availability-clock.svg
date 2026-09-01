@@ -1,0 +1,64 @@
+<svg width="900" height="110" viewBox="0 0 900 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="availBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E131E" />
+      <stop offset="100%" stop-color="#06090F" />
+    </linearGradient>
+
+    <linearGradient id="availBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <style>
+      .a-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #00DFD8; letter-spacing: 2px; }
+      .a-loc { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .a-time { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; }
+      .a-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
+      
+      .live-beacon {
+        animation: pulseBeacon 1.8s infinite alternate;
+      }
+      @keyframes pulseBeacon {
+        0% { opacity: 0.4; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #10B981); }
+      }
+    </style>
+  </defs>
+
+  <!-- Frame with Chamfers -->
+  <polygon points="14,2 886,2 898,14 898,96 886,108 14,108 2,96 2,14" fill="url(#availBg)" stroke="url(#availBorder)" stroke-width="1.3" />
+
+  <!-- Top Title Ribbon -->
+  <g transform="translate(24, 18)">
+    <circle cx="6" cy="6" r="3.5" fill="#10B981" class="live-beacon" />
+    <text x="18" y="9.5" class="a-title">GLOBAL AVAILABILITY // DUAL TIMEZONE COLLABORATION</text>
+    <text x="850" y="9.5" text-anchor="end" class="a-title" fill="#10B981">COLLABORATION: OPEN</text>
+    <line x1="0" y1="18" x2="850" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- Hub 1: Colombo -->
+  <g transform="translate(30, 48)">
+    <polygon points="6,0 264,0 270,6 270,44 264,50 6,50 0,44 0,6" fill="#131822" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <text x="12" y="18" class="a-loc">🇱🇰 COLOMBO, LK</text>
+    <text x="12" y="32" class="a-time">UTC+5:30 • ACTIVE ENGINEERING</text>
+    <text x="12" y="44" class="a-desc">Lead Systems Architecture &amp; R&amp;D</text>
+  </g>
+
+  <!-- Hub 2: Birmingham -->
+  <g transform="translate(315, 48)">
+    <polygon points="6,0 264,0 270,6 270,44 264,50 6,50 0,44 0,6" fill="#131822" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1" />
+    <text x="12" y="18" class="a-loc">🇬🇧 BIRMINGHAM, UK</text>
+    <text x="12" y="32" class="a-time" fill="#C4B5FD">UTC+1 (BST) • COLLABORATION</text>
+    <text x="12" y="44" class="a-desc">Software Engineering &amp; Client Sync</text>
+  </g>
+
+  <!-- Right: Status Badge -->
+  <g transform="translate(600, 48)">
+    <polygon points="6,0 264,0 270,6 270,44 264,50 6,50 0,44 0,6" fill="#131822" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+    <text x="12" y="18" class="a-loc">⚡ ENGAGEMENT STATUS</text>
+    <text x="12" y="32" class="a-time" fill="#34D399">SELECT CONSULTATIONS OPEN</text>
+    <text x="12" y="44" class="a-desc">Multi-Agent AI • 3D Shaders • Performance</text>
+  </g>
+</svg>

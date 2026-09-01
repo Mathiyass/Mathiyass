@@ -7,6 +7,13 @@
 
 <br/><br/>
 
+<!-- DYNAMIC TYPING SVG BANNER -->
+<a href="https://mathiya.cc">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2500&pause=1000&color=00DFD8&center=true&vCenter=true&multiline=false&width=750&height=40&lines=LEAD+SYSTEMS+ARCHITECT+%26+AI+SPECIALIST;SCALABLE+MULTI-AGENT+AI+ECOSYSTEMS+(SIVION);LOW-LATENCY+WINDOWS+KERNEL+TUNING+(MA+OPTIMIZER);WEBGL+2.0+%26+GLSL+GPGPU+COMPUTE+SHADERS" alt="Typing SVG" />
+</a>
+
+<br/><br/>
+
 <!-- PROFILE BADGES -->
 [![Profile Views](https://komarev.com/ghpvc/?username=Mathiyass&label=PROFILE+VIEWS&style=for-the-badge&color=007CF0&labelColor=0D1117)](https://mathiya.cc)
 [![Followers](https://img.shields.io/github/followers/Mathiyass?label=FOLLOWERS&style=for-the-badge&color=00DFD8&labelColor=0D1117)](https://github.com/Mathiyass?tab=followers)
@@ -27,6 +34,13 @@
   <img src="./assets/status-hologram.svg" alt="Holographic System Telemetry" width="100%"/>
 </a>
 
+<br/><br/>
+
+<!-- DUAL TIMEZONE GLOBAL AVAILABILITY -->
+<a href="https://mathiya.cc/resume">
+  <img src="./assets/availability-clock.svg" alt="Global Availability" width="100%"/>
+</a>
+
 </div>
 
 <br/>
@@ -39,6 +53,13 @@
   <a href="https://mathiya.cc">
     <img src="./assets/terminal-telemetry.svg" alt="Live System Telemetry Terminal" width="100%" />
   </a>
+</div>
+
+<br/>
+
+<!-- MULTI-AGENT COGNITIVE STATE MACHINE -->
+<div align="center">
+  <img src="./assets/multiagent-cognition.svg" alt="Multi-Agent Cognitive State Machine" width="100%" />
 </div>
 
 <br/>
@@ -72,6 +93,13 @@
 
 <div align="center">
   <img src="./assets/architecture-blueprint.svg" alt="Kinetic System Architecture Blueprint" width="100%" />
+</div>
+
+<br/><br/>
+
+<!-- ISOMETRIC 3D ARCHITECTURE HEX DECK -->
+<div align="center">
+  <img src="./assets/architecture-hex-deck.svg" alt="Isometric 3D Architecture Deck" width="100%" />
 </div>
 
 <br/>
@@ -150,7 +178,7 @@
 <td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">GitHub</a> • <a href="https://mathiya.cc/projects/MA-Optimizer">Case Study</a></td>
 </tr>
 <tr>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>SIVION Automation</b></td>
+<td style="padding: 12px border-bottom: 1px solid #21262d;"><b>SIVION Automation</b></td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;">Production-grade enterprise platform orchestrating distributed intelligent agents to automate mission-critical workflows with high reliability and low latency.</td>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Python</code> <code>AI Agents</code> <code>FastAPI</code> <code>Docker</code></td>
 <td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc/projects/sivion">Case Study</a></td>
@@ -200,6 +228,13 @@
 <div align="center">
 
 <br/>
+
+<!-- REAL-TIME CONTRIBUTION VELOCITY GRAPH -->
+<a href="https://github.com/Mathiyass">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&theme=react-dark&bg_color=0D1117&color=00DFD8&line=00DFD8&point=7701D0&area=true&hide_border=false&border_color=30363d" alt="Contribution Velocity Wave" width="100%" />
+</a>
+
+<br/><br/>
 
 <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Mathiyass&theme=dark&background=0D1117&border=30363d&stroke=00DFD8&ring=007CF0&fire=00DFD8&currStreakNum=c9d1d9&currStreakLabel=8b949e&sideNums=c9d1d9&sideLabels=8b949e&dates=8b949e" alt="GitHub Streak" width="100%"/>
@@ -330,6 +365,15 @@ Advanced interactive 3D web applications, custom GLSL shader pipelines, and real
 <br/>
 
 <div align="center">
+
+### 📖 Community Guestbook & Star Hub
+
+Leave a star or sign the guestbook to connect:
+
+[![Sign Guestbook](https://img.shields.io/badge/✍️_Sign_Guestbook-0D1117?style=for-the-badge&logo=github&logoColor=00DFD8&border_color=00DFD8)](https://github.com/Mathiyass/Mathiyass/issues/new?title=Guestbook+Sign)
+[![Star Mathiya](https://img.shields.io/badge/⭐_Star_Profile-0D1117?style=for-the-badge&logo=github&logoColor=FBBF24&border_color=FBBF24)](https://github.com/Mathiyass/Mathiyass)
+
+<br/><br/>
 
 ### 🌐 Connect & Network
 

@@ -1,0 +1,91 @@
+<svg width="900" height="140" viewBox="0 0 900 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cogBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E131E" />
+      <stop offset="100%" stop-color="#06080E" />
+    </linearGradient>
+
+    <linearGradient id="cogBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <style>
+      .c-header { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #00DFD8; letter-spacing: 2px; }
+      .c-step { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; fill: #7701D0; }
+      .c-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 11px; font-weight: 700; fill: #FFFFFF; }
+      .c-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
+      .c-tag { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8px; font-weight: 700; }
+      
+      .laser-flow {
+        stroke-dasharray: 4, 6;
+        animation: laserDash 1s linear infinite;
+      }
+      .beacon-dot {
+        animation: pulseBeacon 1.8s infinite alternate;
+      }
+
+      @keyframes laserDash {
+        from { stroke-dashoffset: 20; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseBeacon {
+        0% { opacity: 0.4; transform: scale(0.9); }
+        100% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 6px #00DFD8); }
+      }
+    </style>
+  </defs>
+
+  <!-- Card Frame with Chamfers -->
+  <polygon points="14,2 886,2 898,14 898,126 886,138 14,138 2,126 2,14" fill="url(#cogBg)" stroke="url(#cogBorder)" stroke-width="1.3" />
+
+  <!-- Top Title Ribbon -->
+  <g transform="translate(24, 18)">
+    <circle cx="6" cy="6" r="3.5" fill="#10B981" class="beacon-dot" />
+    <text x="18" y="9.5" class="c-header">SIVION v2.4 // MULTI-AGENT COGNITIVE STATE MACHINE</text>
+    <text x="850" y="9.5" text-anchor="end" class="c-header" fill="#7701D0">4-STAGE AUTONOMOUS LOOP</text>
+    <line x1="0" y1="18" x2="850" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- Connectors Between 4 States -->
+  <line x1="220" y1="88" x2="242" y2="88" stroke="#00DFD8" stroke-width="1.8" class="laser-flow" />
+  <line x1="442" y1="88" x2="464" y2="88" stroke="#7701D0" stroke-width="1.8" class="laser-flow" />
+  <line x1="664" y1="88" x2="686" y2="88" stroke="#00DFD8" stroke-width="1.8" class="laser-flow" />
+
+  <!-- State 01: Context Retrieval -->
+  <g transform="translate(20, 50)">
+    <polygon points="6,0 194,0 200,6 200,66 194,72 6,72 0,66 0,6" fill="#131822" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <text x="10" y="16" class="c-step" fill="#00DFD8">STAGE 01 // DISPATCH</text>
+    <text x="10" y="32" class="c-title">Hybrid RAG Query</text>
+    <text x="10" y="48" class="c-sub">pgvector Semantic Search</text>
+    <text x="10" y="62" class="c-tag" fill="#00DFD8">● LOW-LATENCY EMBED</text>
+  </g>
+
+  <!-- State 02: Swarm Reasoning -->
+  <g transform="translate(242, 50)">
+    <polygon points="6,0 194,0 200,6 200,66 194,72 6,72 0,66 0,6" fill="#131822" stroke="rgba(119, 1, 208, 0.4)" stroke-width="1" />
+    <text x="10" y="16" class="c-step" fill="#C4B5FD">STAGE 02 // REASONING</text>
+    <text x="10" y="32" class="c-title">Swarm Consensus</text>
+    <text x="10" y="48" class="c-sub">Planner + Critic Agents</text>
+    <text x="10" y="62" class="c-tag" fill="#C4B5FD">● 6/6 AGENTS ACTIVE</text>
+  </g>
+
+  <!-- State 03: Kernel Execution -->
+  <g transform="translate(464, 50)">
+    <polygon points="6,0 194,0 200,6 200,66 194,72 6,72 0,66 0,6" fill="#131822" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <text x="10" y="16" class="c-step" fill="#00DFD8">STAGE 03 // EXECUTION</text>
+    <text x="10" y="32" class="c-title">Low-Latency Kernel</text>
+    <text x="10" y="48" class="c-sub">Win32 API &amp; C++20 Ring 0</text>
+    <text x="10" y="62" class="c-tag" fill="#00DFD8">● 0.42ms ZERO JITTER</text>
+  </g>
+
+  <!-- State 04: Realtime Sync -->
+  <g transform="translate(686, 50)">
+    <polygon points="6,0 188,0 194,6 194,66 188,72 6,72 0,66 0,6" fill="#131822" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" />
+    <text x="10" y="16" class="c-step" fill="#34D399">STAGE 04 // REALTIME</text>
+    <text x="10" y="32" class="c-title">Supabase Stream</text>
+    <text x="10" y="48" class="c-sub">WebSocket + React 19 UI</text>
+    <text x="10" y="62" class="c-tag" fill="#34D399">● INSTANT STATE SYNC</text>
+  </g>
+</svg>
