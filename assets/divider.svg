@@ -1,56 +1,122 @@
-<svg width="900" height="20" viewBox="0 0 900 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="laserGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Converging Laser Gradients -->
+    <linearGradient id="divLaserLeft" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="70%" stop-color="#00DFD8" stop-opacity="0.6" />
+      <stop offset="60%" stop-color="#00DFD8" stop-opacity="0.5" />
+      <stop offset="90%" stop-color="#67E8F9" stop-opacity="0.9" />
       <stop offset="100%" stop-color="#FFFFFF" />
     </linearGradient>
 
-    <linearGradient id="laserGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="divLaserRight" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="30%" stop-color="#7701D0" stop-opacity="0.6" />
+      <stop offset="10%" stop-color="#E879F9" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#7701D0" stop-opacity="0.5" />
       <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
     </linearGradient>
 
-    <style>
-      .core-pulse {
-        animation: pulseCore 1.5s ease-in-out infinite alternate;
-      }
-      .laser-dash {
-        stroke-dasharray: 4, 8;
-        animation: laserFlow 2s linear infinite;
-      }
+    <linearGradient id="coreAura" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#7701D0" />
+    </linearGradient>
 
-      @keyframes pulseCore {
-        0% { r: 2; opacity: 0.7; }
-        100% { r: 4.5; opacity: 1; filter: drop-shadow(0 0 8px #00DFD8); }
+    <style>
+      .laser-stream-left {
+        stroke-dasharray: 6, 12;
+        animation: streamLeft 1s linear infinite;
       }
-      @keyframes laserFlow {
-        from { stroke-dashoffset: 24; }
+      .laser-stream-right {
+        stroke-dasharray: 6, 12;
+        animation: streamRight 1s linear infinite;
+      }
+      .plasma-core {
+        animation: plasmaPulse 1.4s ease-in-out infinite alternate;
+      }
+      .plasma-ring {
+        animation: ringExpand 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+      .chevron-pulse {
+        animation: chevronGlow 1.2s ease-in-out infinite alternate;
+      }
+      .c1 { animation-delay: 0s; }
+      .c2 { animation-delay: 0.2s; }
+      .c3 { animation-delay: 0.4s; }
+
+      @keyframes streamLeft {
+        from { stroke-dashoffset: 36; }
         to { stroke-dashoffset: 0; }
+      }
+      @keyframes streamRight {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 36; }
+      }
+      @keyframes plasmaPulse {
+        0% { r: 2.5; opacity: 0.7; }
+        100% { r: 5; opacity: 1; filter: drop-shadow(0 0 10px #00DFD8); }
+      }
+      @keyframes ringExpand {
+        0% { r: 4; opacity: 0.9; stroke-width: 1.5; }
+        100% { r: 18; opacity: 0; stroke-width: 0.5; }
+      }
+      @keyframes chevronGlow {
+        0% { opacity: 0.3; }
+        100% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
       }
     </style>
   </defs>
 
-  <!-- Left Converging Laser Beam -->
-  <line x1="20" y1="10" x2="430" y2="10" stroke="url(#laserGradLeft)" stroke-width="1.5" />
-  <line x1="120" y1="6" x2="410" y2="6" stroke="#00DFD8" stroke-opacity="0.3" stroke-width="1" class="laser-dash" />
+  <!-- Left Main Beam -->
+  <line x1="10" y1="12" x2="425" y2="12" stroke="url(#divLaserLeft)" stroke-width="1.8" />
+  <!-- Left Auxiliary High-Velocity Energy Stream -->
+  <line x1="80" y1="7" x2="415" y2="7" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" class="laser-stream-left" />
+  <line x1="160" y1="17" x2="420" y2="17" stroke="#67E8F9" stroke-opacity="0.3" stroke-width="1" class="laser-stream-left" />
 
-  <!-- Right Converging Laser Beam -->
-  <line x1="470" y1="10" x2="880" y2="10" stroke="url(#laserGradRight)" stroke-width="1.5" />
-  <line x1="490" y1="14" x2="780" y2="14" stroke="#7701D0" stroke-opacity="0.3" stroke-width="1" class="laser-dash" />
+  <!-- Left Pulsing Tactical Chevrons (Rushing to Center) -->
+  <path d="M 370 8 L 375 12 L 370 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c1" />
+  <path d="M 382 8 L 387 12 L 382 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c2" />
+  <path d="M 394 8 L 399 12 L 394 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c3" />
 
-  <!-- Central Diamond HUD Reticle with Native SMIL Rotation -->
+  <!-- Left Graduation Scale Ticks -->
+  <line x1="330" y1="9" x2="330" y2="15" stroke="#00DFD8" stroke-opacity="0.6" stroke-width="1" />
+  <line x1="350" y1="10" x2="350" y2="14" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" />
+  <circle cx="310" cy="12" r="1.5" fill="#00DFD8" opacity="0.6" />
+  <circle cx="270" cy="12" r="1.5" fill="#00DFD8" opacity="0.4" />
+
+  <!-- Right Main Beam -->
+  <line x1="475" y1="12" x2="890" y2="12" stroke="url(#divLaserRight)" stroke-width="1.8" />
+  <!-- Right Auxiliary High-Velocity Energy Stream -->
+  <line x1="485" y1="7" x2="820" y2="7" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" class="laser-stream-right" />
+  <line x1="480" y1="17" x2="740" y2="17" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1" class="laser-stream-right" />
+
+  <!-- Right Pulsing Tactical Chevrons (Rushing to Center) -->
+  <path d="M 530 8 L 525 12 L 530 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c1" />
+  <path d="M 518 8 L 513 12 L 518 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c2" />
+  <path d="M 506 8 L 501 12 L 506 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c3" />
+
+  <!-- Right Graduation Scale Ticks -->
+  <line x1="570" y1="9" x2="570" y2="15" stroke="#7701D0" stroke-opacity="0.6" stroke-width="1" />
+  <line x1="550" y1="10" x2="550" y2="14" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" />
+  <circle cx="590" cy="12" r="1.5" fill="#7701D0" opacity="0.6" />
+  <circle cx="630" cy="12" r="1.5" fill="#7701D0" opacity="0.4" />
+
+  <!-- CENTERPIECE: DUAL COUNTER-ROTATING HUD RETICLES + RADIATING PLASMA CORE -->
+  
+  <!-- Radiating Plasma Energy Halo Ring -->
+  <circle cx="450" cy="12" r="4" fill="none" stroke="#00DFD8" class="plasma-ring" />
+  
+  <!-- Outer Diamond Reticle (Clockwise Rotation) -->
   <g>
-    <rect x="444" y="4" width="12" height="12" fill="none" stroke="#00DFD8" stroke-width="1.2" />
-    <rect x="446" y="6" width="8" height="8" fill="none" stroke="#7701D0" stroke-width="1" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 10" to="360 450 10" dur="10s" repeatCount="indefinite" />
+    <rect x="442" y="4" width="16" height="16" fill="none" stroke="#00DFD8" stroke-width="1.4" rx="1" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 12" to="360 450 12" dur="8s" repeatCount="indefinite" />
   </g>
-  <circle cx="450" cy="10" r="3" fill="#FFFFFF" class="core-pulse" />
 
-  <!-- Graduation Ticks -->
-  <line x1="400" y1="7" x2="400" y2="13" stroke="#00DFD8" stroke-width="1" />
-  <line x1="415" y1="8" x2="415" y2="12" stroke="#00DFD8" stroke-width="1" />
-  <line x1="485" y1="8" x2="485" y2="12" stroke="#7701D0" stroke-width="1" />
-  <line x1="500" y1="7" x2="500" y2="13" stroke="#7701D0" stroke-width="1" />
+  <!-- Inner Octagon Reticle (Counter-Clockwise Rotation) -->
+  <g>
+    <rect x="445" y="7" width="10" height="10" fill="rgba(119, 1, 208, 0.2)" stroke="#A855F7" stroke-width="1.2" />
+    <animateTransform attributeName="transform" type="rotate" from="360 450 12" to="0 450 12" dur="5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Central Supercharged Plasma Node -->
+  <circle cx="450" cy="12" r="3" fill="url(#coreAura)" class="plasma-core" />
 </svg>
