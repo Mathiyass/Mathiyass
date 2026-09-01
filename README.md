@@ -7,9 +7,9 @@
 
 <br/><br/>
 
-<!-- DYNAMIC TYPING SVG BANNER -->
+<!-- DYNAMIC TYPING SVG BANNER (Native 60 FPS 3D HUD) -->
 <a href="https://mathiya.cc">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2500&pause=1000&color=00DFD8&center=true&vCenter=true&multiline=false&width=750&height=40&lines=LEAD+SYSTEMS+ARCHITECT+%26+AI+SPECIALIST;SCALABLE+MULTI-AGENT+AI+ECOSYSTEMS+(SIVION);LOW-LATENCY+WINDOWS+KERNEL+TUNING+(MA+OPTIMIZER);WEBGL+2.0+%26+GLSL+GPGPU+COMPUTE+SHADERS" alt="Typing SVG" />
+  <img src="./assets/hud-typing-banner.svg" alt="Dynamic HUD Typing Banner" width="100%" />
 </a>
 
 <br/><br/>
@@ -116,43 +116,10 @@
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 🛠️ Technology & Architectural Stack
+### 🛠️ Technology & Architectural Stack Matrix
 
 <div align="center">
-
-**🤖 Multi-Agent AI & Intelligent Systems**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi&theme=dark" alt="AI Stack" /></a>
-<br/>
-`Python 3.12` • `PyTorch` • `Multi-Agent Orchestration` • `RAG Pipelines` • `Vector Search (pgvector)` • `FastAPI`
-
-<br/><br/>
-
-**⚡ Low-Level & High-Performance Engineering**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,rust,go,powershell,bash&theme=dark" alt="Systems Stack" /></a>
-<br/>
-`C++20` • `Rust` • `Go` • `Windows API & Kernel Tuning` • `PowerShell Automation` • `POSIX Bash`
-
-<br/><br/>
-
-**🎨 WebGL 2.0, 3D Spatial & Frontend Architecture**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vue,threejs,vite,html,css&theme=dark" alt="Frontend Stack" /></a>
-<br/>
-`Next.js 16 (Turbopack)` • `React 19 (Concurrent UI)` • `TypeScript 5 (Strict)` • `Three.js` • `GLSL Shaders` • `WebGL 2.0` • `Tailwind CSS`
-
-<br/><br/>
-
-**☁️ Cloud Native, Distributed Backend & DevOps**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="DevOps Stack" /></a>
-<br/>
-`Node.js` • `Bun Runtime` • `Docker` • `Kubernetes` • `AWS` • `GCP` • `Azure` • `GitHub Actions CI/CD` • `Linux` • `NGINX`
-
-<br/><br/>
-
-**🗄️ Databases, Caching & Data Systems**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,supabase,redis,mongodb,mysql,sqlite&theme=dark" alt="Databases Stack" /></a>
-<br/>
-`PostgreSQL` • `Supabase (Realtime & Auth)` • `Redis Caching` • `MongoDB` • `MySQL` • `SQLite`
-
+  <img src="./assets/tech-stack-matrix.svg" alt="Technology & Architectural Stack Matrix" width="100%" />
 </div>
 
 <br/>
