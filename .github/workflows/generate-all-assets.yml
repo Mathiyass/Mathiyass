@@ -17,13 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pages: write
+      id-token: write
+      actions: write
     timeout-minutes: 15
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Create output directory
-        run: mkdir -p dist dist/cards
+        run: |
+          mkdir -p dist dist/cards dist/assets
+          touch dist/.nojekyll
 
       - name: Set up Node.js for Header Generation
         uses: actions/setup-node@v4
@@ -31,7 +36,10 @@ jobs:
           node-version: 20
 
       - name: Compile Dynamic Header SVG
-        run: node build-header.js || echo "Header build failed but continuing"
+        run: |
+          node build-header.js || echo "Header build failed but continuing"
+          cp header.svg dist/ 2>/dev/null || true
+          cp -r assets/* dist/assets/ 2>/dev/null || true
 
       - name: Generate Snake Animation
         uses: Platane/snk/svg-only@v3
@@ -79,6 +87,7 @@ jobs:
 
       - name: Push all assets to output branch
         uses: peaceiris/actions-gh-pages@v4
+        continue-on-error: true
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: output
