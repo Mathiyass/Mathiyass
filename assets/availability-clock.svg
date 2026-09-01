@@ -55,6 +55,16 @@
   <polygon points="12,2 888,2 898,12 898,84 888,94 12,94 2,84 2,12" fill="url(#clockGlassBg)" stroke="url(#clockChromeBorder)" stroke-width="1.3" />
   <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#clockSpecular)" />
 
+  
+  <!-- Inter-Zone High-Velocity Packet Streams -->
+  <line x1="295" y1="63" x2="320" y2="63" stroke="#00DFD8" stroke-width="1.5" class="dash-flow" />
+  <circle cx="295" cy="63" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+    <animate attributeName="cx" from="295" to="320" dur="0.8s" repeatCount="indefinite" />
+  </circle>
+  <line x1="585" y1="63" x2="610" y2="63" stroke="#A855F7" stroke-width="1.5" class="dash-flow" />
+  <circle cx="585" cy="63" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+    <animate attributeName="cx" from="585" to="610" dur="0.8s" repeatCount="indefinite" />
+  </circle>
   <!-- Header Banner -->
   <g transform="translate(20, 14)">
     <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />

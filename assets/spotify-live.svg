@@ -92,6 +92,11 @@
       @keyframes eqBounce3 { 0% { transform: scaleY(0.15); } 100% { transform: scaleY(0.95); } }
       @keyframes eqBounce4 { 0% { transform: scaleY(0.9); } 100% { transform: scaleY(0.35); } }
     </style>
+  
+    <!-- Playhead Glow -->
+    <filter id="playheadGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#1DB954" flood-opacity="0.9"/>
+    </filter>
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
@@ -134,7 +139,13 @@
   <text x="82" y="49" class="track-title">Cyberpunk Synthwave &amp; Systems Flow</text>
   <text x="82" y="66" class="track-artist">Curated Architect Soundtracks • 24-Bit / 96kHz</text>
   <text x="82" y="80" class="spot-time">02:48 / 03:15 • STREAMING LIVE</text>
-  <line x1="82" y1="86" x2="350" y2="86" stroke="#1DB954" stroke-width="1.5" stroke-opacity="0.8" class="dash-flow" />
+  
+  <line x1="82" y1="86" x2="350" y2="86" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round" />
+  <line x1="82" y1="86" x2="350" y2="86" stroke="#1DB954" stroke-width="1.8" stroke-opacity="0.8" class="dash-flow" />
+  <!-- Moving Playhead Cursor -->
+  <circle cx="82" cy="86" r="3.5" fill="#FFFFFF" filter="url(#playheadGlow)">
+    <animate attributeName="cx" from="82" to="350" dur="5s" repeatCount="indefinite" />
+  </circle>
 
   <!-- 16-Band Equalizer -->
   <g transform="translate(376, 68)">

@@ -63,6 +63,12 @@
       <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.25" />
       <stop offset="100%" stop-color="transparent" />
     </linearGradient>
+  
+    <linearGradient id="memShimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
   </defs>
 
   <!-- 3D Glass Terminal Window Frame -->
@@ -129,7 +135,12 @@
     <text x="70" y="82" class="term-accent-cyan">💾 MEMORY POOL:</text>
     <g transform="translate(180, 74)">
       <rect x="0" y="0" width="220" height="9" rx="4.5" fill="rgba(255, 255, 255, 0.08)" />
+      
       <rect x="0" y="0" width="165" height="9" rx="4.5" fill="#00DFD8" class="mem-pulse" />
+      <!-- Memory Allocation Shimmer Flare -->
+      <rect x="0" y="0" width="40" height="9" rx="4.5" fill="url(#memShimmerGrad)" pointer-events="none">
+        <animate attributeName="x" from="-40" to="165" dur="1.8s" repeatCount="indefinite" />
+      </rect>
     </g>
     <text x="415" y="82" class="term-log" fill="#00DFD8">38% (12.2GB / 32GB Allocated)</text>
 

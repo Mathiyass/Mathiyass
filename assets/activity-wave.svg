@@ -98,6 +98,8 @@
       <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
       <stop offset="100%" stop-color="transparent" />
     </linearGradient>
+  
+    <path id="waveMotionPath" d="M 24 100 Q 130 50 238 75 T 450 45 T 662 65 T 876 35" fill="none" />
   </defs>
 
   <!-- 3D Glass Outer Frame with Chamfers -->
