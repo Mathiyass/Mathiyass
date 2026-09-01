@@ -46,9 +46,9 @@ https.get(imageUrl, (res) => {
     </radialGradient>
 
     <radialGradient id="avatar-center-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.6" />
-      <stop offset="35%" stop-color="#7E22CE" stop-opacity="0.35" />
-      <stop offset="70%" stop-color="#00DFD8" stop-opacity="0.2" />
+      <stop offset="0%" stop-color="#9333EA" stop-opacity="0.65" />
+      <stop offset="35%" stop-color="#7E22CE" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#00DFD8" stop-opacity="0.22" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
@@ -91,22 +91,22 @@ https.get(imageUrl, (res) => {
 
       .text-outline {
         font-family: 'Arial Black', Impact, -apple-system, sans-serif;
-        font-size: 245px;
+        font-size: 195px;
         font-weight: 900;
         fill: transparent;
         stroke: rgba(255, 255, 255, 0.9);
         stroke-width: 2.5px;
-        letter-spacing: 2px;
+        letter-spacing: 6px;
         text-anchor: middle;
         animation: glitch 6s infinite alternate ease-in-out;
       }
       
       .text-solid {
         font-family: 'Arial Black', Impact, -apple-system, sans-serif;
-        font-size: 285px;
+        font-size: 225px;
         font-weight: 900;
         fill: #FFFFFF;
-        letter-spacing: -4px;
+        letter-spacing: -1px;
         text-anchor: middle;
         filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 35px rgba(0, 223, 216, 0.3));
       }
@@ -153,7 +153,7 @@ https.get(imageUrl, (res) => {
       }
       @keyframes shockwaveExpand {
         0% { r: 80; opacity: 0.8; stroke-width: 2; }
-        100% { r: 360; opacity: 0; stroke-width: 0.3; }
+        100% { r: 340; opacity: 0; stroke-width: 0.3; }
       }
 
       .laser-cable {
@@ -172,14 +172,6 @@ https.get(imageUrl, (res) => {
       @keyframes cornerChase {
         from { stroke-dashoffset: 60; }
         to { stroke-dashoffset: 0; }
-      }
-
-      .audio-bar {
-        animation: audioBounce 1.2s ease-in-out infinite alternate;
-      }
-      @keyframes audioBounce {
-        0% { transform: scaleY(0.2); }
-        100% { transform: scaleY(1.0); }
       }
     </style>
     
@@ -211,7 +203,7 @@ https.get(imageUrl, (res) => {
   <polygon points="22,8 ${width - 22},8 ${width - 8},22 ${width - 8},${height - 22} ${width - 22},${height - 8} 22,${height - 8} 8,${height - 22} 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1.2" class="laser-cable" />
 
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
-  <circle cx="${width / 2}" cy="420" r="320" fill="url(#avatar-center-glow)" />
+  <circle cx="${width / 2}" cy="420" r="300" fill="url(#avatar-center-glow)" />
 
   <!-- Expanding Sonar Shockwaves from Center -->
   <circle cx="${width / 2}" cy="420" r="80" fill="none" stroke="#00DFD8" class="sonar-shockwave" />
@@ -219,57 +211,57 @@ https.get(imageUrl, (res) => {
 
   <!-- Target Reticle Tick Aperture (30s SMIL Rotation) -->
   <g transform="translate(${width / 2}, 420)">
-    <circle cx="0" cy="0" r="330" fill="none" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" stroke-dasharray="3, 10">
+    <circle cx="0" cy="0" r="310" fill="none" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" stroke-dasharray="3, 10">
       <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="30s" repeatCount="indefinite" />
     </circle>
   </g>
 
   <!-- 3D Tilted Gyroscope Outer Ring 1 (18s SMIL Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="420" rx="340" ry="160" fill="none" stroke="rgba(0, 223, 216, 0.55)" stroke-width="1.6" stroke-dasharray="16, 12">
+    <ellipse cx="${width / 2}" cy="420" rx="320" ry="150" fill="none" stroke="rgba(0, 223, 216, 0.55)" stroke-width="1.6" stroke-dasharray="16, 12">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="18s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
   <!-- 3D Tilted Gyroscope Reverse Ring 2 (12s SMIL Counter-Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="420" rx="290" ry="130" fill="none" stroke="rgba(168, 85, 247, 0.55)" stroke-width="1.4" stroke-dasharray="10, 14">
+    <ellipse cx="${width / 2}" cy="420" rx="275" ry="120" fill="none" stroke="rgba(168, 85, 247, 0.55)" stroke-width="1.4" stroke-dasharray="10, 14">
       <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 420" to="0 ${width / 2} 420" dur="12s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
   <!-- 3D Tilted Gyroscope Ring 3 (Inclined 45deg, 8s Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="420" rx="310" ry="100" fill="none" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" stroke-dasharray="6, 8">
+    <ellipse cx="${width / 2}" cy="420" rx="295" ry="95" fill="none" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" stroke-dasharray="6, 8">
       <animateTransform attributeName="transform" type="rotate" from="45 ${width / 2} 420" to="405 ${width / 2} 420" dur="8s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
   <!-- 3D Tilted Gyroscope Ring 4 (Inclined 135deg, 5s Counter-Clockwise Rotation) -->
   <g>
-    <ellipse cx="${width / 2}" cy="420" rx="260" ry="80" fill="none" stroke="rgba(245, 158, 11, 0.45)" stroke-width="1.2" stroke-dasharray="4, 6">
+    <ellipse cx="${width / 2}" cy="420" rx="245" ry="75" fill="none" stroke="rgba(245, 158, 11, 0.45)" stroke-width="1.2" stroke-dasharray="4, 6">
       <animateTransform attributeName="transform" type="rotate" from="135 ${width / 2} 420" to="-225 ${width / 2} 420" dur="5s" repeatCount="indefinite" />
     </ellipse>
   </g>
 
   <!-- Orbiting 3D Photon Satellites around Avatar -->
   <g>
-    <circle cx="${width / 2}" cy="260" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 10px #00DFD8)">
+    <circle cx="${width / 2}" cy="270" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 10px #00DFD8)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
     </circle>
   </g>
   <g>
-    <circle cx="${width / 2}" cy="580" r="4.5" fill="#E879F9" filter="drop-shadow(0 0 10px #A855F7)">
+    <circle cx="${width / 2}" cy="570" r="4.5" fill="#E879F9" filter="drop-shadow(0 0 10px #A855F7)">
       <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 420" to="0 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
     </circle>
   </g>
   <g>
-    <circle cx="${width / 2 + 260}" cy="420" r="4" fill="#34D399" filter="drop-shadow(0 0 8px #10B981)">
+    <circle cx="${width / 2 + 250}" cy="420" r="4" fill="#34D399" filter="drop-shadow(0 0 8px #10B981)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="4s" repeatCount="indefinite" />
     </circle>
   </g>
   <g>
-    <circle cx="${width / 2 - 230}" cy="420" r="4" fill="#FBBF24" filter="drop-shadow(0 0 8px #F59E0B)">
+    <circle cx="${width / 2 - 220}" cy="420" r="4" fill="#FBBF24" filter="drop-shadow(0 0 8px #F59E0B)">
       <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 420" to="0 ${width / 2} 420" dur="5s" repeatCount="indefinite" />
     </circle>
   </g>
@@ -306,19 +298,19 @@ https.get(imageUrl, (res) => {
     <line x1="230" y1="-5" x2="380" y2="-5" stroke="#00DFD8" stroke-width="1.2" stroke-opacity="0.6" />
   </g>
 
-  <!-- Layer 1: Outlined "MATHISHA" (Upper Background Behind Avatar) -->
-  <text x="${width / 2}" y="280" class="text-outline">MATHISHA</text>
+  <!-- Layer 1: Outlined "MATHISHA" (Upper Background Behind Avatar) - Perfectly Fitted -->
+  <text x="${width / 2}" y="295" class="text-outline">MATHISHA</text>
 
   <!-- Layer 2: Mathisha Portrait Photo in Suit -->
   <g class="image-layer">
-    <image href="${imageBase64}" x="${width / 2 - 280}" y="190" width="560" height="610" preserveAspectRatio="xMidYMid slice" />
+    <image href="${imageBase64}" x="${width / 2 - 260}" y="195" width="520" height="570" preserveAspectRatio="xMidYMid slice" />
   </g>
 
-  <!-- Layer 3: Solid "ANGIRASA" (Foreground Bold Typography Overlapping Torso) -->
-  <text x="${width / 2}" y="775" class="text-solid">ANGIRASA</text>
+  <!-- Layer 3: Solid "ANGIRASA" (Foreground Bold Typography Overlapping Torso) - Perfectly Fitted with Safe Margins -->
+  <text x="${width / 2}" y="760" class="text-solid">ANGIRASA</text>
 
   <!-- Layer 4: Bottom Subtitle -->
-  <g transform="translate(${width / 2}, 855)">
+  <g transform="translate(${width / 2}, 850)">
     <line x1="-480" y1="-4" x2="-350" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.4" />
     <text x="0" y="0" class="bottom-meta">SOFTWARE ENGINEER &amp; AI SYSTEMS ARCHITECT</text>
     <line x1="350" y1="-4" x2="480" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.4" />
@@ -328,6 +320,6 @@ https.get(imageUrl, (res) => {
         `;
 
         fs.writeFileSync('header.svg', svg);
-        console.log("Created ultimate hyper-animated header.svg successfully!");
+        console.log("Successfully fixed font sizes and margin padding in header.svg!");
     });
 });
