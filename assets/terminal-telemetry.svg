@@ -1,25 +1,33 @@
 <svg width="900" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="termBgSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0E131E" />
-      <stop offset="100%" stop-color="#06090F" />
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="termGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
-    <!-- Border Gradient -->
-    <linearGradient id="termBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
+    <!-- Top Specular Edge -->
+    <linearGradient id="termSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="termChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
     </linearGradient>
 
     <style>
-      .term-header { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; fill: #8B949E; }
-      .term-cmd { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; }
-      .term-log { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; fill: #C9D1D9; }
-      .term-accent-purple { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; fill: #A855F7; }
-      .term-accent-emerald { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; fill: #10B981; }
-      .term-accent-cyan { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 9px; font-weight: 700; fill: #00DFD8; }
+      .term-header { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; fill: #8B949E; }
+      .term-cmd { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; }
+      .term-log { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; fill: #C9D1D9; }
+      .term-accent-purple { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #C084FC; }
+      .term-accent-emerald { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #34D399; }
+      .term-accent-cyan { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #00DFD8; }
       
       .cursor-blink { animation: termCursorBlink 1s step-end infinite; }
       .mem-pulse { animation: memPulse 2.5s ease-in-out infinite alternate; }
@@ -35,8 +43,9 @@
     </style>
   </defs>
 
-  <!-- Terminal Window Frame -->
-  <polygon points="12,2 888,2 898,12 898,138 888,148 12,148 2,138 2,12" fill="url(#termBgSupreme)" stroke="url(#termBorderSupreme)" stroke-width="1.3" />
+  <!-- 3D Glass Terminal Window Frame -->
+  <polygon points="12,2 888,2 898,12 898,138 888,148 12,148 2,138 2,12" fill="url(#termGlassBg)" stroke="url(#termChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#termSpecular)" />
 
   <!-- Window Control Dots & Title -->
   <g transform="translate(18, 14)">

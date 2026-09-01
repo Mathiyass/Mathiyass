@@ -18,7 +18,7 @@
     <linearGradient id="coreAura" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#00DFD8" />
       <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#7701D0" />
+      <stop offset="100%" stop-color="#A855F7" />
     </linearGradient>
 
     <style>
@@ -100,20 +100,20 @@
   <circle cx="590" cy="12" r="1.5" fill="#7701D0" opacity="0.6" />
   <circle cx="630" cy="12" r="1.5" fill="#7701D0" opacity="0.4" />
 
-  <!-- CENTERPIECE: DUAL COUNTER-ROTATING HUD RETICLES + RADIATING PLASMA CORE -->
+  <!-- CENTERPIECE: 3D GLASS POD + DUAL COUNTER-ROTATING HUD RETICLES -->
   
   <!-- Radiating Plasma Energy Halo Ring -->
   <circle cx="450" cy="12" r="4" fill="none" stroke="#00DFD8" class="plasma-ring" />
   
   <!-- Outer Diamond Reticle (Clockwise Rotation) -->
   <g>
-    <rect x="442" y="4" width="16" height="16" fill="none" stroke="#00DFD8" stroke-width="1.4" rx="1" />
+    <rect x="442" y="4" width="16" height="16" fill="rgba(15, 23, 42, 0.8)" stroke="#00DFD8" stroke-width="1.4" rx="1" />
     <animateTransform attributeName="transform" type="rotate" from="0 450 12" to="360 450 12" dur="8s" repeatCount="indefinite" />
   </g>
 
   <!-- Inner Octagon Reticle (Counter-Clockwise Rotation) -->
   <g>
-    <rect x="445" y="7" width="10" height="10" fill="rgba(119, 1, 208, 0.2)" stroke="#A855F7" stroke-width="1.2" />
+    <rect x="445" y="7" width="10" height="10" fill="rgba(119, 1, 208, 0.3)" stroke="#A855F7" stroke-width="1.2" />
     <animateTransform attributeName="transform" type="rotate" from="360 450 12" to="0 450 12" dur="5s" repeatCount="indefinite" />
   </g>
 

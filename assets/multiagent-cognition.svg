@@ -1,42 +1,32 @@
 <svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="cogBgSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0E131E" />
-      <stop offset="100%" stop-color="#06090F" />
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="cogGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
     </linearGradient>
 
-    <!-- Outer Frame Gradient -->
-    <linearGradient id="cogBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="cogSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
-    <!-- Stage Gradients -->
-    <linearGradient id="st1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0E131E" />
-    </linearGradient>
-    <linearGradient id="st2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0E131E" />
-    </linearGradient>
-    <linearGradient id="st3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0E131E" />
-    </linearGradient>
-    <linearGradient id="st4Grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284C7" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#0E131E" />
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="cogChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
     </linearGradient>
 
     <style>
-      .cog-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
-      .cog-step-num { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
-      .cog-step-name { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; }
-      .cog-step-detail { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8px; fill: #8B949E; }
-      .cog-metric { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 7.5px; font-weight: 700; }
+      .cog-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .cog-step-num { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
+      .cog-step-name { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; }
+      .cog-step-detail { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
+      .cog-metric { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; }
       
       .arrow-track {
         stroke-dasharray: 4, 4;
@@ -52,15 +42,16 @@
         to { stroke-dashoffset: 0; }
       }
       @keyframes stagePulse {
-        0%, 100% { stroke-opacity: 0.3; filter: none; }
-        25% { stroke-opacity: 1; filter: drop-shadow(0 0 8px currentColor); }
-        35% { stroke-opacity: 0.3; filter: none; }
+        0%, 100% { stroke-opacity: 0.35; filter: none; }
+        25% { stroke-opacity: 1; filter: drop-shadow(0 0 10px currentColor); }
+        35% { stroke-opacity: 0.35; filter: none; }
       }
     </style>
   </defs>
 
-  <!-- Outer Glass Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,118 888,128 12,128 2,118 2,12" fill="url(#cogBgSupreme)" stroke="url(#cogBorderSupreme)" stroke-width="1.3" />
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="12,2 888,2 898,12 898,118 888,128 12,128 2,118 2,12" fill="url(#cogGlassBg)" stroke="url(#cogChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#cogSpecular)" />
 
   <!-- Top Title Ribbon -->
   <g transform="translate(20, 16)">
@@ -74,7 +65,8 @@
 
   <!-- Stage 01: Ingestion & RAG -->
   <g transform="translate(24, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="url(#st1Grad)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1" />
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.8)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <circle cx="14" cy="16" r="3" fill="#00DFD8" />
     <text x="24" y="19" class="cog-step-num" fill="#00DFD8">STAGE 01 // INGESTION</text>
     <text x="14" y="35" class="cog-step-name">Hybrid RAG Query</text>
@@ -84,13 +76,14 @@
 
   <!-- Connecting Bus 1-2 -->
   <g transform="translate(224, 80)">
-    <line x1="0" y1="0" x2="16" y2="0" stroke="#00DFD8" stroke-width="1.5" class="arrow-track" />
-    <polygon points="16,-3 22,0 16,3" fill="#00DFD8" />
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#00DFD8" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#00DFD8" />
   </g>
 
   <!-- Stage 02: Swarm Reasoning -->
   <g transform="translate(250, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="url(#st2Grad)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.8)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <circle cx="14" cy="16" r="3" fill="#A855F7" />
     <text x="24" y="19" class="cog-step-num" fill="#C084FC">STAGE 02 // REASONING</text>
     <text x="14" y="35" class="cog-step-name">Swarm Consensus</text>
@@ -100,13 +93,14 @@
 
   <!-- Connecting Bus 2-3 -->
   <g transform="translate(450, 80)">
-    <line x1="0" y1="0" x2="16" y2="0" stroke="#A855F7" stroke-width="1.5" class="arrow-track" />
-    <polygon points="16,-3 22,0 16,3" fill="#A855F7" />
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#A855F7" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#A855F7" />
   </g>
 
   <!-- Stage 03: Kernel Execution -->
   <g transform="translate(476, 46)">
-    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="url(#st3Grad)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.8)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <circle cx="14" cy="16" r="3" fill="#10B981" />
     <text x="24" y="19" class="cog-step-num" fill="#34D399">STAGE 03 // EXECUTION</text>
     <text x="14" y="35" class="cog-step-name">Low-Latency Kernel</text>
@@ -116,13 +110,14 @@
 
   <!-- Connecting Bus 3-4 -->
   <g transform="translate(676, 80)">
-    <line x1="0" y1="0" x2="16" y2="0" stroke="#10B981" stroke-width="1.5" class="arrow-track" />
-    <polygon points="16,-3 22,0 16,3" fill="#10B981" />
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#10B981" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#10B981" />
   </g>
 
   <!-- Stage 04: Realtime Stream -->
   <g transform="translate(702, 46)">
-    <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="url(#st4Grad)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
+    <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.8)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
+    <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)" />
     <circle cx="14" cy="16" r="3" fill="#0284C7" />
     <text x="24" y="19" class="cog-step-num" fill="#38BDF8">STAGE 04 // REALTIME</text>
     <text x="14" y="35" class="cog-step-name">Supabase Stream</text>

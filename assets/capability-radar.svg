@@ -1,15 +1,24 @@
 <svg width="900" height="180" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="radarBgSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0E131E" />
-      <stop offset="100%" stop-color="#06090F" />
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="radarGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
     </linearGradient>
 
-    <linearGradient id="radarBorderSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.9" />
-      <stop offset="50%" stop-color="#7701D0" stop-opacity="0.5" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.9" />
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="radarSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="radarChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
     </linearGradient>
 
     <!-- Radar Sweep Gradient -->
@@ -20,10 +29,10 @@
     </linearGradient>
 
     <style>
-      .r-title { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
-      .r-label { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8.5px; font-weight: 700; fill: #FFFFFF; }
-      .r-coord { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 7.5px; fill: #8B949E; }
-      .r-val { font-family: 'Fira Code', 'SF Mono', monospace; font-size: 8.5px; font-weight: 700; }
+      .r-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .r-label { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #FFFFFF; }
+      .r-coord { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 7.5px; fill: #8B949E; }
+      .r-val { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; }
       
       .radar-ping-node {
         animation: pingNode 2s ease-in-out infinite alternate;
@@ -43,8 +52,9 @@
     </style>
   </defs>
 
-  <!-- Frame with Chamfers -->
-  <polygon points="12,2 888,2 898,12 898,168 888,178 12,178 2,168 2,12" fill="url(#radarBgSupreme)" stroke="url(#radarBorderSupreme)" stroke-width="1.3" />
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="12,2 888,2 898,12 898,168 888,178 12,178 2,168 2,12" fill="url(#radarGlassBg)" stroke="url(#radarChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#radarSpecular)" />
 
   <!-- Top Title Bar -->
   <g transform="translate(20, 16)">
@@ -54,10 +64,10 @@
     <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
   </g>
 
-  <!-- Circular Military-Grade Radar HUD (Left) -->
+  <!-- Circular 3D Radar HUD (Left) -->
   <g transform="translate(45, 42)">
     <!-- Concentric Range Rings -->
-    <circle cx="60" cy="60" r="54" fill="none" stroke="rgba(0, 223, 216, 0.25)" stroke-width="1" />
+    <circle cx="60" cy="60" r="54" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1.2" />
     <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" stroke-dasharray="4, 4" />
     <circle cx="60" cy="60" r="22" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" />
 
@@ -72,7 +82,7 @@
     <text x="0" y="63" class="r-coord">270°</text>
 
     <!-- Radar Polygon (Pentagon of Capabilities) -->
-    <polygon points="60,16 100,42 88,96 32,96 20,42" fill="rgba(0, 223, 216, 0.15)" stroke="#00DFD8" stroke-width="1.5" />
+    <polygon points="60,16 100,42 88,96 32,96 20,42" fill="rgba(0, 223, 216, 0.2)" stroke="#00DFD8" stroke-width="1.5" />
 
     <!-- 360° Continuous Rotating Radar Sweep Beam with Pure SMIL Rotation -->
     <g>
@@ -96,7 +106,7 @@
       <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
       <text x="18" y="9" class="r-label">Multi-Agent AI &amp; Autonomous LLM Swarms</text>
       <text x="590" y="9" text-anchor="end" class="r-val" fill="#00DFD8">98% // EXPERT</text>
-      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.05)" />
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
       <rect x="18" y="14" width="560" height="6" rx="3" fill="#00DFD8" />
     </g>
 
@@ -105,7 +115,7 @@
       <circle cx="6" cy="6" r="3.5" fill="#A855F7" />
       <text x="18" y="9" class="r-label">WebGL 2.0, Three.js &amp; GLSL Compute Shaders</text>
       <text x="590" y="9" text-anchor="end" class="r-val" fill="#C084FC">95% // HIGH-PERF</text>
-      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.05)" />
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
       <rect x="18" y="14" width="543" height="6" rx="3" fill="#A855F7" />
     </g>
 
@@ -114,7 +124,7 @@
       <circle cx="6" cy="6" r="3.5" fill="#10B981" />
       <text x="18" y="9" class="r-label">Kernel Tuning, Windows API &amp; Low-Latency Architecture</text>
       <text x="590" y="9" text-anchor="end" class="r-val" fill="#34D399">96% // 0.42ms DISPATCH</text>
-      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.05)" />
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
       <rect x="18" y="14" width="549" height="6" rx="3" fill="#10B981" />
     </g>
 
@@ -123,7 +133,7 @@
       <circle cx="6" cy="6" r="3.5" fill="#0284C7" />
       <text x="18" y="9" class="r-label">Distributed Cloud, Next.js 16 &amp; Realtime Supabase</text>
       <text x="590" y="9" text-anchor="end" class="r-val" fill="#38BDF8">97% // SCALABLE</text>
-      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.05)" />
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
       <rect x="18" y="14" width="555" height="6" rx="3" fill="#0284C7" />
     </g>
   </g>

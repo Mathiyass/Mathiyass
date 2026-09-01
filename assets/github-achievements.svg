@@ -1,9 +1,17 @@
 <svg width="900" height="116" viewBox="0 0 900 116" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="cardGradDark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#141923" />
-      <stop offset="100%" stop-color="#080B10" />
+    <!-- Frosted Translucent Glass Gradient -->
+    <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.90" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.80" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="cardSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
     <!-- Metallic Tier Gradients -->
@@ -59,25 +67,26 @@
 
       @keyframes floatBadge {
         0% { transform: translateY(0px); }
-        100% { transform: translateY(-3px); }
+        100% { transform: translateY(-4px); }
       }
       @keyframes pulseTier {
         0% { opacity: 0.7; }
-        100% { opacity: 1; filter: drop-shadow(0 0 5px currentColor); }
+        100% { opacity: 1; filter: drop-shadow(0 0 6px currentColor); }
       }
     </style>
   </defs>
 
-  <!-- 5 Chamfered Tactical Badges with Isolated Positioning Coordinates -->
+  <!-- 5 3D Glassmorphic Badges with Isolated Positioning Coordinates -->
 
   <!-- Badge 1: Systems Architect -->
   <g transform="translate(10, 8)">
     <g class="badge-anim f1">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#goldTier)" stroke-width="1.2" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#goldTier)" stroke-width="1.3" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick" />
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4, 4">
+        <circle cx="84" cy="28" r="17" fill="rgba(245, 158, 11, 0.15)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </circle>
       </g>
@@ -91,11 +100,12 @@
   <!-- Badge 2: Multi-Agent AI -->
   <g transform="translate(188, 8)">
     <g class="badge-anim f2">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#cyanTier)" stroke-width="1.2" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#cyanTier)" stroke-width="1.3" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick" />
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4">
+        <circle cx="84" cy="28" r="17" fill="rgba(0, 223, 216, 0.15)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </circle>
       </g>
@@ -109,11 +119,12 @@
   <!-- Badge 3: WebGL & GLSL -->
   <g transform="translate(366, 8)">
     <g class="badge-anim f3">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#purpleTier)" stroke-width="1.2" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#purpleTier)" stroke-width="1.3" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick" />
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4">
+        <circle cx="84" cy="28" r="17" fill="rgba(168, 85, 247, 0.15)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </circle>
       </g>
@@ -127,11 +138,12 @@
   <!-- Badge 4: 50+ Deployments -->
   <g transform="translate(544, 8)">
     <g class="badge-anim f4">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#emeraldTier)" stroke-width="1.2" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#emeraldTier)" stroke-width="1.3" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick" />
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1" stroke-dasharray="4, 4">
+        <circle cx="84" cy="28" r="17" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </circle>
       </g>
@@ -145,11 +157,12 @@
   <!-- Badge 5: OS Kernel Tuner -->
   <g transform="translate(722, 8)">
     <g class="badge-anim f5">
-      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#blueTier)" stroke-width="1.2" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#blueTier)" stroke-width="1.3" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick" />
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1" stroke-dasharray="4, 4">
+        <circle cx="84" cy="28" r="17" fill="rgba(2, 132, 199, 0.15)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
         </circle>
       </g>
