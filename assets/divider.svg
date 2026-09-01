@@ -1,37 +1,40 @@
-<svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="30" viewBox="0 0 900 30" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Converging Laser Gradients -->
+    <!-- Left Converging Laser Gradient -->
     <linearGradient id="divLaserLeft" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
-      <stop offset="60%" stop-color="#00DFD8" stop-opacity="0.5" />
-      <stop offset="90%" stop-color="#67E8F9" stop-opacity="0.9" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.4" />
+      <stop offset="85%" stop-color="#67E8F9" stop-opacity="0.85" />
       <stop offset="100%" stop-color="#FFFFFF" />
     </linearGradient>
 
+    <!-- Right Converging Laser Gradient -->
     <linearGradient id="divLaserRight" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="10%" stop-color="#E879F9" stop-opacity="0.9" />
-      <stop offset="40%" stop-color="#7701D0" stop-opacity="0.5" />
+      <stop offset="15%" stop-color="#E879F9" stop-opacity="0.85" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
     </linearGradient>
 
-    <linearGradient id="coreAura" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" />
-      <stop offset="50%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#A855F7" />
-    </linearGradient>
+    <!-- Central Core Aura -->
+    <radialGradient id="divCoreAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="35%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#A855F7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </radialGradient>
 
     <style>
       .laser-stream-left {
         stroke-dasharray: 6, 12;
-        animation: streamLeft 1s linear infinite;
+        animation: streamLeft 0.8s linear infinite;
       }
       .laser-stream-right {
         stroke-dasharray: 6, 12;
-        animation: streamRight 1s linear infinite;
+        animation: streamRight 0.8s linear infinite;
       }
       .plasma-core {
-        animation: plasmaPulse 1.4s ease-in-out infinite alternate;
+        animation: plasmaPulse 1.2s ease-in-out infinite alternate;
       }
       .plasma-ring {
         animation: ringExpand 2s cubic-bezier(0, 0, 0.2, 1) infinite;
@@ -53,70 +56,87 @@
       }
       @keyframes plasmaPulse {
         0% { r: 2.5; opacity: 0.7; }
-        100% { r: 5; opacity: 1; filter: drop-shadow(0 0 10px #00DFD8); }
+        100% { r: 5; opacity: 1; filter: drop-shadow(0 0 12px #00DFD8); }
       }
       @keyframes ringExpand {
         0% { r: 4; opacity: 0.9; stroke-width: 1.5; }
-        100% { r: 18; opacity: 0; stroke-width: 0.5; }
+        100% { r: 22; opacity: 0; stroke-width: 0.5; }
       }
       @keyframes chevronGlow {
-        0% { opacity: 0.3; }
-        100% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
+        0% { opacity: 0.25; }
+        100% { opacity: 1; filter: drop-shadow(0 0 6px currentColor); }
       }
     </style>
   </defs>
 
-  <!-- Left Main Beam -->
-  <line x1="10" y1="12" x2="425" y2="12" stroke="url(#divLaserLeft)" stroke-width="1.8" />
-  <!-- Left Auxiliary High-Velocity Energy Stream -->
-  <line x1="80" y1="7" x2="415" y2="7" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" class="laser-stream-left" />
-  <line x1="160" y1="17" x2="420" y2="17" stroke="#67E8F9" stroke-opacity="0.3" stroke-width="1" class="laser-stream-left" />
+  <!-- ==================== LEFT CONDUIT ==================== -->
+  <!-- Upper & Lower Micro-Rails -->
+  <line x1="80" y1="8" x2="415" y2="8" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1" class="laser-stream-left" />
+  <line x1="160" y1="22" x2="420" y2="22" stroke="#67E8F9" stroke-opacity="0.3" stroke-width="1" class="laser-stream-left" />
 
-  <!-- Left Pulsing Tactical Chevrons (Rushing to Center) -->
-  <path d="M 370 8 L 375 12 L 370 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c1" />
-  <path d="M 382 8 L 387 12 L 382 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c2" />
-  <path d="M 394 8 L 399 12 L 394 16" fill="none" stroke="#00DFD8" stroke-width="1.2" class="chevron-pulse c3" />
+  <!-- Left Main Heavy Beam -->
+  <line x1="10" y1="15" x2="425" y2="15" stroke="url(#divLaserLeft)" stroke-width="2" />
 
-  <!-- Left Graduation Scale Ticks -->
-  <line x1="330" y1="9" x2="330" y2="15" stroke="#00DFD8" stroke-opacity="0.6" stroke-width="1" />
-  <line x1="350" y1="10" x2="350" y2="14" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" />
-  <circle cx="310" cy="12" r="1.5" fill="#00DFD8" opacity="0.6" />
-  <circle cx="270" cy="12" r="1.5" fill="#00DFD8" opacity="0.4" />
+  <!-- Left Tactical Chevron Stream (Rushing to Core) -->
+  <path d="M 365 10 L 370 15 L 365 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c1" />
+  <path d="M 378 10 L 383 15 L 378 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c2" />
+  <path d="M 391 10 L 396 15 L 391 20" fill="none" stroke="#00DFD8" stroke-width="1.3" class="chevron-pulse c3" />
+  <path d="M 404 10 L 409 15 L 404 20" fill="none" stroke="#67E8F9" stroke-width="1.4" class="chevron-pulse c1" />
 
-  <!-- Right Main Beam -->
-  <line x1="475" y1="12" x2="890" y2="12" stroke="url(#divLaserRight)" stroke-width="1.8" />
-  <!-- Right Auxiliary High-Velocity Energy Stream -->
-  <line x1="485" y1="7" x2="820" y2="7" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" class="laser-stream-right" />
-  <line x1="480" y1="17" x2="740" y2="17" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1" class="laser-stream-right" />
+  <!-- Left Calibration Scale & Coordinate Ticks -->
+  <line x1="310" y1="11" x2="310" y2="19" stroke="#00DFD8" stroke-opacity="0.6" stroke-width="1" />
+  <line x1="330" y1="12" x2="330" y2="18" stroke="#00DFD8" stroke-opacity="0.4" stroke-width="1" />
+  <line x1="350" y1="13" x2="350" y2="17" stroke="#00DFD8" stroke-opacity="0.3" stroke-width="1" />
+  <circle cx="280" cy="15" r="1.5" fill="#00DFD8" opacity="0.6" />
+  <circle cx="240" cy="15" r="1.5" fill="#00DFD8" opacity="0.4" />
+  <circle cx="200" cy="15" r="1.5" fill="#00DFD8" opacity="0.2" />
 
-  <!-- Right Pulsing Tactical Chevrons (Rushing to Center) -->
-  <path d="M 530 8 L 525 12 L 530 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c1" />
-  <path d="M 518 8 L 513 12 L 518 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c2" />
-  <path d="M 506 8 L 501 12 L 506 16" fill="none" stroke="#A855F7" stroke-width="1.2" class="chevron-pulse c3" />
+  <!-- ==================== RIGHT CONDUIT ==================== -->
+  <!-- Upper & Lower Micro-Rails -->
+  <line x1="485" y1="8" x2="820" y2="8" stroke="#7701D0" stroke-opacity="0.35" stroke-width="1" class="laser-stream-right" />
+  <line x1="480" y1="22" x2="740" y2="22" stroke="#A855F7" stroke-opacity="0.3" stroke-width="1" class="laser-stream-right" />
 
-  <!-- Right Graduation Scale Ticks -->
-  <line x1="570" y1="9" x2="570" y2="15" stroke="#7701D0" stroke-opacity="0.6" stroke-width="1" />
-  <line x1="550" y1="10" x2="550" y2="14" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" />
-  <circle cx="590" cy="12" r="1.5" fill="#7701D0" opacity="0.6" />
-  <circle cx="630" cy="12" r="1.5" fill="#7701D0" opacity="0.4" />
+  <!-- Right Main Heavy Beam -->
+  <line x1="475" y1="15" x2="890" y2="15" stroke="url(#divLaserRight)" stroke-width="2" />
 
-  <!-- CENTERPIECE: 3D GLASS POD + DUAL COUNTER-ROTATING HUD RETICLES -->
+  <!-- Right Tactical Chevron Stream (Rushing to Core) -->
+  <path d="M 535 10 L 530 15 L 535 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c1" />
+  <path d="M 522 10 L 517 15 L 522 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c2" />
+  <path d="M 509 10 L 504 15 L 509 20" fill="none" stroke="#A855F7" stroke-width="1.3" class="chevron-pulse c3" />
+  <path d="M 496 10 L 491 15 L 496 20" fill="none" stroke="#E879F9" stroke-width="1.4" class="chevron-pulse c1" />
+
+  <!-- Right Calibration Scale & Coordinate Ticks -->
+  <line x1="590" y1="11" x2="590" y2="19" stroke="#7701D0" stroke-opacity="0.6" stroke-width="1" />
+  <line x1="570" y1="12" x2="570" y2="18" stroke="#7701D0" stroke-opacity="0.4" stroke-width="1" />
+  <line x1="550" y1="13" x2="550" y2="17" stroke="#7701D0" stroke-opacity="0.3" stroke-width="1" />
+  <circle cx="620" cy="15" r="1.5" fill="#7701D0" opacity="0.6" />
+  <circle cx="660" cy="15" r="1.5" fill="#7701D0" opacity="0.4" />
+  <circle cx="700" cy="15" r="1.5" fill="#7701D0" opacity="0.2" />
+
+  <!-- ==================== CENTERPIECE: 3D HOLOGRAPHIC QUANTUM COLLIDER ==================== -->
   
-  <!-- Radiating Plasma Energy Halo Ring -->
-  <circle cx="450" cy="12" r="4" fill="none" stroke="#00DFD8" class="plasma-ring" />
-  
-  <!-- Outer Diamond Reticle (Clockwise Rotation) -->
+  <!-- Radiating Energy Ripple Wave -->
+  <circle cx="450" cy="15" r="4" fill="none" stroke="#00DFD8" class="plasma-ring" />
+  <circle cx="450" cy="15" r="4" fill="none" stroke="#A855F7" class="plasma-ring" style="animation-delay: -1s;" />
+
+  <!-- Outer Hexagonal 3D Glass Shield (12s SMIL Clockwise Rotation) -->
   <g>
-    <rect x="442" y="4" width="16" height="16" fill="rgba(15, 23, 42, 0.8)" stroke="#00DFD8" stroke-width="1.4" rx="1" />
-    <animateTransform attributeName="transform" type="rotate" from="0 450 12" to="360 450 12" dur="8s" repeatCount="indefinite" />
+    <polygon points="450,2 463,8 463,22 450,28 437,22 437,8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.7)" stroke-width="1.3" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 15" to="360 450 15" dur="12s" repeatCount="indefinite" />
   </g>
 
-  <!-- Inner Octagon Reticle (Counter-Clockwise Rotation) -->
+  <!-- Mid Diamond Bezel (6s SMIL Counter-Clockwise Rotation) -->
   <g>
-    <rect x="445" y="7" width="10" height="10" fill="rgba(119, 1, 208, 0.3)" stroke="#A855F7" stroke-width="1.2" />
-    <animateTransform attributeName="transform" type="rotate" from="360 450 12" to="0 450 12" dur="5s" repeatCount="indefinite" />
+    <rect x="442" y="7" width="16" height="16" fill="rgba(119, 1, 208, 0.25)" stroke="#A855F7" stroke-width="1.3" rx="1.5" />
+    <animateTransform attributeName="transform" type="rotate" from="360 450 15" to="0 450 15" dur="6s" repeatCount="indefinite" />
   </g>
 
-  <!-- Central Supercharged Plasma Node -->
-  <circle cx="450" cy="12" r="3" fill="url(#coreAura)" class="plasma-core" />
+  <!-- Inner Octagon Reticle (3s SMIL Clockwise Rotation) -->
+  <g>
+    <rect x="445" y="10" width="10" height="10" fill="none" stroke="#00DFD8" stroke-width="1.2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 15" to="360 450 15" dur="3s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Central Supercharged Plasma Node with Ambient Volumetric Aura -->
+  <circle cx="450" cy="15" r="4" fill="url(#divCoreAura)" class="plasma-core" />
 </svg>
