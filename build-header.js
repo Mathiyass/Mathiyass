@@ -1,7 +1,12 @@
 const fs = require('fs');
+const path = require('path');
 const https = require('https');
 
-// URL of the exact photo used in the portfolio
+const assetsDir = path.join(__dirname, 'assets');
+
+// =========================================================================
+// 1. HEADER.SVG: 32 Satellites on 12 Planes + 600 Particles
+// =========================================================================
 const imageUrl = 'https://pub-5f6d2fdae69b4366a0b8ce890c20cb8d.r2.dev/assets/assets/img/profile_photo/me.png';
 
 https.get(imageUrl, (res) => {
@@ -14,8 +19,8 @@ https.get(imageUrl, (res) => {
         const width = 1600;
         const height = 900;
 
-        // Generate 550 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
-        const particles = Array.from({ length: 550 }).map((_, i) => {
+        // 600 3D floating cosmic particles with continuous smooth X/Y drift
+        const particles = Array.from({ length: 600 }).map((_, i) => {
             const x = Math.random() * width;
             const y = Math.random() * height;
             const r = Math.random() * 2.2 + 0.3;
@@ -301,7 +306,7 @@ https.get(imageUrl, (res) => {
     </ellipse>
   </g>
 
-  <!-- 28 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
+  <!-- 32 Orbiting 3D Photon Satellites around Avatar in Spatial Perspective -->
   <g>
     <circle cx="${width / 2}" cy="265" r="4.5" fill="#FFFFFF" filter="drop-shadow(0 0 12px #00DFD8)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 420" to="360 ${width / 2} 420" dur="6s" repeatCount="indefinite" />
@@ -442,10 +447,30 @@ https.get(imageUrl, (res) => {
       <animateTransform attributeName="transform" type="rotate" from="225 ${width / 2} 420" to="-135 ${width / 2} 420" dur="4.1s" repeatCount="indefinite" />
     </circle>
   </g>
+  <g>
+    <circle cx="${width / 2 + 350}" cy="420" r="2" fill="#38BDF8" filter="drop-shadow(0 0 4px #0284C7)">
+      <animateTransform attributeName="transform" type="rotate" from="105 ${width / 2} 420" to="465 ${width / 2} 420" dur="5.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 350}" cy="420" r="2" fill="#A855F7" filter="drop-shadow(0 0 4px #7C3AED)">
+      <animateTransform attributeName="transform" type="rotate" from="285 ${width / 2} 420" to="-75 ${width / 2} 420" dur="5.8s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2}" cy="200" r="2" fill="#10B981" filter="drop-shadow(0 0 4px #059669)">
+      <animateTransform attributeName="transform" type="rotate" from="165 ${width / 2} 420" to="525 ${width / 2} 420" dur="4.6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2}" cy="640" r="2" fill="#F59E0B" filter="drop-shadow(0 0 4px #D97706)">
+      <animateTransform attributeName="transform" type="rotate" from="345 ${width / 2} 420" to="-15 ${width / 2} 420" dur="4.6s" repeatCount="indefinite" />
+    </circle>
+  </g>
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
-  <!-- 550 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
+  <!-- 600 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
   <g>
     ${particles}
   </g>
@@ -519,6 +544,6 @@ https.get(imageUrl, (res) => {
         `;
 
         fs.writeFileSync('header.svg', svg);
-        console.log("Successfully created 28-satellite supreme header.svg!");
+        console.log("Successfully created 32-satellite supreme header.svg!");
     });
 });
