@@ -231,7 +231,7 @@
 
 <!-- REAL-TIME CONTRIBUTION VELOCITY GRAPH -->
 <a href="https://github.com/Mathiyass">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Mathiyass&theme=react-dark&bg_color=0D1117&color=00DFD8&line=00DFD8&point=7701D0&area=true&hide_border=false&border_color=30363d" alt="Contribution Velocity Wave" width="100%" />
+  <img src="./assets/activity-wave.svg" alt="Contribution Velocity Wave" width="100%" />
 </a>
 
 <br/><br/>
