@@ -250,6 +250,13 @@ https.get(imageUrl, (res) => {
     </ellipse>
   </g>
 
+  <!-- 3D Tilted Gyroscope Ring 4 (Inclined 135deg, 5s Counter-Clockwise Rotation) -->
+  <g>
+    <ellipse cx="${width / 2}" cy="280" rx="180" ry="60" fill="none" stroke="rgba(245, 158, 11, 0.35)" stroke-width="1.2" stroke-dasharray="4, 6">
+      <animateTransform attributeName="transform" type="rotate" from="135 ${width / 2} 280" to="-225 ${width / 2} 280" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+
   <!-- Orbiting 3D Photon Satellites around Avatar -->
   <g>
     <circle cx="${width / 2}" cy="160" r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 8px #00DFD8)">
@@ -264,6 +271,11 @@ https.get(imageUrl, (res) => {
   <g>
     <circle cx="${width / 2 + 180}" cy="280" r="3" fill="#34D399" filter="drop-shadow(0 0 6px #10B981)">
       <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="${width / 2 - 160}" cy="280" r="3" fill="#FBBF24" filter="drop-shadow(0 0 6px #F59E0B)">
+      <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="5s" repeatCount="indefinite" />
     </circle>
   </g>
 
