@@ -7,9 +7,9 @@
 
 <br/><br/>
 
-<!-- DYNAMIC TYPING SVG BANNER -->
+<!-- DYNAMIC TYPING HUD BANNER -->
 <a href="https://mathiya.cc">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=16&duration=2500&pause=1000&color=00DFD8&center=true&vCenter=true&multiline=false&width=750&height=40&lines=LEAD+SYSTEMS+ARCHITECT+%26+AI+SPECIALIST;SCALABLE+MULTI-AGENT+AI+ECOSYSTEMS+(SIVION);LOW-LATENCY+WINDOWS+KERNEL+TUNING+(MA+OPTIMIZER);WEBGL+2.0+%26+GLSL+GPGPU+COMPUTE+SHADERS" alt="Typing SVG" />
+  <img src="./assets/typing-banner.svg" alt="Mathiya Systems Typing Banner" width="100%" />
 </a>
 
 <br/><br/>
