@@ -16,9 +16,9 @@
 
     <!-- Clip Paths for Typewriter Reveal -->
     <clipPath id="clip1">
-      <rect x="220" y="0" width="0" height="42">
+      <rect x="180" y="0" width="0" height="42">
         <animate attributeName="width" 
-                 values="0; 520; 520; 0; 0; 0; 0; 0; 0; 0; 0; 0" 
+                 values="0; 580; 580; 0; 0; 0; 0; 0; 0; 0; 0; 0" 
                  keyTimes="0; 0.08; 0.22; 0.25; 0.26; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
                  dur="16s" 
                  repeatCount="indefinite" />
@@ -26,9 +26,9 @@
     </clipPath>
 
     <clipPath id="clip2">
-      <rect x="220" y="0" width="0" height="42">
+      <rect x="180" y="0" width="0" height="42">
         <animate attributeName="width" 
-                 values="0; 0; 0; 520; 520; 0; 0; 0; 0; 0; 0; 0" 
+                 values="0; 0; 0; 580; 580; 0; 0; 0; 0; 0; 0; 0" 
                  keyTimes="0; 0.25; 0.26; 0.34; 0.47; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
                  dur="16s" 
                  repeatCount="indefinite" />
@@ -36,9 +36,9 @@
     </clipPath>
 
     <clipPath id="clip3">
-      <rect x="220" y="0" width="0" height="42">
+      <rect x="180" y="0" width="0" height="42">
         <animate attributeName="width" 
-                 values="0; 0; 0; 0; 0; 520; 520; 0; 0; 0; 0; 0" 
+                 values="0; 0; 0; 0; 0; 580; 580; 0; 0; 0; 0; 0" 
                  keyTimes="0; 0.50; 0.51; 0.52; 0.53; 0.59; 0.72; 0.75; 0.76; 0.98; 0.99; 1" 
                  dur="16s" 
                  repeatCount="indefinite" />
@@ -46,9 +46,9 @@
     </clipPath>
 
     <clipPath id="clip4">
-      <rect x="220" y="0" width="0" height="42">
+      <rect x="180" y="0" width="0" height="42">
         <animate attributeName="width" 
-                 values="0; 0; 0; 0; 0; 0; 0; 520; 520; 0; 0; 0" 
+                 values="0; 0; 0; 0; 0; 0; 0; 580; 580; 0; 0; 0" 
                  keyTimes="0; 0.75; 0.76; 0.77; 0.78; 0.84; 0.97; 0.99; 0.995; 0.998; 0.999; 1" 
                  dur="16s" 
                  repeatCount="indefinite" />
@@ -70,7 +70,7 @@
         fill: #FFFFFF;
       }
       .cursor-blink {
-        animation: curBlink 0.8s step-end infinite;
+        animation: curBlink 0.7s step-end infinite;
       }
       @keyframes curBlink {
         0%, 100% { opacity: 1; }
@@ -92,46 +92,40 @@
   <!-- Left Status & Terminal Prompt -->
   <g transform="translate(18, 25)">
     <circle cx="0" cy="-3" r="3.5" fill="#10B981" class="beacon-dot" />
-    <text x="14" y="0" class="term-prompt">SYS://CORE/EXEC ❯</text>
+    <text x="14" y="0" class="term-prompt">SYS://PROMPT ❯</text>
   </g>
 
   <!-- Phrase 1 (Cyan Theme) -->
   <g clip-path="url(#clip1)">
-    <text x="220" y="25" class="type-line" fill="#00DFD8">
+    <text x="180" y="25" class="type-line" fill="#00DFD8">
       LEAD SYSTEMS ARCHITECT &amp; AI SPECIALIST <tspan fill="#38BDF8">[mathiya.cc]</tspan>
     </text>
   </g>
 
   <!-- Phrase 2 (Purple Theme) -->
   <g clip-path="url(#clip2)">
-    <text x="220" y="25" class="type-line" fill="#E879F9">
+    <text x="180" y="25" class="type-line" fill="#E879F9">
       SCALABLE MULTI-AGENT AI ECOSYSTEMS <tspan fill="#C084FC">[SIVION SWARMS]</tspan>
     </text>
   </g>
 
   <!-- Phrase 3 (Emerald Theme) -->
   <g clip-path="url(#clip3)">
-    <text x="220" y="25" class="type-line" fill="#34D399">
+    <text x="180" y="25" class="type-line" fill="#34D399">
       LOW-LATENCY WINDOWS KERNEL TUNING <tspan fill="#10B981">[MA OPTIMIZER]</tspan>
     </text>
   </g>
 
   <!-- Phrase 4 (Amber & WebGL Theme) -->
   <g clip-path="url(#clip4)">
-    <text x="220" y="25" class="type-line" fill="#FBBF24">
+    <text x="180" y="25" class="type-line" fill="#FBBF24">
       WEBGL 2.0 &amp; GLSL GPGPU COMPUTE SHADERS <tspan fill="#F59E0B">[3D SPATIAL]</tspan>
     </text>
   </g>
 
-  <!-- Blinking Terminal Block Cursor -->
-  <g>
-    <!-- Dynamic Cursor Tracker -->
-    <text x="740" y="25" fill="#00DFD8" font-family="'Fira Code', monospace" font-size="14" font-weight="700" class="cursor-blink">█</text>
-  </g>
-
-  <!-- Right Telemetry Badge -->
-  <g transform="translate(760, 24)">
-    <text x="0" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681">60 FPS</text>
-    <circle cx="56" cy="-3" r="2.5" fill="#00DFD8" />
+  <!-- Right Telemetry Badge & Live Beacon -->
+  <g transform="translate(775, 25)">
+    <circle cx="0" cy="-3" r="3" fill="#00DFD8" class="beacon-dot" />
+    <text x="12" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681">LIVE</text>
   </g>
 </svg>
