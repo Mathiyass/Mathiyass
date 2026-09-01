@@ -2,15 +2,15 @@
   <defs>
     <!-- 3D Glass Chassis Gradient -->
     <linearGradient id="deckGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="deckSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -23,24 +23,24 @@
 
     <!-- 3D Layer Face Gradients -->
     <linearGradient id="topFaceL1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.2" />
     </linearGradient>
     <linearGradient id="topFaceL2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#007CF0" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#007CF0" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#007CF0" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#007CF0" stop-opacity="0.2" />
     </linearGradient>
     <linearGradient id="topFaceL3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#7701D0" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0.2" />
     </linearGradient>
     <linearGradient id="topFaceL4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10B981" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#059669" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.2" />
     </linearGradient>
     <linearGradient id="topFaceL5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.55" />
-      <stop offset="100%" stop-color="#D97706" stop-opacity="0.15" />
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.2" />
     </linearGradient>
 
     <style>
@@ -144,7 +144,7 @@
   <g transform="translate(300, 42)">
     <!-- L1 Pod -->
     <g transform="translate(0, 0)">
-      <rect x="0" y="0" width="570" height="24" rx="6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1" />
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1" />
       <circle cx="12" cy="12" r="3.5" fill="#00DFD8" />
       <text x="24" y="15" class="h-layer-tag" fill="#00DFD8">L1 // SPATIAL &amp; SHADERS</text>
       <text x="165" y="15" class="h-layer-name">WebGL 2.0 • Three.js • Custom GLSL Compute Shaders • 144 FPS @ 4K</text>
@@ -153,7 +153,7 @@
 
     <!-- L2 Pod -->
     <g transform="translate(0, 28)">
-      <rect x="0" y="0" width="570" height="24" rx="6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(0, 124, 240, 0.35)" stroke-width="1" />
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 124, 240, 0.45)" stroke-width="1" />
       <circle cx="12" cy="12" r="3.5" fill="#007CF0" />
       <text x="24" y="15" class="h-layer-tag" fill="#38BDF8">L2 // CONCURRENT UI</text>
       <text x="165" y="15" class="h-layer-name">Next.js 16 (Turbopack) • React 19 • TypeScript 5 (Strict) • Tailwind</text>
@@ -162,7 +162,7 @@
 
     <!-- L3 Pod -->
     <g transform="translate(0, 56)">
-      <rect x="0" y="0" width="570" height="24" rx="6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1" />
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1" />
       <circle cx="12" cy="12" r="3.5" fill="#A855F7" />
       <text x="24" y="15" class="h-layer-tag" fill="#C084FC">L3 // AGENTIC INTELLIGENCE</text>
       <text x="165" y="15" class="h-layer-name">SIVION Multi-Agent Swarms • pgvector Hybrid RAG • Python 3.12</text>
@@ -171,7 +171,7 @@
 
     <!-- L4 Pod -->
     <g transform="translate(0, 84)">
-      <rect x="0" y="0" width="570" height="24" rx="6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(16, 185, 129, 0.35)" stroke-width="1" />
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1" />
       <circle cx="12" cy="12" r="3.5" fill="#10B981" />
       <text x="24" y="15" class="h-layer-tag" fill="#34D399">L4 // DISTRIBUTED BACKEND</text>
       <text x="165" y="15" class="h-layer-name">FastAPI Async • Bun Runtime • Supabase Realtime • Docker • K8s</text>
@@ -180,7 +180,7 @@
 
     <!-- L5 Pod -->
     <g transform="translate(0, 112)">
-      <rect x="0" y="0" width="570" height="24" rx="6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(245, 158, 11, 0.35)" stroke-width="1" />
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(245, 158, 11, 0.45)" stroke-width="1" />
       <circle cx="12" cy="12" r="3.5" fill="#F59E0B" />
       <text x="24" y="15" class="h-layer-tag" fill="#FBBF24">L5 // LOW-LATENCY KERNEL</text>
       <text x="165" y="15" class="h-layer-name">MA-Optimizer • C++20 • Windows API • 0.42ms Sub-Millisecond Dispatch</text>

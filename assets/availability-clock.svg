@@ -2,15 +2,15 @@
   <defs>
     <!-- 3D Glass Background Gradient -->
     <linearGradient id="clockGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge -->
     <linearGradient id="clockSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -53,10 +53,13 @@
 
   <!-- Zone 1: Colombo (LK) -->
   <g transform="translate(30, 42)">
-    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" />
-    <path d="M 8 1 L 257 1 L 264 8 L 1 8 Z" fill="url(#clockSpecular)" />
-    <!-- Clock Dial 1 with SMIL Center Rotation -->
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
+    <!-- 3D Tilted Gyro Chronometer 1 -->
     <g transform="translate(10, 3)">
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4">
+        <animateTransform attributeName="transform" type="rotate" from="0 18 18" to="360 18 18" dur="6s" repeatCount="indefinite" />
+      </ellipse>
       <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#00DFD8" stroke-width="1.2" />
       <line x1="18" y1="5" x2="18" y2="7" stroke="#00DFD8" stroke-width="1" />
       <line x1="18" y1="29" x2="18" y2="31" stroke="#00DFD8" stroke-width="1" />
@@ -79,10 +82,13 @@
 
   <!-- Zone 2: Birmingham (UK) -->
   <g transform="translate(315, 42)">
-    <rect x="0" y="0" width="265" height="42" rx="8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" />
-    <path d="M 8 1 L 257 1 L 264 8 L 1 8 Z" fill="url(#clockSpecular)" />
-    <!-- Clock Dial 2 with SMIL Center Rotation -->
+    <polygon points="6,0 259,0 265,6 265,36 259,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 259 1 L 264 6 L 1 6 Z" fill="url(#clockSpecular)" />
+    <!-- 3D Tilted Gyro Chronometer 2 -->
     <g transform="translate(10, 3)">
+      <ellipse cx="18" cy="18" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4">
+        <animateTransform attributeName="transform" type="rotate" from="360 18 18" to="0 18 18" dur="6s" repeatCount="indefinite" />
+      </ellipse>
       <circle cx="18" cy="18" r="14" fill="#090D14" stroke="#A855F7" stroke-width="1.2" />
       <line x1="18" y1="5" x2="18" y2="7" stroke="#A855F7" stroke-width="1" />
       <line x1="18" y1="29" x2="18" y2="31" stroke="#A855F7" stroke-width="1" />
@@ -105,8 +111,8 @@
 
   <!-- Zone 3: Engagement Status -->
   <g transform="translate(600, 42)">
-    <rect x="0" y="0" width="270" height="42" rx="8" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.2" />
-    <path d="M 8 1 L 262 1 L 269 8 L 1 8 Z" fill="url(#clockSpecular)" />
+    <polygon points="6,0 264,0 270,6 270,36 264,42 6,42 0,36 0,6" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
+    <path d="M 6 1 L 264 1 L 269 6 L 1 6 Z" fill="url(#clockSpecular)" />
     <g transform="translate(12, 10)">
       <circle cx="6" cy="6" r="4" fill="#10B981" />
       <circle cx="6" cy="6" r="4" fill="none" stroke="#10B981" class="ping-pulse" />

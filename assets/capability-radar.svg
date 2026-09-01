@@ -2,15 +2,15 @@
   <defs>
     <!-- 3D Glass Chassis Gradient -->
     <linearGradient id="radarGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="radarSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -23,8 +23,8 @@
 
     <!-- Radar Sweep Gradient -->
     <linearGradient id="radarSweepSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.65" />
-      <stop offset="60%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.75" />
+      <stop offset="60%" stop-color="#00DFD8" stop-opacity="0.15" />
       <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
     </linearGradient>
 
@@ -37,17 +37,10 @@
       .radar-ping-node {
         animation: pingNode 2s ease-in-out infinite alternate;
       }
-      .radar-reticle-spin {
-        animation: spinReticle 30s linear infinite;
-      }
 
       @keyframes pingNode {
         0% { opacity: 0.4; }
         100% { opacity: 1; filter: drop-shadow(0 0 6px #00DFD8); }
-      }
-      @keyframes spinReticle {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
       }
     </style>
   </defs>
@@ -64,10 +57,23 @@
     <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
   </g>
 
-  <!-- Circular 3D Radar HUD (Left) -->
+  <!-- Circular 3D Radar HUD with Tilted Gyroscope (Left) -->
   <g transform="translate(45, 42)">
+    <!-- 3D Tilted Gyroscope Ring (10s SMIL Rotation) -->
+    <g>
+      <ellipse cx="60" cy="60" rx="60" ry="30" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" stroke-dasharray="6, 6">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="10s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <!-- Orbiting Satellite along Gyro -->
+    <g>
+      <circle cx="60" cy="30" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="4s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
     <!-- Concentric Range Rings -->
-    <circle cx="60" cy="60" r="54" fill="rgba(15, 23, 42, 0.6)" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1.2" />
+    <circle cx="60" cy="60" r="54" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1.2" />
     <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" stroke-dasharray="4, 4" />
     <circle cx="60" cy="60" r="22" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" />
 
@@ -82,7 +88,7 @@
     <text x="0" y="63" class="r-coord">270°</text>
 
     <!-- Radar Polygon (Pentagon of Capabilities) -->
-    <polygon points="60,16 100,42 88,96 32,96 20,42" fill="rgba(0, 223, 216, 0.2)" stroke="#00DFD8" stroke-width="1.5" />
+    <polygon points="60,16 100,42 88,96 32,96 20,42" fill="rgba(0, 223, 216, 0.25)" stroke="#00DFD8" stroke-width="1.5" />
 
     <!-- 360° Continuous Rotating Radar Sweep Beam with Pure SMIL Rotation -->
     <g>

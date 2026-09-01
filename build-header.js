@@ -19,27 +19,27 @@ https.get(imageUrl, (res) => {
   <defs>
     <!-- Volumetric Ambient Nebula Glows -->
     <radialGradient id="nebula-cyan" cx="18%" cy="25%" r="60%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.36" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.38" />
       <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.10" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
     
     <radialGradient id="nebula-purple" cx="82%" cy="75%" r="60%">
-      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.40" />
+      <stop offset="0%" stop-color="#7701D0" stop-opacity="0.42" />
       <stop offset="50%" stop-color="#7701D0" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <radialGradient id="avatar-center-glow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.30" />
-      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.20" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.35" />
+      <stop offset="45%" stop-color="#7701D0" stop-opacity="0.22" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </radialGradient>
 
     <!-- 3D Liquid Glass Gradients -->
     <linearGradient id="glass-chassis-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111827" stop-opacity="0.92" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
       <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
@@ -68,7 +68,7 @@ https.get(imageUrl, (res) => {
 
     <!-- Perspective Horizon Gradient -->
     <linearGradient id="horizon-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.22" />
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.25" />
       <stop offset="60%" stop-color="#7701D0" stop-opacity="0.08" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
@@ -126,7 +126,7 @@ https.get(imageUrl, (res) => {
       }
 
       .image-layer {
-        filter: drop-shadow(0 0 45px rgba(0, 223, 216, 0.35)) drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+        filter: drop-shadow(0 0 50px rgba(0, 223, 216, 0.4)) drop-shadow(0 20px 40px rgba(0,0,0,0.9));
         transform-box: fill-box;
         transform-origin: center;
         animation: breathe 5s infinite ease-in-out;
@@ -181,6 +181,14 @@ https.get(imageUrl, (res) => {
         0% { opacity: 0.4; transform: scale(0.9); }
         100% { opacity: 1; transform: scale(1.25); filter: drop-shadow(0 0 6px #10B981); }
       }
+      .laser-cable {
+        stroke-dasharray: 8, 12;
+        animation: cablePulse 1.2s linear infinite;
+      }
+      @keyframes cablePulse {
+        from { stroke-dashoffset: 20; }
+        to { stroke-dashoffset: 0; }
+      }
     </style>
     
     <pattern id="scanline" width="6" height="6" patternUnits="userSpaceOnUse">
@@ -202,22 +210,38 @@ https.get(imageUrl, (res) => {
   <!-- Specular Top Edge Light Refraction -->
   <path d="M 18 5 L ${width - 18} 5 L ${width - 5} 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.8" />
 
+  <!-- Animated Laser Perimeter Stream -->
+  <polygon points="22,8 ${width - 22},8 ${width - 8},22 ${width - 8},${height - 22} ${width - 22},${height - 8} 22,${height - 8} 8,${height - 22} 8,22" fill="none" stroke="#00DFD8" stroke-opacity="0.35" stroke-width="1" class="laser-cable" />
+
   <!-- Perspective Horizon Grid at Bottom -->
   <polygon points="0,${height} ${width},${height} ${width - 200},440 200,440" fill="url(#horizon-grad)" opacity="0.45" />
   <line x1="0" y1="${height - 20}" x2="${width}" y2="${height - 20}" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" />
   <line x1="0" y1="${height - 60}" x2="${width}" y2="${height - 60}" stroke="rgba(0, 223, 216, 0.1)" stroke-width="1" />
 
-  <!-- Holographic Avatar Backdrop Reticle HUD with Pure Native SMIL Animations -->
+  <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="${width / 2}" cy="280" r="230" fill="url(#avatar-center-glow)" />
+
+  <!-- 3D Tilted Gyroscope Outer Ring (18s SMIL Clockwise Rotation) -->
   <g>
-    <circle cx="${width / 2}" cy="280" r="215" fill="none" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1.5" stroke-dasharray="14, 14" />
-    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="22s" repeatCount="indefinite" />
+    <ellipse cx="${width / 2}" cy="280" rx="240" ry="120" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.5" stroke-dasharray="16, 12" />
+    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="18s" repeatCount="indefinite" />
+  </g>
+
+  <!-- 3D Tilted Gyroscope Reverse Ring (12s SMIL Counter-Clockwise Rotation) -->
+  <g>
+    <ellipse cx="${width / 2}" cy="280" rx="200" ry="100" fill="none" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.4" stroke-dasharray="10, 14" />
+    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="12s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Orbiting 3D Photon Satellites around Avatar -->
+  <g>
+    <circle cx="${width / 2}" cy="160" r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 8px #00DFD8)" />
+    <animateTransform attributeName="transform" type="rotate" from="0 ${width / 2} 280" to="360 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
   </g>
   <g>
-    <circle cx="${width / 2}" cy="280" r="175" fill="none" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1.2" stroke-dasharray="8, 16" />
-    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="15s" repeatCount="indefinite" />
+    <circle cx="${width / 2}" cy="400" r="3.5" fill="#E879F9" filter="drop-shadow(0 0 8px #A855F7)" />
+    <animateTransform attributeName="transform" type="rotate" from="360 ${width / 2} 280" to="0 ${width / 2} 280" dur="6s" repeatCount="indefinite" />
   </g>
-  <circle cx="${width / 2}" cy="280" r="135" fill="none" stroke="rgba(0, 223, 216, 0.25)" stroke-width="1" />
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
@@ -250,18 +274,20 @@ https.get(imageUrl, (res) => {
     <path d="M 0 -35 L 0 0 L -35 0" fill="none" stroke="#7701D0" stroke-width="2.2" />
   </g>
 
-  <!-- HUD Glass Plate: Top Left -->
+  <!-- HUD Glass Plate: Top Left (3D Chamfered Glass Chassis) -->
   <g transform="translate(38, 48)">
-    <polygon points="6,0 360,0 368,8 368,76 360,84 6,84 0,78 0,6" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" />
+    <polygon points="6,0 360,0 368,8 368,76 360,84 6,84 0,78 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.5)" stroke-width="1.3" />
+    <path d="M 6 1 L 360 1 L 367 7 L 1 7 Z" fill="url(#specular-top-edge)" />
     <circle cx="16" cy="22" r="4" fill="#10B981" class="beacon" />
     <text x="28" y="26" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // CORE TELEMETRY</text>
     <text x="16" y="48" class="hud-text-left">[CBO: 6.9271° N, 79.8612° E] • [BHX: 52.4862° N]</text>
     <text x="16" y="70" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • KERNEL TUNING</text>
   </g>
 
-  <!-- HUD Glass Plate: Top Right -->
+  <!-- HUD Glass Plate: Top Right (3D Chamfered Glass Chassis) -->
   <g transform="translate(${width - 406}, 48)">
-    <polygon points="8,0 362,0 368,6 368,78 362,84 8,84 0,76 0,8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" />
+    <polygon points="8,0 362,0 368,6 368,78 362,84 8,84 0,76 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.5)" stroke-width="1.3" />
+    <path d="M 8 1 L 362 1 L 367 6 L 1 6 Z" fill="url(#specular-top-edge)" />
     <text x="350" y="26" class="hud-text-right" fill="#00DFD8">MATHIYA.CC ↗ // OFFICIAL PORTAL</text>
     <text x="350" y="48" class="hud-text-right">LEAD SYSTEMS ARCHITECT</text>
     <text x="350" y="70" class="hud-text-right" fill="#C084FC">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
@@ -269,7 +295,7 @@ https.get(imageUrl, (res) => {
 
   <!-- 3D Glass Badge Center Top -->
   <g transform="translate(${width / 2}, 150)">
-    <polygon points="12,-16 220,-16 230,-6 230,12 220,20 -220,20 -230,12 -230,-6 -220,-16" fill="rgba(13, 17, 23, 0.9)" stroke="rgba(0, 223, 216, 0.6)" stroke-width="1.4" />
+    <polygon points="12,-16 220,-16 230,-6 230,12 220,20 -220,20 -230,12 -230,-6 -220,-16" fill="rgba(13, 17, 23, 0.92)" stroke="rgba(0, 223, 216, 0.7)" stroke-width="1.4" />
     <circle cx="-195" cy="2" r="3.5" fill="#00DFD8" style="animation: pulse 2s infinite;" />
     <text x="0" y="6" class="hud-text" fill="#00DFD8">LEAD SYSTEMS ARCHITECT // MATHIYA<tspan class="cursor" fill="#00DFD8">_</tspan></text>
   </g>

@@ -2,15 +2,15 @@
   <defs>
     <!-- 3D Glass Chassis Gradient -->
     <linearGradient id="blueGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="blueSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -25,7 +25,6 @@
       .bp-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
       .bp-node-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9.5px; font-weight: 700; fill: #FFFFFF; }
       .bp-node-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8px; fill: #8B949E; }
-      .bp-proto { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 7.5px; font-weight: 700; }
       
       .laser-conduit-h {
         stroke-dasharray: 6, 6;
@@ -77,59 +76,89 @@
   <line x1="450" y1="84" x2="450" y2="92" stroke="#A855F7" stroke-width="1.5" class="laser-conduit-v" />
   <line x1="740" y1="84" x2="740" y2="92" stroke="#10B981" stroke-width="1.5" class="laser-conduit-v" />
 
-  <!-- 6 Chamfered 3D Glass Subsystem Pods -->
+  <!-- 6 Chamfered 3D Glass Subsystem Pods with Gyroscopes -->
 
   <!-- Node 1: Multi-Agent AI Core -->
   <g transform="translate(40, 42)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#00DFD8" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#00DFD8" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">MULTI-AGENT AI CORE</text>
+    <text x="24" y="15" class="bp-node-title">MULTI-AGENT AI CORE</text>
     <text x="12" y="32" class="bp-node-sub">Autonomous LLM Swarms • Task Orchestration</text>
   </g>
 
   <!-- Node 2: Vector Embeddings & RAG -->
   <g transform="translate(330, 42)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#A855F7" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#A855F7" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">VECTOR EMBEDDINGS &amp; RAG</text>
+    <text x="24" y="15" class="bp-node-title">VECTOR EMBEDDINGS &amp; RAG</text>
     <text x="12" y="32" class="bp-node-sub">Hybrid Semantic Search • pgvector DB</text>
   </g>
 
   <!-- Node 3: Distributed Cloud Engine -->
   <g transform="translate(620, 42)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#10B981" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#10B981" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">DISTRIBUTED CLOUD ENGINE</text>
+    <text x="24" y="15" class="bp-node-title">DISTRIBUTED CLOUD ENGINE</text>
     <text x="12" y="32" class="bp-node-sub">FastAPI Async • Node.js / Bun Runtime</text>
   </g>
 
   <!-- Node 4: WebGL 2.0 & GLSL Shaders -->
   <g transform="translate(40, 94)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#00DFD8" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#00DFD8" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">WEBGL 2.0 &amp; GLSL SHADERS</text>
+    <text x="24" y="15" class="bp-node-title">WEBGL 2.0 &amp; GLSL SHADERS</text>
     <text x="12" y="32" class="bp-node-sub">Three.js • GPGPU Compute • 3D Spatial Canvas</text>
   </g>
 
   <!-- Node 5: Concurrent UI Architecture -->
   <g transform="translate(330, 94)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#0284C7" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#0284C7" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">CONCURRENT UI ARCHITECTURE</text>
+    <text x="24" y="15" class="bp-node-title">CONCURRENT UI ARCHITECTURE</text>
     <text x="12" y="32" class="bp-node-sub">Next.js 16 (Turbopack) • React 19 Strict</text>
   </g>
 
   <!-- Node 6: Storage & Realtime Stream -->
   <g transform="translate(620, 94)">
-    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.8)" stroke="#F59E0B" stroke-width="1.2" />
+    <polygon points="6,0 234,0 240,6 240,36 234,42 6,42 0,36 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="#F59E0B" stroke-width="1.2" />
     <path d="M 6 1 L 234 1 L 239 6 L 1 6 Z" fill="url(#blueSpecular)" />
+    <g>
+      <ellipse cx="12" cy="12" rx="8" ry="4" fill="none" stroke="#F59E0B" stroke-width="1" stroke-dasharray="2, 2">
+        <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="4s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
     <circle cx="12" cy="12" r="3" fill="#F59E0B" class="pulse-beacon-node" />
-    <text x="22" y="15" class="bp-node-title">STORAGE &amp; REALTIME STREAM</text>
+    <text x="24" y="15" class="bp-node-title">STORAGE &amp; REALTIME STREAM</text>
     <text x="12" y="32" class="bp-node-sub">PostgreSQL • Supabase • Redis Caching</text>
   </g>
 </svg>

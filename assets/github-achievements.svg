@@ -2,14 +2,14 @@
   <defs>
     <!-- Frosted Translucent Glass Gradient -->
     <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.90" />
-      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.80" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.95" />
+      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.94" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="cardSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.4" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
       <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
@@ -46,9 +46,9 @@
     </linearGradient>
 
     <style>
-      .b-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
-      .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
-      .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; letter-spacing: 1.2px; }
+      .b-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
+      .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1.2px; }
       
       .corner-tick { stroke-width: 1.5; }
       
@@ -76,7 +76,7 @@
     </style>
   </defs>
 
-  <!-- 5 3D Glassmorphic Badges with Isolated Positioning Coordinates -->
+  <!-- 5 3D Glassmorphic Podium Cards with Multi-Plane Gyroscopes -->
 
   <!-- Badge 1: Systems Architect -->
   <g transform="translate(10, 8)">
@@ -85,14 +85,21 @@
       <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(245, 158, 11, 0.15)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4">
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#FFE066" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #F59E0B)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🏛️</text>
-      <text x="84" y="60" text-anchor="middle" class="b-title">SYSTEMS ARCHITECT</text>
-      <text x="84" y="74" text-anchor="middle" class="b-sub">Distributed Scalability</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">SYSTEMS ARCHITECT</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Distributed Scalability</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#FBBF24">★ MASTER TIER ★</text>
     </g>
   </g>
@@ -104,14 +111,21 @@
       <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(0, 223, 216, 0.15)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4">
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#67E8F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🤖</text>
-      <text x="84" y="60" text-anchor="middle" class="b-title">MULTI-AGENT AI</text>
-      <text x="84" y="74" text-anchor="middle" class="b-sub">Swarm &amp; Tool RAG</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">MULTI-AGENT AI</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Swarm &amp; Tool RAG</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#00DFD8">★ MYTHIC TIER ★</text>
     </g>
   </g>
@@ -123,14 +137,21 @@
       <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(168, 85, 247, 0.15)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4">
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#E879F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🎮</text>
-      <text x="84" y="60" text-anchor="middle" class="b-title">WEBGL 2.0 &amp; GLSL</text>
-      <text x="84" y="74" text-anchor="middle" class="b-sub">3D Spatial &amp; Compute</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">WEBGL 2.0 &amp; GLSL</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">3D Spatial &amp; Compute</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#C084FC">★ OBSIDIAN TIER ★</text>
     </g>
   </g>
@@ -142,14 +163,21 @@
       <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(16, 185, 129, 0.15)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4">
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#6EE7B7" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #10B981)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">🚀</text>
-      <text x="84" y="60" text-anchor="middle" class="b-title">50+ DEPLOYMENTS</text>
-      <text x="84" y="74" text-anchor="middle" class="b-sub">High-Availability Cloud</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">50+ DEPLOYMENTS</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">High-Availability Cloud</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#34D399">★ DIAMOND TIER ★</text>
     </g>
   </g>
@@ -161,14 +189,21 @@
       <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
       <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick" />
       <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
       <g>
-        <circle cx="84" cy="28" r="17" fill="rgba(2, 132, 199, 0.15)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4">
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4">
           <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#7DD3FC" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #0284C7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
         </circle>
       </g>
       <text x="84" y="34" text-anchor="middle" font-size="16">⚡</text>
-      <text x="84" y="60" text-anchor="middle" class="b-title">OS KERNEL TUNER</text>
-      <text x="84" y="74" text-anchor="middle" class="b-sub">Low-Latency Engineering</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">OS KERNEL TUNER</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Low-Latency Engineering</text>
       <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#38BDF8">★ PLATINUM TIER ★</text>
     </g>
   </g>

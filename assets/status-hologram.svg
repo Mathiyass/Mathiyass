@@ -2,15 +2,15 @@
   <defs>
     <!-- 3D Glass Chassis Gradient -->
     <linearGradient id="holoGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#111726" stop-opacity="0.92" />
-      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.85" />
-      <stop offset="100%" stop-color="#06090E" stop-opacity="0.96" />
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
     </linearGradient>
 
     <!-- Top Specular Edge Highlight -->
     <linearGradient id="holoSpecularEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.38" />
-      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.10" />
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
       <stop offset="100%" stop-color="transparent" stop-opacity="0" />
     </linearGradient>
 
@@ -30,7 +30,7 @@
 
     <style>
       .h-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
-      .h-stat { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #FFFFFF; }
+      .h-stat { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; }
       .h-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
       .h-val { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 0.5px; }
       
@@ -84,10 +84,16 @@
 
   <!-- Metric Pod 1: AI Cognition -->
   <g transform="translate(24, 46)">
-    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" />
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
-    <text x="14" y="20" font-size="14">🧠</text>
-    <text x="36" y="20" class="h-stat">AI COGNITION</text>
+    <!-- 3D Mini Gyroscope -->
+    <g>
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <text x="14" y="24" font-size="13">🧠</text>
+    <text x="38" y="22" class="h-stat">AI COGNITION</text>
     <text x="14" y="38" class="h-sub">SIVION Multi-Agent Core</text>
     <text x="14" y="52" class="h-val" fill="#00DFD8">4/4 THREADS ACTIVE</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
@@ -96,10 +102,15 @@
 
   <!-- Metric Pod 2: Kernel Latency -->
   <g transform="translate(244, 46)">
-    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" />
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
-    <text x="14" y="20" font-size="14">⚡</text>
-    <text x="36" y="20" class="h-stat">KERNEL LATENCY</text>
+    <g>
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <text x="14" y="24" font-size="13">⚡</text>
+    <text x="38" y="22" class="h-stat">KERNEL LATENCY</text>
     <text x="14" y="38" class="h-sub">MA-Optimizer Engine</text>
     <text x="14" y="52" class="h-val" fill="#C084FC">0.42ms DISPATCH</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
@@ -108,10 +119,15 @@
 
   <!-- Metric Pod 3: WebGL Shaders -->
   <g transform="translate(464, 46)">
-    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.2" />
+    <polygon points="8,0 196,0 204,8 204,62 196,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 196 1 L 203 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
-    <text x="14" y="20" font-size="14">🎮</text>
-    <text x="36" y="20" class="h-stat">WEBGL SHADERS</text>
+    <g>
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <text x="14" y="24" font-size="13">🎮</text>
+    <text x="38" y="22" class="h-stat">WEBGL SHADERS</text>
     <text x="14" y="38" class="h-sub">Three.js &amp; GPGPU Shaders</text>
     <text x="14" y="52" class="h-val" fill="#34D399">&gt;144 FPS @ 4K COMPUTE</text>
     <rect x="14" y="58" width="176" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
@@ -120,10 +136,15 @@
 
   <!-- Metric Pod 4: Cloud Resilience -->
   <g transform="translate(684, 46)">
-    <polygon points="8,0 184,0 192,8 192,62 184,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(2, 132, 199, 0.4)" stroke-width="1.2" />
+    <polygon points="8,0 184,0 192,8 192,62 184,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.82)" stroke="rgba(2, 132, 199, 0.45)" stroke-width="1.2" />
     <path d="M 8 1 L 184 1 L 191 8 L 1 8 Z" fill="url(#holoSpecularEdge)" />
-    <text x="14" y="20" font-size="14">☁️</text>
-    <text x="36" y="20" class="h-stat">CLOUD RESILIENCY</text>
+    <g>
+      <ellipse cx="22" cy="20" rx="14" ry="7" fill="none" stroke="rgba(2, 132, 199, 0.4)" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 22 20" to="360 22 20" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <text x="14" y="24" font-size="13">☁️</text>
+    <text x="38" y="22" class="h-stat">CLOUD RESILIENCY</text>
     <text x="14" y="38" class="h-sub">FastAPI + Supabase Sync</text>
     <text x="14" y="52" class="h-val" fill="#38BDF8">99.99% UPTIME CLUSTER</text>
     <rect x="14" y="58" width="164" height="3.5" rx="1.75" fill="rgba(255, 255, 255, 0.06)" />
