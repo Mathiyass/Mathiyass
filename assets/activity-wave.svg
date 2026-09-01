@@ -36,9 +36,27 @@
       .node-pulse {
         animation: pulseNode 2s ease-in-out infinite alternate;
       }
+      .node-ripple {
+        animation: rippleOut 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+      }
+
+      .badge-glow {
+        animation: badgeShimmer 3s ease-in-out infinite alternate;
+      }
+
       @keyframes pulseNode {
         0% { r: 3.5; opacity: 0.7; }
-        100% { r: 6; opacity: 1; filter: drop-shadow(0 0 6px #00DFD8); }
+        100% { r: 6; opacity: 1; filter: drop-shadow(0 0 8px #00DFD8); }
+      }
+
+      @keyframes rippleOut {
+        0% { r: 4; opacity: 0.8; stroke-width: 1.5; }
+        100% { r: 16; opacity: 0; stroke-width: 0.5; }
+      }
+
+      @keyframes badgeShimmer {
+        0% { transform: translateY(0px); filter: drop-shadow(0 0 2px rgba(0, 223, 216, 0.3)); }
+        100% { transform: translateY(-2px); filter: drop-shadow(0 0 8px rgba(0, 223, 216, 0.8)); }
       }
     </style>
   </defs>
@@ -65,20 +83,30 @@
   <!-- Spline Wave Stroke Line -->
   <path d="M 24 105 C 80 110, 140 85, 200 95 C 260 105, 320 60, 380 50 C 440 40, 500 75, 560 65 C 620 55, 680 35, 740 45 C 800 55, 840 40, 876 35" fill="none" stroke="url(#waveStrokeGrad)" stroke-width="2.5" />
 
-  <!-- Key Activity Milestone Data Nodes -->
+  <!-- Key Activity Milestone Data Nodes with Ripple Rings -->
   <circle cx="200" cy="95" r="4" fill="#00DFD8" />
+
+  <!-- Milestone 1 -->
+  <circle cx="380" cy="50" r="4.5" fill="none" stroke="#007CF0" class="node-ripple" />
   <circle cx="380" cy="50" r="4.5" fill="#007CF0" class="node-pulse" />
+
   <circle cx="560" cy="65" r="4" fill="#7701D0" />
+
+  <!-- Milestone 2 -->
+  <circle cx="740" cy="45" r="5" fill="none" stroke="#00DFD8" class="node-ripple" />
   <circle cx="740" cy="45" r="5" fill="#00DFD8" class="node-pulse" />
+
+  <!-- Milestone 3 -->
+  <circle cx="876" cy="35" r="5" fill="none" stroke="#10B981" class="node-ripple" />
   <circle cx="876" cy="35" r="5" fill="#10B981" class="node-pulse" />
 
-  <!-- Peak Velocity Callout Badges -->
-  <g transform="translate(380, 26)">
+  <!-- Peak Velocity Callout Badges with Shimmer -->
+  <g transform="translate(380, 26)" class="badge-glow">
     <rect x="-42" y="0" width="84" height="18" rx="9" fill="#0D1117" stroke="#007CF0" stroke-width="1" />
     <text x="0" y="12" text-anchor="middle" class="w-meta" fill="#00DFD8">MA-Opt v11</text>
   </g>
 
-  <g transform="translate(740, 20)">
+  <g transform="translate(740, 20)" class="badge-glow">
     <rect x="-45" y="0" width="90" height="18" rx="9" fill="#0D1117" stroke="#00DFD8" stroke-width="1" />
     <text x="0" y="12" text-anchor="middle" class="w-meta" fill="#34D399">PEAK VELOCITY</text>
   </g>

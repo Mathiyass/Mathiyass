@@ -1,46 +1,63 @@
-<svg width="900" height="24" viewBox="0 0 900 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="20" viewBox="0 0 900 20" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="laserBeamSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
-      <stop offset="12%" stop-color="#00DFD8" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="1"/>
-      <stop offset="88%" stop-color="#7701D0" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
+    <linearGradient id="laserGradLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
+      <stop offset="70%" stop-color="#00DFD8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#FFFFFF" />
     </linearGradient>
 
-    <linearGradient id="laserGlowSupreme" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0"/>
-      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.5"/>
-      <stop offset="50%" stop-color="#00DFD8" stop-opacity="1"/>
-      <stop offset="75%" stop-color="#7701D0" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#7701D0" stop-opacity="0"/>
+    <linearGradient id="laserGradRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#7701D0" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
     </linearGradient>
 
     <style>
-      .beacon-div {
-        animation: pulseBeaconDiv 1.5s ease-in-out infinite alternate;
+      .spin-diamond {
+        transform-origin: 450px 10px;
+        animation: spinD 12s linear infinite;
       }
-      @keyframes pulseBeaconDiv {
-        0% { opacity: 0.6; transform: scale(0.9); }
-        100% { opacity: 1; transform: scale(1.3); filter: drop-shadow(0 0 8px #00DFD8); }
+      .core-pulse {
+        animation: pulseCore 1.5s ease-in-out infinite alternate;
+      }
+      .laser-dash {
+        stroke-dasharray: 4, 8;
+        animation: laserFlow 2s linear infinite;
+      }
+
+      @keyframes spinD {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseCore {
+        0% { r: 2; opacity: 0.7; }
+        100% { r: 4.5; opacity: 1; filter: drop-shadow(0 0 8px #00DFD8); }
+      }
+      @keyframes laserFlow {
+        from { stroke-dashoffset: 24; }
+        to { stroke-dashoffset: 0; }
       }
     </style>
   </defs>
 
-  <!-- Ambient Glow Line -->
-  <line x1="20" y1="12" x2="880" y2="12" stroke="url(#laserGlowSupreme)" stroke-width="4.5" opacity="0.6" />
-  
-  <!-- Main Laser Precision Beam -->
-  <line x1="10" y1="12" x2="890" y2="12" stroke="url(#laserBeamSupreme)" stroke-width="1.6" />
-  
-  <!-- Precision Circuit Graduation Ticks -->
-  <line x1="300" y1="8" x2="300" y2="16" stroke="#00DFD8" stroke-width="1.2" stroke-opacity="0.7" />
-  <line x1="360" y1="6" x2="360" y2="18" stroke="#00DFD8" stroke-width="1.5" stroke-opacity="0.9" />
-  <line x1="540" y1="6" x2="540" y2="18" stroke="#7701D0" stroke-width="1.5" stroke-opacity="0.9" />
-  <line x1="600" y1="8" x2="600" y2="16" stroke="#7701D0" stroke-width="1.2" stroke-opacity="0.7" />
-  
-  <!-- Center Diamond HUD Reticle -->
-  <polygon points="450,3 460,12 450,21 440,12" fill="#00DFD8" />
-  <polygon points="450,6 456,12 450,18 444,12" fill="#0D1117" />
-  <circle cx="450" cy="12" r="2.5" fill="#FFFFFF" class="beacon-div" />
+  <!-- Left Converging Laser Beam -->
+  <line x1="20" y1="10" x2="430" y2="10" stroke="url(#laserGradLeft)" stroke-width="1.5" />
+  <line x1="120" y1="6" x2="410" y2="6" stroke="#00DFD8" stroke-opacity="0.3" stroke-width="1" class="laser-dash" />
+
+  <!-- Right Converging Laser Beam -->
+  <line x1="470" y1="10" x2="880" y2="10" stroke="url(#laserGradRight)" stroke-width="1.5" />
+  <line x1="490" y1="14" x2="780" y2="14" stroke="#7701D0" stroke-opacity="0.3" stroke-width="1" class="laser-dash" />
+
+  <!-- Central Diamond HUD Reticle with Spin & Pulse -->
+  <g class="spin-diamond">
+    <rect x="444" y="4" width="12" height="12" fill="none" stroke="#00DFD8" stroke-width="1.2" />
+    <rect x="446" y="6" width="8" height="8" fill="none" stroke="#7701D0" stroke-width="1" />
+  </g>
+  <circle cx="450" cy="10" r="3" fill="#FFFFFF" class="core-pulse" />
+
+  <!-- Graduation Ticks -->
+  <line x1="400" y1="7" x2="400" y2="13" stroke="#00DFD8" stroke-width="1" />
+  <line x1="415" y1="8" x2="415" y2="12" stroke="#00DFD8" stroke-width="1" />
+  <line x1="485" y1="8" x2="485" y2="12" stroke="#7701D0" stroke-width="1" />
+  <line x1="500" y1="7" x2="500" y2="13" stroke="#7701D0" stroke-width="1" />
 </svg>

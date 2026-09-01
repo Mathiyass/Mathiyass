@@ -42,79 +42,100 @@
       .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9.5px; fill: #8B949E; }
       .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; letter-spacing: 1.2px; }
       
-      .corner-tick {
-        stroke-width: 1.5;
+      .corner-tick { stroke-width: 1.5; }
+      
+      .badge-float {
+        animation: floatBadge 4s ease-in-out infinite alternate;
       }
-      .badge-glow {
-        animation: pulseBadge 3s ease-in-out infinite alternate;
+      .f1 { animation-delay: 0s; }
+      .f2 { animation-delay: 0.4s; }
+      .f3 { animation-delay: 0.8s; }
+      .f4 { animation-delay: 1.2s; }
+      .f5 { animation-delay: 1.6s; }
+
+      .halo-spin {
+        transform-origin: 84px 28px;
+        animation: spinHalo 6s linear infinite;
       }
-      @keyframes pulseBadge {
+      .tier-pulse {
+        animation: pulseTier 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes floatBadge {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-3px); }
+      }
+      @keyframes spinHalo {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      @keyframes pulseTier {
         0% { opacity: 0.7; }
-        100% { opacity: 1; filter: drop-shadow(0 0 5px rgba(0, 223, 216, 0.4)); }
+        100% { opacity: 1; filter: drop-shadow(0 0 4px currentColor); }
       }
     </style>
   </defs>
 
-  <!-- 5 Chamfered Tactical Badges (Width 168 each, Gap 10) -->
+  <!-- 5 Chamfered Tactical Badges with Floating Kinetics -->
 
   <!-- Badge 1: Systems Architect -->
-  <g transform="translate(10, 8)">
+  <g transform="translate(10, 8)" class="badge-float f1">
     <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#goldTier)" stroke-width="1.2" />
-    <!-- Chamfer Corner Accents -->
     <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick" />
     <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick" />
-    <circle cx="84" cy="28" r="17" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1" />
+    <!-- Rotating Halo Ring -->
+    <circle cx="84" cy="28" r="17" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1" stroke-dasharray="4, 4" class="halo-spin" />
     <text x="84" y="34" text-anchor="middle" font-size="16">🏛️</text>
     <text x="84" y="60" text-anchor="middle" class="b-title">SYSTEMS ARCHITECT</text>
     <text x="84" y="74" text-anchor="middle" class="b-sub">Distributed Scalability</text>
-    <text x="84" y="88" text-anchor="middle" class="b-tier" fill="#FBBF24">★ MASTER TIER ★</text>
+    <text x="84" y="88" text-anchor="middle" class="b-tier tier-pulse" fill="#FBBF24">★ MASTER TIER ★</text>
   </g>
 
   <!-- Badge 2: Multi-Agent AI -->
-  <g transform="translate(188, 8)">
+  <g transform="translate(188, 8)" class="badge-float f2">
     <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#cyanTier)" stroke-width="1.2" />
     <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick" />
     <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick" />
-    <circle cx="84" cy="28" r="17" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1" />
+    <circle cx="84" cy="28" r="17" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1" stroke-dasharray="4, 4" class="halo-spin" />
     <text x="84" y="34" text-anchor="middle" font-size="16">🤖</text>
     <text x="84" y="60" text-anchor="middle" class="b-title">MULTI-AGENT AI</text>
     <text x="84" y="74" text-anchor="middle" class="b-sub">Swarm &amp; Tool RAG</text>
-    <text x="84" y="88" text-anchor="middle" class="b-tier" fill="#00DFD8">★ MYTHIC TIER ★</text>
+    <text x="84" y="88" text-anchor="middle" class="b-tier tier-pulse" fill="#00DFD8">★ MYTHIC TIER ★</text>
   </g>
 
   <!-- Badge 3: WebGL & GLSL -->
-  <g transform="translate(366, 8)">
+  <g transform="translate(366, 8)" class="badge-float f3">
     <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#purpleTier)" stroke-width="1.2" />
     <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick" />
     <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick" />
-    <circle cx="84" cy="28" r="17" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1" />
+    <circle cx="84" cy="28" r="17" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1" stroke-dasharray="4, 4" class="halo-spin" />
     <text x="84" y="34" text-anchor="middle" font-size="16">🎮</text>
     <text x="84" y="60" text-anchor="middle" class="b-title">WEBGL 2.0 &amp; GLSL</text>
     <text x="84" y="74" text-anchor="middle" class="b-sub">3D Spatial &amp; Compute</text>
-    <text x="84" y="88" text-anchor="middle" class="b-tier" fill="#C084FC">★ OBSIDIAN TIER ★</text>
+    <text x="84" y="88" text-anchor="middle" class="b-tier tier-pulse" fill="#C084FC">★ OBSIDIAN TIER ★</text>
   </g>
 
   <!-- Badge 4: 50+ Deployments -->
-  <g transform="translate(544, 8)">
+  <g transform="translate(544, 8)" class="badge-float f4">
     <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#emeraldTier)" stroke-width="1.2" />
     <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick" />
     <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick" />
-    <circle cx="84" cy="28" r="17" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1" />
+    <circle cx="84" cy="28" r="17" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1" stroke-dasharray="4, 4" class="halo-spin" />
     <text x="84" y="34" text-anchor="middle" font-size="16">🚀</text>
     <text x="84" y="60" text-anchor="middle" class="b-title">50+ DEPLOYMENTS</text>
     <text x="84" y="74" text-anchor="middle" class="b-sub">High-Availability Cloud</text>
-    <text x="84" y="88" text-anchor="middle" class="b-tier" fill="#34D399">★ DIAMOND TIER ★</text>
+    <text x="84" y="88" text-anchor="middle" class="b-tier tier-pulse" fill="#34D399">★ DIAMOND TIER ★</text>
   </g>
 
   <!-- Badge 5: OS Kernel Tuner -->
-  <g transform="translate(722, 8)">
+  <g transform="translate(722, 8)" class="badge-float f5">
     <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#cardGradDark)" stroke="url(#blueTier)" stroke-width="1.2" />
     <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick" />
     <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick" />
-    <circle cx="84" cy="28" r="17" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1" />
+    <circle cx="84" cy="28" r="17" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1" stroke-dasharray="4, 4" class="halo-spin" />
     <text x="84" y="34" text-anchor="middle" font-size="16">⚡</text>
     <text x="84" y="60" text-anchor="middle" class="b-title">OS KERNEL TUNER</text>
     <text x="84" y="74" text-anchor="middle" class="b-sub">Low-Latency Engineering</text>
-    <text x="84" y="88" text-anchor="middle" class="b-tier" fill="#38BDF8">★ PLATINUM TIER ★</text>
+    <text x="84" y="88" text-anchor="middle" class="b-tier tier-pulse" fill="#38BDF8">★ PLATINUM TIER ★</text>
   </g>
 </svg>
