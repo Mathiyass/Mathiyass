@@ -299,6 +299,83 @@ body {
     letter-spacing: 1px;
 }
 
+/* Projects Grid inside HUD Card */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.project-mini-card {
+    background: rgba(0, 0, 0, 0.35);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+}
+
+.project-mini-card:hover {
+    border-color: var(--border-cyan);
+    background: rgba(0, 223, 216, 0.04);
+    transform: translateY(-2px);
+}
+
+.project-mini-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.project-mini-head h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    font-family: var(--font-display);
+}
+
+.badge-chip {
+    font-family: var(--font-mono);
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    background: rgba(119, 1, 208, 0.2);
+    border: 1px solid rgba(119, 1, 208, 0.4);
+    color: #c4b5fd;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.project-mini-card p {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.45;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 12px;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+}
+
+.project-links a {
+    color: var(--cyan);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px var(--cyan);
+}
+
 .card-content {
     display: flex;
     align-items: center;

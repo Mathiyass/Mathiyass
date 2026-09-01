@@ -187,20 +187,20 @@ https.get(imageUrl, (res) => {
 
   <!-- HUD Elements: Top Left -->
   <circle cx="48" cy="68" r="4" fill="#10B981" />
-  <text x="60" y="72" class="hud-text-left" fill="#10B981">SYSTEM ONLINE</text>
-  <text x="48" y="98" class="hud-text-left">LOC: BIRMINGHAM, UK</text>
-  <text x="48" y="124" class="hud-text-left" fill="#00DFD8">SPEC: AI &amp; CLOUD ARCHITECT</text>
+  <text x="60" y="72" class="hud-text-left" fill="#10B981">SYSTEM ONLINE // CORE TELEMETRY</text>
+  <text x="48" y="98" class="hud-text-left">LOC: COLOMBO &amp; BIRMINGHAM</text>
+  <text x="48" y="124" class="hud-text-left" fill="#00DFD8">SPEC: AI AGENTS • WEBGL 2.0 • SYSTEMS</text>
 
   <!-- HUD Elements: Top Right -->
-  <text x="${width - 48}" y="72" class="hud-text-right" fill="#00DFD8">MATHIYA.CC</text>
-  <text x="${width - 48}" y="98" class="hud-text-right">FULL-STACK INNOVATION</text>
-  <text x="${width - 48}" y="124" class="hud-text-right" fill="rgba(255,255,255,0.7)">OPEN FOR COLLABORATION</text>
+  <text x="${width - 48}" y="72" class="hud-text-right" fill="#00DFD8">MATHIYA.CC ↗</text>
+  <text x="${width - 48}" y="98" class="hud-text-right">LEAD SYSTEMS ARCHITECT</text>
+  <text x="${width - 48}" y="124" class="hud-text-right" fill="rgba(255,255,255,0.7)">50+ DEPLOYMENTS • 4+ YRS ACTIVE</text>
 
   <!-- Subtitle Top Badge -->
   <g transform="translate(${width / 2}, 150)">
-    <rect x="-180" y="-18" width="360" height="28" rx="14" fill="#0D1117" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
-    <circle cx="-155" cy="-4" r="3.5" fill="#00DFD8" style="animation: pulse 2s infinite;" />
-    <text x="0" y="0" class="hud-text" fill="#00DFD8">SYSTEM ARCHITECT // MATHIYA<tspan class="cursor" fill="#00DFD8">_</tspan></text>
+    <rect x="-200" y="-18" width="400" height="28" rx="14" fill="#0D1117" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1" />
+    <circle cx="-175" cy="-4" r="3.5" fill="#00DFD8" style="animation: pulse 2s infinite;" />
+    <text x="0" y="0" class="hud-text" fill="#00DFD8">LEAD SYSTEMS ARCHITECT // MATHIYA<tspan class="cursor" fill="#00DFD8">_</tspan></text>
   </g>
 
   <!-- Layer 1: Bold Outlined Text (Behind Photo) -->
@@ -216,9 +216,9 @@ https.get(imageUrl, (res) => {
 
   <!-- Subtitle Bottom Ribbon -->
   <g transform="translate(${width / 2}, 545)">
-    <line x1="-350" y1="0" x2="-260" y2="0" stroke="url(#border-grad)" stroke-width="1" />
-    <text x="0" y="4" class="hud-text" fill="rgba(255,255,255,0.85)" style="letter-spacing: 6px;">BUILDING INTELLIGENT SYSTEMS &amp; DISTRIBUTED CLOUD</text>
-    <line x1="260" y1="0" x2="350" y2="0" stroke="url(#border-grad)" stroke-width="1" />
+    <line x1="-380" y1="0" x2="-280" y2="0" stroke="url(#border-grad)" stroke-width="1" />
+    <text x="0" y="4" class="hud-text" fill="rgba(255,255,255,0.85)" style="letter-spacing: 6px;">MULTI-AGENT AI • WEBGL GRAPHICS • DISTRIBUTED SYSTEMS</text>
+    <line x1="280" y1="0" x2="380" y2="0" stroke="url(#border-grad)" stroke-width="1" />
   </g>
 
 </svg>

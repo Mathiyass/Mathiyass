@@ -2,7 +2,7 @@
 
 <!-- CUSTOM ANIMATED HEADER (Matching Website) -->
 <a href="https://mathiya.cc">
-  <img src="./header.svg" alt="Custom Animated Header" width="100%" />
+  <img src="./header.svg" alt="Mathiya - Lead Systems Architect" width="100%" />
 </a>
 
 <br/><br/>
@@ -13,26 +13,35 @@
 [![Stars](https://img.shields.io/github/stars/Mathiyass?label=STARS&style=for-the-badge&color=7701D0&labelColor=0D1117)](https://github.com/Mathiyass?tab=repositories)
 [![Repos](https://img.shields.io/badge/dynamic/json?label=REPOS&style=for-the-badge&color=00DFD8&labelColor=0D1117&query=%24.public_repos&url=https://api.github.com/users/Mathiyass)](https://github.com/Mathiyass?tab=repositories)
 
+<br/><br/>
+
+<!-- GITHUB TROPHIES -->
+<a href="https://github.com/Mathiyass">
+  <img src="https://github-profile-trophy.vercel.app/?username=Mathiyass&theme=onedark&no-frame=false&no-bg=false&margin-w=4" alt="GitHub Trophies" width="100%"/>
+</a>
+
 </div>
 
 <br/>
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 👨‍💻 System Architect & Engineer
+### 👨‍💻 Lead Systems Architect & AI Engineer
 
 <div align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Full-Stack+Architect+%26+System+Specialist;AI+Agent+Systems+%26+Distributed+Cloud;Crafting+Production-Ready+High-Impact+Software;Open-Source+Ecosystem+Contributor" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00DFD8&center=true&vCenter=true&width=800&lines=Lead+Systems+Architect+%26+Software+Engineer;Scalable+Multi-Agent+AI+Ecosystems;WebGL+2.0+Real-Time+Graphics+%26+3D+Spatial;High-Performance+Distributed+Cloud+Engines" alt="Typing SVG" /></a>
 
 ```console
 $ whoami
-> Mathisha Angirasa (MATHIYA) — Full-Stack Architect & AI Specialist
-$ location --current
-> Birmingham, United Kingdom 🇬🇧
-$ cat core_mission.json
+> Mathisha Angirasa (MATHIYA) — Lead Systems Architect & AI Specialist
+$ location --active
+> Colombo, Sri Lanka 🇱🇰 // Birmingham, United Kingdom 🇬🇧
+$ cat system_status.json
 > {
-    "focus": ["AI Agent Systems", "Distributed Cloud", "Modern Web Architecture", "High-Performance Engineering"],
-    "status": "Available for High-Impact Projects & Innovative Collaborations"
+    "experience": "4+ Years Active in Systems Architecture & Full-Stack",
+    "deployments": "50+ Production Services & Cloud Deployments",
+    "peer_reviews": "12+ Verified Industry Peer Endorsements",
+    "core_focus": ["Multi-Agent AI Systems", "WebGL 2.0 & GLSL Shaders", "Low-Latency Distributed Engines"]
   }
 ```
 </div>
@@ -41,18 +50,18 @@ $ cat core_mission.json
 <tr>
 <td width="50%" valign="top" style="padding: 16px; border-right: 1px solid #30363d;">
 
-#### ⚡ Core Capabilities & Architecture
-- 🏗️ **Systems Engineering:** Scalable microservices, distributed cloud architectures & low-latency backends.
-- 🤖 **AI & Agentic Systems:** LLM orchestration, autonomous agent tool pipelines, and neural workflows.
-- 🌱 **Continuous Mastery:** Rust systems programming, concurrent Go pipelines, and advanced distributed patterns.
+#### ⚡ Architectural Thesis & Research
+- 🤖 **Multi-Agent Orchestration:** Designing distributed intelligent agents with robust tool execution pipelines and low-latency decision loops.
+- 🎮 **WebGL 2.0 & Spatial 3D:** Building procedural graphics engines, custom GLSL shaders, and high-fidelity interactive digital experiences.
+- ⚡ **High-Performance Systems:** Kernel-level Windows tuning, input latency elimination, and concurrent systems programming in Rust, Go, and C++.
 
 </td>
 <td width="50%" valign="top" style="padding: 16px;">
 
-#### 🤝 Collaboration & Focus
-- 💬 **Ask Me About:** React/Next.js, Node.js, Python, TypeScript, Docker & Cloud Architecture.
-- 🚀 **Open Source:** Active contributor & architect of developer productivity ecosystems.
-- ⚡ **Fun Fact:** I debug complex architectures in my dreams and wake up with the solution ready to commit.
+#### 🤝 Collaboration & Engagement
+- 💼 **Dedicated Engineering Partner:** Full-cycle system design, technical leadership, and production-scale refactoring.
+- 🚀 **Flagship Ecosystem:** Architecting [MA Optimizer](https://github.com/Mathiyass/MA-Optimizer) & [mathiya.cc](https://mathiya.cc).
+- 💬 **Direct Consultation:** Distributed Cloud, Agentic Workflows, Three.js, React, Node.js, and Supabase.
 
 </td>
 </tr>
@@ -66,23 +75,28 @@ $ cat core_mission.json
 
 <div align="center">
 
-**Core Languages & Systems**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,python,rust,go,java,cpp,c&theme=dark" alt="Languages" /></a>
+**🤖 Multi-Agent AI & Intelligent Systems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,fastapi&theme=dark" alt="AI Stack" /></a>
 
 <br/><br/>
 
-**Frontend Architecture & Ecosystems**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,vue,html,css,redux,vite&theme=dark" alt="Frontend" /></a>
+**⚡ Low-Level & High-Performance Engineering**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cpp,c,rust,go,powershell,bash&theme=dark" alt="Systems Stack" /></a>
 
 <br/><br/>
 
-**Backend, Cloud Infrastructure & DevOps**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,fastapi,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="Cloud and DevOps" /></a>
+**🎨 WebGL 2.0, 3D Spatial & Frontend Architecture**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vue,threejs,vite,html,css&theme=dark" alt="Frontend Stack" /></a>
 
 <br/><br/>
 
-**Databases, Streaming & Caching**<br/>
-<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,supabase,mysql,sqlite&theme=dark" alt="Databases" /></a>
+**☁️ Cloud Native, Distributed Backend & DevOps**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=nodejs,express,django,docker,kubernetes,aws,gcp,azure,githubactions,linux,nginx&theme=dark" alt="DevOps Stack" /></a>
+
+<br/><br/>
+
+**🗄️ Databases, Caching & Data Systems**<br/>
+<a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=postgres,supabase,redis,mongodb,mysql,sqlite&theme=dark" alt="Databases Stack" /></a>
 
 </div>
 
@@ -90,35 +104,47 @@ $ cat core_mission.json
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
-### 🌟 Featured Projects & Innovations
+### 🌟 Flagship Projects & Engineering Case Studies
 
 <table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
 <thead>
 <tr style="background-color: #161b22;">
 <th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">🚀 Project</th>
-<th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">💡 Description</th>
+<th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">💡 Engineering Highlights</th>
 <th align="left" style="padding: 12px; border-bottom: 1px solid #30363d;">🛠️ Tech Stack</th>
-<th align="center" style="padding: 12px; border-bottom: 1px solid #30363d;">🔗 Link</th>
+<th align="center" style="padding: 12px; border-bottom: 1px solid #30363d;">🔗 Access</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>MA Optimizer</b></td>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;">High-performance Windows & gaming system optimization suite designed to reduce latency, boost FPS, and clean bloatware.</td>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Batch</code> <code>PowerShell</code> <code>Windows API</code></td>
-<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">View Repo</a></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">Flagship Windows OS performance suite fusing deep-level kernel tuning, telemetry lockdown, and input latency reduction with a fluid React & Electron GUI.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>React</code> <code>Electron</code> <code>PowerShell</code> <code>Windows API</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://github.com/Mathiyass/MA-Optimizer">GitHub</a> • <a href="https://mathiya.cc/projects/MA-Optimizer">Case Study</a></td>
 </tr>
 <tr>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.cc</b></td>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;">Official cyber-aesthetic portfolio featuring custom GLSL shaders, terminal telemetry, and high-performance frontend engineering.</td>
-<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>TypeScript</code> <code>TailwindCSS</code> <code>Three.js</code></td>
-<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc">Live Site</a></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>SIVION Automation</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">Production-grade enterprise platform orchestrating distributed intelligent agents to automate mission-critical workflows with high reliability and low latency.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Python</code> <code>AI Agents</code> <code>FastAPI</code> <code>Docker</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc/projects/sivion">Case Study</a></td>
 </tr>
 <tr>
-<td style="padding: 12px;"><b>Mathiyass GitHub Ecosystem</b></td>
-<td style="padding: 12px;">Automated dynamic profile architecture with real-time SVG asset pipeline, 3D contribution projections, and multi-feed updates.</td>
-<td style="padding: 12px;"><code>Node.js</code> <code>GitHub Actions</code> <code>SVG / Canvas</code></td>
-<td align="center" style="padding: 12px;"><a href="https://github.com/Mathiyass/Mathiyass">View Repo</a></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>mathiya.cc & The Lab</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">Official cyber-spatial portfolio and interactive WebGL shader laboratory featuring procedural 3D environments, audio visualizers, and zero-latency UI.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>TypeScript</code> <code>Three.js</code> <code>WebGL 2.0</code> <code>GLSL</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc">Live Site</a> • <a href="https://mathiya.cc/lab">Lab</a></td>
+</tr>
+<tr>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><b>Dev Marketplace</b></td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;">Specialized native Android/KMP platform for distributing developer assets with real-time inventory management, clean architecture, and secure licensing.</td>
+<td style="padding: 12px; border-bottom: 1px solid #21262d;"><code>Kotlin</code> <code>KMP</code> <code>Android SDK</code> <code>Supabase</code></td>
+<td align="center" style="padding: 12px; border-bottom: 1px solid #21262d;"><a href="https://mathiya.cc/projects/marketplace">Case Study</a></td>
+</tr>
+<tr>
+<td style="padding: 12px;"><b>VELORA Paint Factory POS</b></td>
+<td style="padding: 12px;">Enterprise POS and manufacturing inventory system with real-time supply chain tracking, order processing, and administrative dashboards.</td>
+<td style="padding: 12px;"><code>Full-Stack</code> <code>SQL</code> <code>Node.js</code> <code>React</code></td>
+<td align="center" style="padding: 12px;"><a href="https://github.com/Mathiyass/-VELORA-Paint-Factory-POS">GitHub</a></td>
 </tr>
 </tbody>
 </table>
@@ -220,19 +246,57 @@ $ cat core_mission.json
 <img src="./assets/divider.svg" width="100%" alt="Divider" />
 <br/>
 
+### 💼 Engineering Solutions & Engagement
+
+<table width="100%" style="border-collapse: collapse; border: 1px solid #30363d; border-radius: 8px;">
+<tr>
+<td width="33.3%" valign="top" style="padding: 16px; border-right: 1px solid #30363d;">
+
+#### 🤝 Dedicated Partner
+Continuous high-velocity engineering, technical leadership, performance optimizations, and infrastructure scaling.
+- Active codebase stewardship
+- Performance & technical SEO
+- Multi-agent AI integration
+
+</td>
+<td width="33.3%" valign="top" style="padding: 16px; border-right: 1px solid #30363d;">
+
+#### 🚀 Fast-Track MVP
+Production-ready web application or service launched in 1–2 weeks with modern stack and clean architecture.
+- Full-stack React / Next.js
+- Headless backend & DB setup
+- High-impact micro-interactions
+
+</td>
+<td width="33.3%" valign="top" style="padding: 16px;">
+
+#### 🎮 Bespoke 3D Systems
+Advanced interactive 3D web applications, custom GLSL shader pipelines, and real-time visualization engines.
+- Three.js & WebGL 2.0
+- Complex state & physics
+- Multi-database architecture
+
+</td>
+</tr>
+</table>
+
+<br/>
+<img src="./assets/divider.svg" width="100%" alt="Divider" />
+<br/>
+
 <div align="center">
 
 ### 🌐 Connect & Network
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-0D1117?style=for-the-badge&logo=googlechrome&logoColor=00DFD8&border_color=30363d)](https://mathiya.cc)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-angirasa-a955941a2/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0D1117?style=for-the-badge&logo=linkedin&logoColor=007CF0)](https://linkedin.com/in/mathisha-a-a955941a2/)
 [![Twitter](https://img.shields.io/badge/Twitter-0D1117?style=for-the-badge&logo=x&logoColor=ffffff)](https://x.com/__Mathiya__)
-[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/QERP5JJM8k)
+[![Discord](https://img.shields.io/badge/Discord-0D1117?style=for-the-badge&logo=discord&logoColor=5865F2)](https://discord.gg/z3k3NVxuqY)
 [![Medium](https://img.shields.io/badge/Medium-0D1117?style=for-the-badge&logo=medium&logoColor=00DFD8)](https://medium.com/@mathishaangirasa)
 [![YouTube](https://img.shields.io/badge/YouTube-0D1117?style=for-the-badge&logo=youtube&logoColor=FF0000)](https://youtube.com/@mathiya1783)
 
 <br/><br/>
 
-<sub>⚡ Designed & Engineered with precision by <b><a href="https://mathiya.cc">Mathisha Angirasa (MATHIYA)</a></b></sub>
+<sub>⚡ Architected & Engineered with precision by <b><a href="https://mathiya.cc">Mathisha Angirasa (MATHIYA)</a></b></sub>
 
 </div>
