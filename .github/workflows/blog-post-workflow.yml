@@ -13,7 +13,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Pull in dev.to / Medium posts
+      - name: Pull in Medium & Dev.to posts
         uses: gautamkrishnar/blog-post-workflow@v1
+        continue-on-error: true
         with:
           feed_list: "https://medium.com/feed/@mathishaangirasa,https://dev.to/feed/mathishaangirasa"
+          max_post_count: 5
+          retry_count: 2
+          retry_wait_time: 5

@@ -12,10 +12,13 @@ jobs:
       contents: write
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: jamesgeorge007/github-activity-readme@master
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Update GitHub Activity
+        uses: jamesgeorge007/github-activity-readme@master
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          COMMIT_MSG: 'Zap! Updated README with the recent activity'
+          COMMIT_MSG: 'chore: update recent GitHub activity'
           MAX_LINES: 10
