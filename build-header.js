@@ -14,18 +14,17 @@ https.get(imageUrl, (res) => {
         const width = 1600;
         const height = 900;
 
-        // Generate 320 3D floating cosmic particles with multi-speed twinkle, X-drift, and Y-drift
+        // Generate 320 3D floating cosmic particles with continuous smooth X/Y drift (NO opacity pulsing)
         const particles = Array.from({ length: 320 }).map((_, i) => {
             const x = Math.random() * width;
             const y = Math.random() * height;
             const r = Math.random() * 2.2 + 0.3;
-            const op = (Math.random() * 0.8 + 0.2).toFixed(2);
-            const dur = (Math.random() * 6 + 3).toFixed(1);
+            const op = (Math.random() * 0.6 + 0.3).toFixed(2);
+            const dur = (Math.random() * 6 + 4).toFixed(1);
             const delay = (Math.random() * 10).toFixed(1);
             const color = Math.random() > 0.6 ? '#00DFD8' : (Math.random() > 0.3 ? '#E879F9' : (Math.random() > 0.15 ? '#38BDF8' : '#FFFFFF'));
             return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="${color}" opacity="${op}">
-        <animate attributeName="opacity" values="${op};${(op * 0.1).toFixed(2)};${op}" dur="${dur}s" begin="-${delay}s" repeatCount="indefinite" />
-        <animate attributeName="cy" values="${y.toFixed(1)};${(y - 80).toFixed(1)};${y.toFixed(1)}" dur="${dur}s" begin="-${delay}s" repeatCount="indefinite" />
+        <animate attributeName="cy" values="${y.toFixed(1)};${(y - 60).toFixed(1)};${y.toFixed(1)}" dur="${dur}s" begin="-${delay}s" repeatCount="indefinite" />
         <animate attributeName="cx" values="${x.toFixed(1)};${(x + (Math.random() * 40 - 20)).toFixed(1)};${x.toFixed(1)}" dur="${(dur * 1.4).toFixed(1)}s" begin="-${delay}s" repeatCount="indefinite" />
       </circle>`;
         }).join('\n      ');
@@ -92,19 +91,23 @@ https.get(imageUrl, (res) => {
     </linearGradient>
 
     <style>
-      /* EXTREME HYPER ANIMATIONS (SAFE) */
+      /* CONTINUOUS HIGH-FPS CYBER ANIMATIONS (NO PULSE, NO GLITCH) */
       @keyframes cyber-scan {
-        0% { transform: translateY(-100%); opacity: 0; }
-        10% { opacity: 0.8; }
-        90% { opacity: 0.8; }
-        100% { transform: translateY(1000%); opacity: 0; }
+        0% { transform: translateY(-100%); }
+        100% { transform: translateY(1000%); }
       }
       @keyframes border-run {
         0% { stroke-dashoffset: 1000; }
         100% { stroke-dashoffset: 0; }
       }
-      .cyber-scanner { animation: cyber-scan 3s cubic-bezier(0.1, 0.8, 0.9, 0.2) infinite; }
-      .border-run { stroke-dasharray: 100 200; animation: border-run 5s linear infinite; }
+      .cyber-scanner { 
+        animation: cyber-scan 3.5s linear infinite; 
+        opacity: 0.45; 
+      }
+      .border-run { 
+        stroke-dasharray: 100 200; 
+        animation: border-run 5s linear infinite; 
+      }
 
       .bg-void { fill: #000000; }
       
@@ -126,7 +129,6 @@ https.get(imageUrl, (res) => {
         stroke-width: 2.5px;
         letter-spacing: 6px;
         text-anchor: middle;
-        
       }
       
       .text-solid {
@@ -136,8 +138,7 @@ https.get(imageUrl, (res) => {
         fill: #FFFFFF;
         letter-spacing: -1px;
         text-anchor: middle;
-        filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.45));
-        animation: textGlowPulse 3.5s infinite alternate ease-in-out;
+        filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.5));
       }
 
       .bottom-meta {
@@ -156,30 +157,10 @@ https.get(imageUrl, (res) => {
         animation: breathe 4s infinite ease-in-out;
       }
 
-      @keyframes pulse {
-  0% { opacity: 0.8; }
-  100% { opacity: 0.8; }
-}
-
       @keyframes breathe {
         0% { transform: scale(1) translateY(0px); }
         50% { transform: scale(1.03) translateY(-8px); }
         100% { transform: scale(1) translateY(0px); }
-      }
-
-      @keyframes textGlowPulse {
-  0% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.7)); }
-  100% { filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.95)) drop-shadow(0px 0px 40px rgba(0, 223, 216, 0.7)); }
-}
-
-      
-
-      .sonar-shockwave {
-        animation: shockwaveExpand 2.4s cubic-bezier(0.1, 0.8, 0.3, 1) infinite;
-      }
-      @keyframes shockwaveExpand {
-        0% { r: 50; opacity: 0.95; stroke-width: 2.5; }
-        100% { r: 400; opacity: 0; stroke-width: 0.2; }
       }
 
       .laser-cable {
@@ -202,20 +183,20 @@ https.get(imageUrl, (res) => {
 
       .laser-scanner-1 {
         animation: verticalScan1 3s ease-in-out infinite alternate;
+        opacity: 0.7;
       }
       @keyframes verticalScan1 {
-        0% { transform: translateY(180px); opacity: 0.2; }
-        50% { opacity: 0.9; }
-        100% { transform: translateY(750px); opacity: 0.2; }
+        0% { transform: translateY(180px); }
+        100% { transform: translateY(750px); }
       }
 
       .laser-scanner-2 {
         animation: verticalScan2 3s ease-in-out infinite alternate-reverse;
+        opacity: 0.7;
       }
       @keyframes verticalScan2 {
-        0% { transform: translateY(180px); opacity: 0.2; }
-        50% { opacity: 0.9; }
-        100% { transform: translateY(750px); opacity: 0.2; }
+        0% { transform: translateY(180px); }
+        100% { transform: translateY(750px); }
       }
     </style>
     
@@ -232,8 +213,8 @@ https.get(imageUrl, (res) => {
   <!-- Deep Obsidian Background Void -->
   <rect width="${width}" height="${height}" class="bg-void" />
   <rect width="${width}" height="${height}" fill="url(#cyber-grid)" />
-  <rect width="${width}" height="${height}" fill="url(#nebula-cyan)" style="animation: pulse 6s infinite alternate;" />
-  <rect width="${width}" height="${height}" fill="url(#nebula-purple)" style="animation: pulse 6s infinite alternate-reverse;" />
+  <rect width="${width}" height="${height}" fill="url(#nebula-cyan)" opacity="0.65" />
+  <rect width="${width}" height="${height}" fill="url(#nebula-purple)" opacity="0.65" />
 
   <!-- Specular Top Edge Light Refraction -->
   <path d="M 18 5 L ${width - 18} 5 L ${width - 5} 18 L 5 18 Z" fill="url(#specular-top-edge)" opacity="0.85" />
@@ -254,7 +235,6 @@ https.get(imageUrl, (res) => {
   <!-- 3D MULTI-PLANE TILTED GYROSCOPIC HOLOGRAM AROUND AVATAR -->
   <circle cx="${width / 2}" cy="420" r="320" fill="url(#avatar-center-glow)" />
 
-  <!-- Expanding Sonar Shockwaves from Center -->
   <!-- Target Reticle Tick Aperture (Dual Counter-Rotating Gears) -->
   <g transform="translate(${width / 2}, 420)">
     <circle cx="0" cy="0" r="325" fill="none" stroke="rgba(0, 223, 216, 0.4)" stroke-width="1.2" stroke-dasharray="4, 12">
@@ -371,7 +351,7 @@ https.get(imageUrl, (res) => {
 
   <rect width="${width}" height="${height}" fill="url(#scanline)" />
 
-  <!-- 320 3D Floating Cosmic Particles -->
+  <!-- 320 3D Floating Cosmic Particles (Continuous Smooth Glide) -->
   <g>
     ${particles}
   </g>
@@ -423,13 +403,11 @@ https.get(imageUrl, (res) => {
     <line x1="350" y1="-4" x2="480" y2="-4" stroke="url(#chrome-border-grad)" stroke-width="1.6" />
   </g>
 
-  <!-- Layer 5: Extreme Cyber Scanner Overlay -->
+  <!-- Layer 5: Extreme Cyber Scanner Overlay (Continuous Smooth Sweeps) -->
   <g class="hyper-overlay-effects" style="pointer-events: none;">
       <!-- Scanning laser -->
-      <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" opacity="0.7" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)">
-          <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite" />
-      </rect>
-      <rect x="0" y="-20" width="100%" height="40" fill="url(#specular-top-edge)" opacity="0.4" class="cyber-scanner" style="animation-delay: -0.1s" />
+      <rect x="0" y="0" width="100%" height="2" fill="#00DFD8" class="cyber-scanner" filter="drop-shadow(0 0 8px #00DFD8)" />
+      <rect x="0" y="-20" width="100%" height="40" fill="url(#specular-top-edge)" class="cyber-scanner" style="animation-delay: -0.1s" />
       
       <!-- Vignette / Border flare -->
       <rect x="2" y="2" width="calc(100% - 4px)" height="calc(100% - 4px)" fill="none" stroke="rgba(0,223,216,0.5)" stroke-width="2" class="border-run" />
