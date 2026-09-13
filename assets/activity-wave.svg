@@ -1,0 +1,228 @@
+<svg width="900" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="waveGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="waveSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="waveChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Area Fill Under Spline Wave -->
+    <linearGradient id="waveAreaGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.0" />
+    </linearGradient>
+
+    <linearGradient id="waveStrokeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" />
+      <stop offset="30%" stop-color="#007CF0" />
+      <stop offset="70%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#00DFD8" />
+    </linearGradient>
+
+    <!-- Scanline Cursor Gradient -->
+    <linearGradient id="cursorBeamGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .w-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .w-meta { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; fill: #8B949E; }
+      .w-stat { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #FFFFFF; }
+      .grid-line { stroke: rgba(255, 255, 255, 0.04); stroke-width: 1; }
+      
+      .wave-laser-stream {
+        stroke-dasharray: 8, 12;
+        animation: waveStream 1.5s linear infinite;
+      }
+      .wave-cursor { animation: sweepCursor 7s ease-in-out infinite alternate; opacity: 0.85; }
+      
+      
+      .badge-float-wave {
+        animation: badgeFloat 3s ease-in-out infinite alternate;
+      }
+
+      @keyframes waveStream {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      
+      @keyframes sweepCursor {
+        0% { transform: translateX(24px); }
+        100% { transform: translateX(876px); }
+      }
+      
+      
+      @keyframes badgeFloat {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-3px); }
+      }
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
+  
+    <linearGradient id="waveScanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  
+    <path id="waveMotionPath" d="M 24 105 C 80 110, 140 85, 200 95 C 260 105, 320 60, 380 50 C 440 40, 500 75, 560 65 C 620 55, 680 35, 740 45 C 800 55, 840 40, 876 35" fill="none" />
+  </defs>
+
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="14,2 886,2 898,14 898,136 886,148 14,148 2,136 2,14" fill="url(#waveGlassBg)" stroke="url(#waveChromeBorder)" stroke-width="1.3" />
+  <path d="M 14 3 L 886 3 L 896 13 L 4 13 Z" fill="url(#waveSpecular)" />
+
+  <!-- Top Title Ribbon -->
+  <g transform="translate(24, 18)">
+    <circle cx="6" cy="6" r="3.5" fill="#10B981" />
+    <text x="18" y="9.5" class="w-title">CONTRIBUTION ACTIVITY &amp; COMMIT VELOCITY WAVE</text>
+    <text x="850" y="9.5" text-anchor="end" class="w-title" fill="#7701D0">968+ ALL-TIME COMMITS // 100% SPRINT HEALTH</text>
+    <line x1="0" y1="18" x2="850" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- Horizontal HUD Grid Lines -->
+  <line x1="24" y1="55" x2="876" y2="55" class="grid-line" />
+  <line x1="24" y1="80" x2="876" y2="80" class="grid-line" />
+  <line x1="24" y1="105" x2="876" y2="105" class="grid-line" />
+
+  <!-- Vertical Telemetry Calibration Lines -->
+  <line x1="200" y1="36" x2="200" y2="130" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1" stroke-dasharray="2, 4" />
+  <line x1="380" y1="36" x2="380" y2="130" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1" stroke-dasharray="2, 4" />
+  <line x1="560" y1="36" x2="560" y2="130" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1" stroke-dasharray="2, 4" />
+  <line x1="740" y1="36" x2="740" y2="130" stroke="rgba(255, 255, 255, 0.025)" stroke-width="1" stroke-dasharray="2, 4" />
+
+  <!-- Harmonic Secondary Wave (Purple Baseline) -->
+  <path d="M 24 115 C 90 120, 150 100, 210 108 C 270 115, 330 85, 390 78 C 450 70, 510 95, 570 88 C 630 80, 690 60, 750 68 C 810 75, 850 60, 876 52" fill="none" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1.2" stroke-dasharray="4, 4" />
+
+  <!-- Spline Wave Area Fill -->
+  <path d="M 24 130 L 24 105 C 80 110, 140 85, 200 95 C 260 105, 320 60, 380 50 C 440 40, 500 75, 560 65 C 620 55, 680 35, 740 45 C 800 55, 840 40, 876 35 L 876 130 Z" fill="url(#waveAreaGrad)" />
+
+  <!-- Spline Wave Main Stroke Line -->
+  <path d="M 24 105 C 80 110, 140 85, 200 95 C 260 105, 320 60, 380 50 C 440 40, 500 75, 560 65 C 620 55, 680 35, 740 45 C 800 55, 840 40, 876 35" fill="none" stroke="url(#waveStrokeGrad)" stroke-width="2.4" />
+
+  <!-- Traveling Laser Energy Stream On Wave -->
+  <path d="M 24 105 C 80 110, 140 85, 200 95 C 260 105, 320 60, 380 50 C 440 40, 500 75, 560 65 C 620 55, 680 35, 740 45 C 800 55, 840 40, 876 35" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-opacity="0.8" class="wave-laser-stream" />
+
+  <!-- 5 Glowing Kinetic Photons Racing Along Telemetry Wave -->
+  <g>
+    <circle r="3.5" fill="#FFFFFF" filter="drop-shadow(0 0 8px #00DFD8)">
+      <animateMotion dur="4s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#waveMotionPath"/>
+      </animateMotion>
+    </circle>
+    <circle r="3" fill="#E879F9" filter="drop-shadow(0 0 8px #A855F7)">
+      <animateMotion dur="4s" begin="-0.8s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#waveMotionPath"/>
+      </animateMotion>
+    </circle>
+    <circle r="3" fill="#34D399" filter="drop-shadow(0 0 8px #10B981)">
+      <animateMotion dur="4s" begin="-1.6s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#waveMotionPath"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.8" fill="#38BDF8" filter="drop-shadow(0 0 8px #0284C7)">
+      <animateMotion dur="4s" begin="-2.4s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#waveMotionPath"/>
+      </animateMotion>
+    </circle>
+    <circle r="2.8" fill="#FBBF24" filter="drop-shadow(0 0 8px #F59E0B)">
+      <animateMotion dur="4s" begin="-3.2s" repeatCount="indefinite" rotate="auto">
+        <mpath href="#waveMotionPath"/>
+      </animateMotion>
+    </circle>
+  </g>
+
+  <!-- Sweeping Vertical HUD Cursor Line -->
+  <g class="wave-cursor">
+    <line x1="0" y1="36" x2="0" y2="130" stroke="url(#cursorBeamGrad)" stroke-width="1.5" />
+    <circle cx="0" cy="50" r="2.5" fill="#00DFD8" />
+  </g>
+
+  <!-- Key Activity Milestone Data Nodes with Ripple Rings -->
+  <circle cx="200" cy="95" r="3.5" fill="#00DFD8" />
+
+  <!-- Milestone 1: MA-Opt Launch with 3D Gyro -->
+  <g>
+    <ellipse cx="380" cy="50" rx="14" ry="7" fill="none" stroke="#007CF0" stroke-width="1" stroke-dasharray="3, 3">
+      <animateTransform attributeName="transform" type="rotate" from="0 380 50" to="360 380 50" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  <circle cx="380" cy="50" r="4" fill="none" stroke="#007CF0" class="node-ripple" />
+  <circle cx="380" cy="50" r="4" fill="#007CF0" class="node-pulse" />
+
+  <circle cx="560" cy="65" r="3.5" fill="#7701D0" />
+
+  <!-- Milestone 2: SIVION Engine Swarm with 3D Gyro -->
+  <g>
+    <ellipse cx="740" cy="45" rx="14" ry="7" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3">
+      <animateTransform attributeName="transform" type="rotate" from="0 740 45" to="360 740 45" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  <circle cx="740" cy="45" r="4.5" fill="none" stroke="#00DFD8" class="node-ripple" />
+  <circle cx="740" cy="45" r="4.5" fill="#00DFD8" class="node-pulse" />
+
+  <!-- Milestone 3: Present Day Peak with 3D Gyro -->
+  <g>
+    <ellipse cx="876" cy="35" rx="14" ry="7" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3">
+      <animateTransform attributeName="transform" type="rotate" from="0 876 35" to="360 876 35" dur="5s" repeatCount="indefinite" />
+    </ellipse>
+  </g>
+  <circle cx="876" cy="35" r="4.5" fill="none" stroke="#10B981" class="node-ripple" />
+  <circle cx="876" cy="35" r="4.5" fill="#10B981" class="node-pulse" />
+
+  <!-- 3D Glass Milestone Callout Badges -->
+  <g transform="translate(380, 24)">
+    <g class="badge-float-wave">
+      <polygon points="6,0 78,0 84,6 84,18 78,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.9)" stroke="#007CF0" stroke-width="1.2" />
+      <text x="42" y="15" text-anchor="middle" class="w-stat" fill="#00DFD8">MA-OPT v11</text>
+    </g>
+  </g>
+
+  <g transform="translate(740, 18)">
+    <g class="badge-float-wave" style="animation-delay: 0.5s;">
+      <polygon points="6,0 96,0 102,6 102,18 96,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.9)" stroke="#00DFD8" stroke-width="1.2" />
+      <text x="51" y="15" text-anchor="middle" class="w-stat" fill="#34D399">PEAK VELOCITY</text>
+    </g>
+  </g>
+
+  <!-- Bottom Time Axis Labels -->
+  <text x="24" y="140" class="w-meta">OCT 2022</text>
+  <text x="200" y="140" class="w-meta">2023 // SYSTEMS</text>
+  <text x="460" y="140" class="w-meta">2024 // WEBGL &amp; AI</text>
+  <text x="690" y="140" class="w-meta">2025 // SIVION SWARMS</text>
+  <text x="876" y="140" text-anchor="end" class="w-meta" fill="#00DFD8">PRESENT (2026) ↗</text>
+</svg>

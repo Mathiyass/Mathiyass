@@ -1,0 +1,260 @@
+<svg width="900" height="116" viewBox="0 0 900 116" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Frosted Translucent Glass Gradient -->
+    <linearGradient id="glassCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151D2E" stop-opacity="0.94" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="cardSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Metallic Tier Gradients -->
+    <linearGradient id="goldTier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="cyanTier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#67E8F9" />
+      <stop offset="50%" stop-color="#00DFD8" />
+      <stop offset="100%" stop-color="#0891B2" />
+    </linearGradient>
+
+    <linearGradient id="purpleTier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E879F9" />
+      <stop offset="50%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#6B21A8" />
+    </linearGradient>
+
+    <linearGradient id="emeraldTier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <linearGradient id="blueTier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+
+    <style>
+      .b-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; letter-spacing: 0.5px; }
+      .b-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #8B949E; }
+      .b-tier { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1.2px; }
+      
+      .corner-tick { stroke-width: 1.5; }
+      
+      .badge-anim {
+        animation: floatBadge 3.5s ease-in-out infinite alternate;
+      }
+      .f1 { animation-delay: 0s; }
+      .f2 { animation-delay: 0.4s; }
+      .f3 { animation-delay: 0.8s; }
+      .f4 { animation-delay: 1.2s; }
+      .f5 { animation-delay: 1.6s; }
+
+      .tier-glow { filter: drop-shadow(0 0 6px currentColor); }
+      .card-laser-stream { stroke-dasharray: 6, 12; animation: cardLaser 1.5s linear infinite; }
+
+      @keyframes floatBadge {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-4px); }
+      }
+      
+      @keyframes cardLaser {
+        from { stroke-dashoffset: 36; }
+        to { stroke-dashoffset: 0; }
+      }
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
+  
+    <linearGradient id="achieveBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  
+    <linearGradient id="badgePerimeterPulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  </defs>
+
+  <!-- 5 3D Glassmorphic Podium Cards with Multi-Plane Gyroscopes & Laser Perimeter -->
+
+  <!-- Badge 1: Systems Architect -->
+  <g transform="translate(10, 8)">
+    <g class="badge-anim f1">
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#goldTier)" stroke-width="1.3" />
+      
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#FFE066" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <rect x="0" y="0" width="30" height="100" fill="url(#badgePerimeterPulse)" opacity="0.25" pointer-events="none">
+        <animate attributeName="x" from="-30" to="170" dur="2.8s" repeatCount="indefinite" />
+      </rect>
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#FFE066" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#FFE066" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
+      <g>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(245, 158, 11, 0.12)" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#FFE066" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #F59E0B)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🏛️</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">SYSTEMS ARCHITECT</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Distributed Scalability</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#FBBF24">★ MASTER TIER ★</text>
+    </g>
+  </g>
+
+  <!-- Badge 2: Multi-Agent AI -->
+  <g transform="translate(188, 8)">
+    <g class="badge-anim f2">
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#cyanTier)" stroke-width="1.3" />
+      
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#67E8F9" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <rect x="0" y="0" width="30" height="100" fill="url(#badgePerimeterPulse)" opacity="0.25" pointer-events="none">
+        <animate attributeName="x" from="-30" to="170" dur="3.2s" repeatCount="indefinite" />
+      </rect>
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#67E8F9" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#67E8F9" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
+      <g>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(0, 223, 216, 0.12)" stroke="#00DFD8" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#67E8F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🤖</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">MULTI-AGENT AI</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Swarm &amp; Tool RAG</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#00DFD8">★ MYTHIC TIER ★</text>
+    </g>
+  </g>
+
+  <!-- Badge 3: WebGL & GLSL -->
+  <g transform="translate(366, 8)">
+    <g class="badge-anim f3">
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#purpleTier)" stroke-width="1.3" />
+      
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#E879F9" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <rect x="0" y="0" width="30" height="100" fill="url(#badgePerimeterPulse)" opacity="0.25" pointer-events="none">
+        <animate attributeName="x" from="-30" to="170" dur="2.5s" repeatCount="indefinite" />
+      </rect>
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#E879F9" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#E879F9" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
+      <g>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(168, 85, 247, 0.12)" stroke="#A855F7" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#E879F9" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🎮</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">WEBGL 2.0 &amp; GLSL</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">3D Spatial &amp; Compute</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#C084FC">★ OBSIDIAN TIER ★</text>
+    </g>
+  </g>
+
+  <!-- Badge 4: 50+ Deployments -->
+  <g transform="translate(544, 8)">
+    <g class="badge-anim f4">
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#emeraldTier)" stroke-width="1.3" />
+      
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#6EE7B7" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <rect x="0" y="0" width="30" height="100" fill="url(#badgePerimeterPulse)" opacity="0.25" pointer-events="none">
+        <animate attributeName="x" from="-30" to="170" dur="3.5s" repeatCount="indefinite" />
+      </rect>
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#6EE7B7" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#6EE7B7" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
+      <g>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(16, 185, 129, 0.12)" stroke="#10B981" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#6EE7B7" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #10B981)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">🚀</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">50+ DEPLOYMENTS</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">High-Availability Cloud</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#34D399">★ DIAMOND TIER ★</text>
+    </g>
+  </g>
+
+  <!-- Badge 5: OS Kernel Tuner -->
+  <g transform="translate(722, 8)">
+    <g class="badge-anim f5">
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="url(#glassCardGrad)" stroke="url(#blueTier)" stroke-width="1.3" />
+      <polygon points="12,0 156,0 168,12 168,88 156,100 12,100 0,88 0,12" fill="none" stroke="#7DD3FC" stroke-width="1" class="card-laser-stream" opacity="0.6" />
+      <path d="M 12 1 L 156 1 L 167 12 L 1 12 Z" fill="url(#cardSpecular)" />
+      <line x1="0" y1="12" x2="12" y2="0" stroke="#7DD3FC" class="corner-tick" />
+      <line x1="156" y1="100" x2="168" y2="88" stroke="#7DD3FC" class="corner-tick" />
+      <!-- 3D Tilted Gyroscope Rings -->
+      <g>
+        <ellipse cx="84" cy="28" rx="22" ry="11" fill="rgba(2, 132, 199, 0.12)" stroke="#0284C7" stroke-width="1.2" stroke-dasharray="4, 4">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="84" cy="28" rx="16" ry="8" fill="none" stroke="#7DD3FC" stroke-width="1">
+          <animateTransform attributeName="transform" type="rotate" from="360 84 28" to="0 84 28" dur="4s" repeatCount="indefinite" />
+        </ellipse>
+        <circle cx="84" cy="17" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #0284C7)">
+          <animateTransform attributeName="transform" type="rotate" from="0 84 28" to="360 84 28" dur="3s" repeatCount="indefinite" />
+        </circle>
+      </g>
+      <text x="84" y="34" text-anchor="middle" font-size="16">⚡</text>
+      <text x="84" y="58" text-anchor="middle" class="b-title">OS KERNEL TUNER</text>
+      <text x="84" y="72" text-anchor="middle" class="b-sub">Low-Latency Engineering</text>
+      <text x="84" y="88" text-anchor="middle" class="b-tier tier-glow" fill="#38BDF8">★ PLATINUM TIER ★</text>
+    </g>
+  </g>
+</svg>
