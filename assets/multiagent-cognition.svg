@@ -1,0 +1,181 @@
+<svg width="900" height="130" viewBox="0 0 900 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="cogGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="cogSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="cogChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <style>
+      .cog-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .cog-step-num { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; letter-spacing: 1px; }
+      .cog-step-name { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #FFFFFF; }
+      .cog-step-detail { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 8.5px; fill: #8B949E; }
+      .cog-metric { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; font-weight: 700; }
+      
+      .arrow-track {
+        stroke-dasharray: 4, 4;
+        animation: arrowStream 0.8s linear infinite;
+      }
+      
+      
+      
+      
+
+      @keyframes arrowStream {
+        from { stroke-dashoffset: 8; }
+        to { stroke-dashoffset: 0; }
+      }
+      
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="12,2 888,2 898,12 898,118 888,128 12,128 2,118 2,12" fill="url(#cogGlassBg)" stroke="url(#cogChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#cogSpecular)" />
+
+  <!-- Top Title Ribbon -->
+  <g transform="translate(20, 16)">
+    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
+    <text x="18" y="9.5" class="cog-title">SIVION v2.4 // MULTI-AGENT COGNITIVE STATE MACHINE</text>
+    <text x="860" y="9.5" text-anchor="end" class="cog-title" fill="#7701D0">4-STAGE AUTONOMOUS PIPELINE</text>
+    
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+    <rect x="0" y="17" width="120" height="2" fill="#00DFD8" opacity="0.8">
+      <animate attributeName="x" from="-120" to="860" dur="3s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <!-- 4 PIPELINE PODS WITH ACTIVE SEQUENTIAL ILLUMINATION -->
+
+  <!-- Stage 01: Ingestion & RAG -->
+  <g transform="translate(24, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.2s" additive="sum" repeatCount="indefinite"/>
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#00DFD8" stroke-width="1.2" class="st-glow-1" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+    <!-- 3D Mini Gyroscope -->
+    <g>
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#00DFD8" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <circle cx="14" cy="16" r="3" fill="#00DFD8" />
+    <text x="28" y="19" class="cog-step-num" fill="#00DFD8">STAGE 01 // INGESTION</text>
+    <text x="14" y="35" class="cog-step-name">Hybrid RAG Query</text>
+    <text x="14" y="48" class="cog-step-detail">pgvector Semantic Search</text>
+    <text x="14" y="60" class="cog-metric" fill="#00DFD8">⚡ LATENCY: &lt;10ms PROBE</text>
+  </g>
+
+  <!-- Connecting Bus 1-2 -->
+  <g transform="translate(224, 80)">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#00DFD8" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#00DFD8" />
+  </g>
+
+  <!-- Stage 02: Swarm Reasoning -->
+  <g transform="translate(250, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="2.7s" additive="sum" repeatCount="indefinite"/>
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.2" class="st-glow-2" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+    <g>
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#A855F7" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <circle cx="14" cy="16" r="3" fill="#A855F7" />
+    <text x="28" y="19" class="cog-step-num" fill="#C084FC">STAGE 02 // REASONING</text>
+    <text x="14" y="35" class="cog-step-name">Swarm Consensus</text>
+    <text x="14" y="48" class="cog-step-detail">Planner + Critic Swarm</text>
+    <text x="14" y="60" class="cog-metric" fill="#C084FC">🤖 SWARM: 4/4 ACTIVE</text>
+  </g>
+
+  <!-- Connecting Bus 2-3 -->
+  <g transform="translate(450, 80)">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#A855F7" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#A855F7" />
+  </g>
+
+  <!-- Stage 03: Kernel Execution -->
+  <g transform="translate(476, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="3.5s" additive="sum" repeatCount="indefinite"/>
+    <polygon points="8,0 188,0 196,8 196,62 188,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#10B981" stroke-width="1.2" class="st-glow-3" />
+    <path d="M 8 1 L 188 1 L 195 8 L 1 8 Z" fill="url(#cogSpecular)" />
+    <g>
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#10B981" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <circle cx="14" cy="16" r="3" fill="#10B981" />
+    <text x="28" y="19" class="cog-step-num" fill="#34D399">STAGE 03 // EXECUTION</text>
+    <text x="14" y="35" class="cog-step-name">Low-Latency Kernel</text>
+    <text x="14" y="48" class="cog-step-detail">Win32 API &amp; C++20 Ring 0</text>
+    <text x="14" y="60" class="cog-metric" fill="#34D399">🚀 LATENCY: 0.42ms DISPATCH</text>
+  </g>
+
+  <!-- Connecting Bus 3-4 -->
+  <g transform="translate(676, 80)">
+    <line x1="0" y1="0" x2="18" y2="0" stroke="#10B981" stroke-width="1.5" class="arrow-track" />
+    <polygon points="18,-3 24,0 18,3" fill="#10B981" />
+  </g>
+
+  <!-- Stage 04: Realtime Stream -->
+  <g transform="translate(702, 46)"><animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="2.9s" additive="sum" repeatCount="indefinite"/>
+    <polygon points="8,0 166,0 174,8 174,62 166,70 8,70 0,62 0,8" fill="rgba(15, 23, 42, 0.85)" stroke="#0284C7" stroke-width="1.2" class="st-glow-4" />
+    <path d="M 8 1 L 166 1 L 173 8 L 1 8 Z" fill="url(#cogSpecular)" />
+    <g>
+      
+        <ellipse cx="14" cy="16" rx="16" ry="8" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="2, 4" opacity="0.5">
+          <animateTransform attributeName="transform" type="rotate" from="360 14 16" to="0 14 16" dur="6s" repeatCount="indefinite" />
+        </ellipse>
+        <ellipse cx="14" cy="16" rx="10" ry="5" fill="none" stroke="#0284C7" stroke-width="1" stroke-dasharray="3, 3">
+        <animateTransform attributeName="transform" type="rotate" from="0 14 16" to="360 14 16" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <circle cx="14" cy="16" r="3" fill="#0284C7" />
+    <text x="28" y="19" class="cog-step-num" fill="#38BDF8">STAGE 04 // REALTIME</text>
+    <text x="14" y="35" class="cog-step-name">Supabase Stream</text>
+    <text x="14" y="48" class="cog-step-detail">WebSocket + React 19 UI</text>
+    <text x="14" y="60" class="cog-metric" fill="#38BDF8">☁️ SYNC: REALTIME WS</text>
+  </g>
+</svg>
