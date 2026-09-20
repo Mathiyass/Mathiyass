@@ -312,10 +312,10 @@
 
 #### ⚡ GitHub Telemetry
 <!--START_SECTION:activity-->
-1. 🚀 Published release [MA-Optimizer v11.3.0 — eSports Hit Registration & ONT-Safe Suite](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.3.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-2. 🚀 Published release [MA Optimizer v11.2.0 — eSports Low-Latency Engine & Delta Force 2026 Title Support](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.2.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-3. 🚀 Published release [MA Optimizer v11.1.0 — Autonomous Neural Engine & Ambient AI Architecture](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.1.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
-4. 🎉 Merged PR [#5](https://github.com/Mathiyass/Mathiyass/pull/5) in [Mathiyass/Mathiyass](https://github.com/Mathiyass/Mathiyass)
+1. 🚀 Published release [v11.5.0 — Maximum Potential Suite: Security Matrix, ISLC Standby Purge & DPC Telemetry](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.5.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+2. 🚀 Published release [MA Optimizer v11.4.0 — Deep Hitreg & DPC Elimination Suite](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.4.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+3. 🚀 Published release [MA-Optimizer v11.3.0 — eSports Hit Registration & ONT-Safe Suite](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.3.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
+4. 🚀 Published release [MA Optimizer v11.2.0 — eSports Low-Latency Engine & Delta Force 2026 Title Support](https://github.com/Mathiyass/MA-Optimizer/releases/tag/v11.2.0) in [Mathiyass/MA-Optimizer](https://github.com/Mathiyass/MA-Optimizer)
 <!--END_SECTION:activity-->
 
 </td>
