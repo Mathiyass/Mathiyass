@@ -1,0 +1,210 @@
+<svg width="850" height="44" viewBox="0 0 850 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Glass Gradient -->
+    <linearGradient id="typGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Highlight -->
+    <linearGradient id="typSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="typBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Sweeping Laser Scan Gradient -->
+    <linearGradient id="typLaser" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+
+    <!-- Clip Paths for Typewriter Reveal -->
+    <clipPath id="clip1">
+      <rect x="230" y="0" width="0" height="44">
+        <animate attributeName="width" 
+                 values="0; 520; 520; 0; 0; 0; 0; 0; 0; 0; 0; 0" 
+                 keyTimes="0; 0.08; 0.22; 0.25; 0.26; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
+                 dur="16s" 
+                 repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="clip2">
+      <rect x="230" y="0" width="0" height="44">
+        <animate attributeName="width" 
+                 values="0; 0; 0; 520; 520; 0; 0; 0; 0; 0; 0; 0" 
+                 keyTimes="0; 0.25; 0.26; 0.34; 0.47; 0.50; 0.51; 0.75; 0.76; 0.98; 0.99; 1" 
+                 dur="16s" 
+                 repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="clip3">
+      <rect x="230" y="0" width="0" height="44">
+        <animate attributeName="width" 
+                 values="0; 0; 0; 0; 0; 520; 520; 0; 0; 0; 0; 0" 
+                 keyTimes="0; 0.50; 0.51; 0.52; 0.53; 0.59; 0.72; 0.75; 0.76; 0.98; 0.99; 1" 
+                 dur="16s" 
+                 repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <clipPath id="clip4">
+      <rect x="230" y="0" width="0" height="44">
+        <animate attributeName="width" 
+                 values="0; 0; 0; 0; 0; 0; 0; 520; 520; 0; 0; 0" 
+                 keyTimes="0; 0.75; 0.76; 0.77; 0.78; 0.84; 0.97; 0.99; 0.995; 0.998; 0.999; 1" 
+                 dur="16s" 
+                 repeatCount="indefinite" />
+      </rect>
+    </clipPath>
+
+    <style>
+      .term-prompt {
+        font-family: 'Fira Code', 'SF Mono', Consolas, monospace;
+        font-size: 11px;
+        font-weight: 700;
+        fill: #00DFD8;
+        letter-spacing: 1px;
+      }
+      .type-line {
+        font-family: 'Fira Code', 'SF Mono', Consolas, monospace;
+        font-size: 12.5px;
+        font-weight: 600;
+        fill: #FFFFFF;
+      }
+      .cursor-blink { opacity: 1; }
+      
+      .beacon-dot { filter: drop-shadow(0 0 6px #00DFD8); }
+      .bar-bounce {
+        animation: barBounce 1s ease-in-out infinite alternate;
+        transform-box: fill-box;
+        transform-origin: bottom;
+      }
+      @keyframes barBounce {
+        0% { transform: scaleY(0.25); }
+        100% { transform: scaleY(1); }
+      }
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    
+      .eq-tb-1 { animation: tbEq1 0.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-2 { animation: tbEq2 1.1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-3 { animation: tbEq3 0.7s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .eq-tb-4 { animation: tbEq4 1.3s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes tbEq1 { 0% { transform: scaleY(0.2); } 100% { transform: scaleY(1); } }
+      @keyframes tbEq2 { 0% { transform: scaleY(0.8); } 100% { transform: scaleY(0.25); } }
+      @keyframes tbEq3 { 0% { transform: scaleY(0.15); } 100% { transform: scaleY(0.9); } }
+      @keyframes tbEq4 { 0% { transform: scaleY(0.95); } 100% { transform: scaleY(0.3); } }
+    </style>
+  
+    <linearGradient id="typLaserShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  </defs>
+
+  <!-- 3D Glass Chassis Container -->
+  <polygon points="6,2 844,2 848,6 848,38 844,42 6,42 2,38 2,6" fill="url(#typGlassBg)" stroke="url(#typBorder)" stroke-width="1.2" />
+  
+  <path d="M 6 3 L 844 3 L 847 7 L 3 7 Z" fill="url(#typSpecular)" />
+  <!-- Continuous Sweeping Laser Flare -->
+  <rect x="0" y="2" width="180" height="38" fill="url(#typLaserShine)" pointer-events="none">
+    <animate attributeName="x" from="-200" to="900" dur="3s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Sweeping Laser Beam Across Track -->
+  <rect x="0" y="2" width="160" height="2" fill="url(#typLaser)">
+    <animate attributeName="x" from="-180" to="860" dur="4s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Traffic Lights Terminal Header -->
+  <g transform="translate(18, 22)">
+    <circle cx="0" cy="0" r="3.5" fill="#EF4444" opacity="0.85" />
+    <circle cx="12" cy="0" r="3.5" fill="#FBBF24" opacity="0.85" />
+    <circle cx="24" cy="0" r="3.5" fill="#10B981" class="beacon-dot" />
+  </g>
+
+  <!-- Terminal Prompt -->
+  <g transform="translate(60, 26)">
+    <text x="0" y="0" class="term-prompt">SYS://PROMPT ❯</text>
+  </g>
+
+  <!-- Live Audio Waveform Bars next to Prompt -->
+  <g transform="translate(185, 27)">
+    <rect x="0" y="-12" width="2" height="12" fill="#00DFD8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.1s;" />
+    <rect x="4" y="-12" width="2" height="12" fill="#38BDF8" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.3s;" />
+    <rect x="8" y="-12" width="2" height="12" fill="#A855F7" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.5s;" />
+    <rect x="12" y="-12" width="2" height="12" fill="#10B981" class="bar-bounce" style="transform-origin: bottom; animation-delay: 0.2s;" />
+  </g>
+
+  <!-- Phrase 1 (Cyan Theme) -->
+  <g clip-path="url(#clip1)">
+    <text x="230" y="26" class="type-line" fill="#00DFD8">
+      LEAD SYSTEMS ARCHITECT &amp; AI SPECIALIST <tspan fill="#38BDF8">[mathiya.cc]</tspan>
+    </text>
+  </g>
+
+  <!-- Phrase 2 (Purple Theme) -->
+  <g clip-path="url(#clip2)">
+    <text x="230" y="26" class="type-line" fill="#E879F9">
+      SCALABLE MULTI-AGENT AI ECOSYSTEMS <tspan fill="#C084FC">[SIVION SWARMS]</tspan>
+    </text>
+  </g>
+
+  <!-- Phrase 3 (Emerald Theme) -->
+  <g clip-path="url(#clip3)">
+    <text x="230" y="26" class="type-line" fill="#34D399">
+      LOW-LATENCY WINDOWS KERNEL TUNING <tspan fill="#10B981">[MA OPTIMIZER]</tspan>
+    </text>
+  </g>
+
+  <!-- Phrase 4 (Amber & WebGL Theme) -->
+  <g clip-path="url(#clip4)">
+    <text x="230" y="26" class="type-line" fill="#FBBF24">
+      WEBGL 2.0 &amp; GLSL GPGPU COMPUTE SHADERS <tspan fill="#F59E0B">[3D SPATIAL]</tspan>
+    </text>
+  </g>
+
+  <!-- Right Telemetry Badge & Live Beacon -->
+  <g transform="translate(775, 26)">
+    <circle cx="0" cy="-3" r="3" fill="#00DFD8" class="beacon-dot" />
+    <text x="10" y="0" font-family="'Fira Code', monospace" font-size="9" font-weight="700" fill="#6E7681">60 FPS</text>
+  </g>
+
+  <!-- Mini 6-Channel Visualizer on Right Rail -->
+  <g transform="translate(805, 32)">
+    <rect x="0" y="-18" width="2.5" height="18" rx="1.25" fill="#00DFD8" class="eq-tb-1" />
+    <rect x="4" y="-18" width="2.5" height="18" rx="1.25" fill="#38BDF8" class="eq-tb-2" />
+    <rect x="8" y="-18" width="2.5" height="18" rx="1.25" fill="#A855F7" class="eq-tb-3" />
+    <rect x="12" y="-18" width="2.5" height="18" rx="1.25" fill="#10B981" class="eq-tb-4" />
+    <rect x="16" y="-18" width="2.5" height="18" rx="1.25" fill="#00DFD8" class="eq-tb-2" />
+    <rect x="20" y="-18" width="2.5" height="18" rx="1.25" fill="#E879F9" class="eq-tb-1" />
+  </g>
+</svg>
