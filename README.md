@@ -312,7 +312,7 @@
 
 #### ⚡ GitHub Telemetry
 <!--START_SECTION:activity-->
-1. 🚀 Published release [⚡ Mathiya GameLoop Panel v4.4 — Streamer UHD 120 FPS Writable Edition](https://github.com/Mathiyass/panel-loop-ultimate/releases/tag/v4.4.0) in [Mathiyass/panel-loop-ultimate](https://github.com/Mathiyass/panel-loop-ultimate)
+1. 🚀 Published release [⚡ Mathiya GameLoop Panel v4.4 — Tier 6 Ultra HD 120 FPS Edition](https://github.com/Mathiyass/panel-loop-ultimate/releases/tag/v4.4.0) in [Mathiyass/panel-loop-ultimate](https://github.com/Mathiyass/panel-loop-ultimate)
 2. 🚀 Published release [⚡ Mathiya GameLoop Panel v4.3 — Streamer HDR 120 FPS Verified Edition](https://github.com/Mathiyass/panel-loop-ultimate/releases/tag/v4.3.0) in [Mathiyass/panel-loop-ultimate](https://github.com/Mathiyass/panel-loop-ultimate)
 3. 🚀 Published release [⚡ Mathiya GameLoop Panel v4.2 — MrBro Ultra HD 120 FPS & Zero Combat Lag Edition](https://github.com/Mathiyass/panel-loop-ultimate/releases/tag/v4.2.0) in [Mathiyass/panel-loop-ultimate](https://github.com/Mathiyass/panel-loop-ultimate)
 4. 🚀 Published release [⚡ Mathiya GameLoop Panel v4.1 — Streamer Flat-Texture 120 FPS & Zero Combat Lag Edition](https://github.com/Mathiyass/panel-loop-ultimate/releases/tag/v4.1.0) in [Mathiyass/panel-loop-ultimate](https://github.com/Mathiyass/panel-loop-ultimate)
