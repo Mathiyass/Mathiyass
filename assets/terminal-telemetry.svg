@@ -1,0 +1,152 @@
+<svg width="900" height="150" viewBox="0 0 900 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="termGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge -->
+    <linearGradient id="termSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="termChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <style>
+      .term-header { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; fill: #8B949E; }
+      .term-cmd { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10px; font-weight: 700; fill: #00DFD8; }
+      .term-log { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; fill: #C9D1D9; }
+      .term-accent-purple { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #C084FC; }
+      .term-accent-emerald { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #34D399; }
+      .term-accent-cyan { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 9px; font-weight: 700; fill: #00DFD8; }
+      
+      .cursor-blink { opacity: 1; }
+      
+      .cpu-ping { filter: drop-shadow(0 0 4px #10B981); }
+
+      
+      @keyframes memPulse {
+        0% { width: 140px; }
+        100% { width: 185px; }
+      }
+      
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
+  
+    <linearGradient id="termFlareBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  
+    <linearGradient id="memShimmerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  </defs>
+
+  <!-- 3D Glass Terminal Window Frame -->
+  <polygon points="12,2 888,2 898,12 898,138 888,148 12,148 2,138 2,12" fill="url(#termGlassBg)" stroke="url(#termChromeBorder)" stroke-width="1.3" />
+  
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#termSpecular)" />
+  <!-- Continuous Horizontal Sweeping Laser Flare -->
+  <rect x="0" y="2" width="220" height="144" fill="url(#termFlareBeam)" pointer-events="none">
+    <animate attributeName="x" from="-250" to="920" dur="3.5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Window Control Dots & Title -->
+  <g transform="translate(18, 14)">
+    
+    <circle cx="6" cy="6" r="4" fill="#FF5F56" />
+    <ellipse cx="6" cy="6" rx="8" ry="4" fill="none" stroke="#FF5F56" stroke-width="0.8" stroke-dasharray="2, 2" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0 6 6" to="360 6 6" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <circle cx="20" cy="6" r="4" fill="#FFBD2E" />
+    <ellipse cx="20" cy="6" rx="8" ry="4" fill="none" stroke="#FFBD2E" stroke-width="0.8" stroke-dasharray="2, 2" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="360 20 6" to="0 20 6" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    
+    <circle cx="34" cy="6" r="4" fill="#27C93F" />
+    <ellipse cx="34" cy="6" rx="8" ry="4" fill="none" stroke="#27C93F" stroke-width="0.8" stroke-dasharray="2, 2" opacity="0.7">
+      <animateTransform attributeName="transform" type="rotate" from="0 34 6" to="360 34 6" dur="4s" repeatCount="indefinite" />
+    </ellipse>
+    <text x="430" y="9.5" text-anchor="middle" class="term-header">mathiya@architect-core:~//system-engine (zsh)</text>
+    <rect x="735" y="0" width="130" height="15" rx="7.5" fill="rgba(16, 185, 129, 0.12)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1" />
+    <circle cx="745" cy="7.5" r="3" fill="#10B981" class="cpu-ping" />
+    <text x="753" y="11" font-family="'Fira Code', monospace" font-size="7.5" font-weight="700" fill="#10B981">PIPELINE: 100% OPERATIONAL</text>
+    <line x1="0" y1="18" x2="864" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- Terminal Content Lines -->
+  <g transform="translate(24, 46)">
+    <!-- Command Line -->
+    <text x="0" y="0" class="term-cmd">mathiya@core:~$</text>
+    <text x="110" y="0" font-family="'Fira Code', monospace" font-size="10" fill="#FFFFFF">./orchestrate-systems --profile=production --full-mesh</text>
+
+    <!-- Line 1: Multi-Agent Swarm -->
+    <text x="0" y="18" class="term-log">[00:00.04]</text>
+    <text x="70" y="18" class="term-accent-purple">▲ MULTI-AGENT SWARM:</text>
+    <text x="215" y="18" class="term-log">Active (SIVION v2.4 INITIALIZED • 4/4 workers connected)</text>
+
+    <!-- Line 2: MA-Optimizer Kernel -->
+    <text x="0" y="34" class="term-log">[00:00.12]</text>
+    <text x="70" y="34" class="term-accent-emerald">■ MA-OPTIMIZER TUNER:</text>
+    <text x="225" y="34" class="term-log">BENCHMARK: 0.42ms (kernel latency eliminated • zero jitter)</text>
+
+    <!-- Line 3: WebGL / GLSL -->
+    <text x="0" y="50" class="term-log">[00:00.20]</text>
+    <text x="70" y="50" class="term-accent-cyan">◆ WEBGL 2.0 / GLSL:</text>
+    <text x="210" y="50" class="term-log">144 FPS @ 4K (GPGPU Compute shaders verified • mathiya.cc/lab)</text>
+
+    <!-- Line 4: Distributed Cloud -->
+    <text x="0" y="66" class="term-log">[00:00.35]</text>
+    <text x="70" y="66" class="term-accent-purple">● DISTRIBUTED CLOUD:</text>
+    <text x="215" y="66" class="term-log">Healthy (FastAPI + Bun + Supabase Realtime synchronized)</text>
+
+    <!-- Line 5: Memory Pool + Interactive Prompt -->
+    <text x="0" y="82" class="term-log">[00:00.41]</text>
+    <text x="70" y="82" class="term-accent-cyan">💾 MEMORY POOL:</text>
+    <g transform="translate(180, 74)">
+      <rect x="0" y="0" width="220" height="9" rx="4.5" fill="rgba(255, 255, 255, 0.08)" />
+      
+      <rect x="0" y="0" width="165" height="9" rx="4.5" fill="#00DFD8" class="mem-pulse" />
+      <!-- Memory Allocation Shimmer Flare -->
+      <rect x="0" y="0" width="40" height="9" rx="4.5" fill="url(#memShimmerGrad)" pointer-events="none">
+        <animate attributeName="x" from="-40" to="165" dur="1.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+    <text x="415" y="82" class="term-log" fill="#00DFD8">38% (12.2GB / 32GB Allocated)</text>
+
+    <!-- Active Prompt with Cursor -->
+    <text x="0" y="96" class="term-cmd">mathiya@core:~$</text>
+    <text x="110" y="96" font-family="'Fira Code', monospace" font-size="10" font-weight="700" fill="#10B981">echo "Ready for Production Leadership"</text>
+    <text x="415" y="96" class="term-cmd cursor-blink" fill="#00DFD8">█</text>
+  </g>
+</svg>
