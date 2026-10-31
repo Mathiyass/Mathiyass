@@ -1,0 +1,169 @@
+<svg width="480" height="96" viewBox="0 0 480 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="spotGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.95" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="spotSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#1DB954" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="spotChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1DB954" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#1DB954" stop-opacity="0.95" />
+    </linearGradient>
+
+    <style>
+      .track-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 12px; font-weight: 700; fill: #FFFFFF; }
+      .track-artist { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 10px; fill: #8B949E; }
+      .spot-label { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #1DB954; letter-spacing: 1.5px; }
+      .spot-time { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8px; fill: #6E7681; }
+      
+      .eq-bar {
+        transform-box: fill-box;
+        transform-origin: bottom;
+        animation: bounceEq 1.2s ease-in-out infinite alternate;
+      }
+      .b1 { animation-delay: 0.05s; }
+      .b2 { animation-delay: 0.35s; }
+      .b3 { animation-delay: 0.15s; }
+      .b4 { animation-delay: 0.55s; }
+      .b5 { animation-delay: 0.25s; }
+      .b6 { animation-delay: 0.45s; }
+      .b7 { animation-delay: 0.10s; }
+      .b8 { animation-delay: 0.60s; }
+      .b9 { animation-delay: 0.30s; }
+      .b10 { animation-delay: 0.50s; }
+      .b11 { animation-delay: 0.20s; }
+      .b12 { animation-delay: 0.40s; }
+      .b13 { animation-delay: 0.15s; }
+      .b14 { animation-delay: 0.45s; }
+      .b15 { animation-delay: 0.25s; }
+      .b16 { animation-delay: 0.55s; }
+      
+      
+
+      
+      
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    
+      .b1  { animation: eqBounce1 0.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b2  { animation: eqBounce2 1.1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b3  { animation: eqBounce3 0.7s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b4  { animation: eqBounce4 1.3s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b5  { animation: eqBounce1 1.0s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b6  { animation: eqBounce3 0.9s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b7  { animation: eqBounce2 1.2s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b8  { animation: eqBounce4 0.75s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b9  { animation: eqBounce1 1.15s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b10 { animation: eqBounce2 0.85s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b11 { animation: eqBounce3 1.05s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b12 { animation: eqBounce4 1.25s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b13 { animation: eqBounce1 0.95s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b14 { animation: eqBounce2 1.1s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b15 { animation: eqBounce3 0.8s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      .b16 { animation: eqBounce4 1.0s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: bottom; }
+      @keyframes eqBounce1 { 0% { transform: scaleY(0.25); } 100% { transform: scaleY(1); } }
+      @keyframes eqBounce2 { 0% { transform: scaleY(0.85); } 100% { transform: scaleY(0.2); } }
+      @keyframes eqBounce3 { 0% { transform: scaleY(0.15); } 100% { transform: scaleY(0.95); } }
+      @keyframes eqBounce4 { 0% { transform: scaleY(0.9); } 100% { transform: scaleY(0.35); } }
+    </style>
+  
+    <!-- Playhead Glow -->
+    <filter id="playheadGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#1DB954" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="10,2 470,2 478,10 478,86 470,94 10,94 2,86 2,10" fill="url(#spotGlassBg)" stroke="url(#spotChromeBorder)" stroke-width="1.3" />
+  <path d="M 10 3 L 470 3 L 476 9 L 4 9 Z" fill="url(#spotSpecular)" />
+
+  <!-- 3D Tilted Gyro Orbit around Spotify Logo -->
+  <g transform="translate(16, 20)">
+    
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#1DB954" stroke-opacity="0.3" />
+    <!-- Secondary 3D Counter-Rotating Gyroscope -->
+    <ellipse cx="28" cy="28" rx="36" ry="18" fill="none" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1.2" stroke-dasharray="3, 5">
+      <animateTransform attributeName="transform" type="rotate" from="360 28 28" to="0 28 28" dur="6s" repeatCount="indefinite" />
+    </ellipse>
+    <!-- Orbiting Satellite Photon Node -->
+    <g>
+      <circle cx="28" cy="8" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 6px #1DB954)">
+        <animateTransform attributeName="transform" type="rotate" from="0 28 28" to="360 28 28" dur="3.5s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <ellipse cx="28" cy="28" rx="32" ry="16" fill="none" stroke="rgba(29, 185, 84, 0.4)" stroke-width="1.2" stroke-dasharray="4, 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 28 28" to="360 28 28" dur="8s" repeatCount="indefinite" />
+    </ellipse>
+    <circle cx="28" cy="12" r="2" fill="#FFFFFF" filter="drop-shadow(0 0 4px #1DB954)">
+      <animateTransform attributeName="transform" type="rotate" from="0 28 28" to="360 28 28" dur="4s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Spotify Logo & Icon with Radiant Aura -->
+  <g transform="translate(16, 20)" class="spot-pulse">
+    <circle cx="28" cy="28" r="26" fill="#1DB954" />
+    <path d="M 38 23 C 30 18 18 17.5 11 19.5 C 10 19.8 8.8 19.2 8.5 18 C 8.2 16.8 8.8 15.6 10 15.3 C 18 12.8 31.5 13.3 40.5 18.8 C 41.5 19.4 41.8 20.7 41.2 21.7 C 40.6 22.7 39.2 23 38 23 Z" fill="#080B10" />
+    <path d="M 35 29.5 C 30.5 26.8 20.8 25.6 13.2 27.9 C 12.2 28.2 11.2 27.6 10.9 26.7 C 10.6 25.7 11.2 24.7 12.1 24.4 C 20.8 21.8 31.7 23.1 37.1 26.4 C 38 27 38.2 28 37.7 28.9 C 37.2 29.7 36 30 35 29.5 Z" fill="#080B10" />
+    <path d="M 32.5 36 C 29 33.8 21.6 33.1 15.2 35 C 14.4 35.2 13.6 34.8 13.4 34 C 13.2 33.3 13.6 32.5 14.4 32.3 C 21.6 30.1 29.8 30.8 34.1 33.5 C 34.8 33.9 35 34.8 34.6 35.5 C 34.2 36.2 33.3 36.4 32.5 36 Z" fill="#080B10" />
+  </g>
+
+  <!-- Track Meta -->
+  <text x="82" y="30" class="spot-label">● AUDIO STREAM // HIGH-FIDELITY FLAC</text>
+  <text x="82" y="49" class="track-title">Cyberpunk Synthwave &amp; Systems Flow</text>
+  <text x="82" y="66" class="track-artist">Curated Architect Soundtracks • 24-Bit / 96kHz</text>
+  <text x="82" y="80" class="spot-time">02:48 / 03:15 • STREAMING LIVE</text>
+  
+  <line x1="82" y1="86" x2="350" y2="86" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-linecap="round" />
+  <line x1="82" y1="86" x2="350" y2="86" stroke="#1DB954" stroke-width="1.8" stroke-opacity="0.8" class="dash-flow" />
+  <!-- Moving Playhead Cursor -->
+  <circle cx="82" cy="86" r="3.5" fill="#FFFFFF" filter="url(#playheadGlow)">
+    <animate attributeName="cx" from="82" to="350" dur="5s" repeatCount="indefinite" />
+  </circle>
+
+  <!-- 16-Band Equalizer -->
+  <g transform="translate(376, 68)">
+    <rect x="0" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b1" />
+    <rect x="5" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b2" />
+    <rect x="10" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b3" />
+    <rect x="15" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b4" />
+    <rect x="20" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b5" />
+    <rect x="25" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b6" />
+    <rect x="30" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b7" />
+    <rect x="35" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b8" />
+    <rect x="40" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b9" />
+    <rect x="45" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b10" />
+    <rect x="50" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b11" />
+    <rect x="55" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b12" />
+    <rect x="60" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b13" />
+    <rect x="65" y="-32" width="3" height="32" rx="1.5" fill="#00DFD8" class="eq-bar b14" />
+    <rect x="70" y="-32" width="3" height="32" rx="1.5" fill="#1DB954" class="eq-bar b15" />
+    <rect x="75" y="-32" width="3" height="32" rx="1.5" fill="#10B981" class="eq-bar b16" />
+  </g>
+</svg>

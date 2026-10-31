@@ -1,0 +1,221 @@
+<svg width="900" height="180" viewBox="0 0 900 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="radarGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="radarSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="radarChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- Radar Sweep Gradient -->
+    <linearGradient id="radarSweepSupreme" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.75" />
+      <stop offset="60%" stop-color="#00DFD8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .r-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .r-label { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; fill: #FFFFFF; }
+      .r-coord { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 7.5px; fill: #8B949E; }
+      .r-val { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; }
+      
+      
+      
+      
+
+      
+      
+      
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    </style>
+  
+    <linearGradient id="radarBarFlare" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+  
+    <g id="radarCompassRing">
+      <circle cx="60" cy="60" r="46" fill="none" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1" stroke-dasharray="2, 10">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="12s" repeatCount="indefinite" />
+      </circle>
+      <circle cx="60" cy="60" r="30" fill="none" stroke="rgba(168, 85, 247, 0.35)" stroke-width="1" stroke-dasharray="2, 6">
+        <animateTransform attributeName="transform" type="rotate" from="360 60 60" to="0 60 60" dur="8s" repeatCount="indefinite" />
+      </circle>
+    </g>
+  </defs>
+
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="12,2 888,2 898,12 898,168 888,178 12,178 2,168 2,12" fill="url(#radarGlassBg)" stroke="url(#radarChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#radarSpecular)" />
+
+  <!-- Top Title Bar -->
+  <g transform="translate(20, 16)">
+    <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
+    <text x="18" y="9.5" class="r-title">ARCHITECTURAL CAPABILITY RADAR // METRICS</text>
+    <text x="860" y="9.5" text-anchor="end" class="r-title" fill="#10B981">SYS-RADAR // ACTIVE 360° SWEEP</text>
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- Circular 3D Radar HUD with Tilted Gyroscope (Left) -->
+  <g transform="translate(45, 42)">
+    <!-- 3D Tilted Gyroscope Ring (10s SMIL Rotation) -->
+    <g>
+      <ellipse cx="60" cy="60" rx="60" ry="30" fill="none" stroke="rgba(168, 85, 247, 0.4)" stroke-width="1.2" stroke-dasharray="6, 6">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="10s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    <!-- Orbiting Satellite along Gyro -->
+    <g>
+      <circle cx="60" cy="30" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="4s" repeatCount="indefinite" />
+      </circle>
+    </g>
+
+    <!-- Concentric Range Rings -->
+    <circle cx="60" cy="60" r="54" fill="rgba(15, 23, 42, 0.7)" stroke="rgba(0, 223, 216, 0.35)" stroke-width="1.2" />
+    <circle cx="60" cy="60" r="38" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" stroke-dasharray="4, 4" />
+    <circle cx="60" cy="60" r="22" fill="none" stroke="rgba(0, 223, 216, 0.2)" stroke-width="1" />
+
+    
+    <!-- Rotating Compass Angle Reticle -->
+    <use href="#radarCompassRing" />
+    <!-- Crosshair Lines -->
+    <line x1="6" y1="60" x2="114" y2="60" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+    <line x1="60" y1="6" x2="60" y2="114" stroke="rgba(0, 223, 216, 0.3)" stroke-width="1" />
+
+    <!-- Degree Markings -->
+    <text x="60" y="5" text-anchor="middle" class="r-coord">000°</text>
+    <text x="120" y="63" class="r-coord">090°</text>
+    <text x="60" y="122" text-anchor="middle" class="r-coord">180°</text>
+    <text x="0" y="63" class="r-coord">270°</text>
+
+    <!-- Radar Polygon (Pentagon of Capabilities) -->
+    <polygon points="60,16 100,42 88,96 32,96 20,42" fill="rgba(0, 223, 216, 0.25)" stroke="#00DFD8" stroke-width="1.5" />
+
+    <!-- 360° Continuous Rotating Radar Sweep Beam with Pure SMIL Rotation -->
+    <g>
+      <path d="M 60 60 L 60 6 A 54 54 0 0 1 105 28 Z" fill="url(#radarSweepSupreme)">
+        <animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="4.5s" repeatCount="indefinite" />
+      </path>
+    </g>
+
+    <!-- Radar Vertex Nodes with Echo Rings -->
+    
+    <circle cx="60" cy="16" r="3" fill="#00DFD8" class="radar-ping-node" />
+    
+    
+    <circle cx="100" cy="42" r="3" fill="#00DFD8" class="radar-ping-node" />
+    
+    
+    <circle cx="88" cy="96" r="3" fill="#00DFD8" class="radar-ping-node" />
+    
+    
+    <circle cx="32" cy="96" r="3" fill="#00DFD8" class="radar-ping-node" />
+    
+    
+    <circle cx="20" cy="42" r="3" fill="#00DFD8" class="radar-ping-node" />
+  </g>
+
+  <!-- Competency Progress Gauges (Right) -->
+  <g transform="translate(240, 44)">
+    <!-- Metric 1 -->
+    <g transform="translate(0, 0)">
+      <circle cx="6" cy="6" r="3.5" fill="#00DFD8" />
+      <text x="18" y="9" class="r-label">Multi-Agent AI &amp; Autonomous LLM Swarms</text>
+      <text x="590" y="9" text-anchor="end" class="r-val" fill="#00DFD8">98% // EXPERT</text>
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
+      
+      
+      <rect x="18" y="14" width="560" height="6" rx="3" fill="#00DFD8" />
+      <circle cx="18" cy="17" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 4px #00DFD8)">
+        <animate attributeName="cx" from="18" to="578" dur="2.4s" repeatCount="indefinite" />
+      </circle>
+      <rect x="18" y="14" width="100" height="6" rx="3" fill="url(#radarBarFlare)" pointer-events="none">
+        <animate attributeName="x" from="-100" to="580" dur="2.4s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Metric 2 -->
+    <g transform="translate(0, 27)">
+      <circle cx="6" cy="6" r="3.5" fill="#A855F7" />
+      <text x="18" y="9" class="r-label">WebGL 2.0, Three.js &amp; GLSL Compute Shaders</text>
+      <text x="590" y="9" text-anchor="end" class="r-val" fill="#C084FC">95% // HIGH-PERF</text>
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
+      
+      
+      <rect x="18" y="14" width="543" height="6" rx="3" fill="#A855F7" />
+      <circle cx="18" cy="17" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 4px #A855F7)">
+        <animate attributeName="cx" from="18" to="561" dur="2.8s" repeatCount="indefinite" />
+      </circle>
+      <rect x="18" y="14" width="100" height="6" rx="3" fill="url(#radarBarFlare)" pointer-events="none">
+        <animate attributeName="x" from="-100" to="580" dur="2.8s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Metric 3 -->
+    <g transform="translate(0, 54)">
+      <circle cx="6" cy="6" r="3.5" fill="#10B981" />
+      <text x="18" y="9" class="r-label">Kernel Tuning, Windows API &amp; Low-Latency Architecture</text>
+      <text x="590" y="9" text-anchor="end" class="r-val" fill="#34D399">96% // 0.42ms DISPATCH</text>
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
+      
+      
+      <rect x="18" y="14" width="549" height="6" rx="3" fill="#10B981" />
+      <circle cx="18" cy="17" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 4px #10B981)">
+        <animate attributeName="cx" from="18" to="567" dur="3.1s" repeatCount="indefinite" />
+      </circle>
+      <rect x="18" y="14" width="100" height="6" rx="3" fill="url(#radarBarFlare)" pointer-events="none">
+        <animate attributeName="x" from="-100" to="580" dur="3.1s" repeatCount="indefinite" />
+      </rect>
+    </g>
+
+    <!-- Metric 4 -->
+    <g transform="translate(0, 81)">
+      <circle cx="6" cy="6" r="3.5" fill="#0284C7" />
+      <text x="18" y="9" class="r-label">Distributed Cloud, Next.js 16 &amp; Realtime Supabase</text>
+      <text x="590" y="9" text-anchor="end" class="r-val" fill="#38BDF8">97% // SCALABLE</text>
+      <rect x="18" y="14" width="572" height="6" rx="3" fill="rgba(255, 255, 255, 0.06)" />
+      
+      
+      <rect x="18" y="14" width="555" height="6" rx="3" fill="#0284C7" />
+      <circle cx="18" cy="17" r="2.5" fill="#FFFFFF" filter="drop-shadow(0 0 4px #0284C7)">
+        <animate attributeName="cx" from="18" to="573" dur="2.6s" repeatCount="indefinite" />
+      </circle>
+      <rect x="18" y="14" width="100" height="6" rx="3" fill="url(#radarBarFlare)" pointer-events="none">
+        <animate attributeName="x" from="-100" to="580" dur="2.6s" repeatCount="indefinite" />
+      </rect>
+    </g>
+  </g>
+</svg>
