@@ -1,0 +1,212 @@
+<svg width="900" height="44" viewBox="0 0 900 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Volumetric Core Glow -->
+    <radialGradient id="gyroCoreAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="1" />
+      <stop offset="25%" stop-color="#00DFD8" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#7701D0" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- 3D Rail Top Surface Gradient (Specular) -->
+    <linearGradient id="rail3DTopLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#00DFD8" stop-opacity="0.3" />
+      <stop offset="85%" stop-color="#E0F7FA" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <linearGradient id="rail3DTopRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="15%" stop-color="#F3E8FF" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- 3D Rail Front Bevel Gradient (Shadow) -->
+    <linearGradient id="rail3DFrontLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#004D40" stop-opacity="0" />
+      <stop offset="60%" stop-color="#00838F" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.8" />
+    </linearGradient>
+
+    <linearGradient id="rail3DFrontRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="40%" stop-color="#4A148C" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#311B92" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Flare Photons -->
+    <linearGradient id="photonFlareLeft" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="transparent" />
+      <stop offset="70%" stop-color="#00DFD8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" />
+    </linearGradient>
+
+    <linearGradient id="photonFlareRight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#A855F7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="transparent" />
+    </linearGradient>
+
+    <style>
+      .energy-stream-left {
+        stroke-dasharray: 8, 12;
+        animation: dashStreamLeft 0.8s linear infinite;
+      }
+      .energy-stream-left-fast {
+        stroke-dasharray: 6, 10;
+        animation: dashStreamLeft 0.5s linear infinite;
+      }
+      .energy-stream-right {
+        stroke-dasharray: 8, 12;
+        animation: dashStreamRight 0.8s linear infinite;
+      }
+      .energy-stream-right-fast {
+        stroke-dasharray: 6, 10;
+        animation: dashStreamRight 0.5s linear infinite;
+      }
+
+      .chevron-move-left {
+        animation: chevronSlideLeft 1.2s linear infinite;
+      }
+      .chevron-move-right {
+        animation: chevronSlideRight 1.2s linear infinite;
+      }
+
+      @keyframes dashStreamLeft {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashStreamRight {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+
+      @keyframes chevronSlideLeft {
+        0% { transform: translateX(0px); }
+        100% { transform: translateX(18px); }
+      }
+      @keyframes chevronSlideRight {
+        0% { transform: translateX(0px); }
+        100% { transform: translateX(-18px); }
+      }
+    </style>
+  </defs>
+
+  <!-- ==================== 3D EXTRUDED DUAL-RAIL CHASSIS ==================== -->
+
+  <!-- Left Lower Bevel Face (3D Depth Shadow) -->
+  <polygon points="10,23 410,23 410,26 10,26" fill="url(#rail3DFrontLeft)" />
+  <!-- Left Upper Bevel Face (3D Top Specular) -->
+  <polygon points="10,21 410,21 410,23 10,23" fill="url(#rail3DTopLeft)" />
+  
+  <!-- Left Upper Kinetic Stream -->
+  <line x1="60" y1="14" x2="400" y2="14" stroke="#00DFD8" stroke-opacity="0.45" stroke-width="1.2" class="energy-stream-left" />
+  <!-- Left Main Laser Core Beam -->
+  <line x1="10" y1="22" x2="410" y2="22" stroke="url(#rail3DTopLeft)" stroke-width="2.2" />
+  <!-- Left Lower Kinetic Stream -->
+  <line x1="120" y1="30" x2="400" y2="30" stroke="#67E8F9" stroke-opacity="0.35" stroke-width="1.2" class="energy-stream-left-fast" />
+
+  <!-- Left High-Speed Moving Laser Photon Pulse -->
+  <rect x="0" y="20.5" width="90" height="3" rx="1.5" fill="url(#photonFlareLeft)" filter="drop-shadow(0 0 6px #00DFD8)">
+    <animate attributeName="x" from="-100" to="410" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Left 3D Support Truss Struts with Continuous Streaming Dashes -->
+  <line x1="180" y1="14" x2="190" y2="30" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-left" />
+  <line x1="240" y1="14" x2="250" y2="30" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-left" />
+  <line x1="300" y1="14" x2="310" y2="30" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-left" />
+  <line x1="360" y1="14" x2="370" y2="30" stroke="#00DFD8" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-left" />
+
+  <!-- Left High-Energy Moving Inward Chevrons -->
+  <g class="chevron-move-left">
+    <path d="M 330 15 L 337 22 L 330 29" fill="none" stroke="#00DFD8" stroke-width="1.5" opacity="0.6" />
+    <path d="M 345 15 L 352 22 L 345 29" fill="none" stroke="#00DFD8" stroke-width="1.5" opacity="0.8" />
+    <path d="M 360 15 L 367 22 L 360 29" fill="none" stroke="#67E8F9" stroke-width="1.6" />
+    <path d="M 375 14 L 383 22 L 375 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" filter="drop-shadow(0 0 4px #00DFD8)" />
+  </g>
+
+  <!-- Right Lower Bevel Face (3D Depth Shadow) -->
+  <polygon points="490,23 890,23 890,26 490,26" fill="url(#rail3DFrontRight)" />
+  <!-- Right Upper Bevel Face (3D Top Specular) -->
+  <polygon points="490,21 890,21 890,23 490,23" fill="url(#rail3DTopRight)" />
+
+  <!-- Right Upper Kinetic Stream -->
+  <line x1="500" y1="14" x2="840" y2="14" stroke="#7701D0" stroke-opacity="0.45" stroke-width="1.2" class="energy-stream-right" />
+  <!-- Right Main Laser Core Beam -->
+  <line x1="490" y1="22" x2="890" y2="22" stroke="url(#rail3DTopRight)" stroke-width="2.2" />
+  <!-- Right Lower Kinetic Stream -->
+  <line x1="500" y1="30" x2="780" y2="30" stroke="#A855F7" stroke-opacity="0.35" stroke-width="1.2" class="energy-stream-right-fast" />
+
+  <!-- Right High-Speed Moving Laser Photon Pulse -->
+  <rect x="890" y="20.5" width="90" height="3" rx="1.5" fill="url(#photonFlareRight)" filter="drop-shadow(0 0 6px #A855F7)">
+    <animate attributeName="x" from="900" to="390" dur="1.5s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Right 3D Support Truss Struts with Continuous Streaming Dashes -->
+  <line x1="540" y1="14" x2="530" y2="30" stroke="#A855F7" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-right" />
+  <line x1="600" y1="14" x2="590" y2="30" stroke="#A855F7" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-right" />
+  <line x1="660" y1="14" x2="650" y2="30" stroke="#7701D0" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-right" />
+  <line x1="720" y1="14" x2="710" y2="30" stroke="#7701D0" stroke-width="1" stroke-dasharray="2, 3" class="energy-stream-right" />
+
+  <!-- Right High-Energy Moving Inward Chevrons -->
+  <g class="chevron-move-right">
+    <path d="M 570 15 L 563 22 L 570 29" fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.6" />
+    <path d="M 555 15 L 548 22 L 555 29" fill="none" stroke="#A855F7" stroke-width="1.5" opacity="0.8" />
+    <path d="M 540 15 L 533 22 L 540 29" fill="none" stroke="#E879F9" stroke-width="1.6" />
+    <path d="M 525 14 L 517 22 L 525 30" fill="none" stroke="#FFFFFF" stroke-width="1.8" filter="drop-shadow(0 0 4px #A855F7)" />
+  </g>
+
+  <!-- ==================== CENTER: 3D HOLOGRAPHIC GYROSCOPE CORE ==================== -->
+
+  <!-- Outer 3D Gyroscope Glass Ring (Tilted 3D Orbit - 8s SMIL Rotation) -->
+  <g>
+    <ellipse cx="450" cy="22" rx="28" ry="14" fill="none" stroke="rgba(0, 223, 216, 0.65)" stroke-width="1.4" stroke-dasharray="8, 6" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="8s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Mid 3D Gyroscope Bezel Ring (Reverse Tilted Orbit - 5s SMIL Rotation) -->
+  <g>
+    <ellipse cx="450" cy="22" rx="22" ry="11" fill="rgba(15, 23, 42, 0.85)" stroke="#A855F7" stroke-width="1.3" stroke-dasharray="4, 4" />
+    <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Inclined 3D Gyroscope Ring 3 (45deg Inclination - 3.5s SMIL Rotation) -->
+  <g>
+    <ellipse cx="450" cy="22" rx="16" ry="8" fill="none" stroke="#10B981" stroke-width="1.2" stroke-dasharray="3, 3" />
+    <animateTransform attributeName="transform" type="rotate" from="45 450 22" to="405 450 22" dur="3.5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- Inner 3D Hexagonal Aperture (Fast 2.5s SMIL Rotation) -->
+  <g>
+    <polygon points="450,13 458,18 458,26 450,31 442,26 442,18" fill="rgba(119, 1, 208, 0.35)" stroke="#00DFD8" stroke-width="1.2" />
+    <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="-360 450 22" dur="2.5s" repeatCount="indefinite" />
+  </g>
+
+  <!-- 4 Orbiting Photon Satellites along 3D Rings -->
+  <g>
+    <circle cx="450" cy="8" r="2.2" fill="#FFFFFF" filter="drop-shadow(0 0 6px #00DFD8)">
+      <animateTransform attributeName="transform" type="rotate" from="0 450 22" to="360 450 22" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="450" cy="36" r="2.2" fill="#E879F9" filter="drop-shadow(0 0 6px #A855F7)">
+      <animateTransform attributeName="transform" type="rotate" from="360 450 22" to="0 450 22" dur="2.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="468" cy="22" r="2" fill="#34D399" filter="drop-shadow(0 0 6px #10B981)">
+      <animateTransform attributeName="transform" type="rotate" from="90 450 22" to="450 450 22" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  <g>
+    <circle cx="432" cy="22" r="2" fill="#38BDF8" filter="drop-shadow(0 0 6px #0284C7)">
+      <animateTransform attributeName="transform" type="rotate" from="270 450 22" to="-90 450 22" dur="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Central 3D Volumetric Plasma Core -->
+  <circle cx="450" cy="22" r="5" fill="url(#gyroCoreAura)" />
+  <circle cx="450" cy="22" r="2" fill="#FFFFFF" />
+</svg>
