@@ -1,0 +1,227 @@
+<svg width="900" height="200" viewBox="0 0 900 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Glass Chassis Gradient -->
+    <linearGradient id="deckGlassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111726" stop-opacity="0.94" />
+      <stop offset="40%" stop-color="#0E1422" stop-opacity="0.88" />
+      <stop offset="100%" stop-color="#06090E" stop-opacity="0.98" />
+    </linearGradient>
+
+    <!-- Top Specular Edge Highlight -->
+    <linearGradient id="deckSpecular" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.45" />
+      <stop offset="40%" stop-color="#00DFD8" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="transparent" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Chrome Border Gradient -->
+    <linearGradient id="deckChromeBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.95" />
+      <stop offset="50%" stop-color="#A855F7" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.95" />
+    </linearGradient>
+
+    <!-- 3D Layer Face Gradients -->
+    <linearGradient id="topFaceL1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00DFD8" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#00DFD8" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="topFaceL2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#007CF0" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#007CF0" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="topFaceL3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#7701D0" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="topFaceL4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="topFaceL5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.65" />
+      <stop offset="100%" stop-color="#D97706" stop-opacity="0.2" />
+    </linearGradient>
+
+    <style>
+      .h-title { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 10.5px; font-weight: 700; fill: #00DFD8; letter-spacing: 1.5px; }
+      .h-layer-tag { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 8.5px; font-weight: 700; }
+      .h-layer-name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 9px; fill: #FFFFFF; }
+      .h-meta { font-family: 'Fira Code', 'SF Mono', Consolas, monospace; font-size: 7.5px; font-weight: 700; letter-spacing: 1px; }
+      
+      .laser-cable { stroke-dasharray: 4, 4; animation: cablePulse 1.2s linear infinite; }
+      .spark-up { animation: sparkAscend 3s ease-in-out infinite; }
+      
+      .deck-float-1 { animation: layerHover 4s ease-in-out 0s infinite alternate; }
+      .deck-float-2 { animation: layerHover 4s ease-in-out 0.4s infinite alternate; }
+      .deck-float-3 { animation: layerHover 4s ease-in-out 0.8s infinite alternate; }
+      .deck-float-4 { animation: layerHover 4s ease-in-out 1.2s infinite alternate; }
+      .deck-float-5 { animation: layerHover 4s ease-in-out 1.6s infinite alternate; }
+
+      @keyframes cablePulse {
+        from { stroke-dashoffset: 8; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes layerHover {
+        0% { transform: translateY(0px); }
+        100% { transform: translateY(-3px); }
+      }
+      @keyframes sparkAscend {
+        0% { transform: translateY(110px); }
+        100% { transform: translateY(0px); }
+      }
+    
+      @keyframes dashFlow {
+        from { stroke-dashoffset: 40; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes dashFlowRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 40; }
+      }
+      .dash-flow {
+        stroke-dasharray: 8, 6;
+        animation: dashFlow 2s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 8, 6;
+        animation: dashFlowRev 2s linear infinite;
+      }
+    
+      .spark-up-2 { animation: sparkAscend2 3s ease-in-out 1s infinite; }
+      .spark-up-3 { animation: sparkAscend3 3s ease-in-out 2s infinite; }
+      @keyframes sparkAscend2 {
+        0% { transform: translateY(110px); }
+        100% { transform: translateY(0px); }
+      }
+      @keyframes sparkAscend3 {
+        0% { transform: translateY(110px); }
+        100% { transform: translateY(0px); }
+      }
+    
+      .spark-up-4 { animation: sparkAscend4 3s ease-in-out 1.5s infinite; }
+      @keyframes sparkAscend4 {
+        0% { transform: translateY(110px); }
+        100% { transform: translateY(0px); }
+      }
+    </style>
+  
+    <!-- Hex Deck Traveling Photons -->
+    <filter id="hexDeckPhoton" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#00DFD8" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- 3D Glass Outer Frame with Chamfers -->
+  <polygon points="12,2 888,2 898,12 898,188 888,198 12,198 2,188 2,12" fill="url(#deckGlassBg)" stroke="url(#deckChromeBorder)" stroke-width="1.3" />
+  <path d="M 12 3 L 888 3 L 896 11 L 4 11 Z" fill="url(#deckSpecular)" />
+
+  <!-- Top Title Bar -->
+  <g transform="translate(20, 16)">
+    <circle cx="6" cy="6" r="3.5" fill="#7701D0" />
+    <text x="18" y="9.5" class="h-title">ISOMETRIC 3D ARCHITECTURE DECK // FULL-STACK ENGINE</text>
+    <text x="860" y="9.5" text-anchor="end" class="h-title" fill="#00DFD8">CROSS-LAYER TELEMETRY</text>
+    <line x1="0" y1="18" x2="860" y2="18" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+  </g>
+
+  <!-- 3D ISOMETRIC PRISM STACK (LEFT) -->
+  <g transform="translate(60, 42)">
+    <!-- Vertical Connecting Fiber-Optic Pillars -->
+    <line x1="120" y1="12" x2="120" y2="135" stroke="#00DFD8" stroke-width="1.2" class="laser-cable" />
+    <line x1="195" y1="28" x2="195" y2="151" stroke="#A855F7" stroke-width="1.2" class="laser-cable" />
+    <line x1="45" y1="28" x2="45" y2="151" stroke="#10B981" stroke-width="1.2" class="laser-cable" />
+
+    <!-- Ascending Data Sparks -->
+    <circle cx="120" cy="12" r="3" fill="#FFFFFF" class="spark-up" />
+    <circle cx="195" cy="28" r="3" fill="#00DFD8" class="spark-up" style="animation-delay: -1.5s;" />
+    <circle cx="45" cy="28" r="3" fill="#10B981" class="spark-up" style="animation-delay: -0.75s;" />
+
+    <!-- L5: Low-Latency Kernel (Base Hex Prism) -->
+    <g class="deck-float-5">
+      <polygon points="45,138 120,154 120,160 45,144" fill="#78350F" opacity="0.85" />
+      <polygon points="120,154 195,138 195,144 120,160" fill="#92400E" opacity="0.85" />
+      <polygon points="120,122 195,138 120,154 45,138" fill="url(#topFaceL5)" stroke="#F59E0B" stroke-width="1.3" />
+      <circle cx="120" cy="138" r="4" fill="#F59E0B" />
+    </g>
+
+    <!-- L4: Distributed Backend (Hex Prism) -->
+    <g class="deck-float-4">
+      <polygon points="45,110 120,126 120,132 45,116" fill="#064E3B" opacity="0.85" />
+      <polygon points="120,126 195,110 195,116 120,132" fill="#065F46" opacity="0.85" />
+      <polygon points="120,94 195,110 120,126 45,110" fill="url(#topFaceL4)" stroke="#10B981" stroke-width="1.3" />
+      <circle cx="120" cy="110" r="4" fill="#10B981" />
+    </g>
+
+    <!-- L3: Agentic Intelligence (Hex Prism) -->
+    <g class="deck-float-3">
+      <polygon points="45,82 120,98 120,104 45,88" fill="#4C1D95" opacity="0.85" />
+      <polygon points="120,98 195,82 195,88 120,104" fill="#5B21B6" opacity="0.85" />
+      <polygon points="120,66 195,82 120,98 45,82" fill="url(#topFaceL3)" stroke="#A855F7" stroke-width="1.3" />
+      <circle cx="120" cy="82" r="4" fill="#A855F7" />
+    </g>
+
+    <!-- L2: Concurrent UI (Hex Prism) -->
+    <g class="deck-float-2">
+      <polygon points="45,54 120,70 120,76 45,60" fill="#0C4A6E" opacity="0.85" />
+      <polygon points="120,70 195,54 195,60 120,76" fill="#0369A1" opacity="0.85" />
+      <polygon points="120,38 195,54 120,70 45,54" fill="url(#topFaceL2)" stroke="#007CF0" stroke-width="1.3" />
+      <circle cx="120" cy="54" r="4" fill="#007CF0" />
+    </g>
+
+    <!-- L1: Spatial & Shaders (Top Hex Prism) -->
+    <g class="deck-float-1">
+      <polygon points="45,26 120,42 120,48 45,32" fill="#134E4A" opacity="0.85" />
+      <polygon points="120,42 195,26 195,32 120,48" fill="#115E59" opacity="0.85" />
+      <polygon points="120,10 195,26 120,42 45,26" fill="url(#topFaceL1)" stroke="#00DFD8" stroke-width="1.4" />
+      <circle cx="120" cy="26" r="4" fill="#00DFD8" />
+    </g>
+  </g>
+
+  <!-- ARCHITECTURAL STACK TELEMETRY PODS (RIGHT) -->
+  <g transform="translate(300, 42)">
+    <!-- L1 Pod -->
+    <g transform="translate(0, 0)">
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 223, 216, 0.45)" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#00DFD8" />
+      <text x="24" y="15" class="h-layer-tag" fill="#00DFD8">L1 // SPATIAL &amp; SHADERS</text>
+      <text x="165" y="15" class="h-layer-name">WebGL 2.0 • Three.js • Custom GLSL Compute Shaders • 144 FPS @ 4K</text>
+      <text x="555" y="15" text-anchor="end" class="h-meta" fill="#00DFD8">RENDER TIER</text>
+    </g>
+
+    <!-- L2 Pod -->
+    <g transform="translate(0, 28)">
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(0, 124, 240, 0.45)" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#007CF0" />
+      <text x="24" y="15" class="h-layer-tag" fill="#38BDF8">L2 // CONCURRENT UI</text>
+      <text x="165" y="15" class="h-layer-name">Next.js 16 (Turbopack) • React 19 • TypeScript 5 (Strict) • Tailwind</text>
+      <text x="555" y="15" text-anchor="end" class="h-meta" fill="#38BDF8">INTERACTION</text>
+    </g>
+
+    <!-- L3 Pod -->
+    <g transform="translate(0, 56)">
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(168, 85, 247, 0.45)" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#A855F7" />
+      <text x="24" y="15" class="h-layer-tag" fill="#C084FC">L3 // AGENTIC INTELLIGENCE</text>
+      <text x="165" y="15" class="h-layer-name">SIVION Multi-Agent Swarms • pgvector Hybrid RAG • Python 3.12</text>
+      <text x="555" y="15" text-anchor="end" class="h-meta" fill="#C084FC">COGNITION</text>
+    </g>
+
+    <!-- L4 Pod -->
+    <g transform="translate(0, 84)">
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(16, 185, 129, 0.45)" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#10B981" />
+      <text x="24" y="15" class="h-layer-tag" fill="#34D399">L4 // DISTRIBUTED BACKEND</text>
+      <text x="165" y="15" class="h-layer-name">FastAPI Async • Bun Runtime • Supabase Realtime • Docker • K8s</text>
+      <text x="555" y="15" text-anchor="end" class="h-meta" fill="#34D399">INFRASTRUCTURE</text>
+    </g>
+
+    <!-- L5 Pod -->
+    <g transform="translate(0, 112)">
+      <polygon points="6,0 564,0 570,6 570,18 564,24 6,24 0,18 0,6" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(245, 158, 11, 0.45)" stroke-width="1" />
+      <circle cx="12" cy="12" r="3.5" fill="#F59E0B" />
+      <text x="24" y="15" class="h-layer-tag" fill="#FBBF24">L5 // LOW-LATENCY KERNEL</text>
+      <text x="165" y="15" class="h-layer-name">MA-Optimizer • C++20 • Windows API • 0.42ms Sub-Millisecond Dispatch</text>
+      <text x="555" y="15" text-anchor="end" class="h-meta" fill="#FBBF24">KERNEL RING 0</text>
+    </g>
+  </g>
+</svg>
